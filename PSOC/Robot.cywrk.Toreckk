@@ -153,6 +153,7 @@
 <v>Robot\RobotBLE\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>Robot\RobotBLE\CortexM0\ARM_GCC_541\Debug\Listing Files\ENA.lst</v>
 <v>Robot\RobotBLE\CortexM0\ARM_GCC_541\Debug\Listing Files\ENA_PM.lst</v>
+<v>Robot\RobotBLE\CortexM0\ARM_GCC_541\Debug\Listing Files\ENB.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
