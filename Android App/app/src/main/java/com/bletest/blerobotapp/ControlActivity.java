@@ -58,10 +58,10 @@ public class ControlActivity extends AppCompatActivity {
         }
     };
 
-    @Override
+    //@Override
     public void onServiceDisconnected(ComponentName componentName)
     {
-        
+        mRobotService = null;
     }
 
     @Override
@@ -74,10 +74,19 @@ public class ControlActivity extends AppCompatActivity {
         seekbar = (SeekBar) findViewById(R.id.seekBar);
         seekbar2 = (SeekBar) findViewById(R.id.seekBar2);
 
+        final Intent intent = getIntent();
+        mDeviceAddress = intent.getStringExtra(BLEScanActivity.EXTRAS_BLE_ADDRESS);
+
+        //Bind to the BLE Service
+        Log.i(TAG, "Binding Service");
+        Intent RobotServiceIntent = new Intent(this, RobotService.class);
+        bindService(RobotServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
+
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 int newprogress = progress-100;
+                mRobotService.setMotorSpeed(RobotService.Motor.LEFT_WHEEL, newprogress);
                 textView.setText("" + newprogress + "%");
             }
 
@@ -97,6 +106,7 @@ public class ControlActivity extends AppCompatActivity {
 
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 int newprogress = progress-100;
+                mRobotService.setMotorSpeed(RobotService.Motor.RIGHT_WHEEL, newprogress);
                 textView2.setText("" + newprogress + "%");
             }
 
@@ -119,5 +129,65 @@ public class ControlActivity extends AppCompatActivity {
                 seekbar2.setProgress(100);
             }
         });
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        registerReceiver(mRobotUpdateReceiver, makeRobotUpdateIntentFilter());
+        if(mRobotService != null)
+        {
+            final boolean result = mRobotService.connect(mDeviceAddress);
+            Log.i(TAG, "Connect request result = "+ result);
+        }
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        unregisterReceiver(mRobotUpdateReceiver);
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        unbindService(mServiceConnection);
+        mRobotService = null;
+    }
+
+    /**
+     * Handle broadcasts from the Car service object. The events are:
+     * ACTION_CONNECTED: connected to the car.
+     * ACTION_DISCONNECTED: disconnected from the car.
+     * ACTION_DATA_AVAILABLE: received data from the car.  This can be a result of a read
+     * or notify operation.
+     */
+    private final BroadcastReceiver mRobotUpdateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            final String action = intent.getAction();
+            switch (action) {
+                case RobotService.ACTION_CONNECTED:
+                    // No need to do anything here. Service discovery is started by the service.
+                    break;
+                case RobotService.ACTION_DISCONNECTED:
+                    mRobotService.close();
+                    break;
+            }
+        }
+    };
+
+    /**
+     * This sets up the filter for broadcasts that we want to be notified of.
+     * This needs to match the broadcast receiver cases.
+     *
+     * @return intentFilter
+     */
+    private static IntentFilter makeRobotUpdateIntentFilter() {
+        final IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(RobotService.ACTION_CONNECTED);
+        intentFilter.addAction(RobotService.ACTION_DISCONNECTED);
+        intentFilter.addAction(RobotService.ACTION_DATA_AVAILABLE);
+        return intentFilter;
     }
 }
