@@ -218,8 +218,8 @@ public class RobotService extends Service {
         }
 
         // Initialize car state variables
-        motorLeftState = false;
-        motorRightState = false;
+        //motorLeftState = false;
+        //motorRightState = false;
         motorLeftSpeed = 0;
         motorRightSpeed = 0;
 

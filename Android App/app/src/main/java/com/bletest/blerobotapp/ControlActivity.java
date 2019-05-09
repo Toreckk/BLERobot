@@ -74,6 +74,8 @@ public class ControlActivity extends AppCompatActivity {
         seekbar = (SeekBar) findViewById(R.id.seekBar);
         seekbar2 = (SeekBar) findViewById(R.id.seekBar2);
 
+        seekbar.setProgress(100);
+        seekbar2.setProgress(100);
         final Intent intent = getIntent();
         mDeviceAddress = intent.getStringExtra(BLEScanActivity.EXTRAS_BLE_ADDRESS);
 
