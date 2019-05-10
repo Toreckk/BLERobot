@@ -1,5 +1,5 @@
 -- Project:   RobotBLE
--- Generated: 05/08/2019 18:54:17
+-- Generated: 05/09/2019 18:33:19
 -- PSoC Creator  4.2
 
 ENTITY RobotBLE IS
@@ -11,17 +11,17 @@ ENTITY RobotBLE IS
         IN2(0)_PAD : OUT std_ulogic;
         IN3(0)_PAD : OUT std_ulogic;
         IN4(0)_PAD : OUT std_ulogic);
+    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA_CTB OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDA_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_0 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD_0 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_2 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_HLS OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_BGLS OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDR_LF OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_HF OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_SYN OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDR_LF OF __DEFAULT__ : ENTITY IS 3.3e0;
 END RobotBLE;
 
 ARCHITECTURE __DEFAULT__ OF RobotBLE IS
@@ -91,12 +91,19 @@ ARCHITECTURE __DEFAULT__ OF RobotBLE IS
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
     ATTRIBUTE lib_model OF red(0) : LABEL IS "iocell1";
+    ATTRIBUTE Location OF red(0) : LABEL IS "P2[6]";
     ATTRIBUTE lib_model OF ENA(0) : LABEL IS "iocell2";
+    ATTRIBUTE Location OF ENA(0) : LABEL IS "P3[0]";
     ATTRIBUTE lib_model OF ENB(0) : LABEL IS "iocell3";
+    ATTRIBUTE Location OF ENB(0) : LABEL IS "P2[0]";
     ATTRIBUTE lib_model OF IN1(0) : LABEL IS "iocell4";
+    ATTRIBUTE Location OF IN1(0) : LABEL IS "P3[1]";
     ATTRIBUTE lib_model OF IN2(0) : LABEL IS "iocell5";
+    ATTRIBUTE Location OF IN2(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF IN3(0) : LABEL IS "iocell6";
+    ATTRIBUTE Location OF IN3(0) : LABEL IS "P3[2]";
     ATTRIBUTE lib_model OF IN4(0) : LABEL IS "iocell7";
+    ATTRIBUTE Location OF IN4(0) : LABEL IS "P2[2]";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:status_2\ : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF Net_65 : LABEL IS "macrocell2";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell1";

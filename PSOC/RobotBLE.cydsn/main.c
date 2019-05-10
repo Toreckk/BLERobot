@@ -45,10 +45,17 @@ characteristic
 */
 void setSpeed(motor m, int speed){
     int absSpeed = abs(speed);
-    int dir = (absSpeed == speed) ? 0 : 1;
     
-    if(absSpeed>100) //we don't allow speeds over the limit-> +/- 100%
+    int dir;
+    
+    if(absSpeed == speed)
+        dir = 0;
+    else
+        dir = 1;
+    
+    if(absSpeed>100) //100% -> speed limit
         return;
+    
     switch(m){
         case LEFT_WHEEL:
             IN1_Write(dir);

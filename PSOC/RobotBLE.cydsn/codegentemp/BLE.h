@@ -86,7 +86,7 @@
     #define CYBLE_AUTO_POPULATE_WHITELIST           (0x01u)
     #if(CYBLE_M0S8BLESS_VERSION_2)
         #define CYBLE_MAX_RESOLVABLE_DEVICES        (0x08u)
-        #define CYBLE_ENABLE_LL_PRIVACY             (0x01u)
+        #define CYBLE_ENABLE_LL_PRIVACY             (0x00u)
     #else
         #define CYBLE_MAX_RESOLVABLE_DEVICES        (0u)
         #define CYBLE_ENABLE_LL_PRIVACY             (0u)
@@ -178,7 +178,7 @@
 
 #define CYBLE_ADV_PKT_INDEX_FLAGS   (0x00u)
 #define CYBLE_ADV_PKT_INDEX_LOCAL_NAME   (0x03u)
-#define CYBLE_ADV_PKT_INDEX_SERVICE_UUID_128   (0x0Cu)
+#define CYBLE_ADV_PKT_INDEX_SERVICE_UUID_128   (0x0Bu)
 
 
 

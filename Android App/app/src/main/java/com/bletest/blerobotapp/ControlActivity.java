@@ -179,12 +179,6 @@ public class ControlActivity extends AppCompatActivity {
         }
     };
 
-    /**
-     * This sets up the filter for broadcasts that we want to be notified of.
-     * This needs to match the broadcast receiver cases.
-     *
-     * @return intentFilter
-     */
     private static IntentFilter makeRobotUpdateIntentFilter() {
         final IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(RobotService.ACTION_CONNECTED);

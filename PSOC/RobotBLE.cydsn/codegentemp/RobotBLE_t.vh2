@@ -1,5 +1,5 @@
 -- Project:   C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\RobotBLE.cyprj
--- Generated: 05/08/2019 18:54:19
+-- Generated: 05/09/2019 18:33:22
 -- PSoC Creator  4.2
 
 ENTITY RobotBLE IS
@@ -11,17 +11,17 @@ ENTITY RobotBLE IS
         IN2(0)_PAD : OUT std_ulogic;
         IN3(0)_PAD : OUT std_ulogic;
         IN4(0)_PAD : OUT std_ulogic);
+    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA_CTB OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDA_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_0 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD_0 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_2 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_HLS OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_BGLS OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDR_LF OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_HF OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDR_SYN OF __DEFAULT__ : ENTITY IS 3.3e0;
-    ATTRIBUTE voltage_VDDR_LF OF __DEFAULT__ : ENTITY IS 3.3e0;
 END RobotBLE;
 
 ARCHITECTURE __DEFAULT__ OF RobotBLE IS
@@ -59,9 +59,9 @@ ARCHITECTURE __DEFAULT__ OF RobotBLE IS
     ATTRIBUTE udbclken_assigned OF Net_62_digital : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_62_digital : SIGNAL IS true;
     SIGNAL Net_64 : bit;
-    ATTRIBUTE placement_force OF Net_64 : SIGNAL IS "U(1,0,A)2";
+    ATTRIBUTE placement_force OF Net_64 : SIGNAL IS "U(0,1,A)2";
     SIGNAL Net_65 : bit;
-    ATTRIBUTE placement_force OF Net_65 : SIGNAL IS "U(1,0,A)3";
+    ATTRIBUTE placement_force OF Net_65 : SIGNAL IS "U(0,1,A)3";
     SIGNAL Net_7 : bit;
     SIGNAL Net_8 : bit;
     SIGNAL Net_9 : bit;
@@ -76,13 +76,13 @@ ARCHITECTURE __DEFAULT__ OF RobotBLE IS
     SIGNAL \LED_PWM:PWMUDB:control_6\ : bit;
     SIGNAL \LED_PWM:PWMUDB:control_7\ : bit;
     SIGNAL \LED_PWM:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \LED_PWM:PWMUDB:prevCompare1\ : SIGNAL IS "U(1,0,A)1";
+    ATTRIBUTE placement_force OF \LED_PWM:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,1,A)1";
     SIGNAL \LED_PWM:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \LED_PWM:PWMUDB:runmode_enable\ : SIGNAL IS "U(1,0,B)0";
+    ATTRIBUTE placement_force OF \LED_PWM:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,1,B)0";
     SIGNAL \LED_PWM:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \LED_PWM:PWMUDB:status_0\ : SIGNAL IS "U(1,0,A)0";
+    ATTRIBUTE placement_force OF \LED_PWM:PWMUDB:status_0\ : SIGNAL IS "U(0,1,A)0";
     SIGNAL \LED_PWM:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \LED_PWM:PWMUDB:status_2\ : SIGNAL IS "U(1,0,B)1";
+    ATTRIBUTE placement_force OF \LED_PWM:PWMUDB:status_2\ : SIGNAL IS "U(0,1,B)1";
     SIGNAL \LED_PWM:PWMUDB:status_3\ : bit;
     SIGNAL \LED_PWM:PWMUDB:tc_i\ : bit;
     SIGNAL __ONE__ : bit;
@@ -98,41 +98,41 @@ ARCHITECTURE __DEFAULT__ OF RobotBLE IS
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF red(0) : LABEL IS "iocell1";
-    ATTRIBUTE Location OF red(0) : LABEL IS "P0[0]";
+    ATTRIBUTE Location OF red(0) : LABEL IS "P2[6]";
     ATTRIBUTE lib_model OF ENA(0) : LABEL IS "iocell2";
-    ATTRIBUTE Location OF ENA(0) : LABEL IS "P1[0]";
+    ATTRIBUTE Location OF ENA(0) : LABEL IS "P3[0]";
     ATTRIBUTE lib_model OF ENB(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF ENB(0) : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF ENB(0) : LABEL IS "P2[0]";
     ATTRIBUTE lib_model OF IN1(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF IN1(0) : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF IN1(0) : LABEL IS "P3[1]";
     ATTRIBUTE lib_model OF IN2(0) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF IN2(0) : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF IN2(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF IN3(0) : LABEL IS "iocell6";
-    ATTRIBUTE Location OF IN3(0) : LABEL IS "P0[4]";
+    ATTRIBUTE Location OF IN3(0) : LABEL IS "P3[2]";
     ATTRIBUTE lib_model OF IN4(0) : LABEL IS "iocell7";
-    ATTRIBUTE Location OF IN4(0) : LABEL IS "P0[5]";
+    ATTRIBUTE Location OF IN4(0) : LABEL IS "P2[2]";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:status_2\ : LABEL IS "macrocell1";
-    ATTRIBUTE Location OF \LED_PWM:PWMUDB:status_2\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LED_PWM:PWMUDB:status_2\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF Net_65 : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF Net_65 : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF Net_65 : LABEL IS "U(0,1)";
     ATTRIBUTE Location OF \LEFT_MOTOR:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,0)";
     ATTRIBUTE Location OF \RIGHT_MOTOR:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,1)";
     ATTRIBUTE Location OF \BLE:cy_m0s8_ble\ : LABEL IS "F(BLE,0)";
     ATTRIBUTE Location OF \BLE:bless_isr\ : LABEL IS "[IntrContainer=(0)][IntrId=(12)]";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \LED_PWM:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LED_PWM:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \LED_PWM:PWMUDB:genblk8:stsreg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LED_PWM:PWMUDB:genblk8:stsreg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell1";
-    ATTRIBUTE Location OF \LED_PWM:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LED_PWM:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:runmode_enable\ : LABEL IS "macrocell3";
-    ATTRIBUTE Location OF \LED_PWM:PWMUDB:runmode_enable\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LED_PWM:PWMUDB:runmode_enable\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:prevCompare1\ : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF \LED_PWM:PWMUDB:prevCompare1\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LED_PWM:PWMUDB:prevCompare1\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \LED_PWM:PWMUDB:status_0\ : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF \LED_PWM:PWMUDB:status_0\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LED_PWM:PWMUDB:status_0\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF Net_64 : LABEL IS "macrocell6";
-    ATTRIBUTE Location OF Net_64 : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF Net_64 : LABEL IS "U(0,1)";
     COMPONENT controlcell
         PORT (
             control_0 : OUT std_ulogic;

@@ -213,11 +213,6 @@ public class BLEScanActivity extends AppCompatActivity {
         mSwipeRefreshLayout.setRefreshing(false);
     }
 
-    /**
-     * Start or stop BLE scanning
-     *
-     * @param enable start scanning if true
-     */
     private void scanLeDevice(final boolean enable) {
         if (enable) { // enable set to start scanning
             // Stops scanning after a pre-defined scan period.

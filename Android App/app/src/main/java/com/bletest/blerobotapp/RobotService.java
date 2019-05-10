@@ -42,15 +42,14 @@ public class RobotService extends Service {
     private static final String motorServiceUUID =   baseUUID + "0";
     private static final String speedLeftCharUUID =  baseUUID + "1";
     private static final String speedRightCharUUID = baseUUID + "2";
-    //private static final String CCCD_UUID =          "00002902-0000-1000-8000-00805f9b34fb";
 
     // Bluetooth Characteristics that we need to read/write
     private static BluetoothGattCharacteristic mSpeedLeftCharacteristic;
     private static BluetoothGattCharacteristic mSpeedRightCharacteristic;
 
-    // State (on/off), speed of the motors, and tach values
-    private static boolean motorLeftState;
-    private static boolean motorRightState;
+    // State (on/off), speed of the motors
+    //private static boolean motorLeftState;
+    //private static boolean motorRightState;
     private static int motorLeftSpeed;
     private static int motorRightSpeed;
     // Actions used during broadcasts to the activity
@@ -89,12 +88,7 @@ public class RobotService extends Service {
      * Implements callback methods for GATT events.
      */
     private final BluetoothGattCallback mGattCallback = new BluetoothGattCallback() {
-        /**
-         * This is called on a connection state change (either connection or disconnection)
-         * @param gatt The GATT database object
-         * @param status Status of the event
-         * @param newState New state (connected or disconnected)
-         */
+
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
             if (newState == BluetoothProfile.STATE_CONNECTED) {
@@ -148,14 +142,7 @@ public class RobotService extends Service {
             }
         }
 
-        /**
-         * This is called when a characteristic write has completed. Is uses a queue to determine if
-         * additional BLE actions are still pending and launches the next one if there are.
-         *
-         * @param gatt The GATT database object
-         * @param characteristic The characteristic that was written.
-         * @param status Status of whether the write was successful.
-         */
+
         @Override
         public void onCharacteristicWrite(BluetoothGatt gatt,
                                           BluetoothGattCharacteristic characteristic,
@@ -166,14 +153,6 @@ public class RobotService extends Service {
             handleBleQueue();
         }
 
-        /**
-         * This is called when a CCCD write has completed. It uses a queue to determine if
-         * additional BLE actions are still pending and launches the next one if there are.
-         *
-         * @param gatt The GATT database object
-         * @param descriptor The CCCD that was written.
-         * @param status Status of whether the write was successful.
-         */
         @Override
         public void onDescriptorWrite(BluetoothGatt gatt, BluetoothGattDescriptor descriptor,
                                       int status) {
@@ -184,22 +163,10 @@ public class RobotService extends Service {
         }
     };
 
-
-    /**
-     * Sends a broadcast to the listener in the main activity.
-     *
-     * @param action The type of action that occurred.
-     */
     private void broadcastUpdate(final String action) {
         final Intent intent = new Intent(action);
         sendBroadcast(intent);
     }
-
-    /**
-     * Initialize a reference to the local Bluetooth adapter.
-     *
-     * @return Return true if the initialization is successful.
-     */
     public boolean initialize() {
         // For API level 18 and above, get a reference to BluetoothAdapter through
         // BluetoothManager.
@@ -226,15 +193,6 @@ public class RobotService extends Service {
         return true;
     }
 
-    /**
-     * Connects to the GATT server hosted on the Bluetooth LE device.
-     *
-     * @param address The device address of the destination device.
-     * @return Return true if the connection is initiated successfully. The connection result
-     * is reported asynchronously through the
-     * {@code BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt, int, int)}
-     * callback.
-     */
     public boolean connect(final String address) {
         if (mBluetoothAdapter == null || address == null) {
             Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
@@ -261,12 +219,6 @@ public class RobotService extends Service {
         return true;
     }
 
-    /**
-     * Disconnects an existing connection or cancel a pending connection. The disconnection result
-     * is reported asynchronously through the
-     * {@code BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt, int, int)}
-     * callback.
-     */
     public void disconnect() {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
             Log.w(TAG, "BluetoothAdapter not initialized");
@@ -287,42 +239,30 @@ public class RobotService extends Service {
         mBluetoothGatt = null;
     }
 
-    /**
-     * Update the speed of the motor in the GATT database or turn off motor. the speed
-     * value comes from the global variables motorLeftSpeed or motorRightSpeed which are
-     * set by the setMotorSpeed function.
-     *
-     * @param motor to write (L or R)
-     * @param state determines if motor is on or off
-     */
-    private void updateGattSpeed(Motor motor, boolean state)
+    private void updateGattSpeed(Motor motor)
     {
         if(motor == Motor.LEFT_WHEEL) {
-            if (mSpeedLeftCharacteristic != null) {
-                if(state) {
+            if (mSpeedLeftCharacteristic != null)
+                //if(state)
                     mSpeedLeftCharacteristic.setValue(motorLeftSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
-                } else {
-                    mSpeedLeftCharacteristic.setValue(0, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
-                }
+                //} else {
+                //    mSpeedLeftCharacteristic.setValue(0, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
+
                 writeCharacteristic(mSpeedLeftCharacteristic);
-            }
+
         } else { // Motor == RIGHT
-            if (mSpeedRightCharacteristic != null) {
-                if(state) {
+            if (mSpeedRightCharacteristic != null) //{
+                //if(state) {
                     mSpeedRightCharacteristic.setValue(motorRightSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
-                } else {
-                    mSpeedRightCharacteristic.setValue(0, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
-                }
+                //} else {
+                //    mSpeedRightCharacteristic.setValue(0, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
+                //}
                 writeCharacteristic(mSpeedRightCharacteristic);
-            }
+           // }
         }
     }
 
-    /**
-     * Request a write on a given {@code BluetoothGattCharacteristic}.
-     *
-     * @param characteristic The characteristic to write.
-     */
+
     private void writeCharacteristic(BluetoothGattCharacteristic characteristic) {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
             Log.w(TAG, "BluetoothAdapter not initialized");
@@ -334,17 +274,7 @@ public class RobotService extends Service {
             Log.i(TAG, "Writing Characteristic");
         }
     }
-
-
-
-
-    /**
-     * Turn a motor on/off
-     *
-     * @param motor to operate on
-     * @param state turn motor on or off
-
-    public void setMotorState(Motor motor, boolean state) {
+    /*public void setMotorState(Motor motor, boolean state) {
         // Update the motor state variable
         if(motor == Motor.LEFT_WHEEL)
         {
@@ -354,37 +284,25 @@ public class RobotService extends Service {
         }
         // Update the Speed in the Gatt Database
         updateGattSpeed(motor, state);
-    }
-     */
+    }*/
 
-    /**
-     * Set the speed setting of one of the motors.
-     * Note that this is only the requested speed. It will not
-     * be written into the GATT database unless the switch is
-     * turned on.
-     *
-     * @param motor to operate on
-     * @param speed to set the motor to
-     */
     public void setMotorSpeed(Motor motor, int speed) {
-        boolean state;
+       // boolean state;
         if(motor == Motor.LEFT_WHEEL)
         {
             motorLeftSpeed = speed;
-            state = motorLeftState;
+            //state = motorLeftState;
         } else  { // Motor == RIGHT
             motorRightSpeed = speed;
-            state = motorRightState;
+            //state = motorRightState;
         }
         // Update the Speed in the Gatt Database
-        updateGattSpeed(motor, state);
+        updateGattSpeed(motor);
     }
 
 
     /**
      * This function returns the UUID of the motor service
-     *
-     * @return the motor service UUID
      */
     public static UUID getMotorServiceUUID() {
         return UUID.fromString(RobotService.motorServiceUUID);

@@ -58,7 +58,6 @@
 #include "cyPm.h"
 #include "cytypes.h"
 #include "cypins.h"
-#include "CyDMA.h"
 #include "CyLFClk.h"
 #include "cy_em_eeprom.h"
 

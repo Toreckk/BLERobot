@@ -2,7 +2,7 @@
 --	Conversion of RobotBLE.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed May 08 18:54:16 2019
+--	Thu May 09 18:33:18 2019
 --
 
 USE cypress.cypress.all;

@@ -1,5 +1,5 @@
 # RobotBLE
-# 2019-05-08 16:54:17Z
+# 2019-05-09 16:33:19Z
 
 # IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
 dont_use_io iocell 0 6
@@ -10,3 +10,10 @@ dont_use_io iocell 6 0
 # IO_1@[IOP=(6)][IoId=(1)] is reserved: KhzXtalEnabled
 dont_use_io iocell 6 1
 set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "red(0)" iocell 2 6
+set_io "ENA(0)" iocell 3 0
+set_io "ENB(0)" iocell 2 0
+set_io "IN1(0)" iocell 3 1
+set_io "IN2(0)" iocell 2 1
+set_io "IN3(0)" iocell 3 2
+set_io "IN4(0)" iocell 2 2
