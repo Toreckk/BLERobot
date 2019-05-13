@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Robot\RobotBLE\RobotBLE.cydwr">
 <ExpandedNodeIds>
 <v>Robot</v>
 <v>Robot\RobotBLE</v>
@@ -164,18 +164,6 @@
 <v>Robot\RobotBLE\PSoC 4 Architecture TRM</v>
 <v>Robot\RobotBLE\PSoC 4200 BLE Family Datasheet</v>
 <v>Robot\RobotBLE\System Reference Guides</v>
-<v>Robot\RobotBLE\System Reference Guides\cy_boot_v5_70</v>
-<v>Robot\RobotBLE\System Reference Guides\cy_lfclk_v1_20</v>
-<v>Robot\RobotBLE\BLE_v3_50.pdf</v>
-<v>Robot\RobotBLE\cy_clock_v2_20</v>
-<v>Robot\RobotBLE\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>Robot\RobotBLE\cy_constant_v1_0.pdf</v>
-<v>Robot\RobotBLE\cy_pins_v2_20</v>
-<v>Robot\RobotBLE\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Robot\RobotBLE\not_v1_0.pdf</v>
-<v>Robot\RobotBLE\PWM_v3_30.pdf</v>
-<v>Robot\RobotBLE\TCPWM_P4_v2_10</v>
-<v>Robot\RobotBLE\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Robot</v>
@@ -183,18 +171,6 @@
 <v>Robot\RobotBLE\PSoC 4 Architecture TRM</v>
 <v>Robot\RobotBLE\PSoC 4200 BLE Family Datasheet</v>
 <v>Robot\RobotBLE\System Reference Guides</v>
-<v>Robot\RobotBLE\System Reference Guides\cy_boot_v5_70</v>
-<v>Robot\RobotBLE\System Reference Guides\cy_lfclk_v1_20</v>
-<v>Robot\RobotBLE\BLE_v3_50.pdf</v>
-<v>Robot\RobotBLE\cy_clock_v2_20</v>
-<v>Robot\RobotBLE\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>Robot\RobotBLE\cy_constant_v1_0.pdf</v>
-<v>Robot\RobotBLE\cy_pins_v2_20</v>
-<v>Robot\RobotBLE\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Robot\RobotBLE\not_v1_0.pdf</v>
-<v>Robot\RobotBLE\PWM_v3_30.pdf</v>
-<v>Robot\RobotBLE\TCPWM_P4_v2_10</v>
-<v>Robot\RobotBLE\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -214,7 +190,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="192, 335" SelectedTabbedMdiWindow="fb3ceafd-96cb-4fd3-a9af-2e6c24e474fe"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="c4a70f5e-5bb6-48c6-baf5-7c3e776a7b5b" /><DocumentWindow Key="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\TopDesign\TopDesign.cysch" Guid="fb3ceafd-96cb-4fd3-a9af-2e6c24e474fe" /><DocumentWindow Key="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\main.c" Guid="62829803-b642-4b6d-8017-88e7f98d0360" /><DocumentWindow Key="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\RobotBLE.cydwr" Guid="0133a068-1b05-45b2-a473-c92db5c2fe3e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="844, 368" SelectedTabbedMdiWindow="aa3609f0-7b7a-485b-b329-5aff8deb93a6"><DocumentWindow Key="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\TopDesign\TopDesign.cysch" Guid="d9d1e35d-8c8a-49f2-a354-ff7ef241e8ec" /><DocumentWindow Key="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\main.c" Guid="aa3609f0-7b7a-485b-b329-5aff8deb93a6" /><DocumentWindow Key="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\RobotBLE.cydwr" Guid="a32052e9-0e7a-4625-8758-43aa2c061d07" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="c4a70f5e-5bb6-48c6-baf5-7c3e776a7b5b" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

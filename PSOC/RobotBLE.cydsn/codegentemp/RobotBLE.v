@@ -1,6 +1,6 @@
 // ======================================================================
 // RobotBLE.v generated from TopDesign.cysch
-// 05/09/2019 at 18:33
+// 05/13/2019 at 15:47
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -88,6 +88,19 @@
 `define CYDEV_CHIP_FAMILY_USED 2
 `define CYDEV_CHIP_MEMBER_USED 19
 `define CYDEV_CHIP_REVISION_USED 0
+// Component: B_PWM_v3_30
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v"
+`endif
+
 // Component: cy_virtualmux_v1_0
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
@@ -101,172 +114,6 @@
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
 `endif
 
-// TCPWM_P4_v2_10(Clock_CheckTolerance=true, Clock_desired_freq=12, Clock_desired_freq_unit=6, Clock_divisor=1, Clock_FractDividerDenominator=0, Clock_FractDividerNumerator=0, Clock_FractDividerUsed=false, Clock_is_direct=false, Clock_is_divider=false, Clock_is_freq=true, Clock_minus_tolerance=5, Clock_ph_align_clock_id=, Clock_ph_align_clock_name=, Clock_plus_tolerance=5, Clock_source_clock_id=, Clock_source_clock_name=, PinVisibility_index=false, PinVisibility_kill=false, PinVisibility_phiA=false, PinVisibility_phiB=false, PinVisibility_switch=false, PWMCompare=50, PWMCompareBuf=65535, PWMCompareSwap=0, PWMCountMode=3, PWMCountPresent=false, PWMDeadTimeCycle=0, PWMInterruptMask=1, PWMKillEvent=0, PWMLinenSignal=0, PWMLineSignal=0, PWMMode=4, PWMPeriod=100, PWMPeriodBuf=65535, PWMPeriodSwap=0, PWMPrescaler=0, PWMReloadMode=0, PWMReloadPresent=false, PWMRunMode=0, PWMSetAlign=0, PWMStartMode=0, PWMStartPresent=false, PWMStopEvent=0, PWMStopMode=0, PWMStopPresent=false, PWMSwitchMode=0, PWMSwitchPresent=false, QuadAutoStart=true, QuadEncodingModes=0, QuadIndexMode=0, QuadIndexPresent=false, QuadInterruptMask=1, QuadPhiAMode=3, QuadPhiBMode=3, QuadStopMode=0, QuadStopPresent=false, TCCaptureMode=0, TCCapturePresent=false, TCCompare=65535, TCCompareBuf=65535, TCCompareSwap=0, TCCompCapMode=2, TCCountingModes=0, TCCountMode=3, TCCountPresent=false, TCInterruptMask=1, TCPeriod=65535, TCPrescaler=0, TCPWMCapturePresent=false, TCPWMConfig=7, TCPWMCountPresent=false, TCPWMReloadPresent=false, TCPWMStartPresent=false, TCPWMStopPresent=false, TCReloadMode=0, TCReloadPresent=false, TCRunMode=0, TCStartMode=0, TCStartPresent=false, TCStopMode=0, TCStopPresent=false, TermMode_capture=0, TermMode_cc=0, TermMode_clock=0, TermMode_count=0, TermMode_interrupt=0, TermMode_line=0, TermMode_line_n=0, TermMode_ov=0, TermMode_reload=0, TermMode_start=0, TermMode_stop=0, TermMode_un=0, TermModeStates=, TermVisibility_capture=false, TermVisibility_cc=true, TermVisibility_clock=true, TermVisibility_count=false, TermVisibility_interrupt=true, TermVisibility_line=true, TermVisibility_line_n=true, TermVisibility_ov=true, TermVisibility_reload=false, TermVisibility_start=false, TermVisibility_stop=false, TermVisibility_un=true, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=TCPWM_P4_v2_10, CY_CONFIG_TITLE=LEFT_MOTOR, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=LEFT_MOTOR, CY_INSTANCE_SHORT_NAME=LEFT_MOTOR, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=10, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=LEFT_MOTOR, )
-module TCPWM_P4_v2_10_0 (
-    stop,
-    reload,
-    start,
-    count,
-    capture,
-    interrupt,
-    ov,
-    un,
-    cc,
-    line,
-    line_n,
-    clock);
-    input       stop;
-    input       reload;
-    input       start;
-    input       count;
-    input       capture;
-    output      interrupt;
-    output      ov;
-    output      un;
-    output      cc;
-    output      line;
-    output      line_n;
-    input       clock;
-
-
-          wire  Net_64;
-          wire  Net_63;
-          wire  Net_85;
-          wire  Net_62;
-          wire  Net_110;
-          wire  Net_95;
-          wire  Net_106;
-          wire  Net_104;
-          wire  Net_109;
-          wire  Net_98;
-          wire  Net_108;
-          wire  Net_101;
-          wire  Net_66;
-          wire  Net_81;
-          wire  Net_75;
-          wire  Net_69;
-          wire  Net_82;
-          wire  Net_72;
-
-    cy_m0s8_tcpwm_v1_0 cy_m0s8_tcpwm_1 (
-        .capture(Net_75),
-        .underflow(un),
-        .overflow(ov),
-        .line_out_compl(line_n),
-        .line_out(line),
-        .compare_match(cc),
-        .interrupt(interrupt),
-        .count(Net_69),
-        .reload(Net_66),
-        .stop(Net_82),
-        .start(Net_72),
-        .clock(Net_81));
-
-	// VMux_reload (cy_virtualmux_v1_0)
-	assign Net_66 = reload;
-
-	// VMux_count (cy_virtualmux_v1_0)
-	assign Net_69 = count;
-
-	// VMux_start (cy_virtualmux_v1_0)
-	assign Net_72 = start;
-
-	// VMux_capture (cy_virtualmux_v1_0)
-	assign Net_75 = capture;
-
-	// VMux_stop (cy_virtualmux_v1_0)
-	assign Net_82 = stop;
-
-	// VMux_clock (cy_virtualmux_v1_0)
-	assign Net_81 = clock;
-
-
-
-endmodule
-
-// TCPWM_P4_v2_10(Clock_CheckTolerance=true, Clock_desired_freq=12, Clock_desired_freq_unit=6, Clock_divisor=1, Clock_FractDividerDenominator=0, Clock_FractDividerNumerator=0, Clock_FractDividerUsed=false, Clock_is_direct=false, Clock_is_divider=false, Clock_is_freq=true, Clock_minus_tolerance=5, Clock_ph_align_clock_id=, Clock_ph_align_clock_name=, Clock_plus_tolerance=5, Clock_source_clock_id=, Clock_source_clock_name=, PinVisibility_index=false, PinVisibility_kill=false, PinVisibility_phiA=false, PinVisibility_phiB=false, PinVisibility_switch=false, PWMCompare=50, PWMCompareBuf=65535, PWMCompareSwap=0, PWMCountMode=3, PWMCountPresent=false, PWMDeadTimeCycle=0, PWMInterruptMask=1, PWMKillEvent=0, PWMLinenSignal=0, PWMLineSignal=0, PWMMode=4, PWMPeriod=100, PWMPeriodBuf=65535, PWMPeriodSwap=0, PWMPrescaler=0, PWMReloadMode=0, PWMReloadPresent=false, PWMRunMode=0, PWMSetAlign=0, PWMStartMode=0, PWMStartPresent=false, PWMStopEvent=0, PWMStopMode=0, PWMStopPresent=false, PWMSwitchMode=0, PWMSwitchPresent=false, QuadAutoStart=true, QuadEncodingModes=0, QuadIndexMode=0, QuadIndexPresent=false, QuadInterruptMask=1, QuadPhiAMode=3, QuadPhiBMode=3, QuadStopMode=0, QuadStopPresent=false, TCCaptureMode=0, TCCapturePresent=false, TCCompare=65535, TCCompareBuf=65535, TCCompareSwap=0, TCCompCapMode=2, TCCountingModes=0, TCCountMode=3, TCCountPresent=false, TCInterruptMask=1, TCPeriod=65535, TCPrescaler=0, TCPWMCapturePresent=false, TCPWMConfig=7, TCPWMCountPresent=false, TCPWMReloadPresent=false, TCPWMStartPresent=false, TCPWMStopPresent=false, TCReloadMode=0, TCReloadPresent=false, TCRunMode=0, TCStartMode=0, TCStartPresent=false, TCStopMode=0, TCStopPresent=false, TermMode_capture=0, TermMode_cc=0, TermMode_clock=0, TermMode_count=0, TermMode_interrupt=0, TermMode_line=0, TermMode_line_n=0, TermMode_ov=0, TermMode_reload=0, TermMode_start=0, TermMode_stop=0, TermMode_un=0, TermModeStates=, TermVisibility_capture=false, TermVisibility_cc=true, TermVisibility_clock=true, TermVisibility_count=false, TermVisibility_interrupt=true, TermVisibility_line=true, TermVisibility_line_n=true, TermVisibility_ov=true, TermVisibility_reload=false, TermVisibility_start=false, TermVisibility_stop=false, TermVisibility_un=true, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=TCPWM_P4_v2_10, CY_CONFIG_TITLE=RIGHT_MOTOR, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=RIGHT_MOTOR, CY_INSTANCE_SHORT_NAME=RIGHT_MOTOR, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=10, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=RIGHT_MOTOR, )
-module TCPWM_P4_v2_10_1 (
-    stop,
-    reload,
-    start,
-    count,
-    capture,
-    interrupt,
-    ov,
-    un,
-    cc,
-    line,
-    line_n,
-    clock);
-    input       stop;
-    input       reload;
-    input       start;
-    input       count;
-    input       capture;
-    output      interrupt;
-    output      ov;
-    output      un;
-    output      cc;
-    output      line;
-    output      line_n;
-    input       clock;
-
-
-          wire  Net_64;
-          wire  Net_63;
-          wire  Net_85;
-          wire  Net_62;
-          wire  Net_110;
-          wire  Net_95;
-          wire  Net_106;
-          wire  Net_104;
-          wire  Net_109;
-          wire  Net_98;
-          wire  Net_108;
-          wire  Net_101;
-          wire  Net_66;
-          wire  Net_81;
-          wire  Net_75;
-          wire  Net_69;
-          wire  Net_82;
-          wire  Net_72;
-
-    cy_m0s8_tcpwm_v1_0 cy_m0s8_tcpwm_1 (
-        .capture(Net_75),
-        .underflow(un),
-        .overflow(ov),
-        .line_out_compl(line_n),
-        .line_out(line),
-        .compare_match(cc),
-        .interrupt(interrupt),
-        .count(Net_69),
-        .reload(Net_66),
-        .stop(Net_82),
-        .start(Net_72),
-        .clock(Net_81));
-
-	// VMux_reload (cy_virtualmux_v1_0)
-	assign Net_66 = reload;
-
-	// VMux_count (cy_virtualmux_v1_0)
-	assign Net_69 = count;
-
-	// VMux_start (cy_virtualmux_v1_0)
-	assign Net_72 = start;
-
-	// VMux_capture (cy_virtualmux_v1_0)
-	assign Net_75 = capture;
-
-	// VMux_stop (cy_virtualmux_v1_0)
-	assign Net_82 = stop;
-
-	// VMux_clock (cy_virtualmux_v1_0)
-	assign Net_81 = clock;
-
-
-
-endmodule
-
 // Component: or_v1_0
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
@@ -279,6 +126,241 @@ endmodule
 `define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0"
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v"
 `endif
+
+// Component: ZeroTerminal
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
+`endif
+
+// PWM_v3_30(CaptureMode=0, Clock_CheckTolerance=true, Clock_desired_freq=12, Clock_desired_freq_unit=6, Clock_divisor=1, Clock_FractDividerDenominator=0, Clock_FractDividerNumerator=0, Clock_FractDividerUsed=false, Clock_is_direct=false, Clock_is_divider=false, Clock_is_freq=true, Clock_minus_tolerance=5, Clock_ph_align_clock_id=, Clock_ph_align_clock_name=, Clock_plus_tolerance=5, Clock_source_clock_id=, Clock_source_clock_name=, Compare1_16=false, Compare1_8=true, Compare2_16=false, Compare2_8=false, CompareStatusEdgeSense=true, CompareType1=1, CompareType1Software=0, CompareType2=1, CompareType2Software=0, CompareValue1=50, CompareValue2=63, CONTROL3=0, ControlReg=true, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG8, CySetRegReplacementString=CY_SET_REG8, DeadBand=0, DeadBand2_4=0, DeadBand256=0, DeadBandUsed=0, DeadTime=1, DitherOffset=0, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, InterruptOnCMP1=false, InterruptOnCMP2=false, InterruptOnKill=false, InterruptOnTC=false, IntOnCMP1=0, IntOnCMP2=0, IntOnKill=0, IntOnTC=0, KillMode=0, KillModeMinTime=0, MinimumKillTime=1, OneCompare=true, Period=100, PWMMode=0, PWMModeCenterAligned=0, RegDefReplacementString=reg8, RegSizeReplacementString=uint8, Resolution=8, RstStatusReplacementString=sSTSReg_rstSts, RunMode=0, Status=true, TermMode_capture=0, TermMode_clock=0, TermMode_cmp_sel=0, TermMode_enable=0, TermMode_interrupt=0, TermMode_kill=0, TermMode_ph1=0, TermMode_ph2=0, TermMode_pwm=0, TermMode_pwm1=0, TermMode_pwm2=0, TermMode_reset=0, TermMode_tc=0, TermMode_trigger=0, TermVisibility_capture=false, TermVisibility_clock=true, TermVisibility_cmp_sel=false, TermVisibility_enable=false, TermVisibility_interrupt=true, TermVisibility_kill=false, TermVisibility_ph1=false, TermVisibility_ph2=false, TermVisibility_pwm=true, TermVisibility_pwm1=false, TermVisibility_pwm2=false, TermVisibility_reset=true, TermVisibility_tc=true, TermVisibility_trigger=false, TriggerMode=0, UDB16=false, UDB8=true, UseControl=true, UseInterrupt=true, UseStatus=true, VerilogSectionReplacementString=sP8, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=PWM_v3_30, CY_CONFIG_TITLE=RIGHT_MOTOR, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=RIGHT_MOTOR, CY_INSTANCE_SHORT_NAME=RIGHT_MOTOR, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=30, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=RIGHT_MOTOR, )
+module PWM_v3_30_0 (
+    reset,
+    clock,
+    tc,
+    pwm1,
+    pwm2,
+    interrupt,
+    capture,
+    kill,
+    enable,
+    trigger,
+    cmp_sel,
+    pwm,
+    ph1,
+    ph2);
+    input       reset;
+    input       clock;
+    output      tc;
+    output      pwm1;
+    output      pwm2;
+    output      interrupt;
+    input       capture;
+    input       kill;
+    input       enable;
+    input       trigger;
+    input       cmp_sel;
+    output      pwm;
+    output      ph1;
+    output      ph2;
+
+    parameter Resolution = 8;
+
+          wire  Net_227;
+          wire  Net_226;
+          wire  Net_225;
+          wire  Net_224;
+          wire  Net_223;
+          wire  Net_222;
+          wire  Net_139;
+          wire  Net_138;
+          wire  Net_135;
+          wire  Net_178;
+          wire  Net_181;
+          wire  Net_179;
+          wire  Net_180;
+          wire  Net_183;
+          wire  Net_186;
+          wire  Net_68;
+          wire  Net_125;
+
+    B_PWM_v3_30 PWMUDB (
+        .reset(Net_186),
+        .clock(Net_68),
+        .tc(tc),
+        .pwm1(pwm1),
+        .pwm2(pwm2),
+        .interrupt(interrupt),
+        .kill(Net_179),
+        .capture(Net_180),
+        .enable(Net_181),
+        .cmp_sel(Net_183),
+        .trigger(Net_178),
+        .pwm(pwm),
+        .ph1(ph1),
+        .ph2(ph2));
+    defparam PWMUDB.CaptureMode = 0;
+    defparam PWMUDB.CompareStatusEdgeSense = 1;
+    defparam PWMUDB.CompareType1 = 1;
+    defparam PWMUDB.CompareType2 = 1;
+    defparam PWMUDB.DeadBand = 0;
+    defparam PWMUDB.DitherOffset = 0;
+    defparam PWMUDB.EnableMode = 0;
+    defparam PWMUDB.KillMode = 0;
+    defparam PWMUDB.PWMMode = 0;
+    defparam PWMUDB.Resolution = 8;
+    defparam PWMUDB.RunMode = 0;
+    defparam PWMUDB.TriggerMode = 0;
+    defparam PWMUDB.UseStatus = 1;
+
+	// VMux_clock (cy_virtualmux_v1_0)
+	assign Net_68 = clock;
+
+
+    assign Net_139 = Net_138 | Net_125;
+
+    ZeroTerminal ZeroTerminal_7 (
+        .z(Net_138));
+
+	// VMux_capture (cy_virtualmux_v1_0)
+	assign Net_179 = kill;
+
+	// VMux_capture_1 (cy_virtualmux_v1_0)
+	assign Net_183 = cmp_sel;
+
+	// VMux_capture_2 (cy_virtualmux_v1_0)
+	assign Net_180 = capture;
+
+	// VMux_capture_3 (cy_virtualmux_v1_0)
+	assign Net_181 = enable;
+
+	// VMux_capture_4 (cy_virtualmux_v1_0)
+	assign Net_178 = trigger;
+
+	// VMux_capture_5 (cy_virtualmux_v1_0)
+	assign Net_186 = reset;
+
+
+
+endmodule
+
+// PWM_v3_30(CaptureMode=0, Clock_CheckTolerance=true, Clock_desired_freq=12, Clock_desired_freq_unit=6, Clock_divisor=1, Clock_FractDividerDenominator=0, Clock_FractDividerNumerator=0, Clock_FractDividerUsed=false, Clock_is_direct=false, Clock_is_divider=false, Clock_is_freq=true, Clock_minus_tolerance=5, Clock_ph_align_clock_id=, Clock_ph_align_clock_name=, Clock_plus_tolerance=5, Clock_source_clock_id=, Clock_source_clock_name=, Compare1_16=false, Compare1_8=true, Compare2_16=false, Compare2_8=false, CompareStatusEdgeSense=true, CompareType1=1, CompareType1Software=0, CompareType2=1, CompareType2Software=0, CompareValue1=50, CompareValue2=63, CONTROL3=0, ControlReg=true, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG8, CySetRegReplacementString=CY_SET_REG8, DeadBand=0, DeadBand2_4=0, DeadBand256=0, DeadBandUsed=0, DeadTime=1, DitherOffset=0, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, InterruptOnCMP1=false, InterruptOnCMP2=false, InterruptOnKill=false, InterruptOnTC=false, IntOnCMP1=0, IntOnCMP2=0, IntOnKill=0, IntOnTC=0, KillMode=0, KillModeMinTime=0, MinimumKillTime=1, OneCompare=true, Period=100, PWMMode=0, PWMModeCenterAligned=0, RegDefReplacementString=reg8, RegSizeReplacementString=uint8, Resolution=8, RstStatusReplacementString=sSTSReg_rstSts, RunMode=0, Status=true, TermMode_capture=0, TermMode_clock=0, TermMode_cmp_sel=0, TermMode_enable=0, TermMode_interrupt=0, TermMode_kill=0, TermMode_ph1=0, TermMode_ph2=0, TermMode_pwm=0, TermMode_pwm1=0, TermMode_pwm2=0, TermMode_reset=0, TermMode_tc=0, TermMode_trigger=0, TermVisibility_capture=false, TermVisibility_clock=true, TermVisibility_cmp_sel=false, TermVisibility_enable=false, TermVisibility_interrupt=true, TermVisibility_kill=false, TermVisibility_ph1=false, TermVisibility_ph2=false, TermVisibility_pwm=true, TermVisibility_pwm1=false, TermVisibility_pwm2=false, TermVisibility_reset=true, TermVisibility_tc=true, TermVisibility_trigger=false, TriggerMode=0, UDB16=false, UDB8=true, UseControl=true, UseInterrupt=true, UseStatus=true, VerilogSectionReplacementString=sP8, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=PWM_v3_30, CY_CONFIG_TITLE=LEFT_MOTOR, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=LEFT_MOTOR, CY_INSTANCE_SHORT_NAME=LEFT_MOTOR, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=30, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=LEFT_MOTOR, )
+module PWM_v3_30_1 (
+    reset,
+    clock,
+    tc,
+    pwm1,
+    pwm2,
+    interrupt,
+    capture,
+    kill,
+    enable,
+    trigger,
+    cmp_sel,
+    pwm,
+    ph1,
+    ph2);
+    input       reset;
+    input       clock;
+    output      tc;
+    output      pwm1;
+    output      pwm2;
+    output      interrupt;
+    input       capture;
+    input       kill;
+    input       enable;
+    input       trigger;
+    input       cmp_sel;
+    output      pwm;
+    output      ph1;
+    output      ph2;
+
+    parameter Resolution = 8;
+
+          wire  Net_227;
+          wire  Net_226;
+          wire  Net_225;
+          wire  Net_224;
+          wire  Net_223;
+          wire  Net_222;
+          wire  Net_139;
+          wire  Net_138;
+          wire  Net_135;
+          wire  Net_178;
+          wire  Net_181;
+          wire  Net_179;
+          wire  Net_180;
+          wire  Net_183;
+          wire  Net_186;
+          wire  Net_68;
+          wire  Net_125;
+
+    B_PWM_v3_30 PWMUDB (
+        .reset(Net_186),
+        .clock(Net_68),
+        .tc(tc),
+        .pwm1(pwm1),
+        .pwm2(pwm2),
+        .interrupt(interrupt),
+        .kill(Net_179),
+        .capture(Net_180),
+        .enable(Net_181),
+        .cmp_sel(Net_183),
+        .trigger(Net_178),
+        .pwm(pwm),
+        .ph1(ph1),
+        .ph2(ph2));
+    defparam PWMUDB.CaptureMode = 0;
+    defparam PWMUDB.CompareStatusEdgeSense = 1;
+    defparam PWMUDB.CompareType1 = 1;
+    defparam PWMUDB.CompareType2 = 1;
+    defparam PWMUDB.DeadBand = 0;
+    defparam PWMUDB.DitherOffset = 0;
+    defparam PWMUDB.EnableMode = 0;
+    defparam PWMUDB.KillMode = 0;
+    defparam PWMUDB.PWMMode = 0;
+    defparam PWMUDB.Resolution = 8;
+    defparam PWMUDB.RunMode = 0;
+    defparam PWMUDB.TriggerMode = 0;
+    defparam PWMUDB.UseStatus = 1;
+
+	// VMux_clock (cy_virtualmux_v1_0)
+	assign Net_68 = clock;
+
+
+    assign Net_139 = Net_138 | Net_125;
+
+    ZeroTerminal ZeroTerminal_7 (
+        .z(Net_138));
+
+	// VMux_capture (cy_virtualmux_v1_0)
+	assign Net_179 = kill;
+
+	// VMux_capture_1 (cy_virtualmux_v1_0)
+	assign Net_183 = cmp_sel;
+
+	// VMux_capture_2 (cy_virtualmux_v1_0)
+	assign Net_180 = capture;
+
+	// VMux_capture_3 (cy_virtualmux_v1_0)
+	assign Net_181 = enable;
+
+	// VMux_capture_4 (cy_virtualmux_v1_0)
+	assign Net_178 = trigger;
+
+	// VMux_capture_5 (cy_virtualmux_v1_0)
+	assign Net_186 = reset;
+
+
+
+endmodule
 
 // Component: cy_constant_v1_0
 `ifdef CY_BLK_DIR
@@ -359,32 +441,6 @@ module BLE_v3_50_2 (
 
 
 endmodule
-
-// Component: B_PWM_v3_30
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v"
-`endif
-
-// Component: ZeroTerminal
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
-`endif
 
 // PWM_v3_30(CaptureMode=0, Clock_CheckTolerance=true, Clock_desired_freq=12, Clock_desired_freq_unit=6, Clock_divisor=1, Clock_FractDividerDenominator=0, Clock_FractDividerNumerator=0, Clock_FractDividerUsed=false, Clock_is_direct=false, Clock_is_divider=false, Clock_is_freq=true, Clock_minus_tolerance=5, Clock_ph_align_clock_id=, Clock_ph_align_clock_name=, Clock_plus_tolerance=5, Clock_source_clock_id=, Clock_source_clock_name=, Compare1_16=false, Compare1_8=true, Compare2_16=false, Compare2_8=false, CompareStatusEdgeSense=true, CompareType1=1, CompareType1Software=0, CompareType2=1, CompareType2Software=0, CompareValue1=127, CompareValue2=63, CONTROL3=0, ControlReg=true, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG8, CySetRegReplacementString=CY_SET_REG8, DeadBand=0, DeadBand2_4=0, DeadBand256=0, DeadBandUsed=0, DeadTime=1, DitherOffset=0, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, InterruptOnCMP1=false, InterruptOnCMP2=false, InterruptOnKill=false, InterruptOnTC=false, IntOnCMP1=0, IntOnCMP2=0, IntOnKill=0, IntOnTC=0, KillMode=0, KillModeMinTime=0, MinimumKillTime=1, OneCompare=true, Period=255, PWMMode=0, PWMModeCenterAligned=0, RegDefReplacementString=reg8, RegSizeReplacementString=uint8, Resolution=8, RstStatusReplacementString=sSTSReg_rstSts, RunMode=0, Status=true, TermMode_capture=0, TermMode_clock=0, TermMode_cmp_sel=0, TermMode_enable=0, TermMode_interrupt=0, TermMode_kill=0, TermMode_ph1=0, TermMode_ph2=0, TermMode_pwm=0, TermMode_pwm1=0, TermMode_pwm2=0, TermMode_reset=0, TermMode_tc=0, TermMode_trigger=0, TermVisibility_capture=false, TermVisibility_clock=true, TermVisibility_cmp_sel=false, TermVisibility_enable=false, TermVisibility_interrupt=true, TermVisibility_kill=false, TermVisibility_ph1=false, TermVisibility_ph2=false, TermVisibility_pwm=true, TermVisibility_pwm1=false, TermVisibility_pwm2=false, TermVisibility_reset=true, TermVisibility_tc=true, TermVisibility_trigger=false, TriggerMode=0, UDB16=false, UDB8=true, UseControl=true, UseInterrupt=true, UseStatus=true, VerilogSectionReplacementString=sP8, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=PWM_v3_30, CY_CONFIG_TITLE=LED_PWM, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=LED_PWM, CY_INSTANCE_SHORT_NAME=LED_PWM, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=30, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=LED_PWM, )
 module PWM_v3_30_3 (
@@ -513,7 +569,7 @@ endmodule
 // top
 module top ;
 
-          wire  Net_65;
+          wire  Net_70;
           wire  Net_63;
           wire  Net_59;
           wire  Net_58;
@@ -530,59 +586,69 @@ module top ;
           wire  Net_31;
           wire  Net_30;
           wire  Net_28;
-          wire  Net_23;
-          wire  Net_22;
-          wire  Net_21;
-          wire  Net_20;
-          wire  Net_19;
-          wire  Net_18;
-          wire  Net_17;
-          wire  Net_16;
-          wire  Net_15;
-          wire  Net_14;
-          wire  Net_13;
-          wire  Net_11;
-          wire  Net_10;
-          wire  Net_9;
-          wire  Net_8;
-          wire  Net_7;
-          wire  Net_6;
-          wire  Net_5;
-          wire  Net_4;
-          wire  Net_3;
-          wire  Net_2;
-          wire  Net_1;
+          wire  Net_94;
+          wire  Net_93;
+          wire  Net_92;
+          wire  Net_91;
+          wire  Net_90;
+          wire  Net_89;
+          wire  Net_88;
+          wire  Net_87;
+          wire  Net_86;
+          wire  Net_96;
+          wire  Net_85;
+          wire  Net_84;
+          wire  Net_83;
+          wire  Net_134;
+          wire  Net_133;
+          wire  Net_132;
+          wire  Net_131;
+          wire  Net_130;
+          wire  Net_129;
+          wire  Net_128;
+          wire  Net_127;
+          wire  Net_126;
+          wire  Net_125;
+          wire  Net_112;
+          wire  Net_124;
+          wire  Net_123;
           wire  Net_64;
           wire  Net_62;
           wire  Net_29;
 
-    TCPWM_P4_v2_10_0 LEFT_MOTOR (
-        .stop(1'b0),
-        .reload(1'b0),
-        .start(1'b0),
-        .count(1'b1),
+    PWM_v3_30_0 RIGHT_MOTOR (
+        .reset(1'b0),
+        .clock(Net_29),
+        .tc(Net_124),
+        .pwm1(Net_112),
+        .pwm2(Net_125),
+        .interrupt(Net_126),
         .capture(1'b0),
-        .interrupt(Net_6),
-        .ov(Net_7),
-        .un(Net_8),
-        .cc(Net_9),
-        .line(Net_10),
-        .line_n(Net_11),
-        .clock(Net_29));
+        .kill(1'b1),
+        .enable(1'b1),
+        .trigger(1'b0),
+        .cmp_sel(1'b0),
+        .pwm(Net_132),
+        .ph1(Net_133),
+        .ph2(Net_134));
+    defparam RIGHT_MOTOR.Resolution = 8;
 
-    TCPWM_P4_v2_10_1 RIGHT_MOTOR (
-        .stop(1'b0),
-        .reload(1'b0),
-        .start(1'b0),
-        .count(1'b1),
+    PWM_v3_30_1 LEFT_MOTOR (
+        .reset(1'b0),
+        .clock(Net_29),
+        .tc(Net_84),
+        .pwm1(Net_85),
+        .pwm2(Net_96),
+        .interrupt(Net_86),
         .capture(1'b0),
-        .interrupt(Net_18),
-        .ov(Net_19),
-        .un(Net_20),
-        .cc(Net_21),
-        .line(Net_22),
-        .line_n(Net_23),
-        .clock(Net_29));
+        .kill(1'b1),
+        .enable(1'b1),
+        .trigger(1'b0),
+        .cmp_sel(1'b0),
+        .pwm(Net_92),
+        .ph1(Net_93),
+        .ph2(Net_94));
+    defparam LEFT_MOTOR.Resolution = 8;
 
 
 	cy_clock_v1_0
@@ -591,7 +657,7 @@ module top ;
 		  .divisor(0),
 		  .period("50000000000"),
 		  .is_direct(0),
-		  .is_digital(0))
+		  .is_digital(1))
 		Clock_1
 		 (.clock_out(Net_29));
 
@@ -632,7 +698,7 @@ module top ;
 
 
 
-    assign Net_65 = ~Net_64;
+    assign Net_70 = ~Net_64;
 
 	wire [0:0] tmpOE__red_net;
 	wire [0:0] tmpFB_0__red_net;
@@ -695,7 +761,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		red
 		 (.oe(tmpOE__red_net),
-		  .y({Net_65}),
+		  .y({Net_70}),
 		  .fb({tmpFB_0__red_net[0:0]}),
 		  .io({tmpIO_0__red_net[0:0]}),
 		  .siovref(tmpSIOVREF__red_net),
@@ -770,7 +836,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		ENA
 		 (.oe(tmpOE__ENA_net),
-		  .y({Net_10}),
+		  .y({Net_92}),
 		  .fb({tmpFB_0__ENA_net[0:0]}),
 		  .io({tmpIO_0__ENA_net[0:0]}),
 		  .siovref(tmpSIOVREF__ENA_net),
@@ -845,7 +911,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		ENB
 		 (.oe(tmpOE__ENB_net),
-		  .y({Net_22}),
+		  .y({Net_132}),
 		  .fb({tmpFB_0__ENB_net[0:0]}),
 		  .io({tmpIO_0__ENB_net[0:0]}),
 		  .siovref(tmpSIOVREF__ENB_net),

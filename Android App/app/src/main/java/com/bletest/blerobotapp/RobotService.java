@@ -47,9 +47,6 @@ public class RobotService extends Service {
     private static BluetoothGattCharacteristic mSpeedLeftCharacteristic;
     private static BluetoothGattCharacteristic mSpeedRightCharacteristic;
 
-    // State (on/off), speed of the motors
-    //private static boolean motorLeftState;
-    //private static boolean motorRightState;
     private static int motorLeftSpeed;
     private static int motorRightSpeed;
     // Actions used during broadcasts to the activity
@@ -104,14 +101,6 @@ public class RobotService extends Service {
             }
         }
 
-        /**
-         * This is called when service discovery has completed.
-         *
-         * It broadcasts an update to the main activity.
-         *
-         * @param gatt The GATT database object
-         * @param status Status of whether the discovery was successful.
-         */
         @Override
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
             if (status == BluetoothGatt.GATT_SUCCESS) {
@@ -184,9 +173,6 @@ public class RobotService extends Service {
             return false;
         }
 
-        // Initialize car state variables
-        //motorLeftState = false;
-        //motorRightState = false;
         motorLeftSpeed = 0;
         motorRightSpeed = 0;
 
@@ -242,23 +228,17 @@ public class RobotService extends Service {
     private void updateGattSpeed(Motor motor)
     {
         if(motor == Motor.LEFT_WHEEL) {
-            if (mSpeedLeftCharacteristic != null)
-                //if(state)
-                    mSpeedLeftCharacteristic.setValue(motorLeftSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
-                //} else {
-                //    mSpeedLeftCharacteristic.setValue(0, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
-
+            if (mSpeedLeftCharacteristic != null){
+                mSpeedLeftCharacteristic.setValue(motorLeftSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
                 writeCharacteristic(mSpeedLeftCharacteristic);
+            }
+
 
         } else { // Motor == RIGHT
-            if (mSpeedRightCharacteristic != null) //{
-                //if(state) {
-                    mSpeedRightCharacteristic.setValue(motorRightSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
-                //} else {
-                //    mSpeedRightCharacteristic.setValue(0, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
-                //}
+            if (mSpeedRightCharacteristic != null) {
+                mSpeedRightCharacteristic.setValue(motorRightSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
                 writeCharacteristic(mSpeedRightCharacteristic);
-           // }
+            }
         }
     }
 
@@ -274,27 +254,13 @@ public class RobotService extends Service {
             Log.i(TAG, "Writing Characteristic");
         }
     }
-    /*public void setMotorState(Motor motor, boolean state) {
-        // Update the motor state variable
-        if(motor == Motor.LEFT_WHEEL)
-        {
-            motorLeftState = state;
-        } else { // Motor == RIGHT
-            motorRightState = state;
-        }
-        // Update the Speed in the Gatt Database
-        updateGattSpeed(motor, state);
-    }*/
 
     public void setMotorSpeed(Motor motor, int speed) {
-       // boolean state;
         if(motor == Motor.LEFT_WHEEL)
         {
             motorLeftSpeed = speed;
-            //state = motorLeftState;
         } else  { // Motor == RIGHT
             motorRightSpeed = speed;
-            //state = motorRightState;
         }
         // Update the Speed in the Gatt Database
         updateGattSpeed(motor);

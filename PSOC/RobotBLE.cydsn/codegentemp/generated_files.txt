@@ -13,12 +13,12 @@
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
-  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\LEFT_MOTOR.c" value="SOURCE_C;CortexM0;;;;LEFT_MOTOR" />
-  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\LEFT_MOTOR.h" value="HEADER;;;;;LEFT_MOTOR" />
-  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\LEFT_MOTOR_PM.c" value="SOURCE_C;CortexM0;;;;LEFT_MOTOR" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\RIGHT_MOTOR.c" value="SOURCE_C;CortexM0;;;;RIGHT_MOTOR" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\RIGHT_MOTOR.h" value="HEADER;;;;;RIGHT_MOTOR" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\RIGHT_MOTOR_PM.c" value="SOURCE_C;CortexM0;;;;RIGHT_MOTOR" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\LEFT_MOTOR.c" value="SOURCE_C;CortexM0;;;;LEFT_MOTOR" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\LEFT_MOTOR.h" value="HEADER;;;;;LEFT_MOTOR" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\LEFT_MOTOR_PM.c" value="SOURCE_C;CortexM0;;;;LEFT_MOTOR" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Clock_1.c" value="SOURCE_C;CortexM0;;;;Clock_1" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\BLE_gatt.h" value="HEADER;;;;;BLE" />
@@ -76,6 +76,8 @@
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\IN4_PM.c" value="SOURCE_C;CortexM0;;;;IN4" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\BLE_bless_isr.c" value="SOURCE_C;CortexM0;;;;BLE_bless_isr" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\BLE_bless_isr.h" value="HEADER;;;;;BLE_bless_isr" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM0;;;;Em_EEPROM_Dynamic" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cm0gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Cm0RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Cm0Start.c" value="SOURCE_C;CortexM0;;;;cy_boot" />
@@ -101,8 +103,6 @@
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\CyBootAsmGnu.s" value="SOURCE_ASM;CortexM0,CortexM0p,CortexM3,CortexM4,CortexM7;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\CyLFClk.c" value="SOURCE_C;CortexM0;;;;cy_lfclk" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\CyLFClk.h" value="HEADER;;;;;cy_lfclk" />
-  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM0;;;;Em_EEPROM_Dynamic" />
-  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />

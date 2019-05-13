@@ -54,15 +54,10 @@ public class ControlActivity extends AppCompatActivity {
 
         @Override
         public void onServiceDisconnected(ComponentName componentName) {
+
             mRobotService = null;
         }
     };
-
-    //@Override
-    public void onServiceDisconnected(ComponentName componentName)
-    {
-        mRobotService = null;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -161,8 +156,6 @@ public class ControlActivity extends AppCompatActivity {
      * Handle broadcasts from the Car service object. The events are:
      * ACTION_CONNECTED: connected to the car.
      * ACTION_DISCONNECTED: disconnected from the car.
-     * ACTION_DATA_AVAILABLE: received data from the car.  This can be a result of a read
-     * or notify operation.
      */
     private final BroadcastReceiver mRobotUpdateReceiver = new BroadcastReceiver() {
         @Override

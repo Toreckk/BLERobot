@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
   28:Generated_Source\PSoC4/CyLib.c **** uint32 cydelayFreqKhz = (CYDEV_BCLK__SYSCLK__HZ + CY_DELAY_1K_MINUS_1_THRESHOLD) / CY_DELAY_1K_THRE
   29:Generated_Source\PSoC4/CyLib.c **** uint8  cydelayFreqMhz = (uint8)((CYDEV_BCLK__SYSCLK__HZ + CY_DELAY_1M_MINUS_1_THRESHOLD) / CY_DELAY
   30:Generated_Source\PSoC4/CyLib.c **** uint32 cydelay32kMs   = CY_DELAY_MS_OVERFLOW * ((CYDEV_BCLK__SYSCLK__HZ + CY_DELAY_1K_MINUS_1_THRES
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 2
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 2
 
 
   31:Generated_Source\PSoC4/CyLib.c ****                         CY_DELAY_1K_THRESHOLD);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
   85:Generated_Source\PSoC4/CyLib.c **** /* Stored CY_SYS_CLK_IMO_TRIM4_REG when modified for USB lock */
   86:Generated_Source\PSoC4/CyLib.c **** #if (CY_IP_IMO_TRIMMABLE_BY_USB && CY_IP_SRSSV2)
   87:Generated_Source\PSoC4/CyLib.c ****     uint32 CySysClkImoTrim4 = 0u;
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 3
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 3
 
 
   88:Generated_Source\PSoC4/CyLib.c ****     uint32 CySysClkImoTrim5 = 0u;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
   44 000e C046     		.align	2
   45              	.L2:
   46 0010 08010B40 		.word	1074462984
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 4
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 4
 
 
   47              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
   75 000c 08010B40 		.word	1074462984
   76              		.cfi_endproc
   77              	.LFE3:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 5
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 5
 
 
   78              		.size	CySysClkImoStop, .-CySysClkImoStop
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  197:Generated_Source\PSoC4/CyLib.c ****             #endif /* (CY_IP_IMO_TRIMMABLE_BY_WCO && CY_IP_IMO_TRIMMABLE_BY_USB) */
  198:Generated_Source\PSoC4/CyLib.c **** 
  199:Generated_Source\PSoC4/CyLib.c ****             /* Get current IMO frequency based on the register value */
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 6
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 6
 
 
  200:Generated_Source\PSoC4/CyLib.c ****             #if(CY_IP_SRSSV2)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  254:Generated_Source\PSoC4/CyLib.c ****                 lfLimit = (lfLimit > CY_SYS_CLK_WCO_CONFIG_DPLL_LF_LIMIT_MAX) ?
  255:Generated_Source\PSoC4/CyLib.c ****                     CY_SYS_CLK_WCO_CONFIG_DPLL_LF_LIMIT_MAX : lfLimit;
  256:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 7
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 7
 
 
  257:Generated_Source\PSoC4/CyLib.c ****                 regTmp |= (lfLimit << CY_SYS_CLK_WCO_CONFIG_DPLL_LF_LIMIT_SHIFT);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  311:Generated_Source\PSoC4/CyLib.c **** 
  312:Generated_Source\PSoC4/CyLib.c **** #endif /* (CY_IP_IMO_TRIMMABLE_BY_WCO) */
  313:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 8
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 8
 
 
  314:Generated_Source\PSoC4/CyLib.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  368:Generated_Source\PSoC4/CyLib.c ****                 
  369:Generated_Source\PSoC4/CyLib.c ****                 CY_SYS_CLK_IMO_TRIM4_REG = (CySysClkImoTrim4 & (uint32) ~CY_SYS_CLK_IMO_TRIM4_GAIN_
  370:Generated_Source\PSoC4/CyLib.c ****                                             CY_SFLASH_USBMODE_IMO_GAIN_TRIM_REG;
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 9
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 9
 
 
  371:Generated_Source\PSoC4/CyLib.c ****                 CY_PWR_BG_TRIM5_REG = CY_SFLASH_USBMODE_IMO_TEMPCO_REG;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  425:Generated_Source\PSoC4/CyLib.c **** 
  426:Generated_Source\PSoC4/CyLib.c ****             /* Get current IMO frequency based on the register value */
  427:Generated_Source\PSoC4/CyLib.c ****             uint32 freq = CY_SYS_CLK_IMO_MIN_FREQ_MHZ;;
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 10
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 10
 
 
  428:Generated_Source\PSoC4/CyLib.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  482:Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
  483:Generated_Source\PSoC4/CyLib.c **** *
  484:Generated_Source\PSoC4/CyLib.c **** * Selects the direct source for the HFCLK.
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 11
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 11
 
 
  485:Generated_Source\PSoC4/CyLib.c **** *
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  526:Generated_Source\PSoC4/CyLib.c ****     {
  527:Generated_Source\PSoC4/CyLib.c ****         tmpReg = CY_SYS_CLK_SELECT_REG & ~CY_SYS_CLK_SELECT_DIRECT_SEL_MASK;
  528:Generated_Source\PSoC4/CyLib.c ****         tmpReg |= CY_SYS_CLK_HFCLK_IMO;
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 12
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 12
 
 
  529:Generated_Source\PSoC4/CyLib.c ****         CY_SYS_CLK_SELECT_REG = tmpReg;        
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  116              		.loc 1 566 0
  117              		@ sp needed
  118              	.LVL6:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 13
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 13
 
 
  119 001a 10BD     		pop	{r4, pc}
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  149 000c 5B06     		lsls	r3, r3, #25
  150 000e 0B43     		orrs	r3, r1
  151 0010 1360     		str	r3, [r2]
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 14
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 14
 
 
  152 0012 0AE0     		b	.L10
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  186              	CySysClkGetSysclkSource:
  187              	.LFB6:
  611:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 15
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 15
 
 
  612:Generated_Source\PSoC4/CyLib.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  207              	.LVL10:
  647:Generated_Source\PSoC4/CyLib.c **** 
  648:Generated_Source\PSoC4/CyLib.c ****     return (sysclkSource);
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 16
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 16
 
 
  649:Generated_Source\PSoC4/CyLib.c **** }
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  683:Generated_Source\PSoC4/CyLib.c **** void CySysClkWriteSysclkDiv(uint32 divider)
  684:Generated_Source\PSoC4/CyLib.c **** {
  228              		.loc 1 684 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 17
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 17
 
 
  229              		.cfi_startproc
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  270              	.LFE7:
  271              		.size	CySysClkWriteSysclkDiv, .-CySysClkWriteSysclkDiv
  272              		.section	.text.CySysClkWriteImoFreq,"ax",%progbits
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 18
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 18
 
 
  273              		.align	2
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  280              		.loc 1 742 0
  281              		.cfi_startproc
  282              		@ args = 0, pretend = 0, frame = 24
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 19
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 19
 
 
  283              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  785:Generated_Source\PSoC4/CyLib.c ****                     CySysClkImoDisableUsbLock();
  786:Generated_Source\PSoC4/CyLib.c ****                 }
  787:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 20
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 20
 
 
  788:Generated_Source\PSoC4/CyLib.c ****             #if (CYDEV_IMO_TRIMMED_BY_USB == 0u)
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  810:Generated_Source\PSoC4/CyLib.c ****             (void) CY_FLASH_CPUSS_SYSARG_REG;
  327              		.loc 1 810 0
  328 0038 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 21
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 21
 
 
  811:Generated_Source\PSoC4/CyLib.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  865:Generated_Source\PSoC4/CyLib.c ****             else
  866:Generated_Source\PSoC4/CyLib.c ****             {
  867:Generated_Source\PSoC4/CyLib.c ****                 currentImoTrim2Value = (uint8) (CY_SYS_CLK_IMO_TRIM2_REG & CY_SYS_CLK_IMO_FREQ_BITS
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 22
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 22
 
 
  868:Generated_Source\PSoC4/CyLib.c ****             }
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  329              		.loc 1 921 0
  330 003a FFF7FEFF 		bl	CyExitCriticalSection
  331              	.LVL19:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 23
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 23
 
 
  922:Generated_Source\PSoC4/CyLib.c ****     }
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  949:Generated_Source\PSoC4/CyLib.c ****             interruptState = CyEnterCriticalSection();
  950:Generated_Source\PSoC4/CyLib.c **** 
  951:Generated_Source\PSoC4/CyLib.c ****             #if (CY_IP_IMO_TRIMMABLE_BY_WCO)
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 24
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 24
 
 
  952:Generated_Source\PSoC4/CyLib.c ****                 if(0u != CySysClkImoGetWcoLock())
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1006:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_IMO_TRIM3_REG = (CY_SYS_CLK_IMO_TRIM3_REG & ((uint32) ~CY_SYS_CLK_IMO_TRIM3_
 1007:Generated_Source\PSoC4/CyLib.c ****                 (CY_SFLASH_IMO_TCTRIM_REG(freq - CY_SYS_CLK_IMO_MIN_FREQ_MHZ) & CY_SYS_CLK_IMO_TRIM
 1008:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 25
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 25
 
 
 1009:Generated_Source\PSoC4/CyLib.c ****             CyDelayCycles(CY_SYS_CLK_IMO_TRIM_DELAY_CYCLES);
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1063:Generated_Source\PSoC4/CyLib.c ****     * PSoC 4000: The SYSCLK has the speed of 16 MHz, so HFCLK and SYSCLK dividers
 1064:Generated_Source\PSoC4/CyLib.c ****     * should be selected in a way, not to exceed 16 MHz for SYSCLK.
 1065:Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 26
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 26
 
 
 1066:Generated_Source\PSoC4/CyLib.c ****     * If the SYSCLK clock frequency increases during the device operation, call
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1120:Generated_Source\PSoC4/CyLib.c ****     * is returned.
 1121:Generated_Source\PSoC4/CyLib.c ****     *
 1122:Generated_Source\PSoC4/CyLib.c ****     * \return \ref CYRET_BAD_PARAM One or more invalid parameters.
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 27
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 27
 
 
 1123:Generated_Source\PSoC4/CyLib.c ****     *
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1177:Generated_Source\PSoC4/CyLib.c ****                 if(0u != (CY_SYS_BLESS_BLERD_ACTIVE_INTR_MASK & intrRegMaskStore))
 1178:Generated_Source\PSoC4/CyLib.c ****                 {
 1179:Generated_Source\PSoC4/CyLib.c ****                     CY_SYS_BLESS_INTR_MASK_REG |= CY_SYS_BLESS_BLERD_ACTIVE_INTR_MASK;
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 28
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 28
 
 
 1180:Generated_Source\PSoC4/CyLib.c ****                 }
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1234:Generated_Source\PSoC4/CyLib.c **** 
 1235:Generated_Source\PSoC4/CyLib.c ****         if(timeoutUs > 0u)
 1236:Generated_Source\PSoC4/CyLib.c ****         {
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 29
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 29
 
 
 1237:Generated_Source\PSoC4/CyLib.c ****             returnStatus = CYRET_TIMEOUT;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  375 0012 1360     		str	r3, [r2]
 1275:Generated_Source\PSoC4/CyLib.c ****         #elif (CY_IP_ECO_BLESSV3)
 1276:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_BLESS_MT_CFG_REG &= ~(CY_SYS_BLESS_MT_CFG_DPSLP_ECO_ON  <<  CYFLD_BLE_BLESS_DPSL
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 30
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 30
 
 
 1277:Generated_Source\PSoC4/CyLib.c ****         #else
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1306:Generated_Source\PSoC4/CyLib.c ****             returnValue = CY_SYS_XTAL_BLERD_FSM_REG & CY_SYS_XTAL_BLERD_FSM_XO_AMP_DETECT;
  401              		.loc 1 1306 0
  402 0000 024B     		ldr	r3, .L28
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 31
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 31
 
 
  403 0002 1B68     		ldr	r3, [r3]
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1339:Generated_Source\PSoC4/CyLib.c ****         * CySysFlashSetWaitCycles() description for more information.
 1340:Generated_Source\PSoC4/CyLib.c ****         *
 1341:Generated_Source\PSoC4/CyLib.c ****         * \param divider Power of 2 divider selection.
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 32
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 32
 
 
 1342:Generated_Source\PSoC4/CyLib.c ****         * - \ref CY_SYS_CLK_ECO_DIV1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1396:Generated_Source\PSoC4/CyLib.c ****         * Use care when setting the amplitude trim field because driving a crystal
 1397:Generated_Source\PSoC4/CyLib.c ****         * beyond its rated limit can permanently damage the crystal.
 1398:Generated_Source\PSoC4/CyLib.c ****         *
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 33
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 33
 
 
 1399:Generated_Source\PSoC4/CyLib.c ****         * \param wDTrim: Watchdog trim
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1453:Generated_Source\PSoC4/CyLib.c ****             regTmp |= ((uint32) (rTrim << CY_SYS_CLK_ECO_TRIM1_RTRIM_SHIFT) & CY_SYS_CLK_ECO_TRIM1_
 1454:Generated_Source\PSoC4/CyLib.c ****             regTmp |= ((uint32) (gTrim << CY_SYS_CLK_ECO_TRIM1_GTRIM_SHIFT) & CY_SYS_CLK_ECO_TRIM1_
 1455:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 34
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 34
 
 
 1456:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_ECO_TRIM1_REG = regTmp;
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1510:Generated_Source\PSoC4/CyLib.c **** 
 1511:Generated_Source\PSoC4/CyLib.c ****                 if (maxAmplitude < CY_SYS_CLK_ECO_AMPL_FOR_ATRIM0)
 1512:Generated_Source\PSoC4/CyLib.c ****                 {
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 35
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 35
 
 
 1513:Generated_Source\PSoC4/CyLib.c ****                     aTrim = CY_SYS_CLK_ECO_ATRIM0;
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1567:Generated_Source\PSoC4/CyLib.c ****                 }
 1568:Generated_Source\PSoC4/CyLib.c ****                 else if (freq > CY_SYS_CLK_ECO_FREQ_FOR_FTRIM1)
 1569:Generated_Source\PSoC4/CyLib.c ****                 {
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 36
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 36
 
 
 1570:Generated_Source\PSoC4/CyLib.c ****                     rTrim = CY_SYS_CLK_ECO_FTRIM1;
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1624:Generated_Source\PSoC4/CyLib.c ****     * 1   PLL#1 (available only for PSoC 4200L)
 1625:Generated_Source\PSoC4/CyLib.c ****     *
 1626:Generated_Source\PSoC4/CyLib.c ****     * \param wait:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 37
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 37
 
 
 1627:Generated_Source\PSoC4/CyLib.c ****     * 0 - Return immediately after configuration.
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1681:Generated_Source\PSoC4/CyLib.c ****         }
 1682:Generated_Source\PSoC4/CyLib.c ****         else
 1683:Generated_Source\PSoC4/CyLib.c ****         {
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 38
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 38
 
 
 1684:Generated_Source\PSoC4/CyLib.c ****             returnStatus = CYRET_BAD_PARAM;
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1738:Generated_Source\PSoC4/CyLib.c ****     * PLL:
 1739:Generated_Source\PSoC4/CyLib.c ****     *  0   PLL#0
 1740:Generated_Source\PSoC4/CyLib.c ****     *  1   PLL#1 (available only for PSoC 4200L)
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 39
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 39
 
 
 1741:Generated_Source\PSoC4/CyLib.c ****     *
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1795:Generated_Source\PSoC4/CyLib.c ****         interruptState = CyEnterCriticalSection();
 1796:Generated_Source\PSoC4/CyLib.c **** 
 1797:Generated_Source\PSoC4/CyLib.c ****         tmp = CySysClkPllConfigChangeAllowed(pll);
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 40
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 40
 
 
 1798:Generated_Source\PSoC4/CyLib.c **** 
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1852:Generated_Source\PSoC4/CyLib.c ****     *
 1853:Generated_Source\PSoC4/CyLib.c ****     * CY_SYS_PLL_BYPASS_PLL_OUT - Selects the PLL output.  Ignores the lock indicator.
 1854:Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 41
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 41
 
 
 1855:Generated_Source\PSoC4/CyLib.c ****     *******************************************************************************/
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1909:Generated_Source\PSoC4/CyLib.c ****     ****************************************************************************//**
 1910:Generated_Source\PSoC4/CyLib.c ****     *
 1911:Generated_Source\PSoC4/CyLib.c ****     *  The function returns non-zero value if the specified PLL sources the System
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 42
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 42
 
 
 1912:Generated_Source\PSoC4/CyLib.c ****     *  clock and the PLL is not in the bypass mode.
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 1966:Generated_Source\PSoC4/CyLib.c ****     {
 1967:Generated_Source\PSoC4/CyLib.c ****         uint32 returnStatus = 0u;
 1968:Generated_Source\PSoC4/CyLib.c ****         uint8  interruptState;
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 43
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 43
 
 
 1969:Generated_Source\PSoC4/CyLib.c **** 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2023:Generated_Source\PSoC4/CyLib.c ****         uint32 pVal = CY_SYS_CLK_PLL_INVALID;
 2024:Generated_Source\PSoC4/CyLib.c **** 
 2025:Generated_Source\PSoC4/CyLib.c ****         uint32 q;
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 44
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 44
 
 
 2026:Generated_Source\PSoC4/CyLib.c ****         uint32 p;
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2080:Generated_Source\PSoC4/CyLib.c ****                     {
 2081:Generated_Source\PSoC4/CyLib.c ****                         returnStatus = CySysClkPllSetOutputDivider(pll, divider);
 2082:Generated_Source\PSoC4/CyLib.c ****                     }
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 45
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 45
 
 
 2083:Generated_Source\PSoC4/CyLib.c ****                 }
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2137:Generated_Source\PSoC4/CyLib.c ****                 CY_SYS_EXCO_PGM_CLK_REG |= CY_SYS_EXCO_PGM_CLK_ENABLE_MASK;
 2138:Generated_Source\PSoC4/CyLib.c ****                 
 2139:Generated_Source\PSoC4/CyLib.c ****                 for(i = 0u; i < CY_SYS_EXCO_PGM_CLK_SEQ_GENERATOR; i++)
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 46
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 46
 
 
 2140:Generated_Source\PSoC4/CyLib.c ****                 {
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2194:Generated_Source\PSoC4/CyLib.c ****             tmpReg  = CY_SYS_CLK_PLL_BASE.pll[pll].config & (uint32) ~(CY_SYS_CLK_PLL_CONFIG_OUTPUT
 2195:Generated_Source\PSoC4/CyLib.c ****             tmpReg |= ((divider << CY_SYS_CLK_PLL_CONFIG_OUTPUT_DIV_SHIFT) & CY_SYS_CLK_PLL_CONFIG_
 2196:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 47
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 47
 
 
 2197:Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_PLL_BASE.pll[pll].config = tmpReg;
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2251:Generated_Source\PSoC4/CyLib.c **** 
 2252:Generated_Source\PSoC4/CyLib.c ****         /* Wait for the circuit to stabilize */
 2253:Generated_Source\PSoC4/CyLib.c ****         CyDelayUs(CY_LVD_STABILIZE_TIMEOUT_US);
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 48
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 48
 
 
 2254:Generated_Source\PSoC4/CyLib.c **** 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  458              		.type	CySysLvdGetInterruptSource, %function
  459              	CySysLvdGetInterruptSource:
  460              	.LFB15:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 49
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 49
 
 
 2275:Generated_Source\PSoC4/CyLib.c **** 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2301:Generated_Source\PSoC4/CyLib.c ****     *  None
 2302:Generated_Source\PSoC4/CyLib.c ****     *
 2303:Generated_Source\PSoC4/CyLib.c ****     *******************************************************************************/
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 50
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 50
 
 
 2304:Generated_Source\PSoC4/CyLib.c ****     void CySysLvdClearInterrupt(void)
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2331:Generated_Source\PSoC4/CyLib.c **** {
  516              		.loc 1 2331 0
  517              		.cfi_startproc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 51
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 51
 
 
  518              		@ args = 0, pretend = 0, frame = 0
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2351:Generated_Source\PSoC4/CyLib.c **** *
 2352:Generated_Source\PSoC4/CyLib.c **** *******************************************************************************/
 2353:Generated_Source\PSoC4/CyLib.c **** uint32 CyDisableInts(void)
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 52
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 52
 
 
 2354:Generated_Source\PSoC4/CyLib.c **** {
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2377:Generated_Source\PSoC4/CyLib.c **** {
  584              		.loc 1 2377 0
  585              		.cfi_startproc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 53
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 53
 
 
  586              		@ args = 0, pretend = 0, frame = 0
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2407:Generated_Source\PSoC4/CyLib.c **** 
 2408:Generated_Source\PSoC4/CyLib.c ****     /* Save old Interrupt service routine. */
 2409:Generated_Source\PSoC4/CyLib.c ****     oldIsr = ramVectorTable[number];
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 54
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 54
 
 
 2410:Generated_Source\PSoC4/CyLib.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2464:Generated_Source\PSoC4/CyLib.c ****     /* Save old Interrupt service routine. */
 2465:Generated_Source\PSoC4/CyLib.c ****     oldIsr = ramVectorTable[CY_INT_IRQ_BASE + number];
 2466:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 55
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 55
 
 
 2467:Generated_Source\PSoC4/CyLib.c ****     /* Set new Interrupt service routine. */
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2521:Generated_Source\PSoC4/CyLib.c **** 
 2522:Generated_Source\PSoC4/CyLib.c ****     CyExitCriticalSection(interruptState);
 2523:Generated_Source\PSoC4/CyLib.c **** }
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 56
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 56
 
 
 2524:Generated_Source\PSoC4/CyLib.c **** 
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  626              		@ sp needed
  627 000c 7047     		bx	lr
  628              	.L50:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 57
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 57
 
 
  629 000e C046     		.align	2
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  664              	.L52:
  665 0014 00E100E0 		.word	-536813312
  666              		.cfi_endproc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 58
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 58
 
 
  667              	.LFE27:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  706              		.type	CyIntSetPending, %function
  707              	CyIntSetPending:
  708              	.LFB29:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 59
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 59
 
 
 2597:Generated_Source\PSoC4/CyLib.c **** 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2619:Generated_Source\PSoC4/CyLib.c **** *  \param number: Valid range [0-31].  Interrupt number.
 2620:Generated_Source\PSoC4/CyLib.c **** *
 2621:Generated_Source\PSoC4/CyLib.c **** *******************************************************************************/
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 60
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 60
 
 
 2622:Generated_Source\PSoC4/CyLib.c **** void CyIntClearPending(uint8 number)
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  778              	.LVL38:
 2639:Generated_Source\PSoC4/CyLib.c ****     if(0u != reason)
 2640:Generated_Source\PSoC4/CyLib.c ****     {
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 61
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 61
 
 
 2641:Generated_Source\PSoC4/CyLib.c ****         /* To remove unreferenced local variable warning */
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  819              	.LVL40:
 1356:Generated_Source\PSoC4/CyLib.c ****                                                       (CY_SYS_CLK_XTAL_CLK_DIV_CONFIG_REG & ((uint3
  820              		.loc 1 1356 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 62
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 62
 
 
  821 0014 0321     		movs	r1, #3
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  869              		.cfi_offset 4, -16
  870              		.cfi_offset 5, -12
  871              		.cfi_offset 6, -8
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 63
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 63
 
 
  872              		.cfi_offset 14, -4
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  920              	.LVL53:
 2439:Generated_Source\PSoC4/CyLib.c **** 
  921              		.loc 1 2439 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 64
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 64
 
 
  922 0004 0F28     		cmp	r0, #15
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  970              	.LVL58:
  971 000c FFF7FEFF 		bl	CyHalt
  972              	.LVL59:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 65
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 65
 
 
  973              	.L74:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1020              		.loc 1 2491 0 is_stmt 1
  1021 000e 1034     		adds	r4, r4, #16
  1022 0010 A400     		lsls	r4, r4, #2
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 66
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 66
 
 
  1023 0012 8023     		movs	r3, #128
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1071              	.L79:
 2513:Generated_Source\PSoC4/CyLib.c **** 
  1072              		.loc 1 2513 0 is_stmt 1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 67
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 67
 
 
  1073 001a 0325     		movs	r5, #3
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1120              		.global	CyIntGetPriority
  1121              		.code	16
  1122              		.thumb_func
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 68
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 68
 
 
  1123              		.type	CyIntGetPriority, %function
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1171              		.section	.text.CySoftwareReset,"ax",%progbits
  1172              		.align	2
  1173              		.global	CySoftwareReset
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 69
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 69
 
 
  1174              		.code	16
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1209              		.thumb_func
  1210              		.type	CyDelay, %function
  1211              	CyDelay:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 70
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 70
 
 
  1212              	.LFB33:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2692:Generated_Source\PSoC4/CyLib.c ****     CyDelayCycles(milliseconds * cydelayFreqKhz);
  1243              		.loc 1 2692 0
  1244 001c 024B     		ldr	r3, .L92
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 71
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 71
 
 
  1245 001e 9868     		ldr	r0, [r3, #8]
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2707:Generated_Source\PSoC4/CyLib.c **** }
  1285              		.loc 1 2707 0
  1286              		@ sp needed
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 72
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 72
 
 
  1287 000c 10BD     		pop	{r4, pc}
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1335 0024 0020     		movs	r0, #0
  1336              	.LVL95:
  1337 0026 0CE0     		b	.L99
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 73
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 73
 
 
  1338              	.L100:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2241:Generated_Source\PSoC4/CyLib.c ****         /* Prevent propagating a false interrupt */
  1385              		.loc 1 2241 0
  1386              		.cfi_startproc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 74
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 74
 
 
  1387              		@ args = 0, pretend = 0, frame = 0
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2260:Generated_Source\PSoC4/CyLib.c **** 
  1433              		.loc 1 2260 0
  1434              		@ sp needed
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 75
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 75
 
 
  1435 0038 70BD     		pop	{r4, r5, r6, pc}
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2725:Generated_Source\PSoC4/CyLib.c ****     {
 2726:Generated_Source\PSoC4/CyLib.c ****         cydelayFreqHz = CYDEV_BCLK__SYSCLK__HZ;
  1472              		.loc 1 2726 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 76
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 76
 
 
  1473 000c 0B4A     		ldr	r2, .L110+4
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2734:Generated_Source\PSoC4/CyLib.c **** 
 2735:Generated_Source\PSoC4/CyLib.c **** /*******************************************************************************
 2736:Generated_Source\PSoC4/CyLib.c **** * Function Name: CySysTick_Start
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 77
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 77
 
 
 2737:Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2791:Generated_Source\PSoC4/CyLib.c ****         CySysTickSetClockSource(CY_SYS_SYST_CSR_CLK_SRC_SYSCLK);
 2792:Generated_Source\PSoC4/CyLib.c ****     #endif /* (CY_SYSTICK_LFCLK_SOURCE) */
 2793:Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 78
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 78
 
 
 2794:Generated_Source\PSoC4/CyLib.c ****     CySysTickSetReload(cydelayFreqHz/1000u);
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1538              		.cfi_endproc
  1539              	.LFE39:
  1540              		.size	CySysTickStop, .-CySysTickStop
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 79
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 79
 
 
  1541              		.section	.text.CySysTickEnableInterrupt,"ax",%progbits
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1578              		.loc 1 2810 0
  1579              		.cfi_startproc
  1580              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 80
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 80
 
 
  1581              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2860:Generated_Source\PSoC4/CyLib.c ****     CY_SYS_SYST_CSR_REG &= ((uint32) ~(CY_SYS_SYST_CSR_ENABLE_INT));
  1618              		.loc 1 2860 0
  1619 0000 024A     		ldr	r2, .L122
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 81
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 81
 
 
  1620 0002 1368     		ldr	r3, [r2]
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1656 0008 7047     		bx	lr
  1657              	.L126:
  1658 000a C046     		.align	2
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 82
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 82
 
 
  1659              	.L125:
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1697              		.type	CySysTickGetValue, %function
  1698              	CySysTickGetValue:
  1699              	.LFB44:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 83
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 83
 
 
 2895:Generated_Source\PSoC4/CyLib.c **** 
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2921:Generated_Source\PSoC4/CyLib.c ****     *  function call will have no effect. After changing clock source to the low
 2922:Generated_Source\PSoC4/CyLib.c ****     *  frequency clock the counter and reload register values will remain unchanged
 2923:Generated_Source\PSoC4/CyLib.c ****     *  so time to the interrupt will be significantly longer and vice versa.
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 84
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 84
 
 
 2924:Generated_Source\PSoC4/CyLib.c ****     *
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1756              		.align	2
  1757              	.L136:
  1758 001c 10E000E0 		.word	-536813552
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 85
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 85
 
 
  1759              		.cfi_endproc
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1795              		.thumb_func
  1796              		.type	CySysTickGetCountFlag, %function
  1797              	CySysTickGetCountFlag:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 86
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 86
 
 
  1798              	.LFB47:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 2993:Generated_Source\PSoC4/CyLib.c **** /*******************************************************************************
 2994:Generated_Source\PSoC4/CyLib.c **** * Function Name: CySysTickClear
 2995:Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 87
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 87
 
 
 2996:Generated_Source\PSoC4/CyLib.c **** *
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
 3050:Generated_Source\PSoC4/CyLib.c **** *
 3051:Generated_Source\PSoC4/CyLib.c **** *  \param number: The number of callback function address to get. The valid
 3052:Generated_Source\PSoC4/CyLib.c **** *          range is from 0 to 4.
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 88
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 88
 
 
 3053:Generated_Source\PSoC4/CyLib.c **** *
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1850 0016 9847     		blx	r3
  1851              	.LVL116:
  1852              	.L147:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 89
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 89
 
 
 3079:Generated_Source\PSoC4/CyLib.c ****         {
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1898              		.align	2
  1899              	.L153:
  1900 0008 18E000E0 		.word	-536813544
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 90
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 90
 
 
  1901              		.cfi_endproc
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1947              		.loc 1 2794 0
  1948 0022 074B     		ldr	r3, .L158+8
  1949 0024 1869     		ldr	r0, [r3, #16]
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 91
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 91
 
 
  1950 0026 FA21     		movs	r1, #250
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  1998 0012 5A61     		str	r2, [r3, #20]
  1999              	.L161:
 2758:Generated_Source\PSoC4/CyLib.c **** }
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 92
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 92
 
 
  2000              		.loc 1 2758 0
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2049              		.type	CySysTickGetCallback, %function
  2050              	CySysTickGetCallback:
  2051              	.LFB50:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 93
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 93
 
 
 3060:Generated_Source\PSoC4/CyLib.c ****     return ((cySysTickCallback) CySysTickCallbacks[number]);
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2085              		@ link register save eliminated.
  2086              	.LVL135:
 3106:Generated_Source\PSoC4/CyLib.c **** #if(CY_PSOC4)
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 94
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 94
 
 
 3107:Generated_Source\PSoC4/CyLib.c ****     uniqueId[0u]  =  (uint32)(* (reg8 *) CYREG_SFLASH_DIE_LOT0  );
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2132 004a 4360     		str	r3, [r0, #4]
 3116:Generated_Source\PSoC4/CyLib.c **** #else
 3117:Generated_Source\PSoC4/CyLib.c ****     uniqueId[0u]  =  (uint32) CY_GET_XTND_REG8((void CYFAR *) (CYREG_FLSHID_CUST_TABLES_LOT_LSB   )
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 95
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 95
 
 
 3118:Generated_Source\PSoC4/CyLib.c ****     uniqueId[0u] |= ((uint32) CY_GET_XTND_REG8((void CYFAR *) (CYREG_FLSHID_CUST_TABLES_LOT_MSB   )
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2177 000e 12       		.byte	18
  2178 000f 13       		.byte	19
  2179 0010 14       		.byte	20
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 96
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 96
 
 
  2180 0011 15       		.byte	21
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2234              		.align	2
  2235              		.set	.LANCHOR2,. + 0
  2236              		.type	CySysTickCallbacks, %object
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 97
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 97
 
 
  2237              		.size	CySysTickCallbacks, 20
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2287 0050 08       		.byte	0x8
  2288 0051 05       		.byte	0x5
  2289 0052 5B010000 		.4byte	.LASF6
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 98
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 98
 
 
  2290 0056 02       		.uleb128 0x2
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2344 00c7 9002     		.2byte	0x290
  2345 00c9 CD000000 		.4byte	0xcd
  2346 00cd 05       		.uleb128 0x5
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 99
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 99
 
 
  2347 00ce 83000000 		.4byte	0x83
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2401 0146 0C       		.uleb128 0xc
  2402 0147 86010000 		.4byte	.LASF24
  2403 014b 01       		.byte	0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 100
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 100
 
 
  2404 014c 0302     		.2byte	0x203
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2458 01d4 70000000 		.4byte	.LLST4
  2459 01d8 0D       		.uleb128 0xd
  2460 01d9 06000000 		.4byte	.LVL8
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 101
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 101
 
 
  2461 01dd AE0B0000 		.4byte	0xbae
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2515 0267 91       		.byte	0x91
  2516 0268 70       		.sleb128 -16
  2517 0269 10       		.uleb128 0x10
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 102
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 102
 
 
  2518 026a BE010000 		.4byte	.LASF36
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2572 02ec 9C       		.byte	0x9c
  2573 02ed 00030000 		.4byte	0x300
  2574 02f1 10       		.uleb128 0x10
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 103
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 103
 
 
  2575 02f2 38070000 		.4byte	.LASF40
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2629 0371 50       		.byte	0x50
  2630 0372 00       		.byte	0
  2631 0373 0F       		.uleb128 0xf
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 104
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 104
 
 
  2632 0374 59000000 		.4byte	.LASF46
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2686 03f0 6B000000 		.4byte	0x6b
  2687 03f4 00000000 		.4byte	.LFB27
  2688 03f8 18000000 		.4byte	.LFE27-.LFB27
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 105
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 105
 
 
  2689 03fc 01       		.uleb128 0x1
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2743 047d 3E0A     		.2byte	0xa3e
  2744 047f 6B000000 		.4byte	0x6b
  2745 0483 BB010000 		.4byte	.LLST14
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 106
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 106
 
 
  2746 0487 00       		.byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2800 0504 00       		.byte	0
  2801 0505 0F       		.uleb128 0xf
  2802 0506 AC030000 		.4byte	.LASF58
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 107
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 107
 
 
  2803 050a 01       		.byte	0x1
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2857 0588 9C       		.byte	0x9c
  2858 0589 BD050000 		.4byte	0x5bd
  2859 058d 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 108
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 108
 
 
  2860 058e 87030000 		.4byte	.LASF51
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2914 060d 6D050000 		.4byte	0x56d
  2915 0611 00000020 		.4byte	0x20000000
  2916 0615 15       		.uleb128 0x15
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 109
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 109
 
 
  2917 0616 10000000 		.4byte	.LVL59
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  2971 068d 6B000000 		.4byte	0x6b
  2972 0691 1B030000 		.4byte	.LLST23
  2973 0695 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 110
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 110
 
 
  2974 0696 8E030000 		.4byte	.LASF66
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3028 0716 6B000000 		.4byte	0x6b
  3029 071a 00000000 		.4byte	.LFB25
  3030 071e 2C000000 		.4byte	.LFE25-.LFB25
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 111
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 111
 
 
  3031 0722 01       		.uleb128 0x1
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3085 07a2 00       		.byte	0
  3086 07a3 0A       		.uleb128 0xa
  3087 07a4 5B050000 		.4byte	.LASF73
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 112
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 112
 
 
  3088 07a8 01       		.byte	0x1
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3142 082b A9040000 		.4byte	.LASF77
  3143 082f 01       		.byte	0x1
  3144 0830 C008     		.2byte	0x8c0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 113
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 113
 
 
  3145 0832 00000000 		.4byte	.LFB13
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3199 08b0 00000000 		.4byte	.LFB40
  3200 08b4 10000000 		.4byte	.LFE40-.LFB40
  3201 08b8 01       		.uleb128 0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 114
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 114
 
 
  3202 08b9 9C       		.byte	0x9c
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3256 093d 01       		.uleb128 0x1
  3257 093e 9C       		.byte	0x9c
  3258 093f 0A       		.uleb128 0xa
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 115
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 115
 
 
  3259 0940 60030000 		.4byte	.LASF88
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3313 09bf B1020000 		.4byte	.LASF92
  3314 09c3 01       		.byte	0x1
  3315 09c4 B80B     		.2byte	0xbb8
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 116
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 116
 
 
  3316 09c6 00000000 		.4byte	.LFB48
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3370 0a3b 01       		.byte	0x1
  3371 0a3c BE0A     		.2byte	0xabe
  3372 0a3e 00000000 		.4byte	.LFB36
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 117
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 117
 
 
  3373 0a42 20000000 		.4byte	.LFE36-.LFB36
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3427 0ac5 01       		.byte	0x1
  3428 0ac6 F30B     		.2byte	0xbf3
  3429 0ac8 83000000 		.4byte	0x83
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 118
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 118
 
 
  3430 0acc 33050000 		.4byte	.LLST40
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3484 0b40 20060000 		.4byte	.LASF104
  3485 0b44 01       		.byte	0x1
  3486 0b45 1D       		.byte	0x1d
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 119
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 119
 
 
  3487 0b46 6B000000 		.4byte	0x6b
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3541 0bbe 93040000 		.4byte	.LASF110
  3542 0bc2 03       		.byte	0x3
  3543 0bc3 E6       		.byte	0xe6
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 120
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 120
 
 
  3544 0bc4 1F       		.uleb128 0x1f
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3598 002e 3A       		.uleb128 0x3a
  3599 002f 0B       		.uleb128 0xb
  3600 0030 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 121
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 121
 
 
  3601 0031 05       		.uleb128 0x5
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3655 0067 11       		.uleb128 0x11
  3656 0068 01       		.uleb128 0x1
  3657 0069 12       		.uleb128 0x12
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 122
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 122
 
 
  3658 006a 06       		.uleb128 0x6
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3712 00a2 3B       		.uleb128 0x3b
  3713 00a3 05       		.uleb128 0x5
  3714 00a4 49       		.uleb128 0x49
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 123
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 123
 
 
  3715 00a5 13       		.uleb128 0x13
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3769 00de 00       		.byte	0
  3770 00df 00       		.byte	0
  3771 00e0 10       		.uleb128 0x10
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 124
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 124
 
 
  3772 00e1 34       		.uleb128 0x34
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3826 0118 00       		.byte	0
  3827 0119 14       		.uleb128 0x14
  3828 011a 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 125
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 125
 
 
  3829 011b 00       		.byte	0
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3883 0157 00       		.byte	0
  3884 0158 00       		.byte	0
  3885 0159 18       		.uleb128 0x18
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 126
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 126
 
 
  3886 015a 898201   		.uleb128 0x4109
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3940 0194 01       		.uleb128 0x1
  3941 0195 13       		.uleb128 0x13
  3942 0196 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 127
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 127
 
 
  3943 0197 00       		.byte	0
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  3997 01cd 00       		.byte	0
  3998 01ce 1F       		.uleb128 0x1f
  3999 01cf 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 128
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 128
 
 
  4000 01d0 00       		.byte	0
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4054              	.LLST3:
  4055 005d 06000000 		.4byte	.LVL8
  4056 0061 11000000 		.4byte	.LVL10-1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 129
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 129
 
 
  4057 0065 0100     		.2byte	0x1
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4111 00ef 9F       		.byte	0x9f
  4112 00f0 40000000 		.4byte	.LVL20
  4113 00f4 64000000 		.4byte	.LFE8
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 130
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 130
 
 
  4114 00f8 0400     		.2byte	0x4
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4168 0179 00000000 		.4byte	.LVL32
  4169 017d 04000000 		.4byte	.LVL33
  4170 0181 0100     		.2byte	0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 131
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 131
 
 
  4171 0183 50       		.byte	0x50
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4225 0200 28000000 		.4byte	.LVL43
  4226 0204 2A000000 		.4byte	.LVL44
  4227 0208 0100     		.2byte	0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 132
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 132
 
 
  4228 020a 50       		.byte	0x50
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4282 028c 00000000 		.4byte	.LVL52
  4283 0290 0A000000 		.4byte	.LVL54
  4284 0294 0100     		.2byte	0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 133
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 133
 
 
  4285 0296 50       		.byte	0x50
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4339 0313 00000000 		.4byte	0
  4340 0317 00000000 		.4byte	0
  4341              	.LLST23:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 134
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 134
 
 
  4342 031b 00000000 		.4byte	.LVL66
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4396 03a4 40000000 		.4byte	.LVL76
  4397 03a8 45000000 		.4byte	.LVL77-1
  4398 03ac 0100     		.2byte	0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 135
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 135
 
 
  4399 03ae 51       		.byte	0x51
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4453 0435 26000000 		.4byte	.LVL95
  4454 0439 42000000 		.4byte	.LVL100
  4455 043d 0100     		.2byte	0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 136
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 136
 
 
  4456 043f 54       		.byte	0x54
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4510 04c7 0400     		.2byte	0x4
  4511 04c9 F3       		.byte	0xf3
  4512 04ca 01       		.uleb128 0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 137
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 137
 
 
  4513 04cb 50       		.byte	0x50
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4567 0550 00000000 		.4byte	0
  4568              		.section	.debug_aranges,"",%progbits
  4569 0000 AC010000 		.4byte	0x1ac
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 138
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 138
 
 
  4570 0004 0200     		.2byte	0x2
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4624 00d0 00000000 		.4byte	.LFB22
  4625 00d4 22000000 		.4byte	.LFE22-.LFB22
  4626 00d8 00000000 		.4byte	.LFB23
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 139
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 139
 
 
  4627 00dc 1E000000 		.4byte	.LFE23-.LFB23
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4681              	.Ldebug_ranges0:
  4682 0000 00000000 		.4byte	.LFB2
  4683 0004 14000000 		.4byte	.LFE2
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 140
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 140
 
 
  4684 0008 00000000 		.4byte	.LFB3
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4738 00e0 00000000 		.4byte	.LFB32
  4739 00e4 18000000 		.4byte	.LFE32
  4740 00e8 00000000 		.4byte	.LFB33
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 141
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 141
 
 
  4741 00ec 30000000 		.4byte	.LFE33
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4790      6563746F 
  4790      72546162 
  4790      6C6500
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 142
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 142
 
 
  4791              	.LASF10:
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4812      6D657465 
  4812      727300
  4813              	.LASF48:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 143
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 143
 
 
  4814 0117 4379456E 		.ascii	"CyEnableInts\000"
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4836      61626C65 
  4836      00
  4837              	.LASF36:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 144
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 144
 
 
  4838 01be 72656756 		.ascii	"regValues\000"
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4862      00
  4863              	.LASF93:
  4864 0260 43795379 		.ascii	"CySysTickInit\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 145
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 145
 
 
  4864      73546963 
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4885              	.LASF54:
  4886 0314 4379496E 		.ascii	"CyIntSetPending\000"
  4886      74536574 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 146
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 146
 
 
  4886      50656E64 
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4906      756D7043 
  4906      6C6F636B 
  4907              	.LASF17:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 147
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 147
 
 
  4908 03d3 72656733 		.ascii	"reg32\000"
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4930      56616C75 
  4930      6500
  4931              	.LASF102:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 148
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 148
 
 
  4932 046e 63796465 		.ascii	"cydelayFreqHz\000"
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4954      6C7400
  4955              	.LASF1:
  4956 050a 756E7369 		.ascii	"unsigned char\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 149
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 149
 
 
  4956      676E6564 
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  4980 05a5 43795379 		.ascii	"CySysTickSetCallback\000"
  4980      73546963 
  4980      6B536574 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 150
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 150
 
 
  4980      43616C6C 
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 1
  5001 068a 43795379 		.ascii	"CySysTickStop\000"
  5001      73546963 
  5001      6B53746F 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccdB5X8h.s 			page 151
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cckRHHiw.s 			page 151
 
 
  5001      7000

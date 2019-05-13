@@ -539,12 +539,12 @@ function getElementsByClass(rootNode, elemName, className)
 <tr> <td class="prop"> Project :</td>
 <td class="proptext"> RobotBLE</td></tr>
 <tr> <td class="prop"> Build Time :</td>
-<td class="proptext"> 05/09/19 18:33:22</td></tr>
+<td class="proptext"> 05/13/19 15:47:30</td></tr>
 <tr> <td class="prop"> Device :</td>
-<td class="proptext"> CY8C4247FLI-BL483</td></tr>
+<td class="proptext"> CY8C4247LQI-BL483</td></tr>
 <tr> <td class="prop"> Temperature :</td>
 <td class="proptext"> -40C - 85C</td></tr>
-<tr> <td class="prop"> VDDA :</td>
+<tr> <td class="prop"> VDDA_1 :</td>
 <td class="proptext"> 3.30</td></tr>
 <tr> <td class="prop"> VDDA_CTB :</td>
 <td class="proptext"> 3.30</td></tr>
@@ -603,14 +603,6 @@ Clock Summary Section</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">Clock_1(FFB)</td>
- <td class = "text_info">Clock_1(FFB)</td>
- <td class = "number">20.000&nbsp;kHz</td>
- <td class = "number">20.000&nbsp;kHz</td>
- <td class = "number"> N/A </td>
- <td class = "text_info"> </td>
-</tr>
-<tr> 
  <td class = "text_info">CyECO</td>
  <td class = "text_info">CyECO</td>
  <td class = "number">24.000&nbsp;MHz</td>
@@ -631,15 +623,15 @@ Clock Summary Section</span>
  <td class = "text_info">CyHFClk</td>
  <td class = "number">20.000&nbsp;kHz</td>
  <td class = "number">20.000&nbsp;kHz</td>
- <td class = "number"> N/A </td>
- <td class = "text_info"> </td>
+ <td class = "number">55.907&nbsp;MHz</td>
+ <td class = "text_info"></td>
 </tr>
 <tr> 
  <td class = "text_info">Clock_2</td>
  <td class = "text_info">CyHFClk</td>
  <td class = "number">1.066&nbsp;kHz</td>
  <td class = "number">1.066&nbsp;kHz</td>
- <td class = "number">55.145&nbsp;MHz</td>
+ <td class = "number">55.707&nbsp;MHz</td>
  <td class = "text_info"></td>
 </tr>
 <tr> 
@@ -710,6 +702,703 @@ Setup Subsection</span>
 <div>
 <a href="#" style="text-decoration: none; color: inherit;">
 <span class="sec_head"><span style="font-family: monospace;">+</span>
+Source Clock : Clock_1 : Positive edge(Required Frequency 20&nbsp;kHz)</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Destination Clock : Clock_1 : Positive edge(Required Frequency 20&nbsp;kHz)</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec_desc">Path Delay Requirement : 50000ns(20&nbsp;kHz)</div>
+<table class="sta_tscs">
+ <thead> 
+<tr> 
+<th>Source</th>
+<th>Destination</th>
+<th>FMax</th>
+<th>Delay (ns)</th>
+<th>Slack (ns)</th>
+<th>Violation</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_2</td>
+ <td class = "number">55.907&nbsp;MHz</td>
+ <td class = "number">17.887</td>
+ <td class = "number">49982.113</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">datapathcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/clock</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "number">3.850</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_2</td>
+ <td class = "number">2.517</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">11.520</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_2</td>
+ <td class = "number">55.919&nbsp;MHz</td>
+ <td class = "number">17.883</td>
+ <td class = "number">49982.117</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/clock</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "number">3.850</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_2</td>
+ <td class = "number">2.513</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">11.520</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
+ <td class = "number">63.472&nbsp;MHz</td>
+ <td class = "number">15.755</td>
+ <td class = "number">49984.245</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/clock_0</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
+ <td class = "number">2.985</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">11.520</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
+ <td class = "number">64.090&nbsp;MHz</td>
+ <td class = "number">15.603</td>
+ <td class = "number">49984.397</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell9</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/clock_0</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
+ <td class = "number">2.833</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">11.520</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk8:stsreg\/status_2</td>
+ <td class = "number">73.812&nbsp;MHz</td>
+ <td class = "number">13.548</td>
+ <td class = "number">49986.452</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">datapathcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/clock</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "number">3.850</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:tc_i\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_2\/main_1</td>
+ <td class = "number">2.523</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_2\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_2\/main_1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_2\/q</td>
+ <td class = "number">3.350</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_2\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_2\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk8:stsreg\/status_2</td>
+ <td class = "number">2.255</td>
+</tr>
+<tr> 
+ <td class = "text_info">statusicell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk8:stsreg\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">1.570</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk8:stsreg\/status_2</td>
+ <td class = "number">73.921&nbsp;MHz</td>
+ <td class = "number">13.528</td>
+ <td class = "number">49986.472</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/clock</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "number">3.850</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:tc_i\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_2\/main_1</td>
+ <td class = "number">2.518</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_2\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_2\/main_1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_2\/q</td>
+ <td class = "number">3.350</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_2\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_2\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk8:stsreg\/status_2</td>
+ <td class = "number">2.240</td>
+</tr>
+<tr> 
+ <td class = "text_info">statusicell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk8:stsreg\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">1.570</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\/main_0</td>
+ <td class = "number">87.504&nbsp;MHz</td>
+ <td class = "number">11.428</td>
+ <td class = "number">49988.572</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/clock</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "number">5.680</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:cmp1_less\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\/main_0</td>
+ <td class = "number">2.238</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">3.510</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\/main_1</td>
+ <td class = "number">87.504&nbsp;MHz</td>
+ <td class = "number">11.428</td>
+ <td class = "number">49988.572</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/clock</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "number">5.680</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:cmp1_less\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\/main_1</td>
+ <td class = "number">2.238</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell7</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">3.510</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "text_info">Net_132/main_1</td>
+ <td class = "number">87.504&nbsp;MHz</td>
+ <td class = "number">11.428</td>
+ <td class = "number">49988.572</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/clock</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "number">5.680</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:cmp1_less\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "text_info">Net_132/main_1</td>
+ <td class = "number">2.238</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell8</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">Net_132</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">3.510</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\/main_0</td>
+ <td class = "number">87.512&nbsp;MHz</td>
+ <td class = "number">11.427</td>
+ <td class = "number">49988.573</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">datapathcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/clock</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "number">5.680</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:cmp1_less\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cl0_comb</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\/main_0</td>
+ <td class = "number">2.237</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell10</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">3.510</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+</tbody>
+ </table> 
+</div>
+</div>
+</div>
+</div>
+<div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
 Source Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</span>
 </a>
 </div><div class="sta_secbody"><div class="sta_sec" >
@@ -734,9 +1423,9 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/cs_addr_2</td>
- <td class = "number">55.145&nbsp;MHz</td>
- <td class = "number">18.134</td>
- <td class = "number">938065.199</td>
+ <td class = "number">55.707&nbsp;MHz</td>
+ <td class = "number">17.951</td>
+ <td class = "number">938065.382</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -755,7 +1444,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -764,16 +1453,16 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "number">3.850</td>
 </tr>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/cs_addr_2</td>
- <td class = "number">2.764</td>
+ <td class = "number">2.581</td>
 </tr>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -797,9 +1486,9 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
- <td class = "number">63.886&nbsp;MHz</td>
- <td class = "number">15.653</td>
- <td class = "number">938067.680</td>
+ <td class = "number">63.873&nbsp;MHz</td>
+ <td class = "number">15.656</td>
+ <td class = "number">938067.677</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -818,7 +1507,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell3</td>
+ <td class = "text_info">macrocell13</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
@@ -833,10 +1522,10 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
- <td class = "number">2.883</td>
+ <td class = "number">2.886</td>
 </tr>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -860,9 +1549,9 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\/status_2</td>
- <td class = "number">72.062&nbsp;MHz</td>
- <td class = "number">13.877</td>
- <td class = "number">938069.456</td>
+ <td class = "number">73.115&nbsp;MHz</td>
+ <td class = "number">13.677</td>
+ <td class = "number">938069.656</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -881,7 +1570,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -896,10 +1585,10 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "text_info">\LED_PWM:PWMUDB:tc_i\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_2\/main_1</td>
- <td class = "number">2.789</td>
+ <td class = "number">2.589</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell1</td>
+ <td class = "text_info">macrocell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_2\</td>
@@ -917,7 +1606,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "number">2.318</td>
 </tr>
 <tr> 
- <td class = "text_info">statusicell1</td>
+ <td class = "text_info">statusicell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\</td>
@@ -962,7 +1651,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -980,7 +1669,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "number">2.302</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell4</td>
+ <td class = "text_info">macrocell14</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:prevCompare1\</td>
@@ -1025,7 +1714,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -1043,7 +1732,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "number">2.302</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell5</td>
+ <td class = "text_info">macrocell15</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_0\</td>
@@ -1088,7 +1777,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -1106,7 +1795,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "number">2.302</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell6</td>
+ <td class = "text_info">macrocell16</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">Net_64</td>
@@ -1130,9 +1819,9 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\/status_2</td>
- <td class = "number">87.958&nbsp;MHz</td>
- <td class = "number">11.369</td>
- <td class = "number">938071.964</td>
+ <td class = "number">87.935&nbsp;MHz</td>
+ <td class = "number">11.372</td>
+ <td class = "number">938071.961</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1151,7 +1840,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell3</td>
+ <td class = "text_info">macrocell13</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
@@ -1166,10 +1855,10 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_2\/main_0</td>
- <td class = "number">2.881</td>
+ <td class = "number">2.884</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell1</td>
+ <td class = "text_info">macrocell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_2\</td>
@@ -1187,7 +1876,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "number">2.318</td>
 </tr>
 <tr> 
- <td class = "text_info">statusicell1</td>
+ <td class = "text_info">statusicell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\</td>
@@ -1211,9 +1900,9 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:genblk1:ctrlreg\/control_7</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/main_0</td>
- <td class = "number">118.991&nbsp;MHz</td>
- <td class = "number">8.404</td>
- <td class = "number">938074.929</td>
+ <td class = "number">118.821&nbsp;MHz</td>
+ <td class = "number">8.416</td>
+ <td class = "number">938074.917</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1232,7 +1921,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">controlcell1</td>
+ <td class = "text_info">controlcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk1:ctrlreg\</td>
@@ -1247,10 +1936,10 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "text_info">\LED_PWM:PWMUDB:control_7\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk1:ctrlreg\/control_7</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/main_0</td>
- <td class = "number">2.314</td>
+ <td class = "number">2.326</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell3</td>
+ <td class = "text_info">macrocell13</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
@@ -1274,9 +1963,9 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">Net_64/main_0</td>
- <td class = "number">130.993&nbsp;MHz</td>
- <td class = "number">7.634</td>
- <td class = "number">938075.699</td>
+ <td class = "number">131.010&nbsp;MHz</td>
+ <td class = "number">7.633</td>
+ <td class = "number">938075.700</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1295,7 +1984,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell3</td>
+ <td class = "text_info">macrocell13</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
@@ -1310,10 +1999,10 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">Net_64/main_0</td>
- <td class = "number">2.874</td>
+ <td class = "number">2.873</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell6</td>
+ <td class = "text_info">macrocell16</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">Net_64</td>
@@ -1358,7 +2047,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell4</td>
+ <td class = "text_info">macrocell14</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:prevCompare1\</td>
@@ -1376,7 +2065,7 @@ Destination Clock : Clock_2 : Positive edge(Required Frequency 1.066&nbsp;kHz)</
  <td class = "number">2.304</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell5</td>
+ <td class = "text_info">macrocell15</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_0\</td>
@@ -1415,6 +2104,644 @@ Hold Subsection</span>
 <div>
 <a href="#" style="text-decoration: none; color: inherit;">
 <span class="sec_head"><span style="font-family: monospace;">+</span>
+Source Clock : Clock_1 : Positive edge</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Destination Clock : Clock_1 : Positive edge</span>
+</a>
+</div><div class="sta_secbody"><table class="sta_tscs">
+ <thead> 
+<tr> 
+<th>Source</th>
+<th>Destination</th>
+<th>Slack (ns)</th>
+<th>Violation</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk8:stsreg\/status_0</td>
+ <td class = "number">1.498</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell7</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\/clock_0</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk8:stsreg\/status_0</td>
+ <td class = "number">2.248</td>
+</tr>
+<tr> 
+ <td class = "text_info">statusicell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk8:stsreg\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">-2.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk8:stsreg\/status_0</td>
+ <td class = "number">1.501</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell11</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\/clock_0</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk8:stsreg\/status_0</td>
+ <td class = "number">2.251</td>
+</tr>
+<tr> 
+ <td class = "text_info">statusicell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk8:stsreg\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">-2.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\/main_0</td>
+ <td class = "number">3.490</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell10</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\/clock_0</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:prevCompare1\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\/main_0</td>
+ <td class = "number">2.240</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell11</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:status_0\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\/main_0</td>
+ <td class = "number">3.491</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\/clock_0</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:prevCompare1\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\/main_0</td>
+ <td class = "number">2.241</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell7</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:status_0\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">Net_92/main_0</td>
+ <td class = "number">4.064</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell9</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/clock_0</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">Net_92/main_0</td>
+ <td class = "number">2.814</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell12</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">Net_92</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
+ <td class = "number">4.083</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell9</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/clock_0</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
+ <td class = "number">2.833</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">Net_132/main_0</td>
+ <td class = "number">4.226</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/clock_0</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">Net_132/main_0</td>
+ <td class = "number">2.976</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell8</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">Net_132</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
+ <td class = "number">4.235</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/clock_0</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "number">1.250</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/q</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
+ <td class = "number">2.985</td>
+</tr>
+<tr> 
+ <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:sP8:pwmdp:u0\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk1:ctrlreg\/control_7</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/main_0</td>
+ <td class = "number">4.286</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">controlcell1</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk1:ctrlreg\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk1:ctrlreg\/clock</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk1:ctrlreg\/control_7</td>
+ <td class = "number">2.040</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:control_7\</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:genblk1:ctrlreg\/control_7</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\/main_0</td>
+ <td class = "number">2.246</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(1,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\RIGHT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk1:ctrlreg\/control_7</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/main_0</td>
+ <td class = "number">4.299</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">controlcell2</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk1:ctrlreg\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk1:ctrlreg\/clock</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk1:ctrlreg\/control_7</td>
+ <td class = "number">2.040</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:control_7\</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:genblk1:ctrlreg\/control_7</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\/main_0</td>
+ <td class = "number">2.259</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell9</td>
+ <td class = "text_info">U(0,0)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\LEFT_MOTOR:PWMUDB:runmode_enable\</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+</tbody>
+ </table> 
+</div>
+</div>
+</div>
+</div>
+<div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
 Source Clock : Clock_2 : Positive edge</span>
 </a>
 </div><div class="sta_secbody"><div class="sta_sec" >
@@ -1436,7 +2763,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:status_0\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\/status_0</td>
- <td class = "number">1.575</td>
+ <td class = "number">1.565</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1455,7 +2782,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell5</td>
+ <td class = "text_info">macrocell15</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_0\</td>
@@ -1470,10 +2797,10 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "text_info">\LED_PWM:PWMUDB:status_0\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_0\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\/status_0</td>
- <td class = "number">2.325</td>
+ <td class = "number">2.315</td>
 </tr>
 <tr> 
- <td class = "text_info">statusicell1</td>
+ <td class = "text_info">statusicell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\</td>
@@ -1516,7 +2843,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell4</td>
+ <td class = "text_info">macrocell14</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:prevCompare1\</td>
@@ -1534,7 +2861,7 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "number">2.304</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell5</td>
+ <td class = "text_info">macrocell15</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_0\</td>
@@ -1558,7 +2885,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">Net_64/main_0</td>
- <td class = "number">4.124</td>
+ <td class = "number">4.123</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1577,7 +2904,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell3</td>
+ <td class = "text_info">macrocell13</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
@@ -1592,10 +2919,10 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">Net_64/main_0</td>
- <td class = "number">2.874</td>
+ <td class = "number">2.873</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell6</td>
+ <td class = "text_info">macrocell16</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">Net_64</td>
@@ -1619,7 +2946,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
- <td class = "number">4.133</td>
+ <td class = "number">4.136</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1638,7 +2965,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell3</td>
+ <td class = "text_info">macrocell13</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
@@ -1653,10 +2980,10 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/cs_addr_1</td>
- <td class = "number">2.883</td>
+ <td class = "number">2.886</td>
 </tr>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -1680,7 +3007,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:genblk1:ctrlreg\/control_7</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/main_0</td>
- <td class = "number">4.354</td>
+ <td class = "number">4.366</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1699,7 +3026,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">controlcell1</td>
+ <td class = "text_info">controlcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk1:ctrlreg\</td>
@@ -1714,10 +3041,10 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "text_info">\LED_PWM:PWMUDB:control_7\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk1:ctrlreg\/control_7</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/main_0</td>
- <td class = "number">2.314</td>
+ <td class = "number">2.326</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell3</td>
+ <td class = "text_info">macrocell13</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
@@ -1760,7 +3087,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -1778,7 +3105,7 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "number">2.302</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell4</td>
+ <td class = "text_info">macrocell14</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:prevCompare1\</td>
@@ -1821,7 +3148,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -1839,7 +3166,7 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "number">2.302</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell5</td>
+ <td class = "text_info">macrocell15</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_0\</td>
@@ -1882,7 +3209,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -1900,7 +3227,7 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "number">2.302</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell6</td>
+ <td class = "text_info">macrocell16</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">Net_64</td>
@@ -1924,7 +3251,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/cs_addr_2</td>
- <td class = "number">6.034</td>
+ <td class = "number">5.851</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1943,7 +3270,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -1952,16 +3279,16 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "number">3.270</td>
 </tr>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/z0_comb</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\/cs_addr_2</td>
- <td class = "number">2.764</td>
+ <td class = "number">2.581</td>
 </tr>
 <tr> 
- <td class = "text_info">datapathcell1</td>
+ <td class = "text_info">datapathcell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:sP8:pwmdp:u0\</td>
@@ -1985,7 +3312,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 <tr> 
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\/status_2</td>
- <td class = "number">7.799</td>
+ <td class = "number">7.802</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -2004,7 +3331,7 @@ Destination Clock : Clock_2 : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell3</td>
+ <td class = "text_info">macrocell13</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
@@ -2019,10 +3346,10 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\</td>
  <td class = "text_info">\LED_PWM:PWMUDB:runmode_enable\/q</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_2\/main_0</td>
- <td class = "number">2.881</td>
+ <td class = "number">2.884</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell1</td>
+ <td class = "text_info">macrocell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:status_2\</td>
@@ -2040,7 +3367,7 @@ Destination Clock : Clock_2 : Positive edge</span>
  <td class = "number">2.318</td>
 </tr>
 <tr> 
- <td class = "text_info">statusicell1</td>
+ <td class = "text_info">statusicell3</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">\LED_PWM:PWMUDB:genblk8:stsreg\</td>
@@ -2081,7 +3408,7 @@ Clock To Output Section</span>
 <div>
 <a href="#" style="text-decoration: none; color: inherit;">
 <span class="sec_head"><span style="font-family: monospace;">+</span>
-Clock_1(FFB)</span>
+Clock_1</span>
 </a>
 </div><div class="sta_secbody"><table class="sta_tscs">
  <thead> 
@@ -2093,9 +3420,9 @@ Clock_1(FFB)</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">\RIGHT_MOTOR:cy_m0s8_tcpwm_1\/line</td>
+ <td class = "text_info">Net_132/q</td>
  <td class = "text_info">ENB(0)_PAD</td>
- <td class = "number">18.730</td>
+ <td class = "number">22.898</td>
 </tr>
 <tr class="sta_path">
 <td class="sta_path"  colspan="3">
@@ -2113,22 +3440,22 @@ Clock_1(FFB)</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">m0s8tcpwmcell</td>
- <td class = "text_info">F(TCPWM,1)</td>
+ <td class = "text_info">macrocell8</td>
+ <td class = "text_info">U(1,0)</td>
  <td class = "number">1</td>
- <td class = "text_info">\RIGHT_MOTOR:cy_m0s8_tcpwm_1\</td>
- <td class = "text_info">\RIGHT_MOTOR:cy_m0s8_tcpwm_1\/clock</td>
- <td class = "text_info">\RIGHT_MOTOR:cy_m0s8_tcpwm_1\/line</td>
- <td class = "number">0.000</td>
+ <td class = "text_info">Net_132</td>
+ <td class = "text_info">Net_132/clock_0</td>
+ <td class = "text_info">Net_132/q</td>
+ <td class = "number">1.250</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
  <td class = "text_info"></td>
  <td class = "number">1</td>
- <td class = "text_info">Net_22</td>
- <td class = "text_info">\RIGHT_MOTOR:cy_m0s8_tcpwm_1\/line</td>
+ <td class = "text_info">Net_132</td>
+ <td class = "text_info">Net_132/q</td>
  <td class = "text_info">ENB(0)/pin_input</td>
- <td class = "number">2.661</td>
+ <td class = "number">5.579</td>
 </tr>
 <tr> 
  <td class = "text_info">iocell3</td>
@@ -2162,9 +3489,9 @@ Clock_1(FFB)</span>
 </td>
 </tr>
 <tr> 
- <td class = "text_info">\LEFT_MOTOR:cy_m0s8_tcpwm_1\/line</td>
+ <td class = "text_info">Net_92/q</td>
  <td class = "text_info">ENA(0)_PAD</td>
- <td class = "number">15.456</td>
+ <td class = "number">21.055</td>
 </tr>
 <tr class="sta_path">
 <td class="sta_path"  colspan="3">
@@ -2182,22 +3509,22 @@ Clock_1(FFB)</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">m0s8tcpwmcell</td>
- <td class = "text_info">F(TCPWM,0)</td>
+ <td class = "text_info">macrocell12</td>
+ <td class = "text_info">U(0,0)</td>
  <td class = "number">1</td>
- <td class = "text_info">\LEFT_MOTOR:cy_m0s8_tcpwm_1\</td>
- <td class = "text_info">\LEFT_MOTOR:cy_m0s8_tcpwm_1\/clock</td>
- <td class = "text_info">\LEFT_MOTOR:cy_m0s8_tcpwm_1\/line</td>
- <td class = "number">0.000</td>
+ <td class = "text_info">Net_92</td>
+ <td class = "text_info">Net_92/clock_0</td>
+ <td class = "text_info">Net_92/q</td>
+ <td class = "number">1.250</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
  <td class = "text_info"></td>
  <td class = "number">1</td>
- <td class = "text_info">Net_10</td>
- <td class = "text_info">\LEFT_MOTOR:cy_m0s8_tcpwm_1\/line</td>
+ <td class = "text_info">Net_92</td>
+ <td class = "text_info">Net_92/q</td>
  <td class = "text_info">ENA(0)/pin_input</td>
- <td class = "number">1.000</td>
+ <td class = "number">5.349</td>
 </tr>
 <tr> 
  <td class = "text_info">iocell2</td>
@@ -2252,7 +3579,7 @@ Clock_2</span>
 <tr> 
  <td class = "text_info">Net_64/q</td>
  <td class = "text_info">red(0)_PAD</td>
- <td class = "number">28.923</td>
+ <td class = "number">28.939</td>
 </tr>
 <tr class="sta_path">
 <td class="sta_path"  colspan="3">
@@ -2270,7 +3597,7 @@ Clock_2</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell6</td>
+ <td class = "text_info">macrocell16</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
  <td class = "text_info">Net_64</td>
@@ -2284,26 +3611,26 @@ Clock_2</span>
  <td class = "number">1</td>
  <td class = "text_info">Net_64</td>
  <td class = "text_info">Net_64/q</td>
- <td class = "text_info">Net_65/main_0</td>
- <td class = "number">2.302</td>
+ <td class = "text_info">Net_70/main_0</td>
+ <td class = "number">2.313</td>
 </tr>
 <tr> 
- <td class = "text_info">macrocell2</td>
+ <td class = "text_info">macrocell4</td>
  <td class = "text_info">U(0,1)</td>
  <td class = "number">1</td>
- <td class = "text_info">Net_65</td>
- <td class = "text_info">Net_65/main_0</td>
- <td class = "text_info">Net_65/q</td>
+ <td class = "text_info">Net_70</td>
+ <td class = "text_info">Net_70/main_0</td>
+ <td class = "text_info">Net_70/q</td>
  <td class = "number">3.350</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
  <td class = "text_info"></td>
  <td class = "number">1</td>
- <td class = "text_info">Net_65</td>
- <td class = "text_info">Net_65/q</td>
+ <td class = "text_info">Net_70</td>
+ <td class = "text_info">Net_70/q</td>
  <td class = "text_info">red(0)/pin_input</td>
- <td class = "number">5.909</td>
+ <td class = "number">5.914</td>
 </tr>
 <tr> 
  <td class = "text_info">iocell1</td>

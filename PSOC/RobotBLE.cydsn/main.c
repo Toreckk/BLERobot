@@ -11,6 +11,7 @@
 */
 #include "project.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 int8 speedLeft = 0;
 int8 speedRight = 0;
@@ -26,17 +27,17 @@ and stores it in the GATT database under the correct characteristic
 void updateSpeed(){
     if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
         return;
-    CYBLE_GATTS_HANDLE_VALUE_NTF_T spd;
+    CYBLE_GATTS_HANDLE_VALUE_NTF_T tempHandle;
     
-    spd.attrHandle = CYBLE_MOTOR_MOTORLEFT_CHAR_HANDLE;
-    spd.value.val = (uint8 *)&speedLeft;
-    spd.value.len = 1;
-    CyBle_GattsWriteAttributeValue(&spd, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
+    tempHandle.attrHandle = CYBLE_MOTOR_MOTORLEFT_CHAR_HANDLE;
+    tempHandle.value.val = (uint8 *)&speedLeft;
+    tempHandle.value.len = 1;
+    CyBle_GattsWriteAttributeValue(&tempHandle, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
     
-    spd.attrHandle = CYBLE_MOTOR_MOTORRIGHT_CHAR_HANDLE;
-    spd.value.val = (uint8 *)&speedRight;
-    spd.value.len = 1;
-    CyBle_GattsWriteAttributeValue(&spd, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
+    tempHandle.attrHandle = CYBLE_MOTOR_MOTORRIGHT_CHAR_HANDLE;
+    tempHandle.value.val = (uint8 *)&speedRight;
+    tempHandle.value.len = 1;
+    CyBle_GattsWriteAttributeValue(&tempHandle, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
     
 }
 /*
@@ -44,29 +45,32 @@ Called by the BLE stack handle when there is a write in the MotorLeft or MotorRi
 characteristic
 */
 void setSpeed(motor m, int speed){
-    int absSpeed = abs(speed);
     
     int dir;
+
+    //printf("%d\n",speed);
+    if(speed>=100) //100% -> speed limit
+        speed = 100;
+    if(speed<=-100)
+        speed = -100;
     
-    if(absSpeed == speed)
-        dir = 0;
-    else
+    if(speed>=0)
         dir = 1;
+    else
+        dir = 0;
     
-    if(absSpeed>100) //100% -> speed limit
-        return;
+    IN1_Write(dir);
+    IN2_Write(!dir);
+    IN3_Write(dir);
+    IN4_Write(!dir);
     
     switch(m){
         case LEFT_WHEEL:
-            IN1_Write(dir);
-            IN2_Write(!dir);
-            LEFT_MOTOR_WriteCompare(absSpeed);
+            LEFT_MOTOR_WriteCompare(speed);
             speedLeft = speed;
         break;
         case RIGHT_WHEEL:
-            IN3_Write(dir);
-            IN4_Write(!dir);
-            RIGHT_MOTOR_WriteCompare(absSpeed);
+            RIGHT_MOTOR_WriteCompare(speed);
             speedRight = speed;
         break;
     }
@@ -80,12 +84,18 @@ void BleCallBack(uint32 event, void* eventParam){
     switch(event)
     {
         case CYBLE_EVT_STACK_ON:
-        case CYBLE_EVT_GAP_DEVICE_CONNECTED:
+        case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
+            setSpeed(LEFT_WHEEL, 0);
+            setSpeed(RIGHT_WHEEL, 0);
+            updateSpeed();
             LED_PWM_Start();
         break;
             
+        case CYBLE_EVT_GAP_DEVICE_CONNECTED:
         case CYBLE_EVT_GATT_CONNECT_IND:
+            setSpeed(LEFT_WHEEL, 0);
+            setSpeed(RIGHT_WHEEL, 0);
             updateSpeed();
             LED_PWM_Stop();
         break;
@@ -101,11 +111,10 @@ void BleCallBack(uint32 event, void* eventParam){
                 setSpeed(RIGHT_WHEEL, (int8)wrReqParam->handleValPair.value.val[0]);               
             
             CyBle_GattsWriteRsp(cyBle_connHandle);
-            
         break;
             
         default:
-break;
+        break;
     }
     
 }
@@ -121,14 +130,13 @@ int main(void)
     //Initialize speed of each wheel to 0
     setSpeed(LEFT_WHEEL, 0);
     setSpeed(RIGHT_WHEEL, 0);
-    
+
     //Start the BLE
     CyBle_Start(BleCallBack);
-    
+
     for(;;)
     {
         CyBle_ProcessEvents();
-        CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
     }
 }
 

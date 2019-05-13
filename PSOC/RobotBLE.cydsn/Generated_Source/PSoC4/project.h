@@ -18,8 +18,8 @@
 #include "cydevice_trm.h"
 #include "cyfitter.h"
 #include "cydisabledsheets.h"
-#include "LEFT_MOTOR.h"
 #include "RIGHT_MOTOR.h"
+#include "LEFT_MOTOR.h"
 #include "Clock_1.h"
 #include "BLE_gatt.h"
 #include "BLE.h"
@@ -52,6 +52,7 @@
 #include "IN4.h"
 #include "IN4_aliases.h"
 #include "BLE_bless_isr.h"
+#include "cy_em_eeprom.h"
 #include "core_cm0_psoc4.h"
 #include "CyFlash.h"
 #include "CyLib.h"
@@ -59,7 +60,6 @@
 #include "cytypes.h"
 #include "cypins.h"
 #include "CyLFClk.h"
-#include "cy_em_eeprom.h"
 
 /*[]*/
 

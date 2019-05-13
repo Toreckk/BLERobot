@@ -45,10 +45,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:drawableStart="@drawable/ic_action_stop"
+            android:paddingLeft="30dip"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="70dp"
-            android:rotation="90"
-            android:text="Stop" />
+            android:rotation="90" />
 
         <ToggleButton
             android:id="@+id/buttonEqual"
