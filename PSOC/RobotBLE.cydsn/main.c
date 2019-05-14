@@ -50,26 +50,31 @@ void setSpeed(motor m, int speed){
 
     //printf("%d\n",speed);
     if(speed>=100) //100% -> speed limit
-        speed = 100;
+        speed = 0;
     if(speed<=-100)
-        speed = -100;
+        speed = 0;
     
     if(speed>=0)
         dir = 1;
     else
         dir = 0;
     
-    IN1_Write(dir);
-    IN2_Write(!dir);
-    IN3_Write(dir);
-    IN4_Write(!dir);
+    
     
     switch(m){
         case LEFT_WHEEL:
+            IN1_Write(dir);
+            IN2_Write(!dir);
+            IN3_Write(dir);
+            IN4_Write(!dir);
             LEFT_MOTOR_WriteCompare(speed);
             speedLeft = speed;
         break;
         case RIGHT_WHEEL:
+            IN1_Write(dir);
+            IN2_Write(!dir);
+            IN3_Write(dir);
+            IN4_Write(!dir);
             RIGHT_MOTOR_WriteCompare(speed);
             speedRight = speed;
         break;
@@ -86,18 +91,12 @@ void BleCallBack(uint32 event, void* eventParam){
         case CYBLE_EVT_STACK_ON:
         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
-            setSpeed(LEFT_WHEEL, 0);
-            setSpeed(RIGHT_WHEEL, 0);
-            updateSpeed();
             LED_PWM_Start();
         break;
             
-        case CYBLE_EVT_GAP_DEVICE_CONNECTED:
         case CYBLE_EVT_GATT_CONNECT_IND:
-            setSpeed(LEFT_WHEEL, 0);
-            setSpeed(RIGHT_WHEEL, 0);
             updateSpeed();
-            LED_PWM_Stop();
+            LED_PWM_Stop();      
         break;
             
         case CYBLE_EVT_GATTS_WRITE_REQ:

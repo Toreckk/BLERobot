@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
   29:Generated_Source\PSoC4/cyfitter_cfg.c **** #if defined(__GNUC__) || defined(__ARMCC_VERSION)
   30:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYPACKED 
   31:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 2
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 2
 
 
   32:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYALIGNED __attribute__ ((aligned))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
   86:Generated_Source\PSoC4/cyfitter_cfg.c **** }
   87:Generated_Source\PSoC4/cyfitter_cfg.c **** CY_CFG_UNUSED
   88:Generated_Source\PSoC4/cyfitter_cfg.c **** static void CYCONFIGCPYCODE(void *dest, const void *src, size_t n);
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 3
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 3
 
 
   89:Generated_Source\PSoC4/cyfitter_cfg.c **** CY_CFG_UNUSED
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  143:Generated_Source\PSoC4/cyfitter_cfg.c ****     /* `#END` */
  144:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  145:Generated_Source\PSoC4/cyfitter_cfg.c ****     while(1) {}
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 4
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 4
 
 
  146:Generated_Source\PSoC4/cyfitter_cfg.c **** #endif /* CY_CFG_CLOCK_STARTUP_ERROR_CALLBACK */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  179:Generated_Source\PSoC4/cyfitter_cfg.c **** 	{
  180:Generated_Source\PSoC4/cyfitter_cfg.c **** 		uint32 baseAddr = addr_table[i];
   48              		.loc 1 180 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 5
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 5
 
 
   49 0008 BB00     		lsls	r3, r7, #2
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
   90              		@ sp needed
   91              	.LVL10:
   92              	.LVL11:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 6
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 6
 
 
   93 0030 F0BD     		pop	{r4, r5, r6, r7, pc}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  234:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/*Set XTAL(ECO) divider*/
  235:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_BLE_BLESS_XTAL_CLK_DIV_CONFIG), 0x00000000u);
  236:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Disable Crystal Stable Interrupt before enabling ECO */
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 7
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 7
 
 
  237:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void*)CYREG_BLE_BLESS_LL_DSM_CTRL, CY_GET_REG32((void*)CYREG_BLE_BLESS_LL_DSM_CTRL) 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  108              		@ link register save eliminated.
  287:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_XTND_REG32((void CYFAR *)CYREG_CTBM0_DFT_CTRL, 0x00000003u);
  109              		.loc 1 287 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 8
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 8
 
 
  110 0000 0323     		movs	r3, #3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  158              	.LFE2:
  159              		.size	CYMEMZERO, .-CYMEMZERO
  160              		.section	.psocinit,"ax",%progbits
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 9
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 9
 
 
  161              		.align	2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  206 002c 214A     		ldr	r2, .L11+20
  207 002e 1168     		ldr	r1, [r2]
  208 0030 0223     		movs	r3, #2
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 10
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 10
 
 
  209 0032 0B43     		orrs	r3, r1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  253 0076 1A60     		str	r2, [r3]
  252:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  254              		.loc 1 252 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 11
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 11
 
 
  255 0078 8022     		movs	r2, #128
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  303 00ec 00010B40 		.word	1074462976
  304 00f0 38010140 		.word	1073807672
  305 00f4 30010140 		.word	1073807664
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 12
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 12
 
 
  306 00f8 00000000 		.word	CySysWdtIsr
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  333 0100 0022     		movs	r2, #0
  334 0102 2C4B     		ldr	r3, .L16
  335 0104 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 13
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 13
 
 
  336              	.LVL23:
@@ -728,10 +728,10 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  320:Generated_Source\PSoC4/cyfitter_cfg.c **** 		static const uint32 CYCODE cy_cfg_addr_table[] = {
  321:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F0003u, /* Base address: 0x400F0000 Count: 3 */
  322:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F302Bu, /* Base address: 0x400F3000 Count: 43 */
- 323:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F311Eu, /* Base address: 0x400F3100 Count: 30 */
+ 323:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F311Du, /* Base address: 0x400F3100 Count: 29 */
  324:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F3252u, /* Base address: 0x400F3200 Count: 82 */
- 325:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F332Du, /* Base address: 0x400F3300 Count: 45 */
- 326:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F4205u, /* Base address: 0x400F4200 Count: 5 */
+ 325:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F332Cu, /* Base address: 0x400F3300 Count: 44 */
+ 326:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F4206u, /* Base address: 0x400F4200 Count: 6 */
  327:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F4306u, /* Base address: 0x400F4300 Count: 6 */
  328:Generated_Source\PSoC4/cyfitter_cfg.c **** 			0x400F6002u, /* Base address: 0x400F6000 Count: 2 */
  329:Generated_Source\PSoC4/cyfitter_cfg.c **** 		};
@@ -751,9 +751,9 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  343:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x32u, 0x02u},
  344:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x33u, 0x02u},
  345:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x34u, 0x08u},
- 346:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x35u, 0x01u},
- 347:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x36u, 0x01u},
- 348:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x3Fu, 0x14u},
+ 346:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x36u, 0x01u},
+ 347:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x37u, 0x01u},
+ 348:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x3Fu, 0x44u},
  349:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x40u, 0x20u},
  350:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x41u, 0x06u},
  351:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x45u, 0xD1u},
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  370:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x62u, 0xC0u},
  371:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x64u, 0x40u},
  372:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x65u, 0x40u},
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 14
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 14
 
 
  373:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x66u, 0xC0u},
@@ -794,7 +794,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  383:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x19u, 0x80u},
  384:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Au, 0x10u},
  385:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Bu, 0x02u},
- 386:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x22u, 0x24u},
+ 386:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x22u, 0x44u},
  387:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x2Bu, 0x02u},
  388:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x30u, 0x08u},
  389:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x38u, 0x04u},
@@ -805,7 +805,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  394:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x59u, 0x82u},
  395:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Au, 0x08u},
  396:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x71u, 0x02u},
- 397:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x86u, 0x20u},
+ 397:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Eu, 0x40u},
  398:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC0u, 0x04u},
  399:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC2u, 0x0Cu},
  400:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC4u, 0x04u},
@@ -815,185 +815,184 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  404:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD0u, 0x04u},
  405:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD2u, 0x04u},
  406:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD6u, 0x0Bu},
- 407:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE4u, 0x02u},
- 408:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x08u, 0x01u},
- 409:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x0Fu, 0x01u},
- 410:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Au, 0x07u},
- 411:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Eu, 0x04u},
- 412:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x23u, 0x01u},
- 413:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x2Eu, 0x08u},
- 414:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x30u, 0x01u},
- 415:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x32u, 0x04u},
- 416:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x34u, 0x02u},
- 417:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x35u, 0x01u},
- 418:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x36u, 0x08u},
- 419:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x3Fu, 0x10u},
- 420:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x40u, 0x10u},
- 421:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x41u, 0x05u},
- 422:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x45u, 0xD1u},
- 423:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x46u, 0x02u},
- 424:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x48u, 0x07u},
- 425:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x49u, 0xFFu},
- 426:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Au, 0xFFu},
- 427:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Bu, 0xFFu},
- 428:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Du, 0xA0u},
- 429:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Fu, 0x04u},
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 15
+ 407:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x08u, 0x01u},
+ 408:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x0Fu, 0x01u},
+ 409:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Au, 0x07u},
+ 410:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Eu, 0x04u},
+ 411:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x23u, 0x01u},
+ 412:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x2Eu, 0x08u},
+ 413:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x30u, 0x01u},
+ 414:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x32u, 0x04u},
+ 415:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x34u, 0x02u},
+ 416:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x35u, 0x01u},
+ 417:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x36u, 0x08u},
+ 418:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x3Fu, 0x10u},
+ 419:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x40u, 0x10u},
+ 420:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x41u, 0x05u},
+ 421:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x45u, 0xD1u},
+ 422:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x46u, 0x02u},
+ 423:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x48u, 0x07u},
+ 424:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x49u, 0xFFu},
+ 425:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Au, 0xFFu},
+ 426:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Bu, 0xFFu},
+ 427:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Du, 0xA0u},
+ 428:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Fu, 0x04u},
+ 429:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x50u, 0x18u},
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 15
 
 
- 430:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x50u, 0x18u},
- 431:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x52u, 0x80u},
- 432:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x54u, 0x05u},
- 433:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x58u, 0x04u},
- 434:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x59u, 0x04u},
- 435:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Au, 0x04u},
- 436:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Bu, 0x04u},
- 437:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Cu, 0x01u},
- 438:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Du, 0x11u},
- 439:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Fu, 0x01u},
- 440:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x60u, 0x40u},
- 441:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x62u, 0xC0u},
- 442:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x64u, 0x40u},
- 443:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x65u, 0x40u},
- 444:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x66u, 0xC0u},
- 445:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x68u, 0xC0u},
- 446:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x6Au, 0xC0u},
- 447:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x6Cu, 0xC0u},
- 448:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x6Eu, 0xC0u},
- 449:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Eu, 0x04u},
- 450:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Fu, 0x01u},
- 451:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x92u, 0x08u},
- 452:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x93u, 0x01u},
- 453:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x94u, 0x01u},
- 454:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xA6u, 0x07u},
- 455:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB0u, 0x08u},
- 456:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB2u, 0x02u},
- 457:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB3u, 0x01u},
- 458:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB4u, 0x04u},
- 459:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB6u, 0x01u},
- 460:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xBFu, 0x04u},
- 461:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC0u, 0x40u},
- 462:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC1u, 0x05u},
- 463:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC5u, 0xD1u},
- 464:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC7u, 0x20u},
- 465:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC8u, 0x23u},
- 466:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC9u, 0xFFu},
- 467:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCAu, 0xFFu},
- 468:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCBu, 0xFFu},
- 469:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCDu, 0xA0u},
- 470:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCFu, 0x04u},
- 471:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD0u, 0x18u},
- 472:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD2u, 0x80u},
- 473:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD4u, 0x05u},
- 474:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD8u, 0x04u},
- 475:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD9u, 0x04u},
- 476:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDAu, 0x04u},
- 477:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDBu, 0x04u},
- 478:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDCu, 0x01u},
- 479:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDDu, 0x11u},
- 480:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDFu, 0x01u},
- 481:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE0u, 0x40u},
- 482:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE2u, 0xC0u},
- 483:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE4u, 0x40u},
- 484:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE5u, 0x40u},
- 485:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE6u, 0xC0u},
- 486:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE8u, 0xC0u},
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 16
+ 430:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x52u, 0x80u},
+ 431:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x54u, 0x05u},
+ 432:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x58u, 0x04u},
+ 433:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x59u, 0x04u},
+ 434:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Au, 0x04u},
+ 435:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Bu, 0x04u},
+ 436:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Cu, 0x01u},
+ 437:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Du, 0x11u},
+ 438:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Fu, 0x01u},
+ 439:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x60u, 0x40u},
+ 440:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x62u, 0xC0u},
+ 441:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x64u, 0x40u},
+ 442:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x65u, 0x40u},
+ 443:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x66u, 0xC0u},
+ 444:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x68u, 0xC0u},
+ 445:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x6Au, 0xC0u},
+ 446:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x6Cu, 0xC0u},
+ 447:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x6Eu, 0xC0u},
+ 448:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Eu, 0x04u},
+ 449:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Fu, 0x01u},
+ 450:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x92u, 0x08u},
+ 451:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x93u, 0x01u},
+ 452:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x94u, 0x01u},
+ 453:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xA6u, 0x07u},
+ 454:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB0u, 0x08u},
+ 455:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB2u, 0x02u},
+ 456:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB3u, 0x01u},
+ 457:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB4u, 0x04u},
+ 458:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB6u, 0x01u},
+ 459:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xBFu, 0x04u},
+ 460:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC0u, 0x40u},
+ 461:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC1u, 0x05u},
+ 462:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC5u, 0xD1u},
+ 463:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC7u, 0x20u},
+ 464:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC8u, 0x23u},
+ 465:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC9u, 0xFFu},
+ 466:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCAu, 0xFFu},
+ 467:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCBu, 0xFFu},
+ 468:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCDu, 0xA0u},
+ 469:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCFu, 0x04u},
+ 470:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD0u, 0x18u},
+ 471:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD2u, 0x80u},
+ 472:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD4u, 0x05u},
+ 473:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD8u, 0x04u},
+ 474:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD9u, 0x04u},
+ 475:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDAu, 0x04u},
+ 476:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDBu, 0x04u},
+ 477:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDCu, 0x01u},
+ 478:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDDu, 0x11u},
+ 479:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xDFu, 0x01u},
+ 480:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE0u, 0x40u},
+ 481:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE2u, 0xC0u},
+ 482:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE4u, 0x40u},
+ 483:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE5u, 0x40u},
+ 484:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE6u, 0xC0u},
+ 485:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE8u, 0xC0u},
+ 486:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xEAu, 0xC0u},
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 16
 
 
- 487:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xEAu, 0xC0u},
- 488:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xECu, 0xC0u},
- 489:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xEEu, 0xC0u},
- 490:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x00u, 0x40u},
- 491:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x05u, 0x10u},
- 492:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x09u, 0x02u},
- 493:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x0Au, 0x10u},
- 494:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x0Du, 0x80u},
- 495:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x0Fu, 0x08u},
- 496:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x10u, 0x20u},
- 497:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x17u, 0x80u},
- 498:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x18u, 0x44u},
- 499:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x19u, 0x40u},
- 500:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Au, 0x10u},
- 501:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Du, 0x90u},
- 502:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Eu, 0x40u},
- 503:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Fu, 0x88u},
- 504:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x22u, 0x04u},
- 505:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x27u, 0x08u},
- 506:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x2Fu, 0x80u},
- 507:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x30u, 0x02u},
- 508:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x38u, 0x40u},
- 509:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x3Fu, 0x80u},
- 510:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x40u, 0x40u},
- 511:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x45u, 0x80u},
- 512:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x48u, 0x22u},
- 513:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x49u, 0x01u},
- 514:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Fu, 0x89u},
- 515:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x50u, 0x02u},
- 516:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x57u, 0x40u},
- 517:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x59u, 0x41u},
- 518:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Au, 0x08u},
- 519:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Eu, 0x40u},
- 520:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Fu, 0x09u},
- 521:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x71u, 0x02u},
- 522:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x77u, 0x80u},
- 523:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Cu, 0x04u},
- 524:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xA7u, 0x08u},
- 525:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB7u, 0x08u},
- 526:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC0u, 0x41u},
- 527:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC2u, 0xCCu},
- 528:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC4u, 0x84u},
- 529:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCAu, 0x80u},
- 530:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCCu, 0x01u},
- 531:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCEu, 0x18u},
- 532:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD0u, 0x11u},
- 533:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD2u, 0x18u},
- 534:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD6u, 0xDBu},
- 535:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x50u, 0x04u},
- 536:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Fu, 0x02u},
- 537:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x87u, 0x02u},
- 538:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD4u, 0x04u},
- 539:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD6u, 0x01u},
- 540:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x54u, 0x02u},
- 541:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Cu, 0x02u},
- 542:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xB4u, 0x04u},
- 543:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD6u, 0x04u},
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 17
+ 487:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xECu, 0xC0u},
+ 488:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xEEu, 0xC0u},
+ 489:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x00u, 0x40u},
+ 490:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x05u, 0x10u},
+ 491:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x09u, 0x02u},
+ 492:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x0Au, 0x10u},
+ 493:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x0Du, 0x80u},
+ 494:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x0Fu, 0x08u},
+ 495:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x10u, 0x20u},
+ 496:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x17u, 0x80u},
+ 497:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x18u, 0x44u},
+ 498:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x19u, 0x40u},
+ 499:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Au, 0x10u},
+ 500:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Du, 0x94u},
+ 501:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Eu, 0x40u},
+ 502:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x1Fu, 0x80u},
+ 503:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x22u, 0x04u},
+ 504:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x27u, 0x08u},
+ 505:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x2Fu, 0x80u},
+ 506:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x30u, 0x02u},
+ 507:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x38u, 0x40u},
+ 508:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x3Fu, 0x80u},
+ 509:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x40u, 0x40u},
+ 510:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x45u, 0x80u},
+ 511:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x48u, 0x22u},
+ 512:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x49u, 0x01u},
+ 513:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x4Fu, 0x89u},
+ 514:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x50u, 0x02u},
+ 515:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x57u, 0x40u},
+ 516:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x59u, 0x41u},
+ 517:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Au, 0x08u},
+ 518:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Eu, 0x40u},
+ 519:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Fu, 0x09u},
+ 520:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x71u, 0x02u},
+ 521:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x77u, 0x80u},
+ 522:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Cu, 0x04u},
+ 523:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Du, 0x04u},
+ 524:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC0u, 0x41u},
+ 525:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC2u, 0xCCu},
+ 526:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xC4u, 0x84u},
+ 527:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCAu, 0x80u},
+ 528:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCCu, 0x01u},
+ 529:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xCEu, 0x18u},
+ 530:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD0u, 0x11u},
+ 531:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD2u, 0x18u},
+ 532:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD6u, 0xDBu},
+ 533:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Au, 0x80u},
+ 534:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x60u, 0x10u},
+ 535:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Cu, 0x10u},
+ 536:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD4u, 0x01u},
+ 537:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD8u, 0x02u},
+ 538:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE0u, 0x08u},
+ 539:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x56u, 0x20u},
+ 540:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x8Eu, 0x60u},
+ 541:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x96u, 0x80u},
+ 542:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xD4u, 0x02u},
+ 543:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE0u, 0x08u},
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 17
 
 
  544:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE4u, 0x02u},
- 545:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0xE8u, 0x08u},
- 546:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x01u, 0x0Au},
- 547:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x10u, 0x0Au},
- 548:Generated_Source\PSoC4/cyfitter_cfg.c **** 		};
+ 545:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x01u, 0x0Au},
+ 546:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x10u, 0x0Au},
+ 547:Generated_Source\PSoC4/cyfitter_cfg.c **** 		};
+ 548:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  549:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  550:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 551:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 552:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CYPACKED typedef struct {
- 553:Generated_Source\PSoC4/cyfitter_cfg.c **** 			void CYFAR *address;
- 554:Generated_Source\PSoC4/cyfitter_cfg.c **** 			uint16 size;
- 555:Generated_Source\PSoC4/cyfitter_cfg.c **** 		} CYPACKED_ATTR cfg_memset_t;
- 556:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 557:Generated_Source\PSoC4/cyfitter_cfg.c **** 		static const cfg_memset_t CYCODE cfg_memset_list[] = {
- 558:Generated_Source\PSoC4/cyfitter_cfg.c **** 			/* address, size */
- 559:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UDB_P0_U0_BASE), 1024u},
- 560:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UDB_DSI0_BASE), 1024u},
- 561:Generated_Source\PSoC4/cyfitter_cfg.c **** 		};
- 562:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 563:Generated_Source\PSoC4/cyfitter_cfg.c **** 		uint8 CYDATA i;
- 564:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 565:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* Zero out critical memory blocks before beginning configuration */
- 566:Generated_Source\PSoC4/cyfitter_cfg.c **** 		for (i = 0u; i < (sizeof(cfg_memset_list)/sizeof(cfg_memset_list[0])); i++)
- 338              		.loc 1 566 0
+ 551:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CYPACKED typedef struct {
+ 552:Generated_Source\PSoC4/cyfitter_cfg.c **** 			void CYFAR *address;
+ 553:Generated_Source\PSoC4/cyfitter_cfg.c **** 			uint16 size;
+ 554:Generated_Source\PSoC4/cyfitter_cfg.c **** 		} CYPACKED_ATTR cfg_memset_t;
+ 555:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 556:Generated_Source\PSoC4/cyfitter_cfg.c **** 		static const cfg_memset_t CYCODE cfg_memset_list[] = {
+ 557:Generated_Source\PSoC4/cyfitter_cfg.c **** 			/* address, size */
+ 558:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UDB_P0_U0_BASE), 1024u},
+ 559:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UDB_DSI0_BASE), 1024u},
+ 560:Generated_Source\PSoC4/cyfitter_cfg.c **** 		};
+ 561:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 562:Generated_Source\PSoC4/cyfitter_cfg.c **** 		uint8 CYDATA i;
+ 563:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 564:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* Zero out critical memory blocks before beginning configuration */
+ 565:Generated_Source\PSoC4/cyfitter_cfg.c **** 		for (i = 0u; i < (sizeof(cfg_memset_list)/sizeof(cfg_memset_list[0])); i++)
+ 338              		.loc 1 565 0
  339 0106 0024     		movs	r4, #0
  340 0108 0FE0     		b	.L14
  341              	.LVL24:
  342              	.L15:
  343              	.LBB4:
- 567:Generated_Source\PSoC4/cyfitter_cfg.c **** 		{
- 568:Generated_Source\PSoC4/cyfitter_cfg.c **** 			const cfg_memset_t CYCODE * CYDATA ms = &cfg_memset_list[i];
- 569:Generated_Source\PSoC4/cyfitter_cfg.c **** 			CYMEMZERO(ms->address, (size_t)(uint32)(ms->size));
- 344              		.loc 1 569 0 discriminator 3
+ 566:Generated_Source\PSoC4/cyfitter_cfg.c **** 		{
+ 567:Generated_Source\PSoC4/cyfitter_cfg.c **** 			const cfg_memset_t CYCODE * CYDATA ms = &cfg_memset_list[i];
+ 568:Generated_Source\PSoC4/cyfitter_cfg.c **** 			CYMEMZERO(ms->address, (size_t)(uint32)(ms->size));
+ 344              		.loc 1 568 0 discriminator 3
  345 010a 2B48     		ldr	r0, .L16+4
  346 010c 6200     		lsls	r2, r4, #1
  347 010e 1319     		adds	r3, r2, r4
@@ -1009,86 +1008,86 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  357 0122 FFF7FEFF 		bl	CYMEMZERO
  358              	.LVL25:
  359              	.LBE4:
- 566:Generated_Source\PSoC4/cyfitter_cfg.c **** 		{
- 360              		.loc 1 566 0 discriminator 3
+ 565:Generated_Source\PSoC4/cyfitter_cfg.c **** 		{
+ 360              		.loc 1 565 0 discriminator 3
  361 0126 0134     		adds	r4, r4, #1
  362              	.LVL26:
  363 0128 E4B2     		uxtb	r4, r4
  364              	.LVL27:
  365              	.L14:
- 566:Generated_Source\PSoC4/cyfitter_cfg.c **** 		{
- 366              		.loc 1 566 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 18
-
-
+ 565:Generated_Source\PSoC4/cyfitter_cfg.c **** 		{
+ 366              		.loc 1 565 0 is_stmt 0 discriminator 1
  367 012a 012C     		cmp	r4, #1
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 18
+
+
  368 012c EDD9     		bls	.L15
- 570:Generated_Source\PSoC4/cyfitter_cfg.c **** 		}
- 571:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 572:Generated_Source\PSoC4/cyfitter_cfg.c **** 		cfg_write_bytes32(cy_cfg_addr_table, cy_cfg_data_table);
- 369              		.loc 1 572 0 is_stmt 1
+ 569:Generated_Source\PSoC4/cyfitter_cfg.c **** 		}
+ 570:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 571:Generated_Source\PSoC4/cyfitter_cfg.c **** 		cfg_write_bytes32(cy_cfg_addr_table, cy_cfg_data_table);
+ 369              		.loc 1 571 0 is_stmt 1
  370 012e 2249     		ldr	r1, .L16+4
  371 0130 0C31     		adds	r1, r1, #12
  372 0132 2248     		ldr	r0, .L16+8
  373 0134 3C30     		adds	r0, r0, #60
  374 0136 FFF7FEFF 		bl	cfg_write_bytes32
  375              	.LVL28:
- 573:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 574:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* HSIOM Starting address: CYDEV_HSIOM_BASE */
- 575:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_HSIOM_BASE), 0xEE000000u);
- 376              		.loc 1 575 0
+ 572:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 573:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* HSIOM Starting address: CYDEV_HSIOM_BASE */
+ 574:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_HSIOM_BASE), 0xEE000000u);
+ 376              		.loc 1 574 0
  377 013a EE22     		movs	r2, #238
  378 013c 1206     		lsls	r2, r2, #24
  379 013e 204B     		ldr	r3, .L16+12
  380 0140 1A60     		str	r2, [r3]
- 576:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL2), 0x03000003u);
- 381              		.loc 1 576 0
+ 575:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL2), 0x03000003u);
+ 381              		.loc 1 575 0
  382 0142 204A     		ldr	r2, .L16+16
  383 0144 204B     		ldr	r3, .L16+20
  384 0146 1A60     		str	r2, [r3]
- 577:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL3), 0x00000003u);
- 385              		.loc 1 577 0
+ 576:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL3), 0x00000003u);
+ 385              		.loc 1 576 0
  386 0148 0322     		movs	r2, #3
  387 014a 204B     		ldr	r3, .L16+24
  388 014c 1A60     		str	r2, [r3]
- 578:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 579:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_0 Starting address: CYDEV_UDB_PA0_BASE */
- 580:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA0_BASE), 0x00990000u);
- 389              		.loc 1 580 0
+ 577:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 578:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_0 Starting address: CYDEV_UDB_PA0_BASE */
+ 579:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA0_BASE), 0x00990000u);
+ 389              		.loc 1 579 0
  390 014e 9923     		movs	r3, #153
  391 0150 1B04     		lsls	r3, r3, #16
  392 0152 1F4A     		ldr	r2, .L16+28
  393 0154 1360     		str	r3, [r2]
- 581:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 582:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_2 Starting address: CYDEV_UDB_PA2_BASE */
- 583:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA2_BASE), 0x00990000u);
- 394              		.loc 1 583 0
+ 580:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 581:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_2 Starting address: CYDEV_UDB_PA2_BASE */
+ 582:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA2_BASE), 0x00990000u);
+ 394              		.loc 1 582 0
  395 0156 1F4A     		ldr	r2, .L16+32
  396 0158 1360     		str	r3, [r2]
- 584:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYREG_UDB_PA2_CFG8), 0x10540000u);
- 397              		.loc 1 584 0
+ 583:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYREG_UDB_PA2_CFG8), 0x20020000u);
+ 397              		.loc 1 583 0
  398 015a 1F49     		ldr	r1, .L16+36
  399 015c 1F4A     		ldr	r2, .L16+40
  400 015e 1160     		str	r1, [r2]
- 585:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 586:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_3 Starting address: CYDEV_UDB_PA3_BASE */
- 587:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA3_BASE), 0x00990000u);
- 401              		.loc 1 587 0
+ 584:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 585:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* UDB_PA_3 Starting address: CYDEV_UDB_PA3_BASE */
+ 586:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYDEV_UDB_PA3_BASE), 0x00990000u);
+ 401              		.loc 1 586 0
  402 0160 1F4A     		ldr	r2, .L16+44
  403 0162 1360     		str	r3, [r2]
- 588:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYREG_UDB_PA3_CFG8), 0x00030000u);
- 404              		.loc 1 588 0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 19
+ 587:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_REG32((void *)(CYREG_UDB_PA3_CFG8), 0x00010000u);
+ 404              		.loc 1 587 0
+ 405 0164 8022     		movs	r2, #128
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 19
 
 
- 405 0164 C022     		movs	r2, #192
- 406 0166 9202     		lsls	r2, r2, #10
+ 406 0166 5202     		lsls	r2, r2, #9
  407 0168 1E4B     		ldr	r3, .L16+48
  408 016a 1A60     		str	r2, [r3]
- 589:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 590:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* Enable UDB array and digital routing */
- 591:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_XTND_REG8((void *)CYREG_UDB_UDBIF_WAIT_CFG, (uint8)((CY_GET_XTND_REG8((void *)CYREG_UDB_UD
- 409              		.loc 1 591 0
+ 588:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 589:Generated_Source\PSoC4/cyfitter_cfg.c **** 		/* Enable UDB array and digital routing */
+ 590:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_XTND_REG8((void *)CYREG_UDB_UDBIF_WAIT_CFG, (uint8)((CY_GET_XTND_REG8((void *)CYREG_UDB_UD
+ 409              		.loc 1 590 0
  410 016c 1E49     		ldr	r1, .L16+52
  411 016e 0B78     		ldrb	r3, [r1]
  412 0170 3C22     		movs	r2, #60
@@ -1097,8 +1096,8 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  415 0176 1343     		orrs	r3, r2
  416 0178 DBB2     		uxtb	r3, r3
  417 017a 0B70     		strb	r3, [r1]
- 592:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_XTND_REG8((void *)CYREG_UDB_UDBIF_BANK_CTL, (uint8)(CY_GET_XTND_REG8((void *)CYREG_UDB_UDB
- 418              		.loc 1 592 0
+ 591:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CY_SET_XTND_REG8((void *)CYREG_UDB_UDBIF_BANK_CTL, (uint8)(CY_GET_XTND_REG8((void *)CYREG_UDB_UDB
+ 418              		.loc 1 591 0
  419 017c 1B4A     		ldr	r2, .L16+56
  420 017e 1178     		ldrb	r1, [r2]
  421 0180 1623     		movs	r3, #22
@@ -1106,60 +1105,60 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  423 0184 DBB2     		uxtb	r3, r3
  424 0186 1370     		strb	r3, [r2]
  425              	.LBE3:
- 593:Generated_Source\PSoC4/cyfitter_cfg.c **** 	}
- 594:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 595:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Perform second pass device configuration. These items must be configured in specific order afte
- 596:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_0 Starting address: CYDEV_GPIO_PRT0_BASE */
- 597:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC), 0x00D80000u);
- 426              		.loc 1 597 0
+ 592:Generated_Source\PSoC4/cyfitter_cfg.c **** 	}
+ 593:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 594:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Perform second pass device configuration. These items must be configured in specific order afte
+ 595:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_0 Starting address: CYDEV_GPIO_PRT0_BASE */
+ 596:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC), 0x00D80000u);
+ 426              		.loc 1 596 0
  427 0188 D822     		movs	r2, #216
  428 018a 1204     		lsls	r2, r2, #16
  429 018c 184B     		ldr	r3, .L16+60
  430 018e 1A60     		str	r2, [r3]
- 598:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 599:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_2 Starting address: CYDEV_GPIO_PRT2_BASE */
- 600:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYDEV_GPIO_PRT2_BASE), 0x00000041u);
- 431              		.loc 1 600 0
+ 597:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 598:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_2 Starting address: CYDEV_GPIO_PRT2_BASE */
+ 599:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYDEV_GPIO_PRT2_BASE), 0x00000041u);
+ 431              		.loc 1 599 0
  432 0190 4122     		movs	r2, #65
  433 0192 184B     		ldr	r3, .L16+64
  434 0194 1A60     		str	r2, [r3]
- 601:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT2_PC), 0x001801B6u);
- 435              		.loc 1 601 0
+ 600:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT2_PC), 0x001801B6u);
+ 435              		.loc 1 600 0
  436 0196 184A     		ldr	r2, .L16+68
  437 0198 184B     		ldr	r3, .L16+72
  438 019a 1A60     		str	r2, [r3]
- 602:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 603:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_3 Starting address: CYDEV_GPIO_PRT3_BASE */
- 604:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYDEV_GPIO_PRT3_BASE), 0x00000001u);
- 439              		.loc 1 604 0
+ 601:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 602:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_3 Starting address: CYDEV_GPIO_PRT3_BASE */
+ 603:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYDEV_GPIO_PRT3_BASE), 0x00000001u);
+ 439              		.loc 1 603 0
  440 019c 0122     		movs	r2, #1
  441 019e 184B     		ldr	r3, .L16+76
  442 01a0 1A60     		str	r2, [r3]
- 605:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x000001B6u);
- 443              		.loc 1 605 0
+ 604:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x000001B6u);
+ 443              		.loc 1 604 0
  444 01a2 B632     		adds	r2, r2, #182
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 20
-
-
  445 01a4 FF32     		adds	r2, r2, #255
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 20
+
+
  446 01a6 174B     		ldr	r3, .L16+80
  447 01a8 1A60     		str	r2, [r3]
+ 605:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  606:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 607:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 608:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Setup clocks based on selections from Clock DWR */
- 609:Generated_Source\PSoC4/cyfitter_cfg.c **** 	ClockSetup();
- 448              		.loc 1 609 0
+ 607:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Setup clocks based on selections from Clock DWR */
+ 608:Generated_Source\PSoC4/cyfitter_cfg.c **** 	ClockSetup();
+ 448              		.loc 1 608 0
  449 01aa FFF729FF 		bl	ClockSetup
  450              	.LVL29:
- 610:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 611:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Perform basic analog initialization to defaults */
- 612:Generated_Source\PSoC4/cyfitter_cfg.c **** 	AnalogSetDefault();
- 451              		.loc 1 612 0
+ 609:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 610:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Perform basic analog initialization to defaults */
+ 611:Generated_Source\PSoC4/cyfitter_cfg.c **** 	AnalogSetDefault();
+ 451              		.loc 1 611 0
  452 01ae FFF7FEFF 		bl	AnalogSetDefault
  453              	.LVL30:
- 613:Generated_Source\PSoC4/cyfitter_cfg.c **** 
- 614:Generated_Source\PSoC4/cyfitter_cfg.c **** }
- 454              		.loc 1 614 0
+ 612:Generated_Source\PSoC4/cyfitter_cfg.c **** 
+ 613:Generated_Source\PSoC4/cyfitter_cfg.c **** }
+ 454              		.loc 1 613 0
  455              		@ sp needed
  456              	.LVL31:
  457 01b2 10BD     		pop	{r4, pc}
@@ -1175,7 +1174,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  467 01cc 00030240 		.word	1073873664
  468 01d0 00500F40 		.word	1074745344
  469 01d4 20500F40 		.word	1074745376
- 470 01d8 00005410 		.word	273940480
+ 470 01d8 00000220 		.word	537001984
  471 01dc 28500F40 		.word	1074745384
  472 01e0 30500F40 		.word	1074745392
  473 01e4 38500F40 		.word	1074745400
@@ -1194,19 +1193,19 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  486              		.align	2
  487              		.set	.LANCHOR0,. + 0
  488              		.set	.LANCHOR1,. + 384
- 489              		.type	cfg_memset_list.4907, %object
- 490              		.size	cfg_memset_list.4907, 12
- 491              	cfg_memset_list.4907:
+ 489              		.type	cfg_memset_list.4916, %object
+ 490              		.size	cfg_memset_list.4916, 12
+ 491              	cfg_memset_list.4916:
  492 0000 00300F40 		.word	1074737152
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 21
-
-
  493 0004 0004     		.short	1024
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 21
+
+
  494 0006 00400F40 		.4byte	1074741248
  495 000a 0004     		.short	1024
- 496              		.type	cy_cfg_data_table.4902, %object
- 497              		.size	cy_cfg_data_table.4902, 432
- 498              	cy_cfg_data_table.4902:
+ 496              		.type	cy_cfg_data_table.4911, %object
+ 497              		.size	cy_cfg_data_table.4911, 430
+ 498              	cy_cfg_data_table.4911:
  499 000c 80       		.byte	-128
  500 000d 0D       		.byte	13
  501 000e 82       		.byte	-126
@@ -1235,12 +1234,12 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  524 0025 02       		.byte	2
  525 0026 34       		.byte	52
  526 0027 08       		.byte	8
- 527 0028 35       		.byte	53
+ 527 0028 36       		.byte	54
  528 0029 01       		.byte	1
- 529 002a 36       		.byte	54
+ 529 002a 37       		.byte	55
  530 002b 01       		.byte	1
  531 002c 3F       		.byte	63
- 532 002d 14       		.byte	20
+ 532 002d 44       		.byte	68
  533 002e 40       		.byte	64
  534 002f 20       		.byte	32
  535 0030 41       		.byte	65
@@ -1258,10 +1257,10 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  547 003c 4B       		.byte	75
  548 003d FF       		.byte	-1
  549 003e 4D       		.byte	77
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 22
-
-
  550 003f A0       		.byte	-96
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 22
+
+
  551 0040 4F       		.byte	79
  552 0041 04       		.byte	4
  553 0042 50       		.byte	80
@@ -1318,11 +1317,11 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  604 0075 10       		.byte	16
  605 0076 1B       		.byte	27
  606 0077 02       		.byte	2
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 23
-
-
  607 0078 22       		.byte	34
- 608 0079 24       		.byte	36
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 23
+
+
+ 608 0079 44       		.byte	68
  609 007a 2B       		.byte	43
  610 007b 02       		.byte	2
  611 007c 30       		.byte	48
@@ -1343,8 +1342,8 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  626 008b 08       		.byte	8
  627 008c 71       		.byte	113
  628 008d 02       		.byte	2
- 629 008e 86       		.byte	-122
- 630 008f 20       		.byte	32
+ 629 008e 8E       		.byte	-114
+ 630 008f 40       		.byte	64
  631 0090 C0       		.byte	-64
  632 0091 04       		.byte	4
  633 0092 C2       		.byte	-62
@@ -1363,1743 +1362,1742 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 1
  646 009f 04       		.byte	4
  647 00a0 D6       		.byte	-42
  648 00a1 0B       		.byte	11
- 649 00a2 E4       		.byte	-28
- 650 00a3 02       		.byte	2
- 651 00a4 08       		.byte	8
+ 649 00a2 08       		.byte	8
+ 650 00a3 01       		.byte	1
+ 651 00a4 0F       		.byte	15
  652 00a5 01       		.byte	1
- 653 00a6 0F       		.byte	15
- 654 00a7 01       		.byte	1
- 655 00a8 1A       		.byte	26
- 656 00a9 07       		.byte	7
- 657 00aa 1E       		.byte	30
- 658 00ab 04       		.byte	4
- 659 00ac 23       		.byte	35
- 660 00ad 01       		.byte	1
- 661 00ae 2E       		.byte	46
- 662 00af 08       		.byte	8
- 663 00b0 30       		.byte	48
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 24
+ 653 00a6 1A       		.byte	26
+ 654 00a7 07       		.byte	7
+ 655 00a8 1E       		.byte	30
+ 656 00a9 04       		.byte	4
+ 657 00aa 23       		.byte	35
+ 658 00ab 01       		.byte	1
+ 659 00ac 2E       		.byte	46
+ 660 00ad 08       		.byte	8
+ 661 00ae 30       		.byte	48
+ 662 00af 01       		.byte	1
+ 663 00b0 32       		.byte	50
+ 664 00b1 04       		.byte	4
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 24
 
 
- 664 00b1 01       		.byte	1
- 665 00b2 32       		.byte	50
- 666 00b3 04       		.byte	4
- 667 00b4 34       		.byte	52
- 668 00b5 02       		.byte	2
- 669 00b6 35       		.byte	53
- 670 00b7 01       		.byte	1
- 671 00b8 36       		.byte	54
- 672 00b9 08       		.byte	8
- 673 00ba 3F       		.byte	63
+ 665 00b2 34       		.byte	52
+ 666 00b3 02       		.byte	2
+ 667 00b4 35       		.byte	53
+ 668 00b5 01       		.byte	1
+ 669 00b6 36       		.byte	54
+ 670 00b7 08       		.byte	8
+ 671 00b8 3F       		.byte	63
+ 672 00b9 10       		.byte	16
+ 673 00ba 40       		.byte	64
  674 00bb 10       		.byte	16
- 675 00bc 40       		.byte	64
- 676 00bd 10       		.byte	16
- 677 00be 41       		.byte	65
- 678 00bf 05       		.byte	5
- 679 00c0 45       		.byte	69
- 680 00c1 D1       		.byte	-47
- 681 00c2 46       		.byte	70
- 682 00c3 02       		.byte	2
- 683 00c4 48       		.byte	72
- 684 00c5 07       		.byte	7
- 685 00c6 49       		.byte	73
+ 675 00bc 41       		.byte	65
+ 676 00bd 05       		.byte	5
+ 677 00be 45       		.byte	69
+ 678 00bf D1       		.byte	-47
+ 679 00c0 46       		.byte	70
+ 680 00c1 02       		.byte	2
+ 681 00c2 48       		.byte	72
+ 682 00c3 07       		.byte	7
+ 683 00c4 49       		.byte	73
+ 684 00c5 FF       		.byte	-1
+ 685 00c6 4A       		.byte	74
  686 00c7 FF       		.byte	-1
- 687 00c8 4A       		.byte	74
+ 687 00c8 4B       		.byte	75
  688 00c9 FF       		.byte	-1
- 689 00ca 4B       		.byte	75
- 690 00cb FF       		.byte	-1
- 691 00cc 4D       		.byte	77
- 692 00cd A0       		.byte	-96
- 693 00ce 4F       		.byte	79
- 694 00cf 04       		.byte	4
- 695 00d0 50       		.byte	80
- 696 00d1 18       		.byte	24
- 697 00d2 52       		.byte	82
- 698 00d3 80       		.byte	-128
- 699 00d4 54       		.byte	84
- 700 00d5 05       		.byte	5
- 701 00d6 58       		.byte	88
+ 689 00ca 4D       		.byte	77
+ 690 00cb A0       		.byte	-96
+ 691 00cc 4F       		.byte	79
+ 692 00cd 04       		.byte	4
+ 693 00ce 50       		.byte	80
+ 694 00cf 18       		.byte	24
+ 695 00d0 52       		.byte	82
+ 696 00d1 80       		.byte	-128
+ 697 00d2 54       		.byte	84
+ 698 00d3 05       		.byte	5
+ 699 00d4 58       		.byte	88
+ 700 00d5 04       		.byte	4
+ 701 00d6 59       		.byte	89
  702 00d7 04       		.byte	4
- 703 00d8 59       		.byte	89
+ 703 00d8 5A       		.byte	90
  704 00d9 04       		.byte	4
- 705 00da 5A       		.byte	90
+ 705 00da 5B       		.byte	91
  706 00db 04       		.byte	4
- 707 00dc 5B       		.byte	91
- 708 00dd 04       		.byte	4
- 709 00de 5C       		.byte	92
- 710 00df 01       		.byte	1
- 711 00e0 5D       		.byte	93
- 712 00e1 11       		.byte	17
- 713 00e2 5F       		.byte	95
- 714 00e3 01       		.byte	1
- 715 00e4 60       		.byte	96
- 716 00e5 40       		.byte	64
- 717 00e6 62       		.byte	98
- 718 00e7 C0       		.byte	-64
- 719 00e8 64       		.byte	100
+ 707 00dc 5C       		.byte	92
+ 708 00dd 01       		.byte	1
+ 709 00de 5D       		.byte	93
+ 710 00df 11       		.byte	17
+ 711 00e0 5F       		.byte	95
+ 712 00e1 01       		.byte	1
+ 713 00e2 60       		.byte	96
+ 714 00e3 40       		.byte	64
+ 715 00e4 62       		.byte	98
+ 716 00e5 C0       		.byte	-64
+ 717 00e6 64       		.byte	100
+ 718 00e7 40       		.byte	64
+ 719 00e8 65       		.byte	101
  720 00e9 40       		.byte	64
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 25
+ 721 00ea 66       		.byte	102
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 25
 
 
- 721 00ea 65       		.byte	101
- 722 00eb 40       		.byte	64
- 723 00ec 66       		.byte	102
+ 722 00eb C0       		.byte	-64
+ 723 00ec 68       		.byte	104
  724 00ed C0       		.byte	-64
- 725 00ee 68       		.byte	104
+ 725 00ee 6A       		.byte	106
  726 00ef C0       		.byte	-64
- 727 00f0 6A       		.byte	106
+ 727 00f0 6C       		.byte	108
  728 00f1 C0       		.byte	-64
- 729 00f2 6C       		.byte	108
+ 729 00f2 6E       		.byte	110
  730 00f3 C0       		.byte	-64
- 731 00f4 6E       		.byte	110
- 732 00f5 C0       		.byte	-64
- 733 00f6 8E       		.byte	-114
- 734 00f7 04       		.byte	4
- 735 00f8 8F       		.byte	-113
- 736 00f9 01       		.byte	1
- 737 00fa 92       		.byte	-110
- 738 00fb 08       		.byte	8
- 739 00fc 93       		.byte	-109
+ 731 00f4 8E       		.byte	-114
+ 732 00f5 04       		.byte	4
+ 733 00f6 8F       		.byte	-113
+ 734 00f7 01       		.byte	1
+ 735 00f8 92       		.byte	-110
+ 736 00f9 08       		.byte	8
+ 737 00fa 93       		.byte	-109
+ 738 00fb 01       		.byte	1
+ 739 00fc 94       		.byte	-108
  740 00fd 01       		.byte	1
- 741 00fe 94       		.byte	-108
- 742 00ff 01       		.byte	1
- 743 0100 A6       		.byte	-90
- 744 0101 07       		.byte	7
- 745 0102 B0       		.byte	-80
- 746 0103 08       		.byte	8
- 747 0104 B2       		.byte	-78
- 748 0105 02       		.byte	2
- 749 0106 B3       		.byte	-77
- 750 0107 01       		.byte	1
- 751 0108 B4       		.byte	-76
- 752 0109 04       		.byte	4
- 753 010a B6       		.byte	-74
- 754 010b 01       		.byte	1
- 755 010c BF       		.byte	-65
- 756 010d 04       		.byte	4
- 757 010e C0       		.byte	-64
- 758 010f 40       		.byte	64
- 759 0110 C1       		.byte	-63
- 760 0111 05       		.byte	5
- 761 0112 C5       		.byte	-59
- 762 0113 D1       		.byte	-47
- 763 0114 C7       		.byte	-57
- 764 0115 20       		.byte	32
- 765 0116 C8       		.byte	-56
- 766 0117 23       		.byte	35
- 767 0118 C9       		.byte	-55
+ 741 00fe A6       		.byte	-90
+ 742 00ff 07       		.byte	7
+ 743 0100 B0       		.byte	-80
+ 744 0101 08       		.byte	8
+ 745 0102 B2       		.byte	-78
+ 746 0103 02       		.byte	2
+ 747 0104 B3       		.byte	-77
+ 748 0105 01       		.byte	1
+ 749 0106 B4       		.byte	-76
+ 750 0107 04       		.byte	4
+ 751 0108 B6       		.byte	-74
+ 752 0109 01       		.byte	1
+ 753 010a BF       		.byte	-65
+ 754 010b 04       		.byte	4
+ 755 010c C0       		.byte	-64
+ 756 010d 40       		.byte	64
+ 757 010e C1       		.byte	-63
+ 758 010f 05       		.byte	5
+ 759 0110 C5       		.byte	-59
+ 760 0111 D1       		.byte	-47
+ 761 0112 C7       		.byte	-57
+ 762 0113 20       		.byte	32
+ 763 0114 C8       		.byte	-56
+ 764 0115 23       		.byte	35
+ 765 0116 C9       		.byte	-55
+ 766 0117 FF       		.byte	-1
+ 767 0118 CA       		.byte	-54
  768 0119 FF       		.byte	-1
- 769 011a CA       		.byte	-54
+ 769 011a CB       		.byte	-53
  770 011b FF       		.byte	-1
- 771 011c CB       		.byte	-53
- 772 011d FF       		.byte	-1
- 773 011e CD       		.byte	-51
- 774 011f A0       		.byte	-96
- 775 0120 CF       		.byte	-49
- 776 0121 04       		.byte	4
- 777 0122 D0       		.byte	-48
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 26
+ 771 011c CD       		.byte	-51
+ 772 011d A0       		.byte	-96
+ 773 011e CF       		.byte	-49
+ 774 011f 04       		.byte	4
+ 775 0120 D0       		.byte	-48
+ 776 0121 18       		.byte	24
+ 777 0122 D2       		.byte	-46
+ 778 0123 80       		.byte	-128
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 26
 
 
- 778 0123 18       		.byte	24
- 779 0124 D2       		.byte	-46
- 780 0125 80       		.byte	-128
- 781 0126 D4       		.byte	-44
- 782 0127 05       		.byte	5
- 783 0128 D8       		.byte	-40
+ 779 0124 D4       		.byte	-44
+ 780 0125 05       		.byte	5
+ 781 0126 D8       		.byte	-40
+ 782 0127 04       		.byte	4
+ 783 0128 D9       		.byte	-39
  784 0129 04       		.byte	4
- 785 012a D9       		.byte	-39
+ 785 012a DA       		.byte	-38
  786 012b 04       		.byte	4
- 787 012c DA       		.byte	-38
+ 787 012c DB       		.byte	-37
  788 012d 04       		.byte	4
- 789 012e DB       		.byte	-37
- 790 012f 04       		.byte	4
- 791 0130 DC       		.byte	-36
- 792 0131 01       		.byte	1
- 793 0132 DD       		.byte	-35
- 794 0133 11       		.byte	17
- 795 0134 DF       		.byte	-33
- 796 0135 01       		.byte	1
- 797 0136 E0       		.byte	-32
- 798 0137 40       		.byte	64
- 799 0138 E2       		.byte	-30
- 800 0139 C0       		.byte	-64
- 801 013a E4       		.byte	-28
+ 789 012e DC       		.byte	-36
+ 790 012f 01       		.byte	1
+ 791 0130 DD       		.byte	-35
+ 792 0131 11       		.byte	17
+ 793 0132 DF       		.byte	-33
+ 794 0133 01       		.byte	1
+ 795 0134 E0       		.byte	-32
+ 796 0135 40       		.byte	64
+ 797 0136 E2       		.byte	-30
+ 798 0137 C0       		.byte	-64
+ 799 0138 E4       		.byte	-28
+ 800 0139 40       		.byte	64
+ 801 013a E5       		.byte	-27
  802 013b 40       		.byte	64
- 803 013c E5       		.byte	-27
- 804 013d 40       		.byte	64
- 805 013e E6       		.byte	-26
+ 803 013c E6       		.byte	-26
+ 804 013d C0       		.byte	-64
+ 805 013e E8       		.byte	-24
  806 013f C0       		.byte	-64
- 807 0140 E8       		.byte	-24
+ 807 0140 EA       		.byte	-22
  808 0141 C0       		.byte	-64
- 809 0142 EA       		.byte	-22
+ 809 0142 EC       		.byte	-20
  810 0143 C0       		.byte	-64
- 811 0144 EC       		.byte	-20
+ 811 0144 EE       		.byte	-18
  812 0145 C0       		.byte	-64
- 813 0146 EE       		.byte	-18
- 814 0147 C0       		.byte	-64
- 815 0148 00       		.byte	0
- 816 0149 40       		.byte	64
- 817 014a 05       		.byte	5
- 818 014b 10       		.byte	16
- 819 014c 09       		.byte	9
- 820 014d 02       		.byte	2
- 821 014e 0A       		.byte	10
- 822 014f 10       		.byte	16
- 823 0150 0D       		.byte	13
- 824 0151 80       		.byte	-128
- 825 0152 0F       		.byte	15
- 826 0153 08       		.byte	8
- 827 0154 10       		.byte	16
- 828 0155 20       		.byte	32
- 829 0156 17       		.byte	23
- 830 0157 80       		.byte	-128
- 831 0158 18       		.byte	24
- 832 0159 44       		.byte	68
- 833 015a 19       		.byte	25
- 834 015b 40       		.byte	64
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 27
+ 813 0146 00       		.byte	0
+ 814 0147 40       		.byte	64
+ 815 0148 05       		.byte	5
+ 816 0149 10       		.byte	16
+ 817 014a 09       		.byte	9
+ 818 014b 02       		.byte	2
+ 819 014c 0A       		.byte	10
+ 820 014d 10       		.byte	16
+ 821 014e 0D       		.byte	13
+ 822 014f 80       		.byte	-128
+ 823 0150 0F       		.byte	15
+ 824 0151 08       		.byte	8
+ 825 0152 10       		.byte	16
+ 826 0153 20       		.byte	32
+ 827 0154 17       		.byte	23
+ 828 0155 80       		.byte	-128
+ 829 0156 18       		.byte	24
+ 830 0157 44       		.byte	68
+ 831 0158 19       		.byte	25
+ 832 0159 40       		.byte	64
+ 833 015a 1A       		.byte	26
+ 834 015b 10       		.byte	16
+ 835 015c 1D       		.byte	29
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 27
 
 
- 835 015c 1A       		.byte	26
- 836 015d 10       		.byte	16
- 837 015e 1D       		.byte	29
- 838 015f 90       		.byte	-112
- 839 0160 1E       		.byte	30
- 840 0161 40       		.byte	64
- 841 0162 1F       		.byte	31
- 842 0163 88       		.byte	-120
- 843 0164 22       		.byte	34
- 844 0165 04       		.byte	4
- 845 0166 27       		.byte	39
- 846 0167 08       		.byte	8
- 847 0168 2F       		.byte	47
- 848 0169 80       		.byte	-128
- 849 016a 30       		.byte	48
- 850 016b 02       		.byte	2
- 851 016c 38       		.byte	56
- 852 016d 40       		.byte	64
- 853 016e 3F       		.byte	63
- 854 016f 80       		.byte	-128
- 855 0170 40       		.byte	64
- 856 0171 40       		.byte	64
- 857 0172 45       		.byte	69
- 858 0173 80       		.byte	-128
- 859 0174 48       		.byte	72
- 860 0175 22       		.byte	34
- 861 0176 49       		.byte	73
- 862 0177 01       		.byte	1
- 863 0178 4F       		.byte	79
- 864 0179 89       		.byte	-119
- 865 017a 50       		.byte	80
- 866 017b 02       		.byte	2
- 867 017c 57       		.byte	87
- 868 017d 40       		.byte	64
- 869 017e 59       		.byte	89
- 870 017f 41       		.byte	65
- 871 0180 5A       		.byte	90
- 872 0181 08       		.byte	8
- 873 0182 5E       		.byte	94
- 874 0183 40       		.byte	64
- 875 0184 5F       		.byte	95
- 876 0185 09       		.byte	9
- 877 0186 71       		.byte	113
- 878 0187 02       		.byte	2
- 879 0188 77       		.byte	119
- 880 0189 80       		.byte	-128
- 881 018a 8C       		.byte	-116
+ 836 015d 94       		.byte	-108
+ 837 015e 1E       		.byte	30
+ 838 015f 40       		.byte	64
+ 839 0160 1F       		.byte	31
+ 840 0161 80       		.byte	-128
+ 841 0162 22       		.byte	34
+ 842 0163 04       		.byte	4
+ 843 0164 27       		.byte	39
+ 844 0165 08       		.byte	8
+ 845 0166 2F       		.byte	47
+ 846 0167 80       		.byte	-128
+ 847 0168 30       		.byte	48
+ 848 0169 02       		.byte	2
+ 849 016a 38       		.byte	56
+ 850 016b 40       		.byte	64
+ 851 016c 3F       		.byte	63
+ 852 016d 80       		.byte	-128
+ 853 016e 40       		.byte	64
+ 854 016f 40       		.byte	64
+ 855 0170 45       		.byte	69
+ 856 0171 80       		.byte	-128
+ 857 0172 48       		.byte	72
+ 858 0173 22       		.byte	34
+ 859 0174 49       		.byte	73
+ 860 0175 01       		.byte	1
+ 861 0176 4F       		.byte	79
+ 862 0177 89       		.byte	-119
+ 863 0178 50       		.byte	80
+ 864 0179 02       		.byte	2
+ 865 017a 57       		.byte	87
+ 866 017b 40       		.byte	64
+ 867 017c 59       		.byte	89
+ 868 017d 41       		.byte	65
+ 869 017e 5A       		.byte	90
+ 870 017f 08       		.byte	8
+ 871 0180 5E       		.byte	94
+ 872 0181 40       		.byte	64
+ 873 0182 5F       		.byte	95
+ 874 0183 09       		.byte	9
+ 875 0184 71       		.byte	113
+ 876 0185 02       		.byte	2
+ 877 0186 77       		.byte	119
+ 878 0187 80       		.byte	-128
+ 879 0188 8C       		.byte	-116
+ 880 0189 04       		.byte	4
+ 881 018a 8D       		.byte	-115
  882 018b 04       		.byte	4
- 883 018c A7       		.byte	-89
- 884 018d 08       		.byte	8
- 885 018e B7       		.byte	-73
- 886 018f 08       		.byte	8
- 887 0190 C0       		.byte	-64
- 888 0191 41       		.byte	65
- 889 0192 C2       		.byte	-62
- 890 0193 CC       		.byte	-52
- 891 0194 C4       		.byte	-60
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 28
+ 883 018c C0       		.byte	-64
+ 884 018d 41       		.byte	65
+ 885 018e C2       		.byte	-62
+ 886 018f CC       		.byte	-52
+ 887 0190 C4       		.byte	-60
+ 888 0191 84       		.byte	-124
+ 889 0192 CA       		.byte	-54
+ 890 0193 80       		.byte	-128
+ 891 0194 CC       		.byte	-52
+ 892 0195 01       		.byte	1
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 28
 
 
- 892 0195 84       		.byte	-124
- 893 0196 CA       		.byte	-54
- 894 0197 80       		.byte	-128
- 895 0198 CC       		.byte	-52
- 896 0199 01       		.byte	1
- 897 019a CE       		.byte	-50
+ 893 0196 CE       		.byte	-50
+ 894 0197 18       		.byte	24
+ 895 0198 D0       		.byte	-48
+ 896 0199 11       		.byte	17
+ 897 019a D2       		.byte	-46
  898 019b 18       		.byte	24
- 899 019c D0       		.byte	-48
- 900 019d 11       		.byte	17
- 901 019e D2       		.byte	-46
- 902 019f 18       		.byte	24
- 903 01a0 D6       		.byte	-42
- 904 01a1 DB       		.byte	-37
- 905 01a2 50       		.byte	80
- 906 01a3 04       		.byte	4
- 907 01a4 5F       		.byte	95
- 908 01a5 02       		.byte	2
- 909 01a6 87       		.byte	-121
+ 899 019c D6       		.byte	-42
+ 900 019d DB       		.byte	-37
+ 901 019e 5A       		.byte	90
+ 902 019f 80       		.byte	-128
+ 903 01a0 60       		.byte	96
+ 904 01a1 10       		.byte	16
+ 905 01a2 8C       		.byte	-116
+ 906 01a3 10       		.byte	16
+ 907 01a4 D4       		.byte	-44
+ 908 01a5 01       		.byte	1
+ 909 01a6 D8       		.byte	-40
  910 01a7 02       		.byte	2
- 911 01a8 D4       		.byte	-44
- 912 01a9 04       		.byte	4
- 913 01aa D6       		.byte	-42
- 914 01ab 01       		.byte	1
- 915 01ac 54       		.byte	84
- 916 01ad 02       		.byte	2
- 917 01ae 8C       		.byte	-116
- 918 01af 02       		.byte	2
- 919 01b0 B4       		.byte	-76
- 920 01b1 04       		.byte	4
- 921 01b2 D6       		.byte	-42
- 922 01b3 04       		.byte	4
+ 911 01a8 E0       		.byte	-32
+ 912 01a9 08       		.byte	8
+ 913 01aa 56       		.byte	86
+ 914 01ab 20       		.byte	32
+ 915 01ac 8E       		.byte	-114
+ 916 01ad 60       		.byte	96
+ 917 01ae 96       		.byte	-106
+ 918 01af 80       		.byte	-128
+ 919 01b0 D4       		.byte	-44
+ 920 01b1 02       		.byte	2
+ 921 01b2 E0       		.byte	-32
+ 922 01b3 08       		.byte	8
  923 01b4 E4       		.byte	-28
  924 01b5 02       		.byte	2
- 925 01b6 E8       		.byte	-24
- 926 01b7 08       		.byte	8
- 927 01b8 01       		.byte	1
+ 925 01b6 01       		.byte	1
+ 926 01b7 0A       		.byte	10
+ 927 01b8 10       		.byte	16
  928 01b9 0A       		.byte	10
- 929 01ba 10       		.byte	16
- 930 01bb 0A       		.byte	10
- 931              		.type	cy_cfg_addr_table.4901, %object
- 932              		.size	cy_cfg_addr_table.4901, 32
- 933              	cy_cfg_addr_table.4901:
- 934 01bc 03000F40 		.word	1074724867
- 935 01c0 2B300F40 		.word	1074737195
- 936 01c4 1E310F40 		.word	1074737438
- 937 01c8 52320F40 		.word	1074737746
- 938 01cc 2D330F40 		.word	1074737965
- 939 01d0 05420F40 		.word	1074741765
- 940 01d4 06430F40 		.word	1074742022
- 941 01d8 02600F40 		.word	1074749442
- 942              		.text
- 943              	.Letext0:
- 944              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 945              		.file 3 "Generated_Source\\PSoC4\\cytypes.h"
- 946              		.file 4 "Generated_Source\\PSoC4\\CyLFClk.h"
- 947              		.file 5 "Generated_Source\\PSoC4\\CyLib.h"
- 948              		.section	.debug_info,"",%progbits
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 29
+ 929 01ba 0000     		.space	2
+ 930              		.type	cy_cfg_addr_table.4910, %object
+ 931              		.size	cy_cfg_addr_table.4910, 32
+ 932              	cy_cfg_addr_table.4910:
+ 933 01bc 03000F40 		.word	1074724867
+ 934 01c0 2B300F40 		.word	1074737195
+ 935 01c4 1D310F40 		.word	1074737437
+ 936 01c8 52320F40 		.word	1074737746
+ 937 01cc 2C330F40 		.word	1074737964
+ 938 01d0 06420F40 		.word	1074741766
+ 939 01d4 06430F40 		.word	1074742022
+ 940 01d8 02600F40 		.word	1074749442
+ 941              		.text
+ 942              	.Letext0:
+ 943              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 944              		.file 3 "Generated_Source\\PSoC4\\cytypes.h"
+ 945              		.file 4 "Generated_Source\\PSoC4\\CyLFClk.h"
+ 946              		.file 5 "Generated_Source\\PSoC4\\CyLib.h"
+ 947              		.section	.debug_info,"",%progbits
+ 948              	.Ldebug_info0:
+ 949 0000 4C040000 		.4byte	0x44c
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 29
 
 
- 949              	.Ldebug_info0:
- 950 0000 4C040000 		.4byte	0x44c
- 951 0004 0400     		.2byte	0x4
- 952 0006 00000000 		.4byte	.Ldebug_abbrev0
- 953 000a 04       		.byte	0x4
- 954 000b 01       		.uleb128 0x1
- 955 000c 78010000 		.4byte	.LASF44
- 956 0010 0C       		.byte	0xc
- 957 0011 0B030000 		.4byte	.LASF45
- 958 0015 25020000 		.4byte	.LASF46
- 959 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 960 001d 00000000 		.4byte	0
- 961 0021 00000000 		.4byte	.Ldebug_line0
- 962 0025 02       		.uleb128 0x2
- 963 0026 04       		.byte	0x4
- 964 0027 05       		.byte	0x5
- 965 0028 696E7400 		.ascii	"int\000"
- 966 002c 03       		.uleb128 0x3
- 967 002d 14000000 		.4byte	.LASF12
- 968 0031 02       		.byte	0x2
- 969 0032 D8       		.byte	0xd8
- 970 0033 37000000 		.4byte	0x37
- 971 0037 04       		.uleb128 0x4
- 972 0038 04       		.byte	0x4
- 973 0039 07       		.byte	0x7
- 974 003a 3F010000 		.4byte	.LASF0
- 975 003e 04       		.uleb128 0x4
- 976 003f 08       		.byte	0x8
- 977 0040 05       		.byte	0x5
- 978 0041 83020000 		.4byte	.LASF1
- 979 0045 04       		.uleb128 0x4
- 980 0046 08       		.byte	0x8
- 981 0047 04       		.byte	0x4
- 982 0048 F3020000 		.4byte	.LASF2
- 983 004c 04       		.uleb128 0x4
- 984 004d 01       		.byte	0x1
- 985 004e 06       		.byte	0x6
- 986 004f FF020000 		.4byte	.LASF3
- 987 0053 04       		.uleb128 0x4
- 988 0054 01       		.byte	0x1
- 989 0055 08       		.byte	0x8
- 990 0056 E1000000 		.4byte	.LASF4
- 991 005a 04       		.uleb128 0x4
- 992 005b 02       		.byte	0x2
- 993 005c 05       		.byte	0x5
- 994 005d CB020000 		.4byte	.LASF5
- 995 0061 04       		.uleb128 0x4
- 996 0062 02       		.byte	0x2
- 997 0063 07       		.byte	0x7
- 998 0064 70020000 		.4byte	.LASF6
- 999 0068 04       		.uleb128 0x4
- 1000 0069 04       		.byte	0x4
- 1001 006a 05       		.byte	0x5
- 1002 006b EA020000 		.4byte	.LASF7
- 1003 006f 04       		.uleb128 0x4
- 1004 0070 04       		.byte	0x4
- 1005 0071 07       		.byte	0x7
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 30
+ 950 0004 0400     		.2byte	0x4
+ 951 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 952 000a 04       		.byte	0x4
+ 953 000b 01       		.uleb128 0x1
+ 954 000c 78010000 		.4byte	.LASF44
+ 955 0010 0C       		.byte	0xc
+ 956 0011 0B030000 		.4byte	.LASF45
+ 957 0015 25020000 		.4byte	.LASF46
+ 958 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 959 001d 00000000 		.4byte	0
+ 960 0021 00000000 		.4byte	.Ldebug_line0
+ 961 0025 02       		.uleb128 0x2
+ 962 0026 04       		.byte	0x4
+ 963 0027 05       		.byte	0x5
+ 964 0028 696E7400 		.ascii	"int\000"
+ 965 002c 03       		.uleb128 0x3
+ 966 002d 14000000 		.4byte	.LASF12
+ 967 0031 02       		.byte	0x2
+ 968 0032 D8       		.byte	0xd8
+ 969 0033 37000000 		.4byte	0x37
+ 970 0037 04       		.uleb128 0x4
+ 971 0038 04       		.byte	0x4
+ 972 0039 07       		.byte	0x7
+ 973 003a 3F010000 		.4byte	.LASF0
+ 974 003e 04       		.uleb128 0x4
+ 975 003f 08       		.byte	0x8
+ 976 0040 05       		.byte	0x5
+ 977 0041 83020000 		.4byte	.LASF1
+ 978 0045 04       		.uleb128 0x4
+ 979 0046 08       		.byte	0x8
+ 980 0047 04       		.byte	0x4
+ 981 0048 F3020000 		.4byte	.LASF2
+ 982 004c 04       		.uleb128 0x4
+ 983 004d 01       		.byte	0x1
+ 984 004e 06       		.byte	0x6
+ 985 004f FF020000 		.4byte	.LASF3
+ 986 0053 04       		.uleb128 0x4
+ 987 0054 01       		.byte	0x1
+ 988 0055 08       		.byte	0x8
+ 989 0056 E1000000 		.4byte	.LASF4
+ 990 005a 04       		.uleb128 0x4
+ 991 005b 02       		.byte	0x2
+ 992 005c 05       		.byte	0x5
+ 993 005d CB020000 		.4byte	.LASF5
+ 994 0061 04       		.uleb128 0x4
+ 995 0062 02       		.byte	0x2
+ 996 0063 07       		.byte	0x7
+ 997 0064 70020000 		.4byte	.LASF6
+ 998 0068 04       		.uleb128 0x4
+ 999 0069 04       		.byte	0x4
+ 1000 006a 05       		.byte	0x5
+ 1001 006b EA020000 		.4byte	.LASF7
+ 1002 006f 04       		.uleb128 0x4
+ 1003 0070 04       		.byte	0x4
+ 1004 0071 07       		.byte	0x7
+ 1005 0072 AE000000 		.4byte	.LASF8
+ 1006 0076 04       		.uleb128 0x4
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 30
 
 
- 1006 0072 AE000000 		.4byte	.LASF8
- 1007 0076 04       		.uleb128 0x4
- 1008 0077 08       		.byte	0x8
- 1009 0078 07       		.byte	0x7
- 1010 0079 61010000 		.4byte	.LASF9
- 1011 007d 04       		.uleb128 0x4
- 1012 007e 04       		.byte	0x4
- 1013 007f 07       		.byte	0x7
- 1014 0080 1C020000 		.4byte	.LASF10
- 1015 0084 05       		.uleb128 0x5
- 1016 0085 04       		.byte	0x4
- 1017 0086 04       		.uleb128 0x4
- 1018 0087 01       		.byte	0x1
- 1019 0088 08       		.byte	0x8
- 1020 0089 9B020000 		.4byte	.LASF11
- 1021 008d 06       		.uleb128 0x6
- 1022 008e C0000000 		.4byte	.LASF13
- 1023 0092 03       		.byte	0x3
- 1024 0093 E401     		.2byte	0x1e4
- 1025 0095 53000000 		.4byte	0x53
- 1026 0099 06       		.uleb128 0x6
- 1027 009a 26010000 		.4byte	.LASF14
- 1028 009e 03       		.byte	0x3
- 1029 009f E501     		.2byte	0x1e5
- 1030 00a1 61000000 		.4byte	0x61
- 1031 00a5 06       		.uleb128 0x6
- 1032 00a6 38010000 		.4byte	.LASF15
- 1033 00aa 03       		.byte	0x3
- 1034 00ab E601     		.2byte	0x1e6
- 1035 00ad 6F000000 		.4byte	0x6f
- 1036 00b1 04       		.uleb128 0x4
- 1037 00b2 04       		.byte	0x4
- 1038 00b3 04       		.byte	0x4
- 1039 00b4 76000000 		.4byte	.LASF16
- 1040 00b8 04       		.uleb128 0x4
- 1041 00b9 08       		.byte	0x8
- 1042 00ba 04       		.byte	0x4
- 1043 00bb F6000000 		.4byte	.LASF17
- 1044 00bf 06       		.uleb128 0x6
- 1045 00c0 A9000000 		.4byte	.LASF18
- 1046 00c4 03       		.byte	0x3
- 1047 00c5 8E02     		.2byte	0x28e
- 1048 00c7 CB000000 		.4byte	0xcb
- 1049 00cb 07       		.uleb128 0x7
- 1050 00cc 8D000000 		.4byte	0x8d
- 1051 00d0 06       		.uleb128 0x6
- 1052 00d1 0E000000 		.4byte	.LASF19
- 1053 00d5 03       		.byte	0x3
- 1054 00d6 9002     		.2byte	0x290
- 1055 00d8 DC000000 		.4byte	0xdc
- 1056 00dc 07       		.uleb128 0x7
- 1057 00dd A5000000 		.4byte	0xa5
- 1058 00e1 08       		.uleb128 0x8
- 1059 00e2 02       		.byte	0x2
- 1060 00e3 01       		.byte	0x1
- 1061 00e4 97       		.byte	0x97
- 1062 00e5 02010000 		.4byte	0x102
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 31
+ 1007 0077 08       		.byte	0x8
+ 1008 0078 07       		.byte	0x7
+ 1009 0079 61010000 		.4byte	.LASF9
+ 1010 007d 04       		.uleb128 0x4
+ 1011 007e 04       		.byte	0x4
+ 1012 007f 07       		.byte	0x7
+ 1013 0080 1C020000 		.4byte	.LASF10
+ 1014 0084 05       		.uleb128 0x5
+ 1015 0085 04       		.byte	0x4
+ 1016 0086 04       		.uleb128 0x4
+ 1017 0087 01       		.byte	0x1
+ 1018 0088 08       		.byte	0x8
+ 1019 0089 9B020000 		.4byte	.LASF11
+ 1020 008d 06       		.uleb128 0x6
+ 1021 008e C0000000 		.4byte	.LASF13
+ 1022 0092 03       		.byte	0x3
+ 1023 0093 E401     		.2byte	0x1e4
+ 1024 0095 53000000 		.4byte	0x53
+ 1025 0099 06       		.uleb128 0x6
+ 1026 009a 26010000 		.4byte	.LASF14
+ 1027 009e 03       		.byte	0x3
+ 1028 009f E501     		.2byte	0x1e5
+ 1029 00a1 61000000 		.4byte	0x61
+ 1030 00a5 06       		.uleb128 0x6
+ 1031 00a6 38010000 		.4byte	.LASF15
+ 1032 00aa 03       		.byte	0x3
+ 1033 00ab E601     		.2byte	0x1e6
+ 1034 00ad 6F000000 		.4byte	0x6f
+ 1035 00b1 04       		.uleb128 0x4
+ 1036 00b2 04       		.byte	0x4
+ 1037 00b3 04       		.byte	0x4
+ 1038 00b4 76000000 		.4byte	.LASF16
+ 1039 00b8 04       		.uleb128 0x4
+ 1040 00b9 08       		.byte	0x8
+ 1041 00ba 04       		.byte	0x4
+ 1042 00bb F6000000 		.4byte	.LASF17
+ 1043 00bf 06       		.uleb128 0x6
+ 1044 00c0 A9000000 		.4byte	.LASF18
+ 1045 00c4 03       		.byte	0x3
+ 1046 00c5 8E02     		.2byte	0x28e
+ 1047 00c7 CB000000 		.4byte	0xcb
+ 1048 00cb 07       		.uleb128 0x7
+ 1049 00cc 8D000000 		.4byte	0x8d
+ 1050 00d0 06       		.uleb128 0x6
+ 1051 00d1 0E000000 		.4byte	.LASF19
+ 1052 00d5 03       		.byte	0x3
+ 1053 00d6 9002     		.2byte	0x290
+ 1054 00d8 DC000000 		.4byte	0xdc
+ 1055 00dc 07       		.uleb128 0x7
+ 1056 00dd A5000000 		.4byte	0xa5
+ 1057 00e1 08       		.uleb128 0x8
+ 1058 00e2 02       		.byte	0x2
+ 1059 00e3 01       		.byte	0x1
+ 1060 00e4 97       		.byte	0x97
+ 1061 00e5 02010000 		.4byte	0x102
+ 1062 00e9 09       		.uleb128 0x9
+ 1063 00ea C4020000 		.4byte	.LASF20
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 31
 
 
- 1063 00e9 09       		.uleb128 0x9
- 1064 00ea C4020000 		.4byte	.LASF20
- 1065 00ee 01       		.byte	0x1
- 1066 00ef 99       		.byte	0x99
- 1067 00f0 8D000000 		.4byte	0x8d
- 1068 00f4 00       		.byte	0
- 1069 00f5 09       		.uleb128 0x9
- 1070 00f6 3B000000 		.4byte	.LASF21
- 1071 00fa 01       		.byte	0x1
- 1072 00fb 9A       		.byte	0x9a
- 1073 00fc 8D000000 		.4byte	0x8d
- 1074 0100 01       		.byte	0x1
- 1075 0101 00       		.byte	0
- 1076 0102 03       		.uleb128 0x3
- 1077 0103 B1020000 		.4byte	.LASF22
- 1078 0107 01       		.byte	0x1
- 1079 0108 9B       		.byte	0x9b
- 1080 0109 E1000000 		.4byte	0xe1
- 1081 010d 0A       		.uleb128 0xa
- 1082 010e FD000000 		.4byte	.LASF27
- 1083 0112 01       		.byte	0x1
- 1084 0113 AE       		.byte	0xae
- 1085 0114 00000000 		.4byte	.LFB5
- 1086 0118 32000000 		.4byte	.LFE5-.LFB5
- 1087 011c 01       		.uleb128 0x1
- 1088 011d 9C       		.byte	0x9c
- 1089 011e 7F010000 		.4byte	0x17f
- 1090 0122 0B       		.uleb128 0xb
- 1091 0123 1B010000 		.4byte	.LASF23
- 1092 0127 01       		.byte	0x1
- 1093 0128 AE       		.byte	0xae
- 1094 0129 7F010000 		.4byte	0x17f
- 1095 012d 01       		.uleb128 0x1
- 1096 012e 50       		.byte	0x50
- 1097 012f 0B       		.uleb128 0xb
- 1098 0130 2D010000 		.4byte	.LASF24
- 1099 0134 01       		.byte	0x1
- 1100 0135 AE       		.byte	0xae
- 1101 0136 8A010000 		.4byte	0x18a
- 1102 013a 01       		.uleb128 0x1
- 1103 013b 51       		.byte	0x51
- 1104 013c 0C       		.uleb128 0xc
- 1105 013d 6900     		.ascii	"i\000"
- 1106 013f 01       		.byte	0x1
- 1107 0140 B1       		.byte	0xb1
- 1108 0141 A5000000 		.4byte	0xa5
- 1109 0145 00000000 		.4byte	.LLST0
- 1110 0149 0C       		.uleb128 0xc
- 1111 014a 6A00     		.ascii	"j\000"
- 1112 014c 01       		.byte	0x1
- 1113 014d B1       		.byte	0xb1
- 1114 014e A5000000 		.4byte	0xa5
- 1115 0152 1F000000 		.4byte	.LLST1
- 1116 0156 0D       		.uleb128 0xd
- 1117 0157 08000000 		.4byte	.LBB2
- 1118 015b 22000000 		.4byte	.LBE2-.LBB2
- 1119 015f 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 32
+ 1064 00ee 01       		.byte	0x1
+ 1065 00ef 99       		.byte	0x99
+ 1066 00f0 8D000000 		.4byte	0x8d
+ 1067 00f4 00       		.byte	0
+ 1068 00f5 09       		.uleb128 0x9
+ 1069 00f6 3B000000 		.4byte	.LASF21
+ 1070 00fa 01       		.byte	0x1
+ 1071 00fb 9A       		.byte	0x9a
+ 1072 00fc 8D000000 		.4byte	0x8d
+ 1073 0100 01       		.byte	0x1
+ 1074 0101 00       		.byte	0
+ 1075 0102 03       		.uleb128 0x3
+ 1076 0103 B1020000 		.4byte	.LASF22
+ 1077 0107 01       		.byte	0x1
+ 1078 0108 9B       		.byte	0x9b
+ 1079 0109 E1000000 		.4byte	0xe1
+ 1080 010d 0A       		.uleb128 0xa
+ 1081 010e FD000000 		.4byte	.LASF27
+ 1082 0112 01       		.byte	0x1
+ 1083 0113 AE       		.byte	0xae
+ 1084 0114 00000000 		.4byte	.LFB5
+ 1085 0118 32000000 		.4byte	.LFE5-.LFB5
+ 1086 011c 01       		.uleb128 0x1
+ 1087 011d 9C       		.byte	0x9c
+ 1088 011e 7F010000 		.4byte	0x17f
+ 1089 0122 0B       		.uleb128 0xb
+ 1090 0123 1B010000 		.4byte	.LASF23
+ 1091 0127 01       		.byte	0x1
+ 1092 0128 AE       		.byte	0xae
+ 1093 0129 7F010000 		.4byte	0x17f
+ 1094 012d 01       		.uleb128 0x1
+ 1095 012e 50       		.byte	0x50
+ 1096 012f 0B       		.uleb128 0xb
+ 1097 0130 2D010000 		.4byte	.LASF24
+ 1098 0134 01       		.byte	0x1
+ 1099 0135 AE       		.byte	0xae
+ 1100 0136 8A010000 		.4byte	0x18a
+ 1101 013a 01       		.uleb128 0x1
+ 1102 013b 51       		.byte	0x51
+ 1103 013c 0C       		.uleb128 0xc
+ 1104 013d 6900     		.ascii	"i\000"
+ 1105 013f 01       		.byte	0x1
+ 1106 0140 B1       		.byte	0xb1
+ 1107 0141 A5000000 		.4byte	0xa5
+ 1108 0145 00000000 		.4byte	.LLST0
+ 1109 0149 0C       		.uleb128 0xc
+ 1110 014a 6A00     		.ascii	"j\000"
+ 1111 014c 01       		.byte	0x1
+ 1112 014d B1       		.byte	0xb1
+ 1113 014e A5000000 		.4byte	0xa5
+ 1114 0152 1F000000 		.4byte	.LLST1
+ 1115 0156 0D       		.uleb128 0xd
+ 1116 0157 08000000 		.4byte	.LBB2
+ 1117 015b 22000000 		.4byte	.LBE2-.LBB2
+ 1118 015f 0E       		.uleb128 0xe
+ 1119 0160 13020000 		.4byte	.LASF25
+ 1120 0164 01       		.byte	0x1
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 32
 
 
- 1120 0160 13020000 		.4byte	.LASF25
- 1121 0164 01       		.byte	0x1
- 1122 0165 B4       		.byte	0xb4
- 1123 0166 A5000000 		.4byte	0xa5
- 1124 016a 3E000000 		.4byte	.LLST2
- 1125 016e 0E       		.uleb128 0xe
- 1126 016f 41000000 		.4byte	.LASF26
- 1127 0173 01       		.byte	0x1
- 1128 0174 B5       		.byte	0xb5
- 1129 0175 8D000000 		.4byte	0x8d
- 1130 0179 51000000 		.4byte	.LLST3
- 1131 017d 00       		.byte	0
- 1132 017e 00       		.byte	0
- 1133 017f 0F       		.uleb128 0xf
- 1134 0180 04       		.byte	0x4
- 1135 0181 85010000 		.4byte	0x185
- 1136 0185 10       		.uleb128 0x10
- 1137 0186 A5000000 		.4byte	0xa5
- 1138 018a 0F       		.uleb128 0xf
- 1139 018b 04       		.byte	0x4
- 1140 018c 90010000 		.4byte	0x190
- 1141 0190 10       		.uleb128 0x10
- 1142 0191 02010000 		.4byte	0x102
- 1143 0195 11       		.uleb128 0x11
- 1144 0196 1B000000 		.4byte	.LASF47
- 1145 019a 01       		.byte	0x1
- 1146 019b 1D01     		.2byte	0x11d
- 1147 019d 00000000 		.4byte	.LFB7
- 1148 01a1 20000000 		.4byte	.LFE7-.LFB7
- 1149 01a5 01       		.uleb128 0x1
- 1150 01a6 9C       		.byte	0x9c
- 1151 01a7 0A       		.uleb128 0xa
- 1152 01a8 D7000000 		.4byte	.LASF28
- 1153 01ac 01       		.byte	0x1
- 1154 01ad 4C       		.byte	0x4c
- 1155 01ae 00000000 		.4byte	.LFB2
- 1156 01b2 0C000000 		.4byte	.LFE2-.LFB2
- 1157 01b6 01       		.uleb128 0x1
- 1158 01b7 9C       		.byte	0x9c
- 1159 01b8 F4010000 		.4byte	0x1f4
- 1160 01bc 12       		.uleb128 0x12
- 1161 01bd 7300     		.ascii	"s\000"
- 1162 01bf 01       		.byte	0x1
- 1163 01c0 4C       		.byte	0x4c
- 1164 01c1 84000000 		.4byte	0x84
- 1165 01c5 6F000000 		.4byte	.LLST4
- 1166 01c9 12       		.uleb128 0x12
- 1167 01ca 6E00     		.ascii	"n\000"
- 1168 01cc 01       		.byte	0x1
- 1169 01cd 4C       		.byte	0x4c
- 1170 01ce 2C000000 		.4byte	0x2c
- 1171 01d2 90000000 		.4byte	.LLST5
- 1172 01d6 13       		.uleb128 0x13
- 1173 01d7 0A000000 		.4byte	.LVL14
- 1174 01db EE030000 		.4byte	0x3ee
- 1175 01df 14       		.uleb128 0x14
- 1176 01e0 01       		.uleb128 0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 33
+ 1121 0165 B4       		.byte	0xb4
+ 1122 0166 A5000000 		.4byte	0xa5
+ 1123 016a 3E000000 		.4byte	.LLST2
+ 1124 016e 0E       		.uleb128 0xe
+ 1125 016f 41000000 		.4byte	.LASF26
+ 1126 0173 01       		.byte	0x1
+ 1127 0174 B5       		.byte	0xb5
+ 1128 0175 8D000000 		.4byte	0x8d
+ 1129 0179 51000000 		.4byte	.LLST3
+ 1130 017d 00       		.byte	0
+ 1131 017e 00       		.byte	0
+ 1132 017f 0F       		.uleb128 0xf
+ 1133 0180 04       		.byte	0x4
+ 1134 0181 85010000 		.4byte	0x185
+ 1135 0185 10       		.uleb128 0x10
+ 1136 0186 A5000000 		.4byte	0xa5
+ 1137 018a 0F       		.uleb128 0xf
+ 1138 018b 04       		.byte	0x4
+ 1139 018c 90010000 		.4byte	0x190
+ 1140 0190 10       		.uleb128 0x10
+ 1141 0191 02010000 		.4byte	0x102
+ 1142 0195 11       		.uleb128 0x11
+ 1143 0196 1B000000 		.4byte	.LASF47
+ 1144 019a 01       		.byte	0x1
+ 1145 019b 1D01     		.2byte	0x11d
+ 1146 019d 00000000 		.4byte	.LFB7
+ 1147 01a1 20000000 		.4byte	.LFE7-.LFB7
+ 1148 01a5 01       		.uleb128 0x1
+ 1149 01a6 9C       		.byte	0x9c
+ 1150 01a7 0A       		.uleb128 0xa
+ 1151 01a8 D7000000 		.4byte	.LASF28
+ 1152 01ac 01       		.byte	0x1
+ 1153 01ad 4C       		.byte	0x4c
+ 1154 01ae 00000000 		.4byte	.LFB2
+ 1155 01b2 0C000000 		.4byte	.LFE2-.LFB2
+ 1156 01b6 01       		.uleb128 0x1
+ 1157 01b7 9C       		.byte	0x9c
+ 1158 01b8 F4010000 		.4byte	0x1f4
+ 1159 01bc 12       		.uleb128 0x12
+ 1160 01bd 7300     		.ascii	"s\000"
+ 1161 01bf 01       		.byte	0x1
+ 1162 01c0 4C       		.byte	0x4c
+ 1163 01c1 84000000 		.4byte	0x84
+ 1164 01c5 6F000000 		.4byte	.LLST4
+ 1165 01c9 12       		.uleb128 0x12
+ 1166 01ca 6E00     		.ascii	"n\000"
+ 1167 01cc 01       		.byte	0x1
+ 1168 01cd 4C       		.byte	0x4c
+ 1169 01ce 2C000000 		.4byte	0x2c
+ 1170 01d2 90000000 		.4byte	.LLST5
+ 1171 01d6 13       		.uleb128 0x13
+ 1172 01d7 0A000000 		.4byte	.LVL14
+ 1173 01db EE030000 		.4byte	0x3ee
+ 1174 01df 14       		.uleb128 0x14
+ 1175 01e0 01       		.uleb128 0x1
+ 1176 01e1 50       		.byte	0x50
+ 1177 01e2 03       		.uleb128 0x3
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 33
 
 
- 1177 01e1 50       		.byte	0x50
- 1178 01e2 03       		.uleb128 0x3
- 1179 01e3 F3       		.byte	0xf3
- 1180 01e4 01       		.uleb128 0x1
- 1181 01e5 50       		.byte	0x50
- 1182 01e6 14       		.uleb128 0x14
- 1183 01e7 01       		.uleb128 0x1
- 1184 01e8 51       		.byte	0x51
- 1185 01e9 01       		.uleb128 0x1
- 1186 01ea 30       		.byte	0x30
- 1187 01eb 14       		.uleb128 0x14
- 1188 01ec 01       		.uleb128 0x1
- 1189 01ed 52       		.byte	0x52
- 1190 01ee 03       		.uleb128 0x3
- 1191 01ef F3       		.byte	0xf3
- 1192 01f0 01       		.uleb128 0x1
- 1193 01f1 51       		.byte	0x51
- 1194 01f2 00       		.byte	0
- 1195 01f3 00       		.byte	0
- 1196 01f4 0A       		.uleb128 0xa
- 1197 01f5 47000000 		.4byte	.LASF29
- 1198 01f9 01       		.byte	0x1
- 1199 01fa D3       		.byte	0xd3
- 1200 01fb 00000000 		.4byte	.LFB6
- 1201 01ff FC000000 		.4byte	.LFE6-.LFB6
- 1202 0203 01       		.uleb128 0x1
- 1203 0204 9C       		.byte	0x9c
- 1204 0205 9D020000 		.4byte	0x29d
- 1205 0209 15       		.uleb128 0x15
- 1206 020a 0C000000 		.4byte	.LVL15
- 1207 020e F7030000 		.4byte	0x3f7
- 1208 0212 16       		.uleb128 0x16
- 1209 0213 12000000 		.4byte	.LVL16
- 1210 0217 02040000 		.4byte	0x402
- 1211 021b 29020000 		.4byte	0x229
- 1212 021f 14       		.uleb128 0x14
- 1213 0220 01       		.uleb128 0x1
- 1214 0221 50       		.byte	0x50
- 1215 0222 05       		.uleb128 0x5
- 1216 0223 0C       		.byte	0xc
- 1217 0224 001BB700 		.4byte	0xb71b00
- 1218 0228 00       		.byte	0
- 1219 0229 16       		.uleb128 0x16
- 1220 022a 18000000 		.4byte	.LVL17
- 1221 022e 0D040000 		.4byte	0x40d
- 1222 0232 3C020000 		.4byte	0x23c
- 1223 0236 14       		.uleb128 0x14
- 1224 0237 01       		.uleb128 0x1
- 1225 0238 50       		.byte	0x50
- 1226 0239 01       		.uleb128 0x1
- 1227 023a 31       		.byte	0x31
- 1228 023b 00       		.byte	0
- 1229 023c 16       		.uleb128 0x16
- 1230 023d 1E000000 		.4byte	.LVL18
- 1231 0241 18040000 		.4byte	0x418
- 1232 0245 50020000 		.4byte	0x250
- 1233 0249 14       		.uleb128 0x14
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 34
+ 1178 01e3 F3       		.byte	0xf3
+ 1179 01e4 01       		.uleb128 0x1
+ 1180 01e5 50       		.byte	0x50
+ 1181 01e6 14       		.uleb128 0x14
+ 1182 01e7 01       		.uleb128 0x1
+ 1183 01e8 51       		.byte	0x51
+ 1184 01e9 01       		.uleb128 0x1
+ 1185 01ea 30       		.byte	0x30
+ 1186 01eb 14       		.uleb128 0x14
+ 1187 01ec 01       		.uleb128 0x1
+ 1188 01ed 52       		.byte	0x52
+ 1189 01ee 03       		.uleb128 0x3
+ 1190 01ef F3       		.byte	0xf3
+ 1191 01f0 01       		.uleb128 0x1
+ 1192 01f1 51       		.byte	0x51
+ 1193 01f2 00       		.byte	0
+ 1194 01f3 00       		.byte	0
+ 1195 01f4 0A       		.uleb128 0xa
+ 1196 01f5 47000000 		.4byte	.LASF29
+ 1197 01f9 01       		.byte	0x1
+ 1198 01fa D3       		.byte	0xd3
+ 1199 01fb 00000000 		.4byte	.LFB6
+ 1200 01ff FC000000 		.4byte	.LFE6-.LFB6
+ 1201 0203 01       		.uleb128 0x1
+ 1202 0204 9C       		.byte	0x9c
+ 1203 0205 9D020000 		.4byte	0x29d
+ 1204 0209 15       		.uleb128 0x15
+ 1205 020a 0C000000 		.4byte	.LVL15
+ 1206 020e F7030000 		.4byte	0x3f7
+ 1207 0212 16       		.uleb128 0x16
+ 1208 0213 12000000 		.4byte	.LVL16
+ 1209 0217 02040000 		.4byte	0x402
+ 1210 021b 29020000 		.4byte	0x229
+ 1211 021f 14       		.uleb128 0x14
+ 1212 0220 01       		.uleb128 0x1
+ 1213 0221 50       		.byte	0x50
+ 1214 0222 05       		.uleb128 0x5
+ 1215 0223 0C       		.byte	0xc
+ 1216 0224 001BB700 		.4byte	0xb71b00
+ 1217 0228 00       		.byte	0
+ 1218 0229 16       		.uleb128 0x16
+ 1219 022a 18000000 		.4byte	.LVL17
+ 1220 022e 0D040000 		.4byte	0x40d
+ 1221 0232 3C020000 		.4byte	0x23c
+ 1222 0236 14       		.uleb128 0x14
+ 1223 0237 01       		.uleb128 0x1
+ 1224 0238 50       		.byte	0x50
+ 1225 0239 01       		.uleb128 0x1
+ 1226 023a 31       		.byte	0x31
+ 1227 023b 00       		.byte	0
+ 1228 023c 16       		.uleb128 0x16
+ 1229 023d 1E000000 		.4byte	.LVL18
+ 1230 0241 18040000 		.4byte	0x418
+ 1231 0245 50020000 		.4byte	0x250
+ 1232 0249 14       		.uleb128 0x14
+ 1233 024a 01       		.uleb128 0x1
+ 1234 024b 50       		.byte	0x50
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 34
 
 
- 1234 024a 01       		.uleb128 0x1
- 1235 024b 50       		.byte	0x50
- 1236 024c 02       		.uleb128 0x2
- 1237 024d 08       		.byte	0x8
- 1238 024e 30       		.byte	0x30
- 1239 024f 00       		.byte	0
- 1240 0250 16       		.uleb128 0x16
- 1241 0251 54000000 		.4byte	.LVL19
- 1242 0255 23040000 		.4byte	0x423
- 1243 0259 65020000 		.4byte	0x265
- 1244 025d 14       		.uleb128 0x14
- 1245 025e 01       		.uleb128 0x1
- 1246 025f 50       		.byte	0x50
- 1247 0260 03       		.uleb128 0x3
- 1248 0261 0A       		.byte	0xa
- 1249 0262 D007     		.2byte	0x7d0
- 1250 0264 00       		.byte	0
- 1251 0265 16       		.uleb128 0x16
- 1252 0266 5A000000 		.4byte	.LVL20
- 1253 026a 2E040000 		.4byte	0x42e
- 1254 026e 7A020000 		.4byte	0x27a
- 1255 0272 14       		.uleb128 0x14
- 1256 0273 01       		.uleb128 0x1
- 1257 0274 50       		.byte	0x50
- 1258 0275 03       		.uleb128 0x3
- 1259 0276 0A       		.byte	0xa
- 1260 0277 DC05     		.2byte	0x5dc
- 1261 0279 00       		.byte	0
- 1262 027a 16       		.uleb128 0x16
- 1263 027b 94000000 		.4byte	.LVL21
- 1264 027f 39040000 		.4byte	0x439
- 1265 0283 8D020000 		.4byte	0x28d
- 1266 0287 14       		.uleb128 0x14
- 1267 0288 01       		.uleb128 0x1
- 1268 0289 50       		.byte	0x50
- 1269 028a 01       		.uleb128 0x1
- 1270 028b 38       		.byte	0x38
- 1271 028c 00       		.byte	0
- 1272 028d 13       		.uleb128 0x13
- 1273 028e 9A000000 		.4byte	.LVL22
- 1274 0292 44040000 		.4byte	0x444
- 1275 0296 14       		.uleb128 0x14
- 1276 0297 01       		.uleb128 0x1
- 1277 0298 50       		.byte	0x50
- 1278 0299 01       		.uleb128 0x1
- 1279 029a 38       		.byte	0x38
- 1280 029b 00       		.byte	0
- 1281 029c 00       		.byte	0
- 1282 029d 17       		.uleb128 0x17
- 1283 029e 4C010000 		.4byte	.LASF48
- 1284 02a2 01       		.byte	0x1
- 1285 02a3 3801     		.2byte	0x138
- 1286 02a5 FC000000 		.4byte	.LFB8
- 1287 02a9 0C010000 		.4byte	.LFE8-.LFB8
- 1288 02ad 01       		.uleb128 0x1
- 1289 02ae 9C       		.byte	0x9c
- 1290 02af C4030000 		.4byte	0x3c4
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 35
+ 1235 024c 02       		.uleb128 0x2
+ 1236 024d 08       		.byte	0x8
+ 1237 024e 30       		.byte	0x30
+ 1238 024f 00       		.byte	0
+ 1239 0250 16       		.uleb128 0x16
+ 1240 0251 54000000 		.4byte	.LVL19
+ 1241 0255 23040000 		.4byte	0x423
+ 1242 0259 65020000 		.4byte	0x265
+ 1243 025d 14       		.uleb128 0x14
+ 1244 025e 01       		.uleb128 0x1
+ 1245 025f 50       		.byte	0x50
+ 1246 0260 03       		.uleb128 0x3
+ 1247 0261 0A       		.byte	0xa
+ 1248 0262 D007     		.2byte	0x7d0
+ 1249 0264 00       		.byte	0
+ 1250 0265 16       		.uleb128 0x16
+ 1251 0266 5A000000 		.4byte	.LVL20
+ 1252 026a 2E040000 		.4byte	0x42e
+ 1253 026e 7A020000 		.4byte	0x27a
+ 1254 0272 14       		.uleb128 0x14
+ 1255 0273 01       		.uleb128 0x1
+ 1256 0274 50       		.byte	0x50
+ 1257 0275 03       		.uleb128 0x3
+ 1258 0276 0A       		.byte	0xa
+ 1259 0277 DC05     		.2byte	0x5dc
+ 1260 0279 00       		.byte	0
+ 1261 027a 16       		.uleb128 0x16
+ 1262 027b 94000000 		.4byte	.LVL21
+ 1263 027f 39040000 		.4byte	0x439
+ 1264 0283 8D020000 		.4byte	0x28d
+ 1265 0287 14       		.uleb128 0x14
+ 1266 0288 01       		.uleb128 0x1
+ 1267 0289 50       		.byte	0x50
+ 1268 028a 01       		.uleb128 0x1
+ 1269 028b 38       		.byte	0x38
+ 1270 028c 00       		.byte	0
+ 1271 028d 13       		.uleb128 0x13
+ 1272 028e 9A000000 		.4byte	.LVL22
+ 1273 0292 44040000 		.4byte	0x444
+ 1274 0296 14       		.uleb128 0x14
+ 1275 0297 01       		.uleb128 0x1
+ 1276 0298 50       		.byte	0x50
+ 1277 0299 01       		.uleb128 0x1
+ 1278 029a 38       		.byte	0x38
+ 1279 029b 00       		.byte	0
+ 1280 029c 00       		.byte	0
+ 1281 029d 17       		.uleb128 0x17
+ 1282 029e 4C010000 		.4byte	.LASF48
+ 1283 02a2 01       		.byte	0x1
+ 1284 02a3 3801     		.2byte	0x138
+ 1285 02a5 FC000000 		.4byte	.LFB8
+ 1286 02a9 0C010000 		.4byte	.LFE8-.LFB8
+ 1287 02ad 01       		.uleb128 0x1
+ 1288 02ae 9C       		.byte	0x9c
+ 1289 02af C4030000 		.4byte	0x3c4
+ 1290 02b3 18       		.uleb128 0x18
+ 1291 02b4 06010000 		.4byte	.LBB3
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 35
 
 
- 1291 02b3 18       		.uleb128 0x18
- 1292 02b4 06010000 		.4byte	.LBB3
- 1293 02b8 82000000 		.4byte	.LBE3-.LBB3
- 1294 02bc B1030000 		.4byte	0x3b1
- 1295 02c0 19       		.uleb128 0x19
- 1296 02c1 52000000 		.4byte	.LASF30
- 1297 02c5 01       		.byte	0x1
- 1298 02c6 4001     		.2byte	0x140
- 1299 02c8 D4030000 		.4byte	0x3d4
- 1300 02cc 05       		.uleb128 0x5
- 1301 02cd 03       		.byte	0x3
- 1302 02ce BC010000 		.4byte	cy_cfg_addr_table.4901
- 1303 02d2 19       		.uleb128 0x19
- 1304 02d3 64000000 		.4byte	.LASF31
- 1305 02d7 01       		.byte	0x1
- 1306 02d8 4B01     		.2byte	0x14b
- 1307 02da E9030000 		.4byte	0x3e9
- 1308 02de 05       		.uleb128 0x5
- 1309 02df 03       		.byte	0x3
- 1310 02e0 0C000000 		.4byte	cy_cfg_data_table.4902
- 1311 02e4 1A       		.uleb128 0x1a
- 1312 02e5 06       		.byte	0x6
- 1313 02e6 01       		.byte	0x1
- 1314 02e7 2802     		.2byte	0x228
- 1315 02e9 08030000 		.4byte	0x308
- 1316 02ed 1B       		.uleb128 0x1b
- 1317 02ee 59010000 		.4byte	.LASF32
- 1318 02f2 01       		.byte	0x1
- 1319 02f3 2902     		.2byte	0x229
- 1320 02f5 84000000 		.4byte	0x84
- 1321 02f9 00       		.byte	0
- 1322 02fa 1B       		.uleb128 0x1b
- 1323 02fb 8C000000 		.4byte	.LASF33
- 1324 02ff 01       		.byte	0x1
- 1325 0300 2A02     		.2byte	0x22a
- 1326 0302 99000000 		.4byte	0x99
- 1327 0306 04       		.byte	0x4
- 1328 0307 00       		.byte	0
- 1329 0308 06       		.uleb128 0x6
- 1330 0309 06020000 		.4byte	.LASF34
- 1331 030d 01       		.byte	0x1
- 1332 030e 2B02     		.2byte	0x22b
- 1333 0310 E4020000 		.4byte	0x2e4
- 1334 0314 1C       		.uleb128 0x1c
- 1335 0315 24030000 		.4byte	0x324
- 1336 0319 24030000 		.4byte	0x324
- 1337 031d 1D       		.uleb128 0x1d
- 1338 031e 7D000000 		.4byte	0x7d
- 1339 0322 01       		.byte	0x1
- 1340 0323 00       		.byte	0
- 1341 0324 10       		.uleb128 0x10
- 1342 0325 08030000 		.4byte	0x308
- 1343 0329 19       		.uleb128 0x19
- 1344 032a 7C000000 		.4byte	.LASF35
- 1345 032e 01       		.byte	0x1
- 1346 032f 2D02     		.2byte	0x22d
- 1347 0331 3B030000 		.4byte	0x33b
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 36
+ 1292 02b8 82000000 		.4byte	.LBE3-.LBB3
+ 1293 02bc B1030000 		.4byte	0x3b1
+ 1294 02c0 19       		.uleb128 0x19
+ 1295 02c1 52000000 		.4byte	.LASF30
+ 1296 02c5 01       		.byte	0x1
+ 1297 02c6 4001     		.2byte	0x140
+ 1298 02c8 D4030000 		.4byte	0x3d4
+ 1299 02cc 05       		.uleb128 0x5
+ 1300 02cd 03       		.byte	0x3
+ 1301 02ce BC010000 		.4byte	cy_cfg_addr_table.4910
+ 1302 02d2 19       		.uleb128 0x19
+ 1303 02d3 64000000 		.4byte	.LASF31
+ 1304 02d7 01       		.byte	0x1
+ 1305 02d8 4B01     		.2byte	0x14b
+ 1306 02da E9030000 		.4byte	0x3e9
+ 1307 02de 05       		.uleb128 0x5
+ 1308 02df 03       		.byte	0x3
+ 1309 02e0 0C000000 		.4byte	cy_cfg_data_table.4911
+ 1310 02e4 1A       		.uleb128 0x1a
+ 1311 02e5 06       		.byte	0x6
+ 1312 02e6 01       		.byte	0x1
+ 1313 02e7 2702     		.2byte	0x227
+ 1314 02e9 08030000 		.4byte	0x308
+ 1315 02ed 1B       		.uleb128 0x1b
+ 1316 02ee 59010000 		.4byte	.LASF32
+ 1317 02f2 01       		.byte	0x1
+ 1318 02f3 2802     		.2byte	0x228
+ 1319 02f5 84000000 		.4byte	0x84
+ 1320 02f9 00       		.byte	0
+ 1321 02fa 1B       		.uleb128 0x1b
+ 1322 02fb 8C000000 		.4byte	.LASF33
+ 1323 02ff 01       		.byte	0x1
+ 1324 0300 2902     		.2byte	0x229
+ 1325 0302 99000000 		.4byte	0x99
+ 1326 0306 04       		.byte	0x4
+ 1327 0307 00       		.byte	0
+ 1328 0308 06       		.uleb128 0x6
+ 1329 0309 06020000 		.4byte	.LASF34
+ 1330 030d 01       		.byte	0x1
+ 1331 030e 2A02     		.2byte	0x22a
+ 1332 0310 E4020000 		.4byte	0x2e4
+ 1333 0314 1C       		.uleb128 0x1c
+ 1334 0315 24030000 		.4byte	0x324
+ 1335 0319 24030000 		.4byte	0x324
+ 1336 031d 1D       		.uleb128 0x1d
+ 1337 031e 7D000000 		.4byte	0x7d
+ 1338 0322 01       		.byte	0x1
+ 1339 0323 00       		.byte	0
+ 1340 0324 10       		.uleb128 0x10
+ 1341 0325 08030000 		.4byte	0x308
+ 1342 0329 19       		.uleb128 0x19
+ 1343 032a 7C000000 		.4byte	.LASF35
+ 1344 032e 01       		.byte	0x1
+ 1345 032f 2C02     		.2byte	0x22c
+ 1346 0331 3B030000 		.4byte	0x33b
+ 1347 0335 05       		.uleb128 0x5
+ 1348 0336 03       		.byte	0x3
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 36
 
 
- 1348 0335 05       		.uleb128 0x5
- 1349 0336 03       		.byte	0x3
- 1350 0337 00000000 		.4byte	cfg_memset_list.4907
- 1351 033b 10       		.uleb128 0x10
- 1352 033c 14030000 		.4byte	0x314
- 1353 0340 1E       		.uleb128 0x1e
- 1354 0341 6900     		.ascii	"i\000"
- 1355 0343 01       		.byte	0x1
- 1356 0344 3302     		.2byte	0x233
- 1357 0346 8D000000 		.4byte	0x8d
- 1358 034a BC000000 		.4byte	.LLST6
- 1359 034e 18       		.uleb128 0x18
- 1360 034f 0A010000 		.4byte	.LBB4
- 1361 0353 1C000000 		.4byte	.LBE4-.LBB4
- 1362 0357 94030000 		.4byte	0x394
- 1363 035b 1E       		.uleb128 0x1e
- 1364 035c 6D7300   		.ascii	"ms\000"
- 1365 035f 01       		.byte	0x1
- 1366 0360 3802     		.2byte	0x238
- 1367 0362 6A030000 		.4byte	0x36a
- 1368 0366 E6000000 		.4byte	.LLST7
- 1369 036a 0F       		.uleb128 0xf
- 1370 036b 04       		.byte	0x4
- 1371 036c 24030000 		.4byte	0x324
- 1372 0370 13       		.uleb128 0x13
- 1373 0371 26010000 		.4byte	.LVL25
- 1374 0375 A7010000 		.4byte	0x1a7
- 1375 0379 14       		.uleb128 0x14
- 1376 037a 01       		.uleb128 0x1
- 1377 037b 51       		.byte	0x51
- 1378 037c 15       		.uleb128 0x15
- 1379 037d 74       		.byte	0x74
- 1380 037e 00       		.sleb128 0
- 1381 037f 31       		.byte	0x31
- 1382 0380 24       		.byte	0x24
- 1383 0381 74       		.byte	0x74
- 1384 0382 00       		.sleb128 0
- 1385 0383 22       		.byte	0x22
- 1386 0384 31       		.byte	0x31
- 1387 0385 24       		.byte	0x24
- 1388 0386 03       		.byte	0x3
- 1389 0387 04000000 		.4byte	.LANCHOR0+4
- 1390 038b 22       		.byte	0x22
- 1391 038c 94       		.byte	0x94
- 1392 038d 02       		.byte	0x2
- 1393 038e 0A       		.byte	0xa
- 1394 038f FFFF     		.2byte	0xffff
- 1395 0391 1A       		.byte	0x1a
- 1396 0392 00       		.byte	0
- 1397 0393 00       		.byte	0
- 1398 0394 13       		.uleb128 0x13
- 1399 0395 3A010000 		.4byte	.LVL28
- 1400 0399 0D010000 		.4byte	0x10d
- 1401 039d 14       		.uleb128 0x14
- 1402 039e 01       		.uleb128 0x1
- 1403 039f 50       		.byte	0x50
- 1404 03a0 05       		.uleb128 0x5
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 37
+ 1349 0337 00000000 		.4byte	cfg_memset_list.4916
+ 1350 033b 10       		.uleb128 0x10
+ 1351 033c 14030000 		.4byte	0x314
+ 1352 0340 1E       		.uleb128 0x1e
+ 1353 0341 6900     		.ascii	"i\000"
+ 1354 0343 01       		.byte	0x1
+ 1355 0344 3202     		.2byte	0x232
+ 1356 0346 8D000000 		.4byte	0x8d
+ 1357 034a BC000000 		.4byte	.LLST6
+ 1358 034e 18       		.uleb128 0x18
+ 1359 034f 0A010000 		.4byte	.LBB4
+ 1360 0353 1C000000 		.4byte	.LBE4-.LBB4
+ 1361 0357 94030000 		.4byte	0x394
+ 1362 035b 1E       		.uleb128 0x1e
+ 1363 035c 6D7300   		.ascii	"ms\000"
+ 1364 035f 01       		.byte	0x1
+ 1365 0360 3702     		.2byte	0x237
+ 1366 0362 6A030000 		.4byte	0x36a
+ 1367 0366 E6000000 		.4byte	.LLST7
+ 1368 036a 0F       		.uleb128 0xf
+ 1369 036b 04       		.byte	0x4
+ 1370 036c 24030000 		.4byte	0x324
+ 1371 0370 13       		.uleb128 0x13
+ 1372 0371 26010000 		.4byte	.LVL25
+ 1373 0375 A7010000 		.4byte	0x1a7
+ 1374 0379 14       		.uleb128 0x14
+ 1375 037a 01       		.uleb128 0x1
+ 1376 037b 51       		.byte	0x51
+ 1377 037c 15       		.uleb128 0x15
+ 1378 037d 74       		.byte	0x74
+ 1379 037e 00       		.sleb128 0
+ 1380 037f 31       		.byte	0x31
+ 1381 0380 24       		.byte	0x24
+ 1382 0381 74       		.byte	0x74
+ 1383 0382 00       		.sleb128 0
+ 1384 0383 22       		.byte	0x22
+ 1385 0384 31       		.byte	0x31
+ 1386 0385 24       		.byte	0x24
+ 1387 0386 03       		.byte	0x3
+ 1388 0387 04000000 		.4byte	.LANCHOR0+4
+ 1389 038b 22       		.byte	0x22
+ 1390 038c 94       		.byte	0x94
+ 1391 038d 02       		.byte	0x2
+ 1392 038e 0A       		.byte	0xa
+ 1393 038f FFFF     		.2byte	0xffff
+ 1394 0391 1A       		.byte	0x1a
+ 1395 0392 00       		.byte	0
+ 1396 0393 00       		.byte	0
+ 1397 0394 13       		.uleb128 0x13
+ 1398 0395 3A010000 		.4byte	.LVL28
+ 1399 0399 0D010000 		.4byte	0x10d
+ 1400 039d 14       		.uleb128 0x14
+ 1401 039e 01       		.uleb128 0x1
+ 1402 039f 50       		.byte	0x50
+ 1403 03a0 05       		.uleb128 0x5
+ 1404 03a1 03       		.byte	0x3
+ 1405 03a2 BC010000 		.4byte	.LANCHOR1+60
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 37
 
 
- 1405 03a1 03       		.byte	0x3
- 1406 03a2 BC010000 		.4byte	.LANCHOR1+60
- 1407 03a6 14       		.uleb128 0x14
- 1408 03a7 01       		.uleb128 0x1
- 1409 03a8 51       		.byte	0x51
- 1410 03a9 05       		.uleb128 0x5
- 1411 03aa 03       		.byte	0x3
- 1412 03ab 0C000000 		.4byte	.LANCHOR0+12
- 1413 03af 00       		.byte	0
- 1414 03b0 00       		.byte	0
- 1415 03b1 15       		.uleb128 0x15
- 1416 03b2 AE010000 		.4byte	.LVL29
- 1417 03b6 F4010000 		.4byte	0x1f4
- 1418 03ba 15       		.uleb128 0x15
- 1419 03bb B2010000 		.4byte	.LVL30
- 1420 03bf 95010000 		.4byte	0x195
- 1421 03c3 00       		.byte	0
- 1422 03c4 1C       		.uleb128 0x1c
- 1423 03c5 85010000 		.4byte	0x185
- 1424 03c9 D4030000 		.4byte	0x3d4
- 1425 03cd 1D       		.uleb128 0x1d
- 1426 03ce 7D000000 		.4byte	0x7d
- 1427 03d2 07       		.byte	0x7
- 1428 03d3 00       		.byte	0
- 1429 03d4 10       		.uleb128 0x10
- 1430 03d5 C4030000 		.4byte	0x3c4
- 1431 03d9 1C       		.uleb128 0x1c
- 1432 03da 90010000 		.4byte	0x190
- 1433 03de E9030000 		.4byte	0x3e9
- 1434 03e2 1D       		.uleb128 0x1d
- 1435 03e3 7D000000 		.4byte	0x7d
- 1436 03e7 D7       		.byte	0xd7
- 1437 03e8 00       		.byte	0
- 1438 03e9 10       		.uleb128 0x10
- 1439 03ea D9030000 		.4byte	0x3d9
- 1440 03ee 1F       		.uleb128 0x1f
- 1441 03ef EF000000 		.4byte	.LASF49
- 1442 03f3 EF000000 		.4byte	.LASF49
- 1443 03f7 20       		.uleb128 0x20
- 1444 03f8 C6000000 		.4byte	.LASF36
- 1445 03fc C6000000 		.4byte	.LASF36
- 1446 0400 04       		.byte	0x4
- 1447 0401 4E       		.byte	0x4e
- 1448 0402 20       		.uleb128 0x20
- 1449 0403 00000000 		.4byte	.LASF37
- 1450 0407 00000000 		.4byte	.LASF37
- 1451 040b 05       		.byte	0x5
- 1452 040c DC       		.byte	0xdc
- 1453 040d 20       		.uleb128 0x20
- 1454 040e 91000000 		.4byte	.LASF38
- 1455 0412 91000000 		.4byte	.LASF38
- 1456 0416 04       		.byte	0x4
- 1457 0417 50       		.byte	0x50
- 1458 0418 20       		.uleb128 0x20
- 1459 0419 D5020000 		.4byte	.LASF39
- 1460 041d D5020000 		.4byte	.LASF39
- 1461 0421 05       		.byte	0x5
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 38
+ 1406 03a6 14       		.uleb128 0x14
+ 1407 03a7 01       		.uleb128 0x1
+ 1408 03a8 51       		.byte	0x51
+ 1409 03a9 05       		.uleb128 0x5
+ 1410 03aa 03       		.byte	0x3
+ 1411 03ab 0C000000 		.4byte	.LANCHOR0+12
+ 1412 03af 00       		.byte	0
+ 1413 03b0 00       		.byte	0
+ 1414 03b1 15       		.uleb128 0x15
+ 1415 03b2 AE010000 		.4byte	.LVL29
+ 1416 03b6 F4010000 		.4byte	0x1f4
+ 1417 03ba 15       		.uleb128 0x15
+ 1418 03bb B2010000 		.4byte	.LVL30
+ 1419 03bf 95010000 		.4byte	0x195
+ 1420 03c3 00       		.byte	0
+ 1421 03c4 1C       		.uleb128 0x1c
+ 1422 03c5 85010000 		.4byte	0x185
+ 1423 03c9 D4030000 		.4byte	0x3d4
+ 1424 03cd 1D       		.uleb128 0x1d
+ 1425 03ce 7D000000 		.4byte	0x7d
+ 1426 03d2 07       		.byte	0x7
+ 1427 03d3 00       		.byte	0
+ 1428 03d4 10       		.uleb128 0x10
+ 1429 03d5 C4030000 		.4byte	0x3c4
+ 1430 03d9 1C       		.uleb128 0x1c
+ 1431 03da 90010000 		.4byte	0x190
+ 1432 03de E9030000 		.4byte	0x3e9
+ 1433 03e2 1D       		.uleb128 0x1d
+ 1434 03e3 7D000000 		.4byte	0x7d
+ 1435 03e7 D6       		.byte	0xd6
+ 1436 03e8 00       		.byte	0
+ 1437 03e9 10       		.uleb128 0x10
+ 1438 03ea D9030000 		.4byte	0x3d9
+ 1439 03ee 1F       		.uleb128 0x1f
+ 1440 03ef EF000000 		.4byte	.LASF49
+ 1441 03f3 EF000000 		.4byte	.LASF49
+ 1442 03f7 20       		.uleb128 0x20
+ 1443 03f8 C6000000 		.4byte	.LASF36
+ 1444 03fc C6000000 		.4byte	.LASF36
+ 1445 0400 04       		.byte	0x4
+ 1446 0401 4E       		.byte	0x4e
+ 1447 0402 20       		.uleb128 0x20
+ 1448 0403 00000000 		.4byte	.LASF37
+ 1449 0407 00000000 		.4byte	.LASF37
+ 1450 040b 05       		.byte	0x5
+ 1451 040c DC       		.byte	0xdc
+ 1452 040d 20       		.uleb128 0x20
+ 1453 040e 91000000 		.4byte	.LASF38
+ 1454 0412 91000000 		.4byte	.LASF38
+ 1455 0416 04       		.byte	0x4
+ 1456 0417 50       		.byte	0x50
+ 1457 0418 20       		.uleb128 0x20
+ 1458 0419 D5020000 		.4byte	.LASF39
+ 1459 041d D5020000 		.4byte	.LASF39
+ 1460 0421 05       		.byte	0x5
+ 1461 0422 6C       		.byte	0x6c
+ 1462 0423 20       		.uleb128 0x20
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 38
 
 
- 1462 0422 6C       		.byte	0x6c
- 1463 0423 20       		.uleb128 0x20
- 1464 0424 A0020000 		.4byte	.LASF40
- 1465 0428 A0020000 		.4byte	.LASF40
- 1466 042c 05       		.byte	0x5
- 1467 042d 84       		.byte	0x84
- 1468 042e 20       		.uleb128 0x20
- 1469 042f 91020000 		.4byte	.LASF41
- 1470 0433 91020000 		.4byte	.LASF41
- 1471 0437 05       		.byte	0x5
- 1472 0438 DA       		.byte	0xda
- 1473 0439 20       		.uleb128 0x20
- 1474 043a 2C000000 		.4byte	.LASF42
- 1475 043e 2C000000 		.4byte	.LASF42
- 1476 0442 05       		.byte	0x5
- 1477 0443 BD       		.byte	0xbd
- 1478 0444 20       		.uleb128 0x20
- 1479 0445 0F010000 		.4byte	.LASF43
- 1480 0449 0F010000 		.4byte	.LASF43
- 1481 044d 05       		.byte	0x5
- 1482 044e C3       		.byte	0xc3
- 1483 044f 00       		.byte	0
- 1484              		.section	.debug_abbrev,"",%progbits
- 1485              	.Ldebug_abbrev0:
- 1486 0000 01       		.uleb128 0x1
- 1487 0001 11       		.uleb128 0x11
- 1488 0002 01       		.byte	0x1
- 1489 0003 25       		.uleb128 0x25
- 1490 0004 0E       		.uleb128 0xe
- 1491 0005 13       		.uleb128 0x13
- 1492 0006 0B       		.uleb128 0xb
- 1493 0007 03       		.uleb128 0x3
- 1494 0008 0E       		.uleb128 0xe
- 1495 0009 1B       		.uleb128 0x1b
- 1496 000a 0E       		.uleb128 0xe
- 1497 000b 55       		.uleb128 0x55
- 1498 000c 17       		.uleb128 0x17
- 1499 000d 11       		.uleb128 0x11
- 1500 000e 01       		.uleb128 0x1
- 1501 000f 10       		.uleb128 0x10
- 1502 0010 17       		.uleb128 0x17
- 1503 0011 00       		.byte	0
- 1504 0012 00       		.byte	0
- 1505 0013 02       		.uleb128 0x2
- 1506 0014 24       		.uleb128 0x24
- 1507 0015 00       		.byte	0
- 1508 0016 0B       		.uleb128 0xb
- 1509 0017 0B       		.uleb128 0xb
- 1510 0018 3E       		.uleb128 0x3e
- 1511 0019 0B       		.uleb128 0xb
- 1512 001a 03       		.uleb128 0x3
- 1513 001b 08       		.uleb128 0x8
- 1514 001c 00       		.byte	0
- 1515 001d 00       		.byte	0
- 1516 001e 03       		.uleb128 0x3
- 1517 001f 16       		.uleb128 0x16
- 1518 0020 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 39
+ 1463 0424 A0020000 		.4byte	.LASF40
+ 1464 0428 A0020000 		.4byte	.LASF40
+ 1465 042c 05       		.byte	0x5
+ 1466 042d 84       		.byte	0x84
+ 1467 042e 20       		.uleb128 0x20
+ 1468 042f 91020000 		.4byte	.LASF41
+ 1469 0433 91020000 		.4byte	.LASF41
+ 1470 0437 05       		.byte	0x5
+ 1471 0438 DA       		.byte	0xda
+ 1472 0439 20       		.uleb128 0x20
+ 1473 043a 2C000000 		.4byte	.LASF42
+ 1474 043e 2C000000 		.4byte	.LASF42
+ 1475 0442 05       		.byte	0x5
+ 1476 0443 BD       		.byte	0xbd
+ 1477 0444 20       		.uleb128 0x20
+ 1478 0445 0F010000 		.4byte	.LASF43
+ 1479 0449 0F010000 		.4byte	.LASF43
+ 1480 044d 05       		.byte	0x5
+ 1481 044e C3       		.byte	0xc3
+ 1482 044f 00       		.byte	0
+ 1483              		.section	.debug_abbrev,"",%progbits
+ 1484              	.Ldebug_abbrev0:
+ 1485 0000 01       		.uleb128 0x1
+ 1486 0001 11       		.uleb128 0x11
+ 1487 0002 01       		.byte	0x1
+ 1488 0003 25       		.uleb128 0x25
+ 1489 0004 0E       		.uleb128 0xe
+ 1490 0005 13       		.uleb128 0x13
+ 1491 0006 0B       		.uleb128 0xb
+ 1492 0007 03       		.uleb128 0x3
+ 1493 0008 0E       		.uleb128 0xe
+ 1494 0009 1B       		.uleb128 0x1b
+ 1495 000a 0E       		.uleb128 0xe
+ 1496 000b 55       		.uleb128 0x55
+ 1497 000c 17       		.uleb128 0x17
+ 1498 000d 11       		.uleb128 0x11
+ 1499 000e 01       		.uleb128 0x1
+ 1500 000f 10       		.uleb128 0x10
+ 1501 0010 17       		.uleb128 0x17
+ 1502 0011 00       		.byte	0
+ 1503 0012 00       		.byte	0
+ 1504 0013 02       		.uleb128 0x2
+ 1505 0014 24       		.uleb128 0x24
+ 1506 0015 00       		.byte	0
+ 1507 0016 0B       		.uleb128 0xb
+ 1508 0017 0B       		.uleb128 0xb
+ 1509 0018 3E       		.uleb128 0x3e
+ 1510 0019 0B       		.uleb128 0xb
+ 1511 001a 03       		.uleb128 0x3
+ 1512 001b 08       		.uleb128 0x8
+ 1513 001c 00       		.byte	0
+ 1514 001d 00       		.byte	0
+ 1515 001e 03       		.uleb128 0x3
+ 1516 001f 16       		.uleb128 0x16
+ 1517 0020 00       		.byte	0
+ 1518 0021 03       		.uleb128 0x3
+ 1519 0022 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 39
 
 
- 1519 0021 03       		.uleb128 0x3
- 1520 0022 0E       		.uleb128 0xe
- 1521 0023 3A       		.uleb128 0x3a
- 1522 0024 0B       		.uleb128 0xb
- 1523 0025 3B       		.uleb128 0x3b
- 1524 0026 0B       		.uleb128 0xb
- 1525 0027 49       		.uleb128 0x49
- 1526 0028 13       		.uleb128 0x13
- 1527 0029 00       		.byte	0
- 1528 002a 00       		.byte	0
- 1529 002b 04       		.uleb128 0x4
- 1530 002c 24       		.uleb128 0x24
- 1531 002d 00       		.byte	0
- 1532 002e 0B       		.uleb128 0xb
- 1533 002f 0B       		.uleb128 0xb
- 1534 0030 3E       		.uleb128 0x3e
- 1535 0031 0B       		.uleb128 0xb
- 1536 0032 03       		.uleb128 0x3
- 1537 0033 0E       		.uleb128 0xe
- 1538 0034 00       		.byte	0
- 1539 0035 00       		.byte	0
- 1540 0036 05       		.uleb128 0x5
- 1541 0037 0F       		.uleb128 0xf
- 1542 0038 00       		.byte	0
- 1543 0039 0B       		.uleb128 0xb
- 1544 003a 0B       		.uleb128 0xb
- 1545 003b 00       		.byte	0
- 1546 003c 00       		.byte	0
- 1547 003d 06       		.uleb128 0x6
- 1548 003e 16       		.uleb128 0x16
- 1549 003f 00       		.byte	0
- 1550 0040 03       		.uleb128 0x3
- 1551 0041 0E       		.uleb128 0xe
- 1552 0042 3A       		.uleb128 0x3a
- 1553 0043 0B       		.uleb128 0xb
- 1554 0044 3B       		.uleb128 0x3b
- 1555 0045 05       		.uleb128 0x5
- 1556 0046 49       		.uleb128 0x49
- 1557 0047 13       		.uleb128 0x13
- 1558 0048 00       		.byte	0
- 1559 0049 00       		.byte	0
- 1560 004a 07       		.uleb128 0x7
- 1561 004b 35       		.uleb128 0x35
- 1562 004c 00       		.byte	0
- 1563 004d 49       		.uleb128 0x49
- 1564 004e 13       		.uleb128 0x13
- 1565 004f 00       		.byte	0
- 1566 0050 00       		.byte	0
- 1567 0051 08       		.uleb128 0x8
- 1568 0052 13       		.uleb128 0x13
- 1569 0053 01       		.byte	0x1
- 1570 0054 0B       		.uleb128 0xb
- 1571 0055 0B       		.uleb128 0xb
- 1572 0056 3A       		.uleb128 0x3a
- 1573 0057 0B       		.uleb128 0xb
- 1574 0058 3B       		.uleb128 0x3b
- 1575 0059 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 40
+ 1520 0023 3A       		.uleb128 0x3a
+ 1521 0024 0B       		.uleb128 0xb
+ 1522 0025 3B       		.uleb128 0x3b
+ 1523 0026 0B       		.uleb128 0xb
+ 1524 0027 49       		.uleb128 0x49
+ 1525 0028 13       		.uleb128 0x13
+ 1526 0029 00       		.byte	0
+ 1527 002a 00       		.byte	0
+ 1528 002b 04       		.uleb128 0x4
+ 1529 002c 24       		.uleb128 0x24
+ 1530 002d 00       		.byte	0
+ 1531 002e 0B       		.uleb128 0xb
+ 1532 002f 0B       		.uleb128 0xb
+ 1533 0030 3E       		.uleb128 0x3e
+ 1534 0031 0B       		.uleb128 0xb
+ 1535 0032 03       		.uleb128 0x3
+ 1536 0033 0E       		.uleb128 0xe
+ 1537 0034 00       		.byte	0
+ 1538 0035 00       		.byte	0
+ 1539 0036 05       		.uleb128 0x5
+ 1540 0037 0F       		.uleb128 0xf
+ 1541 0038 00       		.byte	0
+ 1542 0039 0B       		.uleb128 0xb
+ 1543 003a 0B       		.uleb128 0xb
+ 1544 003b 00       		.byte	0
+ 1545 003c 00       		.byte	0
+ 1546 003d 06       		.uleb128 0x6
+ 1547 003e 16       		.uleb128 0x16
+ 1548 003f 00       		.byte	0
+ 1549 0040 03       		.uleb128 0x3
+ 1550 0041 0E       		.uleb128 0xe
+ 1551 0042 3A       		.uleb128 0x3a
+ 1552 0043 0B       		.uleb128 0xb
+ 1553 0044 3B       		.uleb128 0x3b
+ 1554 0045 05       		.uleb128 0x5
+ 1555 0046 49       		.uleb128 0x49
+ 1556 0047 13       		.uleb128 0x13
+ 1557 0048 00       		.byte	0
+ 1558 0049 00       		.byte	0
+ 1559 004a 07       		.uleb128 0x7
+ 1560 004b 35       		.uleb128 0x35
+ 1561 004c 00       		.byte	0
+ 1562 004d 49       		.uleb128 0x49
+ 1563 004e 13       		.uleb128 0x13
+ 1564 004f 00       		.byte	0
+ 1565 0050 00       		.byte	0
+ 1566 0051 08       		.uleb128 0x8
+ 1567 0052 13       		.uleb128 0x13
+ 1568 0053 01       		.byte	0x1
+ 1569 0054 0B       		.uleb128 0xb
+ 1570 0055 0B       		.uleb128 0xb
+ 1571 0056 3A       		.uleb128 0x3a
+ 1572 0057 0B       		.uleb128 0xb
+ 1573 0058 3B       		.uleb128 0x3b
+ 1574 0059 0B       		.uleb128 0xb
+ 1575 005a 01       		.uleb128 0x1
+ 1576 005b 13       		.uleb128 0x13
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 40
 
 
- 1576 005a 01       		.uleb128 0x1
- 1577 005b 13       		.uleb128 0x13
- 1578 005c 00       		.byte	0
- 1579 005d 00       		.byte	0
- 1580 005e 09       		.uleb128 0x9
- 1581 005f 0D       		.uleb128 0xd
- 1582 0060 00       		.byte	0
- 1583 0061 03       		.uleb128 0x3
- 1584 0062 0E       		.uleb128 0xe
- 1585 0063 3A       		.uleb128 0x3a
- 1586 0064 0B       		.uleb128 0xb
- 1587 0065 3B       		.uleb128 0x3b
- 1588 0066 0B       		.uleb128 0xb
- 1589 0067 49       		.uleb128 0x49
- 1590 0068 13       		.uleb128 0x13
- 1591 0069 38       		.uleb128 0x38
- 1592 006a 0B       		.uleb128 0xb
- 1593 006b 00       		.byte	0
- 1594 006c 00       		.byte	0
- 1595 006d 0A       		.uleb128 0xa
- 1596 006e 2E       		.uleb128 0x2e
- 1597 006f 01       		.byte	0x1
- 1598 0070 03       		.uleb128 0x3
- 1599 0071 0E       		.uleb128 0xe
- 1600 0072 3A       		.uleb128 0x3a
- 1601 0073 0B       		.uleb128 0xb
- 1602 0074 3B       		.uleb128 0x3b
- 1603 0075 0B       		.uleb128 0xb
- 1604 0076 27       		.uleb128 0x27
- 1605 0077 19       		.uleb128 0x19
- 1606 0078 11       		.uleb128 0x11
- 1607 0079 01       		.uleb128 0x1
- 1608 007a 12       		.uleb128 0x12
- 1609 007b 06       		.uleb128 0x6
- 1610 007c 40       		.uleb128 0x40
- 1611 007d 18       		.uleb128 0x18
- 1612 007e 9742     		.uleb128 0x2117
- 1613 0080 19       		.uleb128 0x19
- 1614 0081 01       		.uleb128 0x1
- 1615 0082 13       		.uleb128 0x13
- 1616 0083 00       		.byte	0
- 1617 0084 00       		.byte	0
- 1618 0085 0B       		.uleb128 0xb
- 1619 0086 05       		.uleb128 0x5
- 1620 0087 00       		.byte	0
- 1621 0088 03       		.uleb128 0x3
- 1622 0089 0E       		.uleb128 0xe
- 1623 008a 3A       		.uleb128 0x3a
- 1624 008b 0B       		.uleb128 0xb
- 1625 008c 3B       		.uleb128 0x3b
- 1626 008d 0B       		.uleb128 0xb
- 1627 008e 49       		.uleb128 0x49
- 1628 008f 13       		.uleb128 0x13
- 1629 0090 02       		.uleb128 0x2
- 1630 0091 18       		.uleb128 0x18
- 1631 0092 00       		.byte	0
- 1632 0093 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 41
+ 1577 005c 00       		.byte	0
+ 1578 005d 00       		.byte	0
+ 1579 005e 09       		.uleb128 0x9
+ 1580 005f 0D       		.uleb128 0xd
+ 1581 0060 00       		.byte	0
+ 1582 0061 03       		.uleb128 0x3
+ 1583 0062 0E       		.uleb128 0xe
+ 1584 0063 3A       		.uleb128 0x3a
+ 1585 0064 0B       		.uleb128 0xb
+ 1586 0065 3B       		.uleb128 0x3b
+ 1587 0066 0B       		.uleb128 0xb
+ 1588 0067 49       		.uleb128 0x49
+ 1589 0068 13       		.uleb128 0x13
+ 1590 0069 38       		.uleb128 0x38
+ 1591 006a 0B       		.uleb128 0xb
+ 1592 006b 00       		.byte	0
+ 1593 006c 00       		.byte	0
+ 1594 006d 0A       		.uleb128 0xa
+ 1595 006e 2E       		.uleb128 0x2e
+ 1596 006f 01       		.byte	0x1
+ 1597 0070 03       		.uleb128 0x3
+ 1598 0071 0E       		.uleb128 0xe
+ 1599 0072 3A       		.uleb128 0x3a
+ 1600 0073 0B       		.uleb128 0xb
+ 1601 0074 3B       		.uleb128 0x3b
+ 1602 0075 0B       		.uleb128 0xb
+ 1603 0076 27       		.uleb128 0x27
+ 1604 0077 19       		.uleb128 0x19
+ 1605 0078 11       		.uleb128 0x11
+ 1606 0079 01       		.uleb128 0x1
+ 1607 007a 12       		.uleb128 0x12
+ 1608 007b 06       		.uleb128 0x6
+ 1609 007c 40       		.uleb128 0x40
+ 1610 007d 18       		.uleb128 0x18
+ 1611 007e 9742     		.uleb128 0x2117
+ 1612 0080 19       		.uleb128 0x19
+ 1613 0081 01       		.uleb128 0x1
+ 1614 0082 13       		.uleb128 0x13
+ 1615 0083 00       		.byte	0
+ 1616 0084 00       		.byte	0
+ 1617 0085 0B       		.uleb128 0xb
+ 1618 0086 05       		.uleb128 0x5
+ 1619 0087 00       		.byte	0
+ 1620 0088 03       		.uleb128 0x3
+ 1621 0089 0E       		.uleb128 0xe
+ 1622 008a 3A       		.uleb128 0x3a
+ 1623 008b 0B       		.uleb128 0xb
+ 1624 008c 3B       		.uleb128 0x3b
+ 1625 008d 0B       		.uleb128 0xb
+ 1626 008e 49       		.uleb128 0x49
+ 1627 008f 13       		.uleb128 0x13
+ 1628 0090 02       		.uleb128 0x2
+ 1629 0091 18       		.uleb128 0x18
+ 1630 0092 00       		.byte	0
+ 1631 0093 00       		.byte	0
+ 1632 0094 0C       		.uleb128 0xc
+ 1633 0095 34       		.uleb128 0x34
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 41
 
 
- 1633 0094 0C       		.uleb128 0xc
- 1634 0095 34       		.uleb128 0x34
- 1635 0096 00       		.byte	0
- 1636 0097 03       		.uleb128 0x3
- 1637 0098 08       		.uleb128 0x8
- 1638 0099 3A       		.uleb128 0x3a
- 1639 009a 0B       		.uleb128 0xb
- 1640 009b 3B       		.uleb128 0x3b
- 1641 009c 0B       		.uleb128 0xb
- 1642 009d 49       		.uleb128 0x49
- 1643 009e 13       		.uleb128 0x13
- 1644 009f 02       		.uleb128 0x2
- 1645 00a0 17       		.uleb128 0x17
- 1646 00a1 00       		.byte	0
- 1647 00a2 00       		.byte	0
- 1648 00a3 0D       		.uleb128 0xd
- 1649 00a4 0B       		.uleb128 0xb
- 1650 00a5 01       		.byte	0x1
- 1651 00a6 11       		.uleb128 0x11
- 1652 00a7 01       		.uleb128 0x1
- 1653 00a8 12       		.uleb128 0x12
- 1654 00a9 06       		.uleb128 0x6
- 1655 00aa 00       		.byte	0
- 1656 00ab 00       		.byte	0
- 1657 00ac 0E       		.uleb128 0xe
- 1658 00ad 34       		.uleb128 0x34
- 1659 00ae 00       		.byte	0
- 1660 00af 03       		.uleb128 0x3
- 1661 00b0 0E       		.uleb128 0xe
- 1662 00b1 3A       		.uleb128 0x3a
- 1663 00b2 0B       		.uleb128 0xb
- 1664 00b3 3B       		.uleb128 0x3b
- 1665 00b4 0B       		.uleb128 0xb
- 1666 00b5 49       		.uleb128 0x49
- 1667 00b6 13       		.uleb128 0x13
- 1668 00b7 02       		.uleb128 0x2
- 1669 00b8 17       		.uleb128 0x17
- 1670 00b9 00       		.byte	0
- 1671 00ba 00       		.byte	0
- 1672 00bb 0F       		.uleb128 0xf
- 1673 00bc 0F       		.uleb128 0xf
- 1674 00bd 00       		.byte	0
- 1675 00be 0B       		.uleb128 0xb
- 1676 00bf 0B       		.uleb128 0xb
- 1677 00c0 49       		.uleb128 0x49
- 1678 00c1 13       		.uleb128 0x13
- 1679 00c2 00       		.byte	0
- 1680 00c3 00       		.byte	0
- 1681 00c4 10       		.uleb128 0x10
- 1682 00c5 26       		.uleb128 0x26
- 1683 00c6 00       		.byte	0
- 1684 00c7 49       		.uleb128 0x49
- 1685 00c8 13       		.uleb128 0x13
- 1686 00c9 00       		.byte	0
- 1687 00ca 00       		.byte	0
- 1688 00cb 11       		.uleb128 0x11
- 1689 00cc 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 42
+ 1634 0096 00       		.byte	0
+ 1635 0097 03       		.uleb128 0x3
+ 1636 0098 08       		.uleb128 0x8
+ 1637 0099 3A       		.uleb128 0x3a
+ 1638 009a 0B       		.uleb128 0xb
+ 1639 009b 3B       		.uleb128 0x3b
+ 1640 009c 0B       		.uleb128 0xb
+ 1641 009d 49       		.uleb128 0x49
+ 1642 009e 13       		.uleb128 0x13
+ 1643 009f 02       		.uleb128 0x2
+ 1644 00a0 17       		.uleb128 0x17
+ 1645 00a1 00       		.byte	0
+ 1646 00a2 00       		.byte	0
+ 1647 00a3 0D       		.uleb128 0xd
+ 1648 00a4 0B       		.uleb128 0xb
+ 1649 00a5 01       		.byte	0x1
+ 1650 00a6 11       		.uleb128 0x11
+ 1651 00a7 01       		.uleb128 0x1
+ 1652 00a8 12       		.uleb128 0x12
+ 1653 00a9 06       		.uleb128 0x6
+ 1654 00aa 00       		.byte	0
+ 1655 00ab 00       		.byte	0
+ 1656 00ac 0E       		.uleb128 0xe
+ 1657 00ad 34       		.uleb128 0x34
+ 1658 00ae 00       		.byte	0
+ 1659 00af 03       		.uleb128 0x3
+ 1660 00b0 0E       		.uleb128 0xe
+ 1661 00b1 3A       		.uleb128 0x3a
+ 1662 00b2 0B       		.uleb128 0xb
+ 1663 00b3 3B       		.uleb128 0x3b
+ 1664 00b4 0B       		.uleb128 0xb
+ 1665 00b5 49       		.uleb128 0x49
+ 1666 00b6 13       		.uleb128 0x13
+ 1667 00b7 02       		.uleb128 0x2
+ 1668 00b8 17       		.uleb128 0x17
+ 1669 00b9 00       		.byte	0
+ 1670 00ba 00       		.byte	0
+ 1671 00bb 0F       		.uleb128 0xf
+ 1672 00bc 0F       		.uleb128 0xf
+ 1673 00bd 00       		.byte	0
+ 1674 00be 0B       		.uleb128 0xb
+ 1675 00bf 0B       		.uleb128 0xb
+ 1676 00c0 49       		.uleb128 0x49
+ 1677 00c1 13       		.uleb128 0x13
+ 1678 00c2 00       		.byte	0
+ 1679 00c3 00       		.byte	0
+ 1680 00c4 10       		.uleb128 0x10
+ 1681 00c5 26       		.uleb128 0x26
+ 1682 00c6 00       		.byte	0
+ 1683 00c7 49       		.uleb128 0x49
+ 1684 00c8 13       		.uleb128 0x13
+ 1685 00c9 00       		.byte	0
+ 1686 00ca 00       		.byte	0
+ 1687 00cb 11       		.uleb128 0x11
+ 1688 00cc 2E       		.uleb128 0x2e
+ 1689 00cd 00       		.byte	0
+ 1690 00ce 03       		.uleb128 0x3
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 42
 
 
- 1690 00cd 00       		.byte	0
- 1691 00ce 03       		.uleb128 0x3
- 1692 00cf 0E       		.uleb128 0xe
- 1693 00d0 3A       		.uleb128 0x3a
- 1694 00d1 0B       		.uleb128 0xb
- 1695 00d2 3B       		.uleb128 0x3b
- 1696 00d3 05       		.uleb128 0x5
- 1697 00d4 27       		.uleb128 0x27
- 1698 00d5 19       		.uleb128 0x19
- 1699 00d6 11       		.uleb128 0x11
- 1700 00d7 01       		.uleb128 0x1
- 1701 00d8 12       		.uleb128 0x12
- 1702 00d9 06       		.uleb128 0x6
- 1703 00da 40       		.uleb128 0x40
- 1704 00db 18       		.uleb128 0x18
- 1705 00dc 9742     		.uleb128 0x2117
- 1706 00de 19       		.uleb128 0x19
- 1707 00df 00       		.byte	0
- 1708 00e0 00       		.byte	0
- 1709 00e1 12       		.uleb128 0x12
- 1710 00e2 05       		.uleb128 0x5
- 1711 00e3 00       		.byte	0
- 1712 00e4 03       		.uleb128 0x3
- 1713 00e5 08       		.uleb128 0x8
- 1714 00e6 3A       		.uleb128 0x3a
- 1715 00e7 0B       		.uleb128 0xb
- 1716 00e8 3B       		.uleb128 0x3b
- 1717 00e9 0B       		.uleb128 0xb
- 1718 00ea 49       		.uleb128 0x49
- 1719 00eb 13       		.uleb128 0x13
- 1720 00ec 02       		.uleb128 0x2
- 1721 00ed 17       		.uleb128 0x17
- 1722 00ee 00       		.byte	0
- 1723 00ef 00       		.byte	0
- 1724 00f0 13       		.uleb128 0x13
- 1725 00f1 898201   		.uleb128 0x4109
- 1726 00f4 01       		.byte	0x1
- 1727 00f5 11       		.uleb128 0x11
- 1728 00f6 01       		.uleb128 0x1
- 1729 00f7 31       		.uleb128 0x31
- 1730 00f8 13       		.uleb128 0x13
- 1731 00f9 00       		.byte	0
- 1732 00fa 00       		.byte	0
- 1733 00fb 14       		.uleb128 0x14
- 1734 00fc 8A8201   		.uleb128 0x410a
- 1735 00ff 00       		.byte	0
- 1736 0100 02       		.uleb128 0x2
- 1737 0101 18       		.uleb128 0x18
- 1738 0102 9142     		.uleb128 0x2111
- 1739 0104 18       		.uleb128 0x18
- 1740 0105 00       		.byte	0
- 1741 0106 00       		.byte	0
- 1742 0107 15       		.uleb128 0x15
- 1743 0108 898201   		.uleb128 0x4109
- 1744 010b 00       		.byte	0
- 1745 010c 11       		.uleb128 0x11
- 1746 010d 01       		.uleb128 0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 43
+ 1691 00cf 0E       		.uleb128 0xe
+ 1692 00d0 3A       		.uleb128 0x3a
+ 1693 00d1 0B       		.uleb128 0xb
+ 1694 00d2 3B       		.uleb128 0x3b
+ 1695 00d3 05       		.uleb128 0x5
+ 1696 00d4 27       		.uleb128 0x27
+ 1697 00d5 19       		.uleb128 0x19
+ 1698 00d6 11       		.uleb128 0x11
+ 1699 00d7 01       		.uleb128 0x1
+ 1700 00d8 12       		.uleb128 0x12
+ 1701 00d9 06       		.uleb128 0x6
+ 1702 00da 40       		.uleb128 0x40
+ 1703 00db 18       		.uleb128 0x18
+ 1704 00dc 9742     		.uleb128 0x2117
+ 1705 00de 19       		.uleb128 0x19
+ 1706 00df 00       		.byte	0
+ 1707 00e0 00       		.byte	0
+ 1708 00e1 12       		.uleb128 0x12
+ 1709 00e2 05       		.uleb128 0x5
+ 1710 00e3 00       		.byte	0
+ 1711 00e4 03       		.uleb128 0x3
+ 1712 00e5 08       		.uleb128 0x8
+ 1713 00e6 3A       		.uleb128 0x3a
+ 1714 00e7 0B       		.uleb128 0xb
+ 1715 00e8 3B       		.uleb128 0x3b
+ 1716 00e9 0B       		.uleb128 0xb
+ 1717 00ea 49       		.uleb128 0x49
+ 1718 00eb 13       		.uleb128 0x13
+ 1719 00ec 02       		.uleb128 0x2
+ 1720 00ed 17       		.uleb128 0x17
+ 1721 00ee 00       		.byte	0
+ 1722 00ef 00       		.byte	0
+ 1723 00f0 13       		.uleb128 0x13
+ 1724 00f1 898201   		.uleb128 0x4109
+ 1725 00f4 01       		.byte	0x1
+ 1726 00f5 11       		.uleb128 0x11
+ 1727 00f6 01       		.uleb128 0x1
+ 1728 00f7 31       		.uleb128 0x31
+ 1729 00f8 13       		.uleb128 0x13
+ 1730 00f9 00       		.byte	0
+ 1731 00fa 00       		.byte	0
+ 1732 00fb 14       		.uleb128 0x14
+ 1733 00fc 8A8201   		.uleb128 0x410a
+ 1734 00ff 00       		.byte	0
+ 1735 0100 02       		.uleb128 0x2
+ 1736 0101 18       		.uleb128 0x18
+ 1737 0102 9142     		.uleb128 0x2111
+ 1738 0104 18       		.uleb128 0x18
+ 1739 0105 00       		.byte	0
+ 1740 0106 00       		.byte	0
+ 1741 0107 15       		.uleb128 0x15
+ 1742 0108 898201   		.uleb128 0x4109
+ 1743 010b 00       		.byte	0
+ 1744 010c 11       		.uleb128 0x11
+ 1745 010d 01       		.uleb128 0x1
+ 1746 010e 31       		.uleb128 0x31
+ 1747 010f 13       		.uleb128 0x13
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 43
 
 
- 1747 010e 31       		.uleb128 0x31
- 1748 010f 13       		.uleb128 0x13
- 1749 0110 00       		.byte	0
- 1750 0111 00       		.byte	0
- 1751 0112 16       		.uleb128 0x16
- 1752 0113 898201   		.uleb128 0x4109
- 1753 0116 01       		.byte	0x1
- 1754 0117 11       		.uleb128 0x11
- 1755 0118 01       		.uleb128 0x1
- 1756 0119 31       		.uleb128 0x31
- 1757 011a 13       		.uleb128 0x13
- 1758 011b 01       		.uleb128 0x1
- 1759 011c 13       		.uleb128 0x13
- 1760 011d 00       		.byte	0
- 1761 011e 00       		.byte	0
- 1762 011f 17       		.uleb128 0x17
- 1763 0120 2E       		.uleb128 0x2e
- 1764 0121 01       		.byte	0x1
- 1765 0122 3F       		.uleb128 0x3f
- 1766 0123 19       		.uleb128 0x19
- 1767 0124 03       		.uleb128 0x3
- 1768 0125 0E       		.uleb128 0xe
- 1769 0126 3A       		.uleb128 0x3a
- 1770 0127 0B       		.uleb128 0xb
- 1771 0128 3B       		.uleb128 0x3b
- 1772 0129 05       		.uleb128 0x5
- 1773 012a 27       		.uleb128 0x27
- 1774 012b 19       		.uleb128 0x19
- 1775 012c 11       		.uleb128 0x11
- 1776 012d 01       		.uleb128 0x1
- 1777 012e 12       		.uleb128 0x12
- 1778 012f 06       		.uleb128 0x6
- 1779 0130 40       		.uleb128 0x40
- 1780 0131 18       		.uleb128 0x18
- 1781 0132 9742     		.uleb128 0x2117
- 1782 0134 19       		.uleb128 0x19
- 1783 0135 01       		.uleb128 0x1
- 1784 0136 13       		.uleb128 0x13
- 1785 0137 00       		.byte	0
- 1786 0138 00       		.byte	0
- 1787 0139 18       		.uleb128 0x18
- 1788 013a 0B       		.uleb128 0xb
- 1789 013b 01       		.byte	0x1
- 1790 013c 11       		.uleb128 0x11
- 1791 013d 01       		.uleb128 0x1
- 1792 013e 12       		.uleb128 0x12
- 1793 013f 06       		.uleb128 0x6
- 1794 0140 01       		.uleb128 0x1
- 1795 0141 13       		.uleb128 0x13
- 1796 0142 00       		.byte	0
- 1797 0143 00       		.byte	0
- 1798 0144 19       		.uleb128 0x19
- 1799 0145 34       		.uleb128 0x34
- 1800 0146 00       		.byte	0
- 1801 0147 03       		.uleb128 0x3
- 1802 0148 0E       		.uleb128 0xe
- 1803 0149 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 44
+ 1748 0110 00       		.byte	0
+ 1749 0111 00       		.byte	0
+ 1750 0112 16       		.uleb128 0x16
+ 1751 0113 898201   		.uleb128 0x4109
+ 1752 0116 01       		.byte	0x1
+ 1753 0117 11       		.uleb128 0x11
+ 1754 0118 01       		.uleb128 0x1
+ 1755 0119 31       		.uleb128 0x31
+ 1756 011a 13       		.uleb128 0x13
+ 1757 011b 01       		.uleb128 0x1
+ 1758 011c 13       		.uleb128 0x13
+ 1759 011d 00       		.byte	0
+ 1760 011e 00       		.byte	0
+ 1761 011f 17       		.uleb128 0x17
+ 1762 0120 2E       		.uleb128 0x2e
+ 1763 0121 01       		.byte	0x1
+ 1764 0122 3F       		.uleb128 0x3f
+ 1765 0123 19       		.uleb128 0x19
+ 1766 0124 03       		.uleb128 0x3
+ 1767 0125 0E       		.uleb128 0xe
+ 1768 0126 3A       		.uleb128 0x3a
+ 1769 0127 0B       		.uleb128 0xb
+ 1770 0128 3B       		.uleb128 0x3b
+ 1771 0129 05       		.uleb128 0x5
+ 1772 012a 27       		.uleb128 0x27
+ 1773 012b 19       		.uleb128 0x19
+ 1774 012c 11       		.uleb128 0x11
+ 1775 012d 01       		.uleb128 0x1
+ 1776 012e 12       		.uleb128 0x12
+ 1777 012f 06       		.uleb128 0x6
+ 1778 0130 40       		.uleb128 0x40
+ 1779 0131 18       		.uleb128 0x18
+ 1780 0132 9742     		.uleb128 0x2117
+ 1781 0134 19       		.uleb128 0x19
+ 1782 0135 01       		.uleb128 0x1
+ 1783 0136 13       		.uleb128 0x13
+ 1784 0137 00       		.byte	0
+ 1785 0138 00       		.byte	0
+ 1786 0139 18       		.uleb128 0x18
+ 1787 013a 0B       		.uleb128 0xb
+ 1788 013b 01       		.byte	0x1
+ 1789 013c 11       		.uleb128 0x11
+ 1790 013d 01       		.uleb128 0x1
+ 1791 013e 12       		.uleb128 0x12
+ 1792 013f 06       		.uleb128 0x6
+ 1793 0140 01       		.uleb128 0x1
+ 1794 0141 13       		.uleb128 0x13
+ 1795 0142 00       		.byte	0
+ 1796 0143 00       		.byte	0
+ 1797 0144 19       		.uleb128 0x19
+ 1798 0145 34       		.uleb128 0x34
+ 1799 0146 00       		.byte	0
+ 1800 0147 03       		.uleb128 0x3
+ 1801 0148 0E       		.uleb128 0xe
+ 1802 0149 3A       		.uleb128 0x3a
+ 1803 014a 0B       		.uleb128 0xb
+ 1804 014b 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 44
 
 
- 1804 014a 0B       		.uleb128 0xb
- 1805 014b 3B       		.uleb128 0x3b
- 1806 014c 05       		.uleb128 0x5
- 1807 014d 49       		.uleb128 0x49
- 1808 014e 13       		.uleb128 0x13
- 1809 014f 02       		.uleb128 0x2
- 1810 0150 18       		.uleb128 0x18
- 1811 0151 00       		.byte	0
- 1812 0152 00       		.byte	0
- 1813 0153 1A       		.uleb128 0x1a
- 1814 0154 13       		.uleb128 0x13
- 1815 0155 01       		.byte	0x1
- 1816 0156 0B       		.uleb128 0xb
- 1817 0157 0B       		.uleb128 0xb
- 1818 0158 3A       		.uleb128 0x3a
- 1819 0159 0B       		.uleb128 0xb
- 1820 015a 3B       		.uleb128 0x3b
- 1821 015b 05       		.uleb128 0x5
- 1822 015c 01       		.uleb128 0x1
- 1823 015d 13       		.uleb128 0x13
- 1824 015e 00       		.byte	0
- 1825 015f 00       		.byte	0
- 1826 0160 1B       		.uleb128 0x1b
- 1827 0161 0D       		.uleb128 0xd
- 1828 0162 00       		.byte	0
- 1829 0163 03       		.uleb128 0x3
- 1830 0164 0E       		.uleb128 0xe
- 1831 0165 3A       		.uleb128 0x3a
- 1832 0166 0B       		.uleb128 0xb
- 1833 0167 3B       		.uleb128 0x3b
- 1834 0168 05       		.uleb128 0x5
- 1835 0169 49       		.uleb128 0x49
- 1836 016a 13       		.uleb128 0x13
- 1837 016b 38       		.uleb128 0x38
- 1838 016c 0B       		.uleb128 0xb
- 1839 016d 00       		.byte	0
- 1840 016e 00       		.byte	0
- 1841 016f 1C       		.uleb128 0x1c
- 1842 0170 01       		.uleb128 0x1
- 1843 0171 01       		.byte	0x1
- 1844 0172 49       		.uleb128 0x49
- 1845 0173 13       		.uleb128 0x13
- 1846 0174 01       		.uleb128 0x1
- 1847 0175 13       		.uleb128 0x13
- 1848 0176 00       		.byte	0
- 1849 0177 00       		.byte	0
- 1850 0178 1D       		.uleb128 0x1d
- 1851 0179 21       		.uleb128 0x21
- 1852 017a 00       		.byte	0
- 1853 017b 49       		.uleb128 0x49
- 1854 017c 13       		.uleb128 0x13
- 1855 017d 2F       		.uleb128 0x2f
- 1856 017e 0B       		.uleb128 0xb
- 1857 017f 00       		.byte	0
- 1858 0180 00       		.byte	0
- 1859 0181 1E       		.uleb128 0x1e
- 1860 0182 34       		.uleb128 0x34
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 45
+ 1805 014c 05       		.uleb128 0x5
+ 1806 014d 49       		.uleb128 0x49
+ 1807 014e 13       		.uleb128 0x13
+ 1808 014f 02       		.uleb128 0x2
+ 1809 0150 18       		.uleb128 0x18
+ 1810 0151 00       		.byte	0
+ 1811 0152 00       		.byte	0
+ 1812 0153 1A       		.uleb128 0x1a
+ 1813 0154 13       		.uleb128 0x13
+ 1814 0155 01       		.byte	0x1
+ 1815 0156 0B       		.uleb128 0xb
+ 1816 0157 0B       		.uleb128 0xb
+ 1817 0158 3A       		.uleb128 0x3a
+ 1818 0159 0B       		.uleb128 0xb
+ 1819 015a 3B       		.uleb128 0x3b
+ 1820 015b 05       		.uleb128 0x5
+ 1821 015c 01       		.uleb128 0x1
+ 1822 015d 13       		.uleb128 0x13
+ 1823 015e 00       		.byte	0
+ 1824 015f 00       		.byte	0
+ 1825 0160 1B       		.uleb128 0x1b
+ 1826 0161 0D       		.uleb128 0xd
+ 1827 0162 00       		.byte	0
+ 1828 0163 03       		.uleb128 0x3
+ 1829 0164 0E       		.uleb128 0xe
+ 1830 0165 3A       		.uleb128 0x3a
+ 1831 0166 0B       		.uleb128 0xb
+ 1832 0167 3B       		.uleb128 0x3b
+ 1833 0168 05       		.uleb128 0x5
+ 1834 0169 49       		.uleb128 0x49
+ 1835 016a 13       		.uleb128 0x13
+ 1836 016b 38       		.uleb128 0x38
+ 1837 016c 0B       		.uleb128 0xb
+ 1838 016d 00       		.byte	0
+ 1839 016e 00       		.byte	0
+ 1840 016f 1C       		.uleb128 0x1c
+ 1841 0170 01       		.uleb128 0x1
+ 1842 0171 01       		.byte	0x1
+ 1843 0172 49       		.uleb128 0x49
+ 1844 0173 13       		.uleb128 0x13
+ 1845 0174 01       		.uleb128 0x1
+ 1846 0175 13       		.uleb128 0x13
+ 1847 0176 00       		.byte	0
+ 1848 0177 00       		.byte	0
+ 1849 0178 1D       		.uleb128 0x1d
+ 1850 0179 21       		.uleb128 0x21
+ 1851 017a 00       		.byte	0
+ 1852 017b 49       		.uleb128 0x49
+ 1853 017c 13       		.uleb128 0x13
+ 1854 017d 2F       		.uleb128 0x2f
+ 1855 017e 0B       		.uleb128 0xb
+ 1856 017f 00       		.byte	0
+ 1857 0180 00       		.byte	0
+ 1858 0181 1E       		.uleb128 0x1e
+ 1859 0182 34       		.uleb128 0x34
+ 1860 0183 00       		.byte	0
+ 1861 0184 03       		.uleb128 0x3
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 45
 
 
- 1861 0183 00       		.byte	0
- 1862 0184 03       		.uleb128 0x3
- 1863 0185 08       		.uleb128 0x8
- 1864 0186 3A       		.uleb128 0x3a
- 1865 0187 0B       		.uleb128 0xb
- 1866 0188 3B       		.uleb128 0x3b
- 1867 0189 05       		.uleb128 0x5
- 1868 018a 49       		.uleb128 0x49
- 1869 018b 13       		.uleb128 0x13
- 1870 018c 02       		.uleb128 0x2
- 1871 018d 17       		.uleb128 0x17
- 1872 018e 00       		.byte	0
- 1873 018f 00       		.byte	0
- 1874 0190 1F       		.uleb128 0x1f
- 1875 0191 2E       		.uleb128 0x2e
- 1876 0192 00       		.byte	0
- 1877 0193 3F       		.uleb128 0x3f
- 1878 0194 19       		.uleb128 0x19
- 1879 0195 3C       		.uleb128 0x3c
- 1880 0196 19       		.uleb128 0x19
- 1881 0197 6E       		.uleb128 0x6e
- 1882 0198 0E       		.uleb128 0xe
- 1883 0199 03       		.uleb128 0x3
- 1884 019a 0E       		.uleb128 0xe
- 1885 019b 00       		.byte	0
- 1886 019c 00       		.byte	0
- 1887 019d 20       		.uleb128 0x20
- 1888 019e 2E       		.uleb128 0x2e
- 1889 019f 00       		.byte	0
- 1890 01a0 3F       		.uleb128 0x3f
- 1891 01a1 19       		.uleb128 0x19
- 1892 01a2 3C       		.uleb128 0x3c
- 1893 01a3 19       		.uleb128 0x19
- 1894 01a4 6E       		.uleb128 0x6e
- 1895 01a5 0E       		.uleb128 0xe
- 1896 01a6 03       		.uleb128 0x3
- 1897 01a7 0E       		.uleb128 0xe
- 1898 01a8 3A       		.uleb128 0x3a
- 1899 01a9 0B       		.uleb128 0xb
- 1900 01aa 3B       		.uleb128 0x3b
- 1901 01ab 0B       		.uleb128 0xb
- 1902 01ac 00       		.byte	0
- 1903 01ad 00       		.byte	0
- 1904 01ae 00       		.byte	0
- 1905              		.section	.debug_loc,"",%progbits
- 1906              	.Ldebug_loc0:
- 1907              	.LLST0:
- 1908 0000 02000000 		.4byte	.LVL1
- 1909 0004 08000000 		.4byte	.LVL2
- 1910 0008 0200     		.2byte	0x2
- 1911 000a 30       		.byte	0x30
- 1912 000b 9F       		.byte	0x9f
- 1913 000c 08000000 		.4byte	.LVL2
- 1914 0010 30000000 		.4byte	.LVL11
- 1915 0014 0100     		.2byte	0x1
- 1916 0016 57       		.byte	0x57
- 1917 0017 00000000 		.4byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 46
+ 1862 0185 08       		.uleb128 0x8
+ 1863 0186 3A       		.uleb128 0x3a
+ 1864 0187 0B       		.uleb128 0xb
+ 1865 0188 3B       		.uleb128 0x3b
+ 1866 0189 05       		.uleb128 0x5
+ 1867 018a 49       		.uleb128 0x49
+ 1868 018b 13       		.uleb128 0x13
+ 1869 018c 02       		.uleb128 0x2
+ 1870 018d 17       		.uleb128 0x17
+ 1871 018e 00       		.byte	0
+ 1872 018f 00       		.byte	0
+ 1873 0190 1F       		.uleb128 0x1f
+ 1874 0191 2E       		.uleb128 0x2e
+ 1875 0192 00       		.byte	0
+ 1876 0193 3F       		.uleb128 0x3f
+ 1877 0194 19       		.uleb128 0x19
+ 1878 0195 3C       		.uleb128 0x3c
+ 1879 0196 19       		.uleb128 0x19
+ 1880 0197 6E       		.uleb128 0x6e
+ 1881 0198 0E       		.uleb128 0xe
+ 1882 0199 03       		.uleb128 0x3
+ 1883 019a 0E       		.uleb128 0xe
+ 1884 019b 00       		.byte	0
+ 1885 019c 00       		.byte	0
+ 1886 019d 20       		.uleb128 0x20
+ 1887 019e 2E       		.uleb128 0x2e
+ 1888 019f 00       		.byte	0
+ 1889 01a0 3F       		.uleb128 0x3f
+ 1890 01a1 19       		.uleb128 0x19
+ 1891 01a2 3C       		.uleb128 0x3c
+ 1892 01a3 19       		.uleb128 0x19
+ 1893 01a4 6E       		.uleb128 0x6e
+ 1894 01a5 0E       		.uleb128 0xe
+ 1895 01a6 03       		.uleb128 0x3
+ 1896 01a7 0E       		.uleb128 0xe
+ 1897 01a8 3A       		.uleb128 0x3a
+ 1898 01a9 0B       		.uleb128 0xb
+ 1899 01aa 3B       		.uleb128 0x3b
+ 1900 01ab 0B       		.uleb128 0xb
+ 1901 01ac 00       		.byte	0
+ 1902 01ad 00       		.byte	0
+ 1903 01ae 00       		.byte	0
+ 1904              		.section	.debug_loc,"",%progbits
+ 1905              	.Ldebug_loc0:
+ 1906              	.LLST0:
+ 1907 0000 02000000 		.4byte	.LVL1
+ 1908 0004 08000000 		.4byte	.LVL2
+ 1909 0008 0200     		.2byte	0x2
+ 1910 000a 30       		.byte	0x30
+ 1911 000b 9F       		.byte	0x9f
+ 1912 000c 08000000 		.4byte	.LVL2
+ 1913 0010 30000000 		.4byte	.LVL11
+ 1914 0014 0100     		.2byte	0x1
+ 1915 0016 57       		.byte	0x57
+ 1916 0017 00000000 		.4byte	0
+ 1917 001b 00000000 		.4byte	0
+ 1918              	.LLST1:
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 46
 
 
- 1918 001b 00000000 		.4byte	0
- 1919              	.LLST1:
- 1920 001f 02000000 		.4byte	.LVL1
- 1921 0023 08000000 		.4byte	.LVL2
- 1922 0027 0200     		.2byte	0x2
- 1923 0029 30       		.byte	0x30
- 1924 002a 9F       		.byte	0x9f
- 1925 002b 08000000 		.4byte	.LVL2
- 1926 002f 30000000 		.4byte	.LVL10
- 1927 0033 0100     		.2byte	0x1
- 1928 0035 55       		.byte	0x55
- 1929 0036 00000000 		.4byte	0
- 1930 003a 00000000 		.4byte	0
- 1931              	.LLST2:
- 1932 003e 0C000000 		.4byte	.LVL3
- 1933 0042 2C000000 		.4byte	.LVL9
- 1934 0046 0100     		.2byte	0x1
- 1935 0048 56       		.byte	0x56
- 1936 0049 00000000 		.4byte	0
- 1937 004d 00000000 		.4byte	0
- 1938              	.LLST3:
- 1939 0051 0E000000 		.4byte	.LVL4
- 1940 0055 24000000 		.4byte	.LVL7
- 1941 0059 0100     		.2byte	0x1
- 1942 005b 53       		.byte	0x53
- 1943 005c 26000000 		.4byte	.LVL8
- 1944 0060 2C000000 		.4byte	.LVL9
- 1945 0064 0100     		.2byte	0x1
- 1946 0066 53       		.byte	0x53
- 1947 0067 00000000 		.4byte	0
- 1948 006b 00000000 		.4byte	0
- 1949              	.LLST4:
- 1950 006f 00000000 		.4byte	.LVL12
- 1951 0073 09000000 		.4byte	.LVL14-1
- 1952 0077 0100     		.2byte	0x1
- 1953 0079 50       		.byte	0x50
- 1954 007a 09000000 		.4byte	.LVL14-1
- 1955 007e 0C000000 		.4byte	.LFE2
- 1956 0082 0400     		.2byte	0x4
- 1957 0084 F3       		.byte	0xf3
- 1958 0085 01       		.uleb128 0x1
- 1959 0086 50       		.byte	0x50
- 1960 0087 9F       		.byte	0x9f
- 1961 0088 00000000 		.4byte	0
- 1962 008c 00000000 		.4byte	0
- 1963              	.LLST5:
- 1964 0090 00000000 		.4byte	.LVL12
- 1965 0094 06000000 		.4byte	.LVL13
- 1966 0098 0100     		.2byte	0x1
- 1967 009a 51       		.byte	0x51
- 1968 009b 06000000 		.4byte	.LVL13
- 1969 009f 09000000 		.4byte	.LVL14-1
- 1970 00a3 0100     		.2byte	0x1
- 1971 00a5 52       		.byte	0x52
- 1972 00a6 09000000 		.4byte	.LVL14-1
- 1973 00aa 0C000000 		.4byte	.LFE2
- 1974 00ae 0400     		.2byte	0x4
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 47
+ 1919 001f 02000000 		.4byte	.LVL1
+ 1920 0023 08000000 		.4byte	.LVL2
+ 1921 0027 0200     		.2byte	0x2
+ 1922 0029 30       		.byte	0x30
+ 1923 002a 9F       		.byte	0x9f
+ 1924 002b 08000000 		.4byte	.LVL2
+ 1925 002f 30000000 		.4byte	.LVL10
+ 1926 0033 0100     		.2byte	0x1
+ 1927 0035 55       		.byte	0x55
+ 1928 0036 00000000 		.4byte	0
+ 1929 003a 00000000 		.4byte	0
+ 1930              	.LLST2:
+ 1931 003e 0C000000 		.4byte	.LVL3
+ 1932 0042 2C000000 		.4byte	.LVL9
+ 1933 0046 0100     		.2byte	0x1
+ 1934 0048 56       		.byte	0x56
+ 1935 0049 00000000 		.4byte	0
+ 1936 004d 00000000 		.4byte	0
+ 1937              	.LLST3:
+ 1938 0051 0E000000 		.4byte	.LVL4
+ 1939 0055 24000000 		.4byte	.LVL7
+ 1940 0059 0100     		.2byte	0x1
+ 1941 005b 53       		.byte	0x53
+ 1942 005c 26000000 		.4byte	.LVL8
+ 1943 0060 2C000000 		.4byte	.LVL9
+ 1944 0064 0100     		.2byte	0x1
+ 1945 0066 53       		.byte	0x53
+ 1946 0067 00000000 		.4byte	0
+ 1947 006b 00000000 		.4byte	0
+ 1948              	.LLST4:
+ 1949 006f 00000000 		.4byte	.LVL12
+ 1950 0073 09000000 		.4byte	.LVL14-1
+ 1951 0077 0100     		.2byte	0x1
+ 1952 0079 50       		.byte	0x50
+ 1953 007a 09000000 		.4byte	.LVL14-1
+ 1954 007e 0C000000 		.4byte	.LFE2
+ 1955 0082 0400     		.2byte	0x4
+ 1956 0084 F3       		.byte	0xf3
+ 1957 0085 01       		.uleb128 0x1
+ 1958 0086 50       		.byte	0x50
+ 1959 0087 9F       		.byte	0x9f
+ 1960 0088 00000000 		.4byte	0
+ 1961 008c 00000000 		.4byte	0
+ 1962              	.LLST5:
+ 1963 0090 00000000 		.4byte	.LVL12
+ 1964 0094 06000000 		.4byte	.LVL13
+ 1965 0098 0100     		.2byte	0x1
+ 1966 009a 51       		.byte	0x51
+ 1967 009b 06000000 		.4byte	.LVL13
+ 1968 009f 09000000 		.4byte	.LVL14-1
+ 1969 00a3 0100     		.2byte	0x1
+ 1970 00a5 52       		.byte	0x52
+ 1971 00a6 09000000 		.4byte	.LVL14-1
+ 1972 00aa 0C000000 		.4byte	.LFE2
+ 1973 00ae 0400     		.2byte	0x4
+ 1974 00b0 F3       		.byte	0xf3
+ 1975 00b1 01       		.uleb128 0x1
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 47
 
 
- 1975 00b0 F3       		.byte	0xf3
- 1976 00b1 01       		.uleb128 0x1
- 1977 00b2 51       		.byte	0x51
- 1978 00b3 9F       		.byte	0x9f
- 1979 00b4 00000000 		.4byte	0
- 1980 00b8 00000000 		.4byte	0
- 1981              	.LLST6:
- 1982 00bc 06010000 		.4byte	.LVL23
- 1983 00c0 0A010000 		.4byte	.LVL24
- 1984 00c4 0200     		.2byte	0x2
- 1985 00c6 30       		.byte	0x30
- 1986 00c7 9F       		.byte	0x9f
- 1987 00c8 0A010000 		.4byte	.LVL24
- 1988 00cc 28010000 		.4byte	.LVL26
- 1989 00d0 0100     		.2byte	0x1
- 1990 00d2 54       		.byte	0x54
- 1991 00d3 2A010000 		.4byte	.LVL27
- 1992 00d7 B2010000 		.4byte	.LVL31
- 1993 00db 0100     		.2byte	0x1
- 1994 00dd 54       		.byte	0x54
- 1995 00de 00000000 		.4byte	0
- 1996 00e2 00000000 		.4byte	0
- 1997              	.LLST7:
- 1998 00e6 0A010000 		.4byte	.LVL24
- 1999 00ea 28010000 		.4byte	.LVL26
- 2000 00ee 0B00     		.2byte	0xb
- 2001 00f0 74       		.byte	0x74
- 2002 00f1 00       		.sleb128 0
- 2003 00f2 36       		.byte	0x36
- 2004 00f3 1E       		.byte	0x1e
- 2005 00f4 03       		.byte	0x3
- 2006 00f5 00000000 		.4byte	cfg_memset_list.4907
- 2007 00f9 22       		.byte	0x22
- 2008 00fa 9F       		.byte	0x9f
- 2009 00fb 28010000 		.4byte	.LVL26
- 2010 00ff 2A010000 		.4byte	.LVL27
- 2011 0103 0B00     		.2byte	0xb
- 2012 0105 74       		.byte	0x74
- 2013 0106 7F       		.sleb128 -1
- 2014 0107 36       		.byte	0x36
- 2015 0108 1E       		.byte	0x1e
- 2016 0109 03       		.byte	0x3
- 2017 010a 00000000 		.4byte	cfg_memset_list.4907
- 2018 010e 22       		.byte	0x22
- 2019 010f 9F       		.byte	0x9f
- 2020 0110 00000000 		.4byte	0
- 2021 0114 00000000 		.4byte	0
- 2022              		.section	.debug_aranges,"",%progbits
- 2023 0000 3C000000 		.4byte	0x3c
- 2024 0004 0200     		.2byte	0x2
- 2025 0006 00000000 		.4byte	.Ldebug_info0
- 2026 000a 04       		.byte	0x4
- 2027 000b 00       		.byte	0
- 2028 000c 0000     		.2byte	0
- 2029 000e 0000     		.2byte	0
- 2030 0010 00000000 		.4byte	.LFB5
- 2031 0014 32000000 		.4byte	.LFE5-.LFB5
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 48
+ 1976 00b2 51       		.byte	0x51
+ 1977 00b3 9F       		.byte	0x9f
+ 1978 00b4 00000000 		.4byte	0
+ 1979 00b8 00000000 		.4byte	0
+ 1980              	.LLST6:
+ 1981 00bc 06010000 		.4byte	.LVL23
+ 1982 00c0 0A010000 		.4byte	.LVL24
+ 1983 00c4 0200     		.2byte	0x2
+ 1984 00c6 30       		.byte	0x30
+ 1985 00c7 9F       		.byte	0x9f
+ 1986 00c8 0A010000 		.4byte	.LVL24
+ 1987 00cc 28010000 		.4byte	.LVL26
+ 1988 00d0 0100     		.2byte	0x1
+ 1989 00d2 54       		.byte	0x54
+ 1990 00d3 2A010000 		.4byte	.LVL27
+ 1991 00d7 B2010000 		.4byte	.LVL31
+ 1992 00db 0100     		.2byte	0x1
+ 1993 00dd 54       		.byte	0x54
+ 1994 00de 00000000 		.4byte	0
+ 1995 00e2 00000000 		.4byte	0
+ 1996              	.LLST7:
+ 1997 00e6 0A010000 		.4byte	.LVL24
+ 1998 00ea 28010000 		.4byte	.LVL26
+ 1999 00ee 0B00     		.2byte	0xb
+ 2000 00f0 74       		.byte	0x74
+ 2001 00f1 00       		.sleb128 0
+ 2002 00f2 36       		.byte	0x36
+ 2003 00f3 1E       		.byte	0x1e
+ 2004 00f4 03       		.byte	0x3
+ 2005 00f5 00000000 		.4byte	cfg_memset_list.4916
+ 2006 00f9 22       		.byte	0x22
+ 2007 00fa 9F       		.byte	0x9f
+ 2008 00fb 28010000 		.4byte	.LVL26
+ 2009 00ff 2A010000 		.4byte	.LVL27
+ 2010 0103 0B00     		.2byte	0xb
+ 2011 0105 74       		.byte	0x74
+ 2012 0106 7F       		.sleb128 -1
+ 2013 0107 36       		.byte	0x36
+ 2014 0108 1E       		.byte	0x1e
+ 2015 0109 03       		.byte	0x3
+ 2016 010a 00000000 		.4byte	cfg_memset_list.4916
+ 2017 010e 22       		.byte	0x22
+ 2018 010f 9F       		.byte	0x9f
+ 2019 0110 00000000 		.4byte	0
+ 2020 0114 00000000 		.4byte	0
+ 2021              		.section	.debug_aranges,"",%progbits
+ 2022 0000 3C000000 		.4byte	0x3c
+ 2023 0004 0200     		.2byte	0x2
+ 2024 0006 00000000 		.4byte	.Ldebug_info0
+ 2025 000a 04       		.byte	0x4
+ 2026 000b 00       		.byte	0
+ 2027 000c 0000     		.2byte	0
+ 2028 000e 0000     		.2byte	0
+ 2029 0010 00000000 		.4byte	.LFB5
+ 2030 0014 32000000 		.4byte	.LFE5-.LFB5
+ 2031 0018 00000000 		.4byte	.LFB7
+ 2032 001c 20000000 		.4byte	.LFE7-.LFB7
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 48
 
 
- 2032 0018 00000000 		.4byte	.LFB7
- 2033 001c 20000000 		.4byte	.LFE7-.LFB7
- 2034 0020 00000000 		.4byte	.LFB2
- 2035 0024 0C000000 		.4byte	.LFE2-.LFB2
- 2036 0028 00000000 		.4byte	.LFB6
- 2037 002c FC000000 		.4byte	.LFE6-.LFB6
- 2038 0030 FC000000 		.4byte	.LFB8
- 2039 0034 0C010000 		.4byte	.LFE8-.LFB8
- 2040 0038 00000000 		.4byte	0
- 2041 003c 00000000 		.4byte	0
- 2042              		.section	.debug_ranges,"",%progbits
- 2043              	.Ldebug_ranges0:
- 2044 0000 00000000 		.4byte	.LFB5
- 2045 0004 32000000 		.4byte	.LFE5
- 2046 0008 00000000 		.4byte	.LFB7
- 2047 000c 20000000 		.4byte	.LFE7
- 2048 0010 00000000 		.4byte	.LFB2
- 2049 0014 0C000000 		.4byte	.LFE2
- 2050 0018 00000000 		.4byte	.LFB6
- 2051 001c FC000000 		.4byte	.LFE6
- 2052 0020 FC000000 		.4byte	.LFB8
- 2053 0024 08020000 		.4byte	.LFE8
- 2054 0028 00000000 		.4byte	0
- 2055 002c 00000000 		.4byte	0
- 2056              		.section	.debug_line,"",%progbits
- 2057              	.Ldebug_line0:
- 2058 0000 90010000 		.section	.debug_str,"MS",%progbits,1
- 2058      0200E300 
- 2058      00000201 
- 2058      FB0E0D00 
- 2058      01010101 
- 2059              	.LASF37:
- 2060 0000 43794465 		.ascii	"CyDelayCycles\000"
- 2060      6C617943 
- 2060      79636C65 
- 2060      7300
- 2061              	.LASF19:
- 2062 000e 72656733 		.ascii	"reg32\000"
- 2062      3200
- 2063              	.LASF12:
- 2064 0014 73697A65 		.ascii	"size_t\000"
- 2064      5F7400
- 2065              	.LASF47:
- 2066 001b 416E616C 		.ascii	"AnalogSetDefault\000"
- 2066      6F675365 
- 2066      74446566 
- 2066      61756C74 
- 2066      00
- 2067              	.LASF42:
- 2068 002c 4379496E 		.ascii	"CyIntSetVector\000"
- 2068      74536574 
- 2068      56656374 
- 2068      6F7200
- 2069              	.LASF21:
- 2070 003b 76616C75 		.ascii	"value\000"
- 2070      6500
- 2071              	.LASF26:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 49
+ 2033 0020 00000000 		.4byte	.LFB2
+ 2034 0024 0C000000 		.4byte	.LFE2-.LFB2
+ 2035 0028 00000000 		.4byte	.LFB6
+ 2036 002c FC000000 		.4byte	.LFE6-.LFB6
+ 2037 0030 FC000000 		.4byte	.LFB8
+ 2038 0034 0C010000 		.4byte	.LFE8-.LFB8
+ 2039 0038 00000000 		.4byte	0
+ 2040 003c 00000000 		.4byte	0
+ 2041              		.section	.debug_ranges,"",%progbits
+ 2042              	.Ldebug_ranges0:
+ 2043 0000 00000000 		.4byte	.LFB5
+ 2044 0004 32000000 		.4byte	.LFE5
+ 2045 0008 00000000 		.4byte	.LFB7
+ 2046 000c 20000000 		.4byte	.LFE7
+ 2047 0010 00000000 		.4byte	.LFB2
+ 2048 0014 0C000000 		.4byte	.LFE2
+ 2049 0018 00000000 		.4byte	.LFB6
+ 2050 001c FC000000 		.4byte	.LFE6
+ 2051 0020 FC000000 		.4byte	.LFB8
+ 2052 0024 08020000 		.4byte	.LFE8
+ 2053 0028 00000000 		.4byte	0
+ 2054 002c 00000000 		.4byte	0
+ 2055              		.section	.debug_line,"",%progbits
+ 2056              	.Ldebug_line0:
+ 2057 0000 90010000 		.section	.debug_str,"MS",%progbits,1
+ 2057      0200E300 
+ 2057      00000201 
+ 2057      FB0E0D00 
+ 2057      01010101 
+ 2058              	.LASF37:
+ 2059 0000 43794465 		.ascii	"CyDelayCycles\000"
+ 2059      6C617943 
+ 2059      79636C65 
+ 2059      7300
+ 2060              	.LASF19:
+ 2061 000e 72656733 		.ascii	"reg32\000"
+ 2061      3200
+ 2062              	.LASF12:
+ 2063 0014 73697A65 		.ascii	"size_t\000"
+ 2063      5F7400
+ 2064              	.LASF47:
+ 2065 001b 416E616C 		.ascii	"AnalogSetDefault\000"
+ 2065      6F675365 
+ 2065      74446566 
+ 2065      61756C74 
+ 2065      00
+ 2066              	.LASF42:
+ 2067 002c 4379496E 		.ascii	"CyIntSetVector\000"
+ 2067      74536574 
+ 2067      56656374 
+ 2067      6F7200
+ 2068              	.LASF21:
+ 2069 003b 76616C75 		.ascii	"value\000"
+ 2069      6500
+ 2070              	.LASF26:
+ 2071 0041 636F756E 		.ascii	"count\000"
+ 2071      7400
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 49
 
 
- 2072 0041 636F756E 		.ascii	"count\000"
- 2072      7400
- 2073              	.LASF29:
- 2074 0047 436C6F63 		.ascii	"ClockSetup\000"
- 2074      6B536574 
- 2074      757000
- 2075              	.LASF30:
- 2076 0052 63795F63 		.ascii	"cy_cfg_addr_table\000"
- 2076      66675F61 
- 2076      6464725F 
- 2076      7461626C 
- 2076      6500
- 2077              	.LASF31:
- 2078 0064 63795F63 		.ascii	"cy_cfg_data_table\000"
- 2078      66675F64 
- 2078      6174615F 
- 2078      7461626C 
- 2078      6500
- 2079              	.LASF16:
- 2080 0076 666C6F61 		.ascii	"float\000"
- 2080      7400
- 2081              	.LASF35:
- 2082 007c 6366675F 		.ascii	"cfg_memset_list\000"
- 2082      6D656D73 
- 2082      65745F6C 
- 2082      69737400 
- 2083              	.LASF33:
- 2084 008c 73697A65 		.ascii	"size\000"
- 2084      00
- 2085              	.LASF38:
- 2086 0091 43795379 		.ascii	"CySysClkWcoSetPowerMode\000"
- 2086      73436C6B 
- 2086      57636F53 
- 2086      6574506F 
- 2086      7765724D 
- 2087              	.LASF18:
- 2088 00a9 72656738 		.ascii	"reg8\000"
- 2088      00
- 2089              	.LASF8:
- 2090 00ae 6C6F6E67 		.ascii	"long unsigned int\000"
- 2090      20756E73 
- 2090      69676E65 
- 2090      6420696E 
- 2090      7400
- 2091              	.LASF13:
- 2092 00c0 75696E74 		.ascii	"uint8\000"
- 2092      3800
- 2093              	.LASF36:
- 2094 00c6 43795379 		.ascii	"CySysClkWcoStart\000"
- 2094      73436C6B 
- 2094      57636F53 
- 2094      74617274 
- 2094      00
- 2095              	.LASF28:
- 2096 00d7 43594D45 		.ascii	"CYMEMZERO\000"
- 2096      4D5A4552 
- 2096      4F00
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 50
+ 2072              	.LASF29:
+ 2073 0047 436C6F63 		.ascii	"ClockSetup\000"
+ 2073      6B536574 
+ 2073      757000
+ 2074              	.LASF30:
+ 2075 0052 63795F63 		.ascii	"cy_cfg_addr_table\000"
+ 2075      66675F61 
+ 2075      6464725F 
+ 2075      7461626C 
+ 2075      6500
+ 2076              	.LASF31:
+ 2077 0064 63795F63 		.ascii	"cy_cfg_data_table\000"
+ 2077      66675F64 
+ 2077      6174615F 
+ 2077      7461626C 
+ 2077      6500
+ 2078              	.LASF16:
+ 2079 0076 666C6F61 		.ascii	"float\000"
+ 2079      7400
+ 2080              	.LASF35:
+ 2081 007c 6366675F 		.ascii	"cfg_memset_list\000"
+ 2081      6D656D73 
+ 2081      65745F6C 
+ 2081      69737400 
+ 2082              	.LASF33:
+ 2083 008c 73697A65 		.ascii	"size\000"
+ 2083      00
+ 2084              	.LASF38:
+ 2085 0091 43795379 		.ascii	"CySysClkWcoSetPowerMode\000"
+ 2085      73436C6B 
+ 2085      57636F53 
+ 2085      6574506F 
+ 2085      7765724D 
+ 2086              	.LASF18:
+ 2087 00a9 72656738 		.ascii	"reg8\000"
+ 2087      00
+ 2088              	.LASF8:
+ 2089 00ae 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2089      20756E73 
+ 2089      69676E65 
+ 2089      6420696E 
+ 2089      7400
+ 2090              	.LASF13:
+ 2091 00c0 75696E74 		.ascii	"uint8\000"
+ 2091      3800
+ 2092              	.LASF36:
+ 2093 00c6 43795379 		.ascii	"CySysClkWcoStart\000"
+ 2093      73436C6B 
+ 2093      57636F53 
+ 2093      74617274 
+ 2093      00
+ 2094              	.LASF28:
+ 2095 00d7 43594D45 		.ascii	"CYMEMZERO\000"
+ 2095      4D5A4552 
+ 2095      4F00
+ 2096              	.LASF4:
+ 2097 00e1 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 50
 
 
- 2097              	.LASF4:
- 2098 00e1 756E7369 		.ascii	"unsigned char\000"
- 2098      676E6564 
- 2098      20636861 
- 2098      7200
- 2099              	.LASF49:
- 2100 00ef 6D656D73 		.ascii	"memset\000"
- 2100      657400
- 2101              	.LASF17:
- 2102 00f6 646F7562 		.ascii	"double\000"
- 2102      6C6500
- 2103              	.LASF27:
- 2104 00fd 6366675F 		.ascii	"cfg_write_bytes32\000"
- 2104      77726974 
- 2104      655F6279 
- 2104      74657333 
- 2104      3200
- 2105              	.LASF43:
- 2106 010f 4379496E 		.ascii	"CyIntEnable\000"
- 2106      74456E61 
- 2106      626C6500 
- 2107              	.LASF23:
- 2108 011b 61646472 		.ascii	"addr_table\000"
- 2108      5F746162 
- 2108      6C6500
- 2109              	.LASF14:
- 2110 0126 75696E74 		.ascii	"uint16\000"
- 2110      313600
- 2111              	.LASF24:
- 2112 012d 64617461 		.ascii	"data_table\000"
- 2112      5F746162 
- 2112      6C6500
- 2113              	.LASF15:
- 2114 0138 75696E74 		.ascii	"uint32\000"
- 2114      333200
- 2115              	.LASF0:
- 2116 013f 756E7369 		.ascii	"unsigned int\000"
- 2116      676E6564 
- 2116      20696E74 
- 2116      00
- 2117              	.LASF48:
- 2118 014c 63796669 		.ascii	"cyfitter_cfg\000"
- 2118      74746572 
- 2118      5F636667 
- 2118      00
- 2119              	.LASF32:
- 2120 0159 61646472 		.ascii	"address\000"
- 2120      65737300 
- 2121              	.LASF9:
- 2122 0161 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2122      206C6F6E 
- 2122      6720756E 
- 2122      7369676E 
- 2122      65642069 
- 2123              	.LASF44:
- 2124 0178 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 2124      43313120 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 51
+ 2097      676E6564 
+ 2097      20636861 
+ 2097      7200
+ 2098              	.LASF49:
+ 2099 00ef 6D656D73 		.ascii	"memset\000"
+ 2099      657400
+ 2100              	.LASF17:
+ 2101 00f6 646F7562 		.ascii	"double\000"
+ 2101      6C6500
+ 2102              	.LASF27:
+ 2103 00fd 6366675F 		.ascii	"cfg_write_bytes32\000"
+ 2103      77726974 
+ 2103      655F6279 
+ 2103      74657333 
+ 2103      3200
+ 2104              	.LASF43:
+ 2105 010f 4379496E 		.ascii	"CyIntEnable\000"
+ 2105      74456E61 
+ 2105      626C6500 
+ 2106              	.LASF23:
+ 2107 011b 61646472 		.ascii	"addr_table\000"
+ 2107      5F746162 
+ 2107      6C6500
+ 2108              	.LASF14:
+ 2109 0126 75696E74 		.ascii	"uint16\000"
+ 2109      313600
+ 2110              	.LASF24:
+ 2111 012d 64617461 		.ascii	"data_table\000"
+ 2111      5F746162 
+ 2111      6C6500
+ 2112              	.LASF15:
+ 2113 0138 75696E74 		.ascii	"uint32\000"
+ 2113      333200
+ 2114              	.LASF0:
+ 2115 013f 756E7369 		.ascii	"unsigned int\000"
+ 2115      676E6564 
+ 2115      20696E74 
+ 2115      00
+ 2116              	.LASF48:
+ 2117 014c 63796669 		.ascii	"cyfitter_cfg\000"
+ 2117      74746572 
+ 2117      5F636667 
+ 2117      00
+ 2118              	.LASF32:
+ 2119 0159 61646472 		.ascii	"address\000"
+ 2119      65737300 
+ 2120              	.LASF9:
+ 2121 0161 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2121      206C6F6E 
+ 2121      6720756E 
+ 2121      7369676E 
+ 2121      65642069 
+ 2122              	.LASF44:
+ 2123 0178 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2123      43313120 
+ 2123      352E342E 
+ 2123      31203230 
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 51
 
 
- 2124      352E342E 
- 2124      31203230 
- 2124      31363036 
- 2125 01ab 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 2125      20726576 
- 2125      6973696F 
- 2125      6E203233 
- 2125      37373135 
- 2126 01de 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 2126      66756E63 
- 2126      74696F6E 
- 2126      2D736563 
- 2126      74696F6E 
- 2127              	.LASF34:
- 2128 0206 6366675F 		.ascii	"cfg_memset_t\000"
- 2128      6D656D73 
- 2128      65745F74 
- 2128      00
- 2129              	.LASF25:
- 2130 0213 62617365 		.ascii	"baseAddr\000"
- 2130      41646472 
- 2130      00
- 2131              	.LASF10:
- 2132 021c 73697A65 		.ascii	"sizetype\000"
- 2132      74797065 
- 2132      00
- 2133              	.LASF46:
- 2134 0225 433A5C55 		.ascii	"C:\\Users\\Toreckk\\Desktop\\Programming\\BLERobot\\"
- 2134      73657273 
- 2134      5C546F72 
- 2134      65636B6B 
- 2134      5C446573 
- 2135 0253 424C4552 		.ascii	"BLERobot\\PSOC\\RobotBLE.cydsn\000"
- 2135      6F626F74 
- 2135      5C50534F 
- 2135      435C526F 
- 2135      626F7442 
- 2136              	.LASF6:
- 2137 0270 73686F72 		.ascii	"short unsigned int\000"
- 2137      7420756E 
- 2137      7369676E 
- 2137      65642069 
- 2137      6E7400
- 2138              	.LASF1:
- 2139 0283 6C6F6E67 		.ascii	"long long int\000"
- 2139      206C6F6E 
- 2139      6720696E 
- 2139      7400
- 2140              	.LASF41:
- 2141 0291 43794465 		.ascii	"CyDelayUs\000"
- 2141      6C617955 
- 2141      7300
- 2142              	.LASF11:
- 2143 029b 63686172 		.ascii	"char\000"
- 2143      00
- 2144              	.LASF40:
- 2145 02a0 43795379 		.ascii	"CySysClkEcoStart\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cc54bHnf.s 			page 52
+ 2123      31363036 
+ 2124 01ab 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 2124      20726576 
+ 2124      6973696F 
+ 2124      6E203233 
+ 2124      37373135 
+ 2125 01de 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2125      66756E63 
+ 2125      74696F6E 
+ 2125      2D736563 
+ 2125      74696F6E 
+ 2126              	.LASF34:
+ 2127 0206 6366675F 		.ascii	"cfg_memset_t\000"
+ 2127      6D656D73 
+ 2127      65745F74 
+ 2127      00
+ 2128              	.LASF25:
+ 2129 0213 62617365 		.ascii	"baseAddr\000"
+ 2129      41646472 
+ 2129      00
+ 2130              	.LASF10:
+ 2131 021c 73697A65 		.ascii	"sizetype\000"
+ 2131      74797065 
+ 2131      00
+ 2132              	.LASF46:
+ 2133 0225 433A5C55 		.ascii	"C:\\Users\\Toreckk\\Desktop\\Programming\\BLERobot\\"
+ 2133      73657273 
+ 2133      5C546F72 
+ 2133      65636B6B 
+ 2133      5C446573 
+ 2134 0253 424C4552 		.ascii	"BLERobot\\PSOC\\RobotBLE.cydsn\000"
+ 2134      6F626F74 
+ 2134      5C50534F 
+ 2134      435C526F 
+ 2134      626F7442 
+ 2135              	.LASF6:
+ 2136 0270 73686F72 		.ascii	"short unsigned int\000"
+ 2136      7420756E 
+ 2136      7369676E 
+ 2136      65642069 
+ 2136      6E7400
+ 2137              	.LASF1:
+ 2138 0283 6C6F6E67 		.ascii	"long long int\000"
+ 2138      206C6F6E 
+ 2138      6720696E 
+ 2138      7400
+ 2139              	.LASF41:
+ 2140 0291 43794465 		.ascii	"CyDelayUs\000"
+ 2140      6C617955 
+ 2140      7300
+ 2141              	.LASF11:
+ 2142 029b 63686172 		.ascii	"char\000"
+ 2142      00
+ 2143              	.LASF40:
+ 2144 02a0 43795379 		.ascii	"CySysClkEcoStart\000"
+ 2144      73436C6B 
+ 2144      45636F53 
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccOaMsKQ.s 			page 52
 
 
- 2145      73436C6B 
- 2145      45636F53 
- 2145      74617274 
- 2145      00
- 2146              	.LASF22:
- 2147 02b1 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
- 2147      66675F61 
- 2147      64647276 
- 2147      616C7565 
- 2147      5F7400
- 2148              	.LASF20:
- 2149 02c4 6F666673 		.ascii	"offset\000"
- 2149      657400
- 2150              	.LASF5:
- 2151 02cb 73686F72 		.ascii	"short int\000"
- 2151      7420696E 
- 2151      7400
- 2152              	.LASF39:
- 2153 02d5 43795379 		.ascii	"CySysClkWriteImoFreq\000"
- 2153      73436C6B 
- 2153      57726974 
- 2153      65496D6F 
- 2153      46726571 
- 2154              	.LASF7:
- 2155 02ea 6C6F6E67 		.ascii	"long int\000"
- 2155      20696E74 
- 2155      00
- 2156              	.LASF2:
- 2157 02f3 6C6F6E67 		.ascii	"long double\000"
- 2157      20646F75 
- 2157      626C6500 
- 2158              	.LASF3:
- 2159 02ff 7369676E 		.ascii	"signed char\000"
- 2159      65642063 
- 2159      68617200 
- 2160              	.LASF45:
- 2161 030b 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyfitter_cfg.c\000"
- 2161      72617465 
- 2161      645F536F 
- 2161      75726365 
- 2161      5C50536F 
- 2162              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 2144      74617274 
+ 2144      00
+ 2145              	.LASF22:
+ 2146 02b1 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
+ 2146      66675F61 
+ 2146      64647276 
+ 2146      616C7565 
+ 2146      5F7400
+ 2147              	.LASF20:
+ 2148 02c4 6F666673 		.ascii	"offset\000"
+ 2148      657400
+ 2149              	.LASF5:
+ 2150 02cb 73686F72 		.ascii	"short int\000"
+ 2150      7420696E 
+ 2150      7400
+ 2151              	.LASF39:
+ 2152 02d5 43795379 		.ascii	"CySysClkWriteImoFreq\000"
+ 2152      73436C6B 
+ 2152      57726974 
+ 2152      65496D6F 
+ 2152      46726571 
+ 2153              	.LASF7:
+ 2154 02ea 6C6F6E67 		.ascii	"long int\000"
+ 2154      20696E74 
+ 2154      00
+ 2155              	.LASF2:
+ 2156 02f3 6C6F6E67 		.ascii	"long double\000"
+ 2156      20646F75 
+ 2156      626C6500 
+ 2157              	.LASF3:
+ 2158 02ff 7369676E 		.ascii	"signed char\000"
+ 2158      65642063 
+ 2158      68617200 
+ 2159              	.LASF45:
+ 2160 030b 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyfitter_cfg.c\000"
+ 2160      72617465 
+ 2160      645F536F 
+ 2160      75726365 
+ 2160      5C50536F 
+ 2161              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

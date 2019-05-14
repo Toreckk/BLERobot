@@ -69,9 +69,9 @@ Port Name  Setup to Clk  Clock Name:Phase
 
 Port Name   Clock to Out  Clock Name:Phase  
 ----------  ------------  ----------------  
-ENA(0)_PAD  21759         Clock_1:R         
-ENB(0)_PAD  23597         Clock_1:R         
-red(0)_PAD  29632         Clock_2:R         
+ENA(0)_PAD  21972         Clock_1:R         
+ENB(0)_PAD  22221         Clock_1:R         
+red(0)_PAD  27838         Clock_2:R         
 
 
                          3.3::Pad to Pad
