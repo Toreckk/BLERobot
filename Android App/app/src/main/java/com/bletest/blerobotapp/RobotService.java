@@ -15,6 +15,8 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.Toast;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.UUID;
@@ -37,18 +39,22 @@ public class RobotService extends Service {
     //  This is needed so that rapid BLE events don't get dropped
     private static final Queue<Object> BleQueue = new LinkedList<>();
 
+
     // UUID for the custom motor characteristics
     private static final String baseUUID =           "BD19D460-CCB7-4BE6-A46F-D2A3A6BB05A";
     private static final String motorServiceUUID =   baseUUID + "0";
     private static final String speedLeftCharUUID =  baseUUID + "1";
     private static final String speedRightCharUUID = baseUUID + "2";
+    private static final String robotModeCharUUID = baseUUID + "3";
 
     // Bluetooth Characteristics that we need to read/write
     private static BluetoothGattCharacteristic mSpeedLeftCharacteristic;
     private static BluetoothGattCharacteristic mSpeedRightCharacteristic;
+    private static BluetoothGattCharacteristic mModeCharacteristic;
 
     private static int motorLeftSpeed;
     private static int motorRightSpeed;
+    private static int robotMode;
     // Actions used during broadcasts to the activity
     public static final String ACTION_CONNECTED =
             "com.bletest.blerobotapp.ACTION_GATT_CONNECTED";
@@ -94,6 +100,7 @@ public class RobotService extends Service {
                 // Attempts to discover services after successful connection.
                 Log.i(TAG, "Attempting to start service discovery:" +
                         mBluetoothGatt.discoverServices());
+                mBluetoothGatt.discoverServices();
 
             } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
                 Log.i(TAG, "Disconnected from GATT server.");
@@ -104,12 +111,13 @@ public class RobotService extends Service {
         @Override
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
             if (status == BluetoothGatt.GATT_SUCCESS) {
-
+                Log.i(TAG,"SERVICES DISCOVERED SUCCESFULLY");
                 // Get the characteristics for the motor service
                 BluetoothGattService gattService = mBluetoothGatt.getService(UUID.fromString(motorServiceUUID));
                 if (gattService == null) return; // return if the motor service is not supported
                 mSpeedLeftCharacteristic = gattService.getCharacteristic(UUID.fromString(speedLeftCharUUID));
                 mSpeedRightCharacteristic = gattService.getCharacteristic(UUID.fromString(speedRightCharUUID));
+                mModeCharacteristic = gattService.getCharacteristic(UUID.fromString(robotModeCharUUID));
 
 
             } else {
@@ -138,6 +146,7 @@ public class RobotService extends Service {
                                           int status) {
             // Pop the item that was written from the queue
             BleQueue.remove();
+            Log.i(TAG, "Write Status: "+ status + ".");
             // See if there are more items in the BLE queues
             handleBleQueue();
         }
@@ -227,18 +236,26 @@ public class RobotService extends Service {
 
     private void updateGattSpeed(Motor motor)
     {
-        if(motor == Motor.LEFT_WHEEL) {
+        if(motor == Motor.LEFT_WHEEL && robotMode==0) {
             if (mSpeedLeftCharacteristic != null){
                 mSpeedLeftCharacteristic.setValue(motorLeftSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
                 writeCharacteristic(mSpeedLeftCharacteristic);
+
             }
 
 
-        } else { // Motor == RIGHT
+        } else if(motor == Motor.RIGHT_WHEEL && robotMode == 0) { // Motor == RIGHT
             if (mSpeedRightCharacteristic != null) {
                 mSpeedRightCharacteristic.setValue(motorRightSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
                 writeCharacteristic(mSpeedRightCharacteristic);
+
             }
+        }
+    }
+    private void updateRobotMode(int state){
+        if(mModeCharacteristic != null){
+            mModeCharacteristic.setValue(state, BluetoothGattCharacteristic.FORMAT_UINT8,0);
+            writeCharacteristic(mModeCharacteristic);
         }
     }
 
@@ -248,12 +265,19 @@ public class RobotService extends Service {
             Log.w(TAG, "BluetoothAdapter not initialized");
             return;
         }
+
+        //Log.i(TAG, "Writing Characteristic");
         BleQueue.add(characteristic);
+        Log.i(TAG, "Queue Size: "+BleQueue.size()+".");
         if (BleQueue.size() == 1) {
-            mBluetoothGatt.writeCharacteristic(characteristic);
-            Log.i(TAG, "Writing Characteristic");
+            boolean writeResult = mBluetoothGatt.writeCharacteristic(characteristic);
+
         }
+
+
     }
+
+
 
     public void setMotorSpeed(Motor motor, int speed) {
         if(motor == Motor.LEFT_WHEEL)
@@ -264,6 +288,14 @@ public class RobotService extends Service {
         }
         // Update the Speed in the Gatt Database
         updateGattSpeed(motor);
+    }
+    public void setRobotMode(int state){
+        if (state>0)
+            robotMode = 1;
+        else
+            robotMode = 0;
+        updateRobotMode(robotMode);
+
     }
 
 

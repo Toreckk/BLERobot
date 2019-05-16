@@ -52,13 +52,24 @@
             android:rotation="90" />
 
         <ToggleButton
-            android:id="@+id/buttonEqual"
+            android:id="@+id/ToggleButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-
+            android:checked="false"
             android:layout_marginTop="70dp"
             android:rotation="90" />
+
+        <TextView
+            android:id="@+id/ModeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:rotation="90"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="190dp"
+            android:inputType=""
+            android:text="" />
 
 
     </RelativeLayout>

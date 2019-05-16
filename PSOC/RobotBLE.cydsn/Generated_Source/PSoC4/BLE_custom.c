@@ -49,6 +49,16 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                     0x0016u, /* Handle of the Characteristic User Description descriptor */ 
                 }, 
             },
+
+            /* Roomba characteristic */
+            {
+                0x0018u, /* Handle of the Roomba characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x0019u, /* Handle of the Characteristic User Description descriptor */ 
+                }, 
+            },
         }, 
     },
 };

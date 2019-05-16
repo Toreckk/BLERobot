@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.content.BroadcastReceiver;
@@ -16,6 +17,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.ToggleButton;
 
 
 public class ControlActivity extends AppCompatActivity {
@@ -24,6 +26,8 @@ public class ControlActivity extends AppCompatActivity {
     private SeekBar seekbar2;
     private TextView textView;
     private TextView textView2;
+
+    private ToggleButton toggleButton;
 
     private Button button;
 
@@ -50,6 +54,7 @@ public class ControlActivity extends AppCompatActivity {
             }
             // Automatically connects to the car database upon successful start-up initialization.
             mRobotService.connect(mDeviceAddress);
+
         }
 
         @Override
@@ -68,6 +73,9 @@ public class ControlActivity extends AppCompatActivity {
         textView2 = (TextView) findViewById(R.id.textView2);
         seekbar = (SeekBar) findViewById(R.id.seekBar);
         seekbar2 = (SeekBar) findViewById(R.id.seekBar2);
+        button = (Button) findViewById(R.id.ButtonStop);
+        ToggleButton toggleButton1 = (ToggleButton) findViewById(R.id.ToggleButton1);
+        final TextView plainText =  findViewById(R.id.ModeValue);
 
         seekbar.setProgress(100);
         seekbar2.setProgress(100);
@@ -118,12 +126,44 @@ public class ControlActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.ButtonStop);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 seekbar.setProgress(100);
                 seekbar2.setProgress(100);
+            }
+        });
+
+        toggleButton1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    seekbar.setProgress(100);
+                    seekbar2.setProgress(100);
+                    seekbar.setEnabled(false);
+                    seekbar.setAlpha(.3f);
+                    seekbar2.setEnabled(false);
+                    seekbar2.setAlpha(.3f);
+                    button.setEnabled(false);
+                    button.setAlpha(.3f);
+                    plainText.setText("Romba mode ON");
+
+                    //Set robot to roomba mode
+                    mRobotService.setRobotMode(1);
+                }
+                else{
+                    seekbar.setEnabled(true);
+                    seekbar.setAlpha(1f);
+                    seekbar2.setEnabled(true);
+                    seekbar2.setAlpha(1f);
+                    button.setEnabled(true);
+                    button.setAlpha(1f);
+                    plainText.setText("Romba mode OFF");
+
+                    //Turn manual control on
+                    mRobotService.setRobotMode(0);
+                }
             }
         });
     }
@@ -143,6 +183,7 @@ public class ControlActivity extends AppCompatActivity {
     protected void onPause(){
         super.onPause();
         unregisterReceiver(mRobotUpdateReceiver);
+        mRobotService.close();
     }
 
     @Override
@@ -166,6 +207,7 @@ public class ControlActivity extends AppCompatActivity {
                     // No need to do anything here. Service discovery is started by the service.
                     break;
                 case RobotService.ACTION_DISCONNECTED:
+                    mRobotService.disconnect();
                     mRobotService.close();
                     break;
             }

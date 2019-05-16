@@ -16,6 +16,11 @@
 int8 speedLeft = 0;
 int8 speedRight = 0;
 
+int8 roombaMode = 0;//Roomba mode starts off
+
+float dist = 0.0;
+int16 i = 0;
+
 typedef enum motor {
     LEFT_WHEEL,
     RIGHT_WHEEL
@@ -40,6 +45,17 @@ void updateSpeed(){
     CyBle_GattsWriteAttributeValue(&tempHandle, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
     
 }
+
+void updateMode(){
+    if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
+        return;
+    CYBLE_GATTS_HANDLE_VALUE_NTF_T tempHandle;
+    
+    tempHandle.attrHandle = CYBLE_MOTOR_ROOMBA_CHAR_HANDLE;
+    tempHandle.value.val = (uint8 *)&roombaMode;
+    tempHandle.value.len = 1;
+    CyBle_GattsWriteAttributeValue(&tempHandle, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
+}
 /*
 Called by the BLE stack handle when there is a write in the MotorLeft or MotorRight
 characteristic
@@ -48,7 +64,6 @@ void setSpeed(motor m, int speed){
     
     int dir;
 
-    //printf("%d\n",speed);
     if(speed>=100) //100% -> speed limit
         speed = 0;
     if(speed<=-100)
@@ -59,29 +74,27 @@ void setSpeed(motor m, int speed){
     else
         dir = 0;
     
+    IN1_Write(dir);
+    IN2_Write(!dir);
+    IN3_Write(dir);
+    IN4_Write(!dir);
     
     
     switch(m){
-        case LEFT_WHEEL:
-            IN1_Write(dir);
-            IN2_Write(!dir);
-            IN3_Write(dir);
-            IN4_Write(!dir);
+        case LEFT_WHEEL: 
             LEFT_MOTOR_WriteCompare(speed);
             speedLeft = speed;
         break;
         case RIGHT_WHEEL:
-            IN1_Write(dir);
-            IN2_Write(!dir);
-            IN3_Write(dir);
-            IN4_Write(!dir);
             RIGHT_MOTOR_WriteCompare(speed);
             speedRight = speed;
         break;
     }
     updateSpeed();
 }
-
+void setMode(int value){
+    roombaMode = value;
+}
 void BleCallBack(uint32 event, void* eventParam){
     
     CYBLE_GATTS_WRITE_REQ_PARAM_T *wrReqParam;
@@ -92,22 +105,27 @@ void BleCallBack(uint32 event, void* eventParam){
         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             LED_PWM_Start();
+            ROOMBA_PWM_Stop();
         break;
             
         case CYBLE_EVT_GATT_CONNECT_IND:
             updateSpeed();
-            LED_PWM_Stop();      
+            LED_PWM_Stop(); 
+            //BLUE_PWM_Start();
         break;
-            
+          
+        case CYBLE_EVT_GATTS_WRITE_CMD_REQ:
         case CYBLE_EVT_GATTS_WRITE_REQ:
             wrReqParam = (CYBLE_GATTS_WRITE_REQ_PARAM_T *) eventParam;
-            
             if(wrReqParam->handleValPair.attrHandle == CYBLE_MOTOR_MOTORLEFT_CHAR_HANDLE)
                 setSpeed(LEFT_WHEEL, (int8)wrReqParam->handleValPair.value.val[0]);
                 
 
             if(wrReqParam->handleValPair.attrHandle == CYBLE_MOTOR_MOTORRIGHT_CHAR_HANDLE)
-                setSpeed(RIGHT_WHEEL, (int8)wrReqParam->handleValPair.value.val[0]);               
+                setSpeed(RIGHT_WHEEL, (int8)wrReqParam->handleValPair.value.val[0]); 
+                
+            if(wrReqParam->handleValPair.attrHandle == CYBLE_MOTOR_ROOMBA_CHAR_HANDLE)
+                setMode((int8)wrReqParam->handleValPair.value.val[0]);
             
             CyBle_GattsWriteRsp(cyBle_connHandle);
         break;
@@ -117,11 +135,40 @@ void BleCallBack(uint32 event, void* eventParam){
     }
     
 }
-
+//Interrupt distancia
+CY_ISR(Timer_sensor_isr_handler){
+    Timer_sensor_ClearInterrupt(Timer_sensor_INTR_MASK_CC_MATCH);
+    i = Timer_sensor_ReadCounter();
+    dist = i /58.0;
+}
+//Movement in roomba mode
+void movimiento (uint dir) {
+    if (dir == 0){
+        
+        IN1_Write(1);
+        IN2_Write(0);
+        IN3_Write(1);
+        IN4_Write(0);
+      
+        LEFT_MOTOR_WriteCompare(70);
+        RIGHT_MOTOR_WriteCompare(70);
+    }
+    if (dir == 1){ // izq
+        
+        IN1_Write(1);
+        IN2_Write(0);
+        IN3_Write(0);
+        IN4_Write(1);
+        
+        LEFT_MOTOR_WriteCompare(70);
+        RIGHT_MOTOR_WriteCompare(50);
+        }
+}
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
-
+    //isr_StartEx(Timer_sensor_isr_handler);
+    
     //Start the motor's PWM
     LEFT_MOTOR_Start();
     RIGHT_MOTOR_Start();
@@ -133,9 +180,35 @@ int main(void)
     //Start the BLE
     CyBle_Start(BleCallBack);
 
+        
     for(;;)
     {
+
+       if(roombaMode != 0){//Roomba mode
+            ROOMBA_PWM_Start();
+            Timer_sensor_Start();
+            
+            Trigger_Write(1); 							
+    		CyDelayUs(10);									
+    		Trigger_Write(0);
+                   
+    		if (dist < 10) {
+                movimiento(1);
+            }
+            else{
+                movimiento(0);
+            }
+        }
+        else{//Manual mode
+            ROOMBA_PWM_Stop();
+            Timer_sensor_Stop();
+            //setSpeed(LEFT_WHEEL, 0);
+            //setSpeed(RIGHT_WHEEL, 0);
+        }
+            
+        
         CyBle_ProcessEvents();
+        CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
     }
 }
 

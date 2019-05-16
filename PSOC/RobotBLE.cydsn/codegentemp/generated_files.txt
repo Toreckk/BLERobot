@@ -74,6 +74,28 @@
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\IN4.h" value="HEADER;;;;;IN4" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\IN4_aliases.h" value="HEADER;;;;;IN4" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\IN4_PM.c" value="SOURCE_C;CortexM0;;;;IN4" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\blue.c" value="SOURCE_C;CortexM0;;;;blue" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\blue.h" value="HEADER;;;;;blue" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\blue_aliases.h" value="HEADER;;;;;blue" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\blue_PM.c" value="SOURCE_C;CortexM0;;;;blue" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\ROOMBA_PWM.c" value="SOURCE_C;CortexM0;;;;ROOMBA_PWM" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\ROOMBA_PWM.h" value="HEADER;;;;;ROOMBA_PWM" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\ROOMBA_PWM_PM.c" value="SOURCE_C;CortexM0;;;;ROOMBA_PWM" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Timer_sensor.c" value="SOURCE_C;CortexM0;;;;Timer_sensor" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Timer_sensor.h" value="HEADER;;;;;Timer_sensor" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Timer_sensor_PM.c" value="SOURCE_C;CortexM0;;;;Timer_sensor" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Echo.c" value="SOURCE_C;CortexM0;;;;Echo" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Echo.h" value="HEADER;;;;;Echo" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Echo_aliases.h" value="HEADER;;;;;Echo" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Echo_PM.c" value="SOURCE_C;CortexM0;;;;Echo" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\isr.c" value="SOURCE_C;CortexM0;;;;isr" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\isr.h" value="HEADER;;;;;isr" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Trigger.c" value="SOURCE_C;CortexM0;;;;Trigger" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Trigger.h" value="HEADER;;;;;Trigger" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Trigger_aliases.h" value="HEADER;;;;;Trigger" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Trigger_PM.c" value="SOURCE_C;CortexM0;;;;Trigger" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Clock_3.c" value="SOURCE_C;CortexM0;;;;Clock_3" />
+  <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\Clock_3.h" value="HEADER;;;;;Clock_3" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\BLE_bless_isr.c" value="SOURCE_C;CortexM0;;;;BLE_bless_isr" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\BLE_bless_isr.h" value="HEADER;;;;;BLE_bless_isr" />
   <file name="C:\Users\Toreckk\Desktop\Programming\BLERobot\BLERobot\PSOC\RobotBLE.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM0;;;;Em_EEPROM_Dynamic" />
