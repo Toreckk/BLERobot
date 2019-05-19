@@ -124,7 +124,7 @@ public class BLEScanActivity extends AppCompatActivity {
         switch (requestCode) {
             case PERMISSION_REQUEST_COARSE_LOCATION: {
                 if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Log.i("Permission for 6.0:", "Coarse location permission granted");
+                    //Log.i("Permission for 6.0:", "Coarse location permission granted");
                 } else {
                     final AlertDialog.Builder builder = new AlertDialog.Builder(this);
                     builder.setTitle("Error");
@@ -170,7 +170,7 @@ public class BLEScanActivity extends AppCompatActivity {
                     mBluetoothDevice.clear(); // Remove all existing devices
                     mBleArrayAdapter.clear();
                     scanLeDevice(true); // Start a scan if not already running
-                    Log.i(TAG, "Rescanning");
+                    //Log.i(TAG, "Rescanning");
                 }
                 mSwipeRefreshLayout.setRefreshing(false);
             }
@@ -181,7 +181,7 @@ public class BLEScanActivity extends AppCompatActivity {
         BleDeviceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.i(TAG, "Item Selected");
+                //Log.i(TAG, "Item Selected");
                 final Intent intent = new Intent(BLEScanActivity.this, ControlActivity.class);
                 // Send the address of the device that was selected so that the control activity
                 // knows which device to connect with

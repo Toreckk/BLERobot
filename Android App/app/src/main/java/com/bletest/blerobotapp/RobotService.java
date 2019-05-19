@@ -96,14 +96,14 @@ public class RobotService extends Service {
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
             if (newState == BluetoothProfile.STATE_CONNECTED) {
                 broadcastUpdate(ACTION_CONNECTED);
-                Log.i(TAG, "Connected to GATT server.");
+                //Log.i(TAG, "Connected to GATT server.");
                 // Attempts to discover services after successful connection.
                 Log.i(TAG, "Attempting to start service discovery:" +
                         mBluetoothGatt.discoverServices());
                 mBluetoothGatt.discoverServices();
 
             } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
-                Log.i(TAG, "Disconnected from GATT server.");
+                //Log.i(TAG, "Disconnected from GATT server.");
                 broadcastUpdate(ACTION_DISCONNECTED);
 
             }
@@ -112,7 +112,7 @@ public class RobotService extends Service {
         @Override
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
             if (status == BluetoothGatt.GATT_SUCCESS) {
-                Log.i(TAG,"SERVICES DISCOVERED SUCCESFULLY");
+                //Log.i(TAG,"SERVICES DISCOVERED SUCCESFULLY");
 
                 // Get the characteristics for the motor service
                 BluetoothGattService gattService = mBluetoothGatt.getService(UUID.fromString(motorServiceUUID));
@@ -123,12 +123,12 @@ public class RobotService extends Service {
                 mModeCharacteristic = gattService.getCharacteristic(UUID.fromString(robotModeCharUUID));
 
                 for (BluetoothGattCharacteristic gattCharacteristic : gattService.getCharacteristics()) {
-                    Log.i(TAG, "Discovered UUID: " + gattCharacteristic.getUuid());
+                    //Log.i(TAG, "Discovered UUID: " + gattCharacteristic.getUuid());
                 }
 
 
             } else {
-                Log.w(TAG, "onServicesDiscovered received: " + status);
+                //Log.w(TAG, "onServicesDiscovered received: " + status);
             }
         }
 
@@ -136,9 +136,9 @@ public class RobotService extends Service {
          * This handles the BLE Queue. If the queue is not empty, it starts the next event.
          */
         private void handleBleQueue() {
-            Log.i(TAG, "Handling Queue...");
+            //Log.i(TAG, "Handling Queue...");
             if(BleQueue.size() > 0) {
-                Log.i(TAG, "BLE Queue size = " + BleQueue.size());
+                //Log.i(TAG, "BLE Queue size = " + BleQueue.size());
                 // Determine which type of event is next and fire it off
                 if (BleQueue.element() instanceof BluetoothGattDescriptor) {
                     mBluetoothGatt.writeDescriptor((BluetoothGattDescriptor) BleQueue.element());
@@ -158,7 +158,7 @@ public class RobotService extends Service {
             // Pop the item that was written from the queue
             //Log.i(TAG, "received onCharacteristicWrite " + new String(characteristic.getValue()) + "; success: " + (status == BluetoothGatt.GATT_SUCCESS));
             BleQueue.remove();
-            Log.i(TAG, "Write Char Status: "+ status + ".");
+            //Log.i(TAG, "Write Char Status: "+ status + ".");
             // See if there are more items in the BLE queues
             handleBleQueue();
         }
@@ -168,7 +168,7 @@ public class RobotService extends Service {
                                       int status) {
             // Pop the item that was written from the queue
             BleQueue.remove();
-            Log.i(TAG, "Write Desc Status: "+ status + ".");
+            //Log.i(TAG, "Write Desc Status: "+ status + ".");
             // See if there are more items in the BLE queues
             handleBleQueue();
         }
@@ -191,14 +191,14 @@ public class RobotService extends Service {
         if (mBluetoothManager == null) {
             mBluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
             if (mBluetoothManager == null) {
-                Log.e(TAG, "Unable to initialize BluetoothManager.");
+                //Log.e(TAG, "Unable to initialize BluetoothManager.");
                 return false;
             }
         }
 
         mBluetoothAdapter = mBluetoothManager.getAdapter();
         if (mBluetoothAdapter == null) {
-            Log.e(TAG, "Unable to obtain a BluetoothAdapter.");
+            //Log.e(TAG, "Unable to obtain a BluetoothAdapter.");
             return false;
         }
 
@@ -210,33 +210,33 @@ public class RobotService extends Service {
 
     public boolean connect(final String address) {
         if (mBluetoothAdapter == null || address == null) {
-            Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
+            //Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
             return false;
         }
 
         // Previously connected device.  Try to reconnect.
         if (mBluetoothDeviceAddress != null && address.equals(mBluetoothDeviceAddress)
                 && mBluetoothGatt != null) {
-            Log.i(TAG, "Trying to use an existing mBluetoothGatt for connection.");
+            //Log.i(TAG, "Trying to use an existing mBluetoothGatt for connection.");
             return mBluetoothGatt.connect();
         }
 
         final BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
         if (device == null) {
-            Log.w(TAG, "Device not found.  Unable to connect.");
+            //Log.w(TAG, "Device not found.  Unable to connect.");
             return false;
         }
         // We want to directly connect to the device, so we are setting the autoConnect
         // parameter to false.
         mBluetoothGatt = device.connectGatt(this, false, mGattCallback);
-        Log.i(TAG, "Trying to create a new connection.");
+        //Log.i(TAG, "Trying to create a new connection.");
         mBluetoothDeviceAddress = address;
         return true;
     }
 
     public void disconnect() {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
-            Log.w(TAG, "BluetoothAdapter not initialized");
+            //Log.w(TAG, "BluetoothAdapter not initialized");
             return;
         }
         mBluetoothGatt.disconnect();
@@ -261,7 +261,7 @@ public class RobotService extends Service {
     {
         if(motor == Motor.LEFT_WHEEL && robotMode==0) {
             if (mSpeedLeftCharacteristic != null){
-                Log.i(TAG,"Left write");
+                //Log.i(TAG,"Left write");
                 mSpeedLeftCharacteristic.setValue(motorLeftSpeed, BluetoothGattCharacteristic.FORMAT_SINT8, 0);
                 writeCharacteristic(mSpeedLeftCharacteristic);
 
@@ -286,13 +286,13 @@ public class RobotService extends Service {
 
     private void writeCharacteristic(BluetoothGattCharacteristic characteristic) {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
-            Log.w(TAG, "BluetoothAdapter not initialized");
+            //Log.w(TAG, "BluetoothAdapter not initialized");
             return;
         }
 
         BleQueue.add(characteristic);
-        Log.i(TAG, "Queue Size: "+BleQueue.size()+".");
-        Log.i(TAG, "received onCharacteristicWrite " + new String(characteristic.getValue()));
+        //Log.i(TAG, "Queue Size: "+BleQueue.size()+".");
+        //Log.i(TAG, "received onCharacteristicWrite " + new String(characteristic.getValue()));
         if (BleQueue.size() == 1) {
             boolean writeResult = mBluetoothGatt.writeCharacteristic(characteristic);
 

@@ -49,10 +49,10 @@ public class ControlActivity extends AppCompatActivity {
 
         @Override
         public void onServiceConnected(ComponentName componentName, IBinder service) {
-            Log.i(TAG, "onServiceConnected");
+            //Log.i(TAG, "onServiceConnected");
             mRobotService = ((RobotService.LocalBinder) service).getService();
             if (!mRobotService.initialize()) {
-                Log.e(TAG, "Unable to initialize Bluetooth");
+                //Log.e(TAG, "Unable to initialize Bluetooth");
                 finish();
             }
             // Automatically connects to the car database upon successful start-up initialization.
@@ -86,7 +86,7 @@ public class ControlActivity extends AppCompatActivity {
         mDeviceAddress = intent.getStringExtra(BLEScanActivity.EXTRAS_BLE_ADDRESS);
 
         //Bind to the BLE Service
-        Log.i(TAG, "Binding Service");
+        //Log.i(TAG, "Binding Service");
         Intent RobotServiceIntent = new Intent(this, RobotService.class);
         bindService(RobotServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
@@ -99,7 +99,7 @@ public class ControlActivity extends AppCompatActivity {
                     oldProgressLeft = newprogress;
                 }
 
-                Log.d(TAG, "Left Speed Change to:" + newprogress);
+                //Log.d(TAG, "Left Speed Change to:" + newprogress);
                 textView.setText("" + newprogress + "%");
             }
 
@@ -125,7 +125,7 @@ public class ControlActivity extends AppCompatActivity {
                     oldProgressRight = newprogress;
                 }
 
-                Log.d(TAG, "Right Speed Change to:" + newprogress);
+                //Log.d(TAG, "Right Speed Change to:" + newprogress);
                 textView2.setText("" + newprogress + "%");
             }
 
@@ -193,7 +193,7 @@ public class ControlActivity extends AppCompatActivity {
         if(mRobotService != null)
         {
             final boolean result = mRobotService.connect(mDeviceAddress);
-            Log.i(TAG, "Connect request result = "+ result);
+            //Log.i(TAG, "Connect request result = "+ result);
         }
     }
 

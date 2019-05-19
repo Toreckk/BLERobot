@@ -66,9 +66,9 @@ void setSpeed(motor m, int speed){
     int dir;
 
     if(speed>=100) //100% -> speed limit
-        speed = 0;
+        speed = 100;
     if(speed<=-100)
-        speed = 0;
+        speed = -100;
     
     if(speed>=0)
         dir = 0;
