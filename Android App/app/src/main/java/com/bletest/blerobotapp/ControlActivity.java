@@ -37,6 +37,9 @@ public class ControlActivity extends AppCompatActivity {
     private static String mDeviceAddress;
     private static RobotService mRobotService;
 
+    int oldProgressLeft = -200;
+    int oldProgressRight = -200;
+
 
     /**
      * This manages the lifecycle of the BLE service.
@@ -91,7 +94,12 @@ public class ControlActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 int newprogress = progress-100;
-                mRobotService.setMotorSpeed(RobotService.Motor.LEFT_WHEEL, newprogress);
+                if(newprogress!= oldProgressLeft){
+                    mRobotService.setMotorSpeed(RobotService.Motor.RIGHT_WHEEL, newprogress);
+                    oldProgressLeft = newprogress;
+                }
+
+                Log.d(TAG, "Left Speed Change to:" + newprogress);
                 textView.setText("" + newprogress + "%");
             }
 
@@ -111,7 +119,13 @@ public class ControlActivity extends AppCompatActivity {
 
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 int newprogress = progress-100;
-                mRobotService.setMotorSpeed(RobotService.Motor.RIGHT_WHEEL, newprogress);
+                if(newprogress != oldProgressRight){
+
+                    mRobotService.setMotorSpeed(RobotService.Motor.LEFT_WHEEL, newprogress);
+                    oldProgressRight = newprogress;
+                }
+
+                Log.d(TAG, "Right Speed Change to:" + newprogress);
                 textView2.setText("" + newprogress + "%");
             }
 
@@ -160,9 +174,13 @@ public class ControlActivity extends AppCompatActivity {
                     button.setEnabled(true);
                     button.setAlpha(1f);
                     plainText.setText("Romba mode OFF");
-
                     //Turn manual control on
                     mRobotService.setRobotMode(0);
+                    //Stop Robot
+                    mRobotService.setMotorSpeed(RobotService.Motor.RIGHT_WHEEL, 0);
+                    mRobotService.setMotorSpeed(RobotService.Motor.LEFT_WHEEL, 0);
+
+
                 }
             }
         });
@@ -188,9 +206,11 @@ public class ControlActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy(){
+        mRobotService.emptyBleQueue();
         super.onDestroy();
         unbindService(mServiceConnection);
         mRobotService = null;
+
     }
 
     /**

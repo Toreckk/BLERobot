@@ -16,7 +16,8 @@
 int8 speedLeft = 0;
 int8 speedRight = 0;
 
-int8 roombaMode = 0;//Roomba mode starts off
+
+int8 roombaMode = 0;//1->Roomba mode || 0 -> manual
 
 float dist = 0.0;
 int16 i = 0;
@@ -70,22 +71,20 @@ void setSpeed(motor m, int speed){
         speed = 0;
     
     if(speed>=0)
-        dir = 1;
-    else
         dir = 0;
-    
-    IN1_Write(dir);
-    IN2_Write(!dir);
-    IN3_Write(dir);
-    IN4_Write(!dir);
-    
-    
+    else
+        dir = 1;
+     
     switch(m){
         case LEFT_WHEEL: 
+            IN1_Write(dir);
+            IN2_Write(!dir);
             LEFT_MOTOR_WriteCompare(speed);
             speedLeft = speed;
         break;
         case RIGHT_WHEEL:
+            IN3_Write(dir);
+            IN4_Write(!dir);
             RIGHT_MOTOR_WriteCompare(speed);
             speedRight = speed;
         break;
@@ -136,7 +135,8 @@ void BleCallBack(uint32 event, void* eventParam){
     
 }
 //Interrupt distancia
-CY_ISR(Timer_sensor_isr_handler){
+CY_ISR(Timer_sensor_isr_sensor_handler)
+{ 
     Timer_sensor_ClearInterrupt(Timer_sensor_INTR_MASK_CC_MATCH);
     i = Timer_sensor_ReadCounter();
     dist = i /58.0;
@@ -145,29 +145,30 @@ CY_ISR(Timer_sensor_isr_handler){
 void movimiento (uint dir) {
     if (dir == 0){
         
-        IN1_Write(1);
-        IN2_Write(0);
-        IN3_Write(1);
-        IN4_Write(0);
+        IN1_Write(0);
+        IN2_Write(1);
+        IN3_Write(0);
+        IN4_Write(1);
       
-        LEFT_MOTOR_WriteCompare(70);
-        RIGHT_MOTOR_WriteCompare(70);
+        LEFT_MOTOR_WriteCompare(30);
+        RIGHT_MOTOR_WriteCompare(30);
     }
     if (dir == 1){ // izq
         
-        IN1_Write(1);
-        IN2_Write(0);
-        IN3_Write(0);
-        IN4_Write(1);
+        IN1_Write(0);
+        IN2_Write(1);
+        IN3_Write(1);
+        IN4_Write(0);
         
-        LEFT_MOTOR_WriteCompare(70);
-        RIGHT_MOTOR_WriteCompare(50);
+        LEFT_MOTOR_WriteCompare(50);
+        RIGHT_MOTOR_WriteCompare(40);
         }
 }
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
-    //isr_StartEx(Timer_sensor_isr_handler);
+    isr_StartEx(Timer_sensor_isr_sensor_handler);
+    Timer_sensor_Start();
     
     //Start the motor's PWM
     LEFT_MOTOR_Start();
@@ -179,31 +180,30 @@ int main(void)
 
     //Start the BLE
     CyBle_Start(BleCallBack);
-
+    
         
     for(;;)
     {
 
        if(roombaMode != 0){//Roomba mode
             ROOMBA_PWM_Start();
-            Timer_sensor_Start();
+            
             
             Trigger_Write(1); 							
     		CyDelayUs(10);									
     		Trigger_Write(0);
-                   
-    		if (dist < 10) {
+              
+    		if (dist < 4.75) {
+                //ROOMBA_PWM_Stop();
                 movimiento(1);
             }
-            else{
+            else if(dist > 10.0){
+                //ROOMBA_PWM_Start();
                 movimiento(0);
             }
         }
         else{//Manual mode
             ROOMBA_PWM_Stop();
-            Timer_sensor_Stop();
-            //setSpeed(LEFT_WHEEL, 0);
-            //setSpeed(RIGHT_WHEEL, 0);
         }
             
         
