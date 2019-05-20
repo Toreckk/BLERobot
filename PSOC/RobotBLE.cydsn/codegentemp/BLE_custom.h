@@ -26,7 +26,7 @@
 /* Maximum supported Custom Services */
 #define CYBLE_CUSTOMS_SERVICE_COUNT                  (0x01u)
 #define CYBLE_CUSTOMC_SERVICE_COUNT                  (0x00u)
-#define CYBLE_CUSTOM_SERVICE_CHAR_COUNT              (0x03u)
+#define CYBLE_CUSTOM_SERVICE_CHAR_COUNT              (0x04u)
 #define CYBLE_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x01u)
 
 /* Below are the indexes and handles of the defined Custom Services and their characteristics */
@@ -37,6 +37,8 @@
 #define CYBLE_MOTOR_MOTORRIGHT_CHARACTERISTIC_USER_DESCRIPTION_DESC_INDEX   (0x00u) /* Index of Characteristic User Description descriptor */
 #define CYBLE_MOTOR_ROOMBA_CHAR_INDEX   (0x02u) /* Index of Roomba characteristic */
 #define CYBLE_MOTOR_ROOMBA_CHARACTERISTIC_USER_DESCRIPTION_DESC_INDEX   (0x00u) /* Index of Characteristic User Description descriptor */
+#define CYBLE_MOTOR_CLAXON_CHAR_INDEX   (0x03u) /* Index of Claxon characteristic */
+#define CYBLE_MOTOR_CLAXON_CHARACTERISTIC_USER_DESCRIPTION_DESC_INDEX   (0x00u) /* Index of Characteristic User Description descriptor */
 
 
 #define CYBLE_MOTOR_SERVICE_HANDLE   (0x0010u) /* Handle of Motor service */
@@ -49,6 +51,9 @@
 #define CYBLE_MOTOR_ROOMBA_DECL_HANDLE   (0x0017u) /* Handle of Roomba characteristic declaration */
 #define CYBLE_MOTOR_ROOMBA_CHAR_HANDLE   (0x0018u) /* Handle of Roomba characteristic */
 #define CYBLE_MOTOR_ROOMBA_CHARACTERISTIC_USER_DESCRIPTION_DESC_HANDLE   (0x0019u) /* Handle of Characteristic User Description descriptor */
+#define CYBLE_MOTOR_CLAXON_DECL_HANDLE   (0x001Au) /* Handle of Claxon characteristic declaration */
+#define CYBLE_MOTOR_CLAXON_CHAR_HANDLE   (0x001Bu) /* Handle of Claxon characteristic */
+#define CYBLE_MOTOR_CLAXON_CHARACTERISTIC_USER_DESCRIPTION_DESC_HANDLE   (0x001Cu) /* Handle of Characteristic User Description descriptor */
 
 
 

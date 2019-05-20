@@ -108,7 +108,7 @@ CYBLE_STATE_T cyBle_state;
     0x000Fu,    /* Handle of the Client Characteristic Configuration descriptor */
 };
     
-    static uint8 cyBle_attValues[0x32u] = {
+    static uint8 cyBle_attValues[0x39u] = {
     /* Device Name */
     (uint8)'B', (uint8)'a', (uint8)'t', (uint8)'m', (uint8)'a', (uint8)'n',
 
@@ -116,7 +116,7 @@ CYBLE_STATE_T cyBle_state;
     0x00u, 0x00u,
 
     /* Peripheral Preferred Connection Parameters */
-    0xFFu, 0xFFu, 0x0Cu, 0x00u, 0x00u, 0x00u, 0xF4u, 0x01u,
+    0xFFu, 0xFFu, 0x28u, 0x00u, 0x00u, 0x00u, 0xF4u, 0x01u,
 
     /* Central Address Resolution */
     0x00u,
@@ -146,6 +146,12 @@ CYBLE_STATE_T cyBle_state;
     /* Characteristic User Description */
     (uint8)'R', (uint8)'o', (uint8)'o', (uint8)'m', (uint8)'b', (uint8)'a',
 
+    /* Claxon */
+    0x00u,
+
+    /* Characteristic User Description */
+    (uint8)'C', (uint8)'l', (uint8)'a', (uint8)'x', (uint8)'o', (uint8)'n',
+
 };
 #if(CYBLE_GATT_DB_CCCD_COUNT != 0u)
 uint8 cyBle_attValuesCCCD[CYBLE_GATT_DB_CCCD_COUNT];
@@ -160,6 +166,8 @@ const uint8 cyBle_attUuid128[][16u] = {
     { 0xA2u, 0x05u, 0xBBu, 0xA6u, 0xA3u, 0xD2u, 0x6Fu, 0xA4u, 0xE6u, 0x4Bu, 0xB7u, 0xCCu, 0x60u, 0xD4u, 0x19u, 0xBDu },
     /* Roomba */
     { 0xA3u, 0x05u, 0xBBu, 0xA6u, 0xA3u, 0xD2u, 0x6Fu, 0xA4u, 0xE6u, 0x4Bu, 0xB7u, 0xCCu, 0x60u, 0xD4u, 0x19u, 0xBDu },
+    /* Claxon */
+    { 0xA4u, 0x05u, 0xBBu, 0xA6u, 0xA3u, 0xD2u, 0x6Fu, 0xA4u, 0xE6u, 0x4Bu, 0xB7u, 0xCCu, 0x60u, 0xD4u, 0x19u, 0xBDu },
 };
 
 CYBLE_GATTS_ATT_GEN_VAL_LEN_T cyBle_attValuesLen[CYBLE_GATT_DB_ATT_VAL_COUNT] = {
@@ -180,9 +188,12 @@ CYBLE_GATTS_ATT_GEN_VAL_LEN_T cyBle_attValuesLen[CYBLE_GATT_DB_ATT_VAL_COUNT] = 
     { 0x0010u, (void *)&cyBle_attUuid128[3] }, /* Roomba UUID */
     { 0x0001u, (void *)&cyBle_attValues[43] }, /* Roomba */
     { 0x0006u, (void *)&cyBle_attValues[44] }, /* Characteristic User Description */
+    { 0x0010u, (void *)&cyBle_attUuid128[4] }, /* Claxon UUID */
+    { 0x0001u, (void *)&cyBle_attValues[50] }, /* Claxon */
+    { 0x0006u, (void *)&cyBle_attValues[51] }, /* Characteristic User Description */
 };
 
-const CYBLE_GATTS_DB_T cyBle_gattDB[0x19u] = {
+const CYBLE_GATTS_DB_T cyBle_gattDB[0x1Cu] = {
     { 0x0001u, 0x2800u /* Primary service                     */, 0x00000001u /*       */, 0x000Bu, {{0x1800u, NULL}}                           },
     { 0x0002u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0003u, {{0x2A00u, NULL}}                           },
     { 0x0003u, 0x2A00u /* Device Name                         */, 0x01020001u /* rd    */, 0x0003u, {{0x0006u, (void *)&cyBle_attValuesLen[0]}} },
@@ -198,7 +209,7 @@ const CYBLE_GATTS_DB_T cyBle_gattDB[0x19u] = {
     { 0x000Du, 0x2803u /* Characteristic                      */, 0x00200001u /* ind   */, 0x000Fu, {{0x2A05u, NULL}}                           },
     { 0x000Eu, 0x2A05u /* Service Changed                     */, 0x01200000u /* ind   */, 0x000Fu, {{0x0004u, (void *)&cyBle_attValuesLen[5]}} },
     { 0x000Fu, 0x2902u /* Client Characteristic Configuration */, 0x010A0101u /* rd,wr */, 0x000Fu, {{0x0002u, (void *)&cyBle_attValuesLen[6]}} },
-    { 0x0010u, 0x2800u /* Primary service                     */, 0x08000001u /*       */, 0x0019u, {{0x0010u, (void *)&cyBle_attValuesLen[7]}} },
+    { 0x0010u, 0x2800u /* Primary service                     */, 0x08000001u /*       */, 0x001Cu, {{0x0010u, (void *)&cyBle_attValuesLen[7]}} },
     { 0x0011u, 0x2803u /* Characteristic                      */, 0x000A0001u /* rd,wr */, 0x0013u, {{0x0010u, (void *)&cyBle_attValuesLen[8]}} },
     { 0x0012u, 0xD460u /* MotorLeft                           */, 0x090A0101u /* rd,wr */, 0x0013u, {{0x0001u, (void *)&cyBle_attValuesLen[9]}} },
     { 0x0013u, 0x2901u /* Characteristic User Description     */, 0x01020001u /* rd    */, 0x0013u, {{0x0009u, (void *)&cyBle_attValuesLen[10]}} },
@@ -208,6 +219,9 @@ const CYBLE_GATTS_DB_T cyBle_gattDB[0x19u] = {
     { 0x0017u, 0x2803u /* Characteristic                      */, 0x000A0001u /* rd,wr */, 0x0019u, {{0x0010u, (void *)&cyBle_attValuesLen[14]}} },
     { 0x0018u, 0xD460u /* Roomba                              */, 0x090A0101u /* rd,wr */, 0x0019u, {{0x0001u, (void *)&cyBle_attValuesLen[15]}} },
     { 0x0019u, 0x2901u /* Characteristic User Description     */, 0x01020001u /* rd    */, 0x0019u, {{0x0006u, (void *)&cyBle_attValuesLen[16]}} },
+    { 0x001Au, 0x2803u /* Characteristic                      */, 0x000A0001u /* rd,wr */, 0x001Cu, {{0x0010u, (void *)&cyBle_attValuesLen[17]}} },
+    { 0x001Bu, 0xD460u /* Claxon                              */, 0x090A0101u /* rd,wr */, 0x001Cu, {{0x0001u, (void *)&cyBle_attValuesLen[18]}} },
+    { 0x001Cu, 0x2901u /* Characteristic User Description     */, 0x01020001u /* rd    */, 0x001Cu, {{0x0006u, (void *)&cyBle_attValuesLen[19]}} },
 };
 
 

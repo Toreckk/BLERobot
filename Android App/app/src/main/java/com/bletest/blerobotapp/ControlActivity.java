@@ -2,10 +2,13 @@ package com.bletest.blerobotapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SwitchCompat;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -77,11 +80,18 @@ public class ControlActivity extends AppCompatActivity {
         seekbar = (SeekBar) findViewById(R.id.seekBar);
         seekbar2 = (SeekBar) findViewById(R.id.seekBar2);
         button = (Button) findViewById(R.id.ButtonStop);
+        Button ClaxonBtn = (Button) findViewById(R.id.Claxonbtn);
+        SwitchCompat PowerSwitch = findViewById(R.id.PWswitch);
+
+
+
         ToggleButton toggleButton1 = (ToggleButton) findViewById(R.id.ToggleButton1);
         final TextView plainText =  findViewById(R.id.ModeValue);
 
         seekbar.setProgress(100);
         seekbar2.setProgress(100);
+        PowerSwitch.setShowText(true);
+
         final Intent intent = getIntent();
         mDeviceAddress = intent.getStringExtra(BLEScanActivity.EXTRAS_BLE_ADDRESS);
 
@@ -149,6 +159,7 @@ public class ControlActivity extends AppCompatActivity {
             }
         });
 
+
         toggleButton1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -164,6 +175,7 @@ public class ControlActivity extends AppCompatActivity {
                     plainText.setText("Romba mode ON");
 
                     //Set robot to roomba mode
+                    mRobotService.emptyBleQueue();
                     mRobotService.setRobotMode(1);
                 }
                 else{

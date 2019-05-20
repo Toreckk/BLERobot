@@ -46,6 +46,7 @@ public class RobotService extends Service {
     private static final String speedLeftCharUUID =  baseUUID + "1";
     private static final String speedRightCharUUID = baseUUID + "2";
     private static final String robotModeCharUUID = baseUUID + "3";
+    private static final String ClaxonModeCharUUID = baseUUID + "4";
 
     // Bluetooth Characteristics that we need to read/write
     private static BluetoothGattCharacteristic mSpeedLeftCharacteristic;
@@ -122,9 +123,6 @@ public class RobotService extends Service {
                 mSpeedRightCharacteristic = gattService.getCharacteristic(UUID.fromString(speedRightCharUUID));
                 mModeCharacteristic = gattService.getCharacteristic(UUID.fromString(robotModeCharUUID));
 
-                for (BluetoothGattCharacteristic gattCharacteristic : gattService.getCharacteristics()) {
-                    //Log.i(TAG, "Discovered UUID: " + gattCharacteristic.getUuid());
-                }
 
 
             } else {
@@ -284,6 +282,7 @@ public class RobotService extends Service {
     }
 
 
+
     private void writeCharacteristic(BluetoothGattCharacteristic characteristic) {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
             //Log.w(TAG, "BluetoothAdapter not initialized");
@@ -322,6 +321,9 @@ public class RobotService extends Service {
         updateRobotMode(robotMode);
 
     }
+
+
+
 
 
     /**

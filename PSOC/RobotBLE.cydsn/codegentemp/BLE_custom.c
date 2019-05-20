@@ -59,6 +59,16 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                     0x0019u, /* Handle of the Characteristic User Description descriptor */ 
                 }, 
             },
+
+            /* Claxon characteristic */
+            {
+                0x001Bu, /* Handle of the Claxon characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x001Cu, /* Handle of the Characteristic User Description descriptor */ 
+                }, 
+            },
         }, 
     },
 };

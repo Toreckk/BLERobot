@@ -140,7 +140,7 @@
     #define CYBLE_SLOW_ADV_INT_MAX                  (0x4000u)
     #define CYBLE_SLOW_ADV_TIMEOUT                  (0x0096u)
     #define CYBLE_GAPP_CONNECTION_INTERVAL_MIN      (0xFFFFu)
-    #define CYBLE_GAPP_CONNECTION_INTERVAL_MAX      (0x000Cu)
+    #define CYBLE_GAPP_CONNECTION_INTERVAL_MAX      (0x0028u)
     #define CYBLE_GAPP_CONNECTION_SLAVE_LATENCY     (0x0000u)
     #define CYBLE_GAPP_CONNECTION_TIME_OUT          (0x01F4u)
 #endif /* CYBLE_GAP_ROLE_PERIPHERAL */

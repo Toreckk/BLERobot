@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:id="@+id/top_linear_layout_id"
@@ -70,6 +71,34 @@
             android:layout_marginTop="190dp"
             android:inputType=""
             android:text="" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/PWswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-10dp"
+            android:rotation="90"
+            android:textOn="On"
+            android:textOff="Off"
+            android:theme= "@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="30sp"
+            android:thumb="@drawable/sw_thumb"
+            app:track="@drawable/sw_track"
+            app:showText="true"
+            android:showText="true"/>
+
+        <Button
+            android:id="@+id/Claxonbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:layout_alignParentRight="true"
+            android:rotation="90"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"/>
 
 
     </RelativeLayout>
