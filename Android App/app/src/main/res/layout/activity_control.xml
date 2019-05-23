@@ -88,17 +88,16 @@
             android:thumb="@drawable/sw_thumb"
             app:track="@drawable/sw_track"
             app:showText="true"
-            android:showText="true"/>
+            android:showText="true"
+            app:switchTextAppearance="@style/Switch_style"/>
 
-        <Button
-            android:id="@+id/Claxonbtn"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            android:layout_alignParentRight="true"
             android:rotation="90"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="70dp"/>
+            app:srcCompat="@drawable/batmanlogo"
+            android:layout_marginLeft="40dp"/>
 
 
     </RelativeLayout>

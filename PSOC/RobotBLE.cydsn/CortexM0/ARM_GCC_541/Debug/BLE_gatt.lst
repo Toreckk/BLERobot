@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
   28:Generated_Source\PSoC4/BLE_gatt.c **** #if(CYBLE_MODE_PROFILE)
   29:Generated_Source\PSoC4/BLE_gatt.c ****     #if defined(__ARMCC_VERSION)
   30:Generated_Source\PSoC4/BLE_gatt.c ****         CY_ALIGN(CYDEV_FLS_ROW_SIZE) const CY_BLE_FLASH_STORAGE cyBle_flashStorage CY_SECTION(".cy_
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 2
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 2
 
 
   31:Generated_Source\PSoC4/BLE_gatt.c ****     #elif defined (__GNUC__)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
   85:Generated_Source\PSoC4/BLE_gatt.c ****         },
   86:Generated_Source\PSoC4/BLE_gatt.c ****         {
   87:Generated_Source\PSoC4/BLE_gatt.c ****             0x00u, 0x00u,
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 3
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 3
 
 
   88:Generated_Source\PSoC4/BLE_gatt.c ****         },
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  142:Generated_Source\PSoC4/BLE_gatt.c **** 
  143:Generated_Source\PSoC4/BLE_gatt.c ****     /* Roomba */
  144:Generated_Source\PSoC4/BLE_gatt.c ****     0x00u,
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 4
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 4
 
 
  145:Generated_Source\PSoC4/BLE_gatt.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  199:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0003u, 0x2A00u /* Device Name                         */, 0x01020001u /* rd    */, 0x0003u,
  200:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0004u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0005u,
  201:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0005u, 0x2A01u /* Appearance                          */, 0x01020001u /* rd    */, 0x0005u,
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 5
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 5
 
 
  202:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0006u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0007u,
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  256:Generated_Source\PSoC4/BLE_gatt.c **** * 
  257:Generated_Source\PSoC4/BLE_gatt.c **** ******************************************************************************/
  258:Generated_Source\PSoC4/BLE_gatt.c **** CYBLE_API_RESULT_T CyBle_GattsReInitGattDb(void)
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 6
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 6
 
 
  259:Generated_Source\PSoC4/BLE_gatt.c **** {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
   68              		.global	CyBle_GattsWriteEventHandler
   69              		.code	16
   70              		.thumb_func
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 7
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 7
 
 
   71              		.type	CyBle_GattsWriteEventHandler, %function
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
   97 0012 FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
   98              	.LVL6:
   99 0016 041E     		subs	r4, r0, #0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 8
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 8
 
 
  100              	.LVL7:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  139 004a 0024     		movs	r4, #0
  140              	.LVL13:
  141              	.L7:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 9
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 9
 
 
  315:Generated_Source\PSoC4/BLE_gatt.c ****     }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  193 003c 0400     		.short	4
  194 003e 0328     		.short	10243
  195 0040 01000200 		.word	131073
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 10
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 10
 
 
  196 0044 0500     		.short	5
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  250 00ca C92A     		.short	10953
  251 00cc 01000201 		.word	16908289
  252 00d0 0B00     		.short	11
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 11
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 11
 
 
  253 00d2 0000     		.space	2
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  307 0158 01010A09 		.word	151650561
  308 015c 1300     		.short	19
  309 015e 0000     		.space	2
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 12
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 12
 
 
  310 0160 0100     		.short	1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  364 01e8 1900     		.short	25
  365 01ea 0000     		.space	2
  366 01ec 0600     		.short	6
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 13
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 13
 
 
  367 01ee 0000     		.space	2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  421 0249 4B       		.byte	75
  422 024a B7       		.byte	-73
  423 024b CC       		.byte	-52
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 14
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 14
 
 
  424 024c 60       		.byte	96
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  478              	cyBle_gatts:
  479 0280 0C00     		.short	12
  480 0282 0E00     		.short	14
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 15
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 15
 
 
  481 0284 0F00     		.short	15
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  535 0080 0600     		.short	6
  536 0082 0000     		.space	2
  537 0084 CC000000 		.word	cyBle_attValues+44
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 16
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 16
 
 
  538 0088 1000     		.short	16
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  592 00ca 74       		.byte	116
  593 00cb 00       		.byte	0
  594 00cc 52       		.byte	82
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 17
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 17
 
 
  595 00cd 6F       		.byte	111
@@ -974,7 +974,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  605 00d7 6F       		.byte	111
  606 00d8 6E       		.byte	110
  607              		.section	.cy_checksum_exclude,"a",%progbits
- 608              		.align	7
+ 608              		.align	8
  609              		.type	cyBle_flashStorage, %object
  610              		.size	cyBle_flashStorage, 645
  611              	cyBle_flashStorage:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  649 0025 00       		.byte	0
  650 0026 00       		.byte	0
  651 0027 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 18
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 18
 
 
  652 0028 00       		.byte	0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  706 005e 00       		.byte	0
  707 005f 00       		.byte	0
  708 0060 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 19
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 19
 
 
  709 0061 00       		.byte	0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  763 0097 00       		.byte	0
  764 0098 00       		.byte	0
  765 0099 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 20
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 20
 
 
  766 009a 00       		.byte	0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  820 00d0 00       		.byte	0
  821 00d1 00       		.byte	0
  822 00d2 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 21
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 21
 
 
  823 00d3 00       		.byte	0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  877 0109 00       		.byte	0
  878 010a 00       		.byte	0
  879 010b 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 22
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 22
 
 
  880 010c 00       		.byte	0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  934 0142 00       		.byte	0
  935 0143 00       		.byte	0
  936 0144 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 23
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 23
 
 
  937 0145 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  991 017b 00       		.byte	0
  992 017c 00       		.byte	0
  993 017d 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 24
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 24
 
 
  994 017e 00       		.byte	0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1048 01b4 00       		.byte	0
  1049 01b5 00       		.byte	0
  1050 01b6 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 25
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 25
 
 
  1051 01b7 00       		.byte	0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1105 01ed 00       		.byte	0
  1106 01ee 00       		.byte	0
  1107 01ef 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 26
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 26
 
 
  1108 01f0 00       		.byte	0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1162 0226 00       		.byte	0
  1163 0227 00       		.byte	0
  1164 0228 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 27
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 27
 
 
  1165 0229 00       		.byte	0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1219 025f 00       		.byte	0
  1220 0260 00       		.byte	0
  1221 0261 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 28
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 28
 
 
  1222 0262 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1276 0011 623B0000 		.4byte	.LASF519
  1277 0015 0D3B0000 		.4byte	.LASF520
  1278 0019 00000000 		.4byte	.Ldebug_ranges0+0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 29
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 29
 
 
  1279 001d 00000000 		.4byte	0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1333 0088 02       		.byte	0x2
  1334 0089 E601     		.2byte	0x1e6
  1335 008b 48000000 		.4byte	0x48
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 30
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 30
 
 
  1336 008f 02       		.uleb128 0x2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1390 00f9 04       		.byte	0x4
  1391 00fa 0B       		.uleb128 0xb
  1392 00fb 49390000 		.4byte	.LASF22
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 31
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 31
 
 
  1393 00ff 05       		.byte	0x5
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1447 016b 30       		.byte	0x30
  1448 016c 0B       		.uleb128 0xb
  1449 016d EA210000 		.4byte	.LASF41
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 32
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 32
 
 
  1450 0171 31       		.byte	0x31
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1504 01dd 4B       		.byte	0x4b
  1505 01de 0B       		.uleb128 0xb
  1506 01df 5A270000 		.4byte	.LASF60
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 33
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 33
 
 
  1507 01e3 4C       		.byte	0x4c
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1561 024f 75       		.byte	0x75
  1562 0250 0B       		.uleb128 0xb
  1563 0251 A8100000 		.4byte	.LASF79
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 34
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 34
 
 
  1564 0255 76       		.byte	0x76
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1618 02bf C0370000 		.4byte	.LASF95
  1619 02c3 06       		.byte	0x6
  1620 02c4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 35
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 35
 
 
  1621 02c5 BA120000 		.4byte	.LASF96
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1675 0331 322E0000 		.4byte	.LASF114
  1676 0335 2C       		.byte	0x2c
  1677 0336 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 36
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 36
 
 
  1678 0337 12310000 		.4byte	.LASF115
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1732 03a9 B5240000 		.4byte	.LASF129
  1733 03ad 05       		.byte	0x5
  1734 03ae 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 37
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 37
 
 
  1735 03af 60340000 		.4byte	.LASF130
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1789 041b F21A0000 		.4byte	.LASF148
  1790 041f 80       		.byte	0x80
  1791 0420 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 38
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 38
 
 
  1792 0421 F12C0000 		.4byte	.LASF149
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1846 048f 04       		.byte	0x4
  1847 0490 9301     		.2byte	0x193
  1848 0492 B1040000 		.4byte	0x4b1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 39
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 39
 
 
  1849 0496 0F       		.uleb128 0xf
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1903 0508 04       		.byte	0x4
  1904 0509 D301     		.2byte	0x1d3
  1905 050b EE040000 		.4byte	0x4ee
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 40
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 40
 
 
  1906 050f 00       		.byte	0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  1960 0577 13       		.uleb128 0x13
  1961 0578 9B280000 		.4byte	.LASF178
  1962 057c 06       		.byte	0x6
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 41
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 41
 
 
  1963 057d D8       		.byte	0xd8
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2017 05e6 12       		.uleb128 0x12
  2018 05e7 F90F0000 		.4byte	.LASF185
  2019 05eb 06       		.byte	0x6
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 42
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 42
 
 
  2020 05ec FA       		.byte	0xfa
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2074 065e 02       		.byte	0x2
  2075 065f 12       		.uleb128 0x12
  2076 0660 843B0000 		.4byte	.LASF194
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 43
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 43
 
 
  2077 0664 08       		.byte	0x8
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2131 06d5 B0000000 		.4byte	0xb0
  2132 06d9 01       		.byte	0x1
  2133 06da 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 44
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 44
 
 
  2134 06db 13       		.uleb128 0x13
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2188 0755 21040000 		.4byte	.LASF215
  2189 0759 0E01     		.2byte	0x10e
  2190 075b 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 45
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 45
 
 
  2191 075c 9B110000 		.4byte	.LASF216
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2245 07da F0100000 		.4byte	.LASF234
  2246 07de 2101     		.2byte	0x121
  2247 07e0 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 46
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 46
 
 
  2248 07e1 DF2E0000 		.4byte	.LASF235
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2302 085f F6360000 		.4byte	.LASF253
  2303 0863 3401     		.2byte	0x134
  2304 0865 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 47
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 47
 
 
  2305 0866 3A0E0000 		.4byte	.LASF254
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2359 08e4 BA2D0000 		.4byte	.LASF272
  2360 08e8 4701     		.2byte	0x147
  2361 08ea 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 48
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 48
 
 
  2362 08eb 7B330000 		.4byte	.LASF273
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2416 0969 270A0000 		.4byte	.LASF291
  2417 096d 5A01     		.2byte	0x15a
  2418 096f 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 49
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 49
 
 
  2419 0970 040A0000 		.4byte	.LASF292
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2473 09ee 94080000 		.4byte	.LASF310
  2474 09f2 6D01     		.2byte	0x16d
  2475 09f4 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 50
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 50
 
 
  2476 09f5 C2070000 		.4byte	.LASF311
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2530 0a73 96250000 		.4byte	.LASF329
  2531 0a77 8001     		.2byte	0x180
  2532 0a79 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 51
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 51
 
 
  2533 0a7a 56310000 		.4byte	.LASF330
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2587 0af8 97120000 		.4byte	.LASF348
  2588 0afc 9301     		.2byte	0x193
  2589 0afe 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 52
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 52
 
 
  2590 0aff A5380000 		.4byte	.LASF349
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2644 0b7d A2350000 		.4byte	.LASF367
  2645 0b81 A601     		.2byte	0x1a6
  2646 0b83 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 53
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 53
 
 
  2647 0b84 20150000 		.4byte	.LASF368
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2701 0c02 F8320000 		.4byte	.LASF386
  2702 0c06 B901     		.2byte	0x1b9
  2703 0c08 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 54
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 54
 
 
  2704 0c09 A0260000 		.4byte	.LASF387
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2758 0c87 490A0000 		.4byte	.LASF405
  2759 0c8b CC01     		.2byte	0x1cc
  2760 0c8d 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 55
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 55
 
 
  2761 0c8e DB0A0000 		.4byte	.LASF406
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2815 0d0c 261C0000 		.4byte	.LASF424
  2816 0d10 DF01     		.2byte	0x1df
  2817 0d12 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 56
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 56
 
 
  2818 0d13 7F000000 		.4byte	.LASF425
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2872 0d91 A51E0000 		.4byte	.LASF443
  2873 0d95 F201     		.2byte	0x1f2
  2874 0d97 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 57
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 57
 
 
  2875 0d98 1C160000 		.4byte	.LASF444
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2929 0e16 FA130000 		.4byte	.LASF462
  2930 0e1a 0502     		.2byte	0x205
  2931 0e1c 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 58
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 58
 
 
  2932 0e1d 240B0000 		.4byte	.LASF463
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  2986 0e9b 74010000 		.4byte	.LASF481
  2987 0e9f 1802     		.2byte	0x218
  2988 0ea1 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 59
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 59
 
 
  2989 0ea2 97270000 		.4byte	.LASF482
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3043 0f1c 0B       		.uleb128 0xb
  3044 0f1d 28090000 		.4byte	.LASF498
  3045 0f21 03       		.byte	0x3
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 60
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 60
 
 
  3046 0f22 0B       		.uleb128 0xb
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3100 0f92 9C       		.byte	0x9c
  3101 0f93 0A100000 		.4byte	0x100a
  3102 0f97 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 61
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 61
 
 
  3103 0f98 9E020000 		.4byte	.LASF521
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3157 0ffb 1E       		.uleb128 0x1e
  3158 0ffc 01       		.uleb128 0x1
  3159 0ffd 50       		.byte	0x50
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 62
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 62
 
 
  3160 0ffe 03       		.uleb128 0x3
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3214 106d 1B       		.byte	0x1b
  3215 106e 00       		.byte	0
  3216 106f 27       		.uleb128 0x27
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 63
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 63
 
 
  3217 1070 27060000 		.4byte	0x627
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3271 10eb 00       		.byte	0
  3272 10ec 26       		.uleb128 0x26
  3273 10ed F01D0000 		.4byte	.LASF512
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 64
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 64
 
 
  3274 10f1 01       		.byte	0x1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3328 000c 17       		.uleb128 0x17
  3329 000d 11       		.uleb128 0x11
  3330 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 65
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 65
 
 
  3331 000f 10       		.uleb128 0x10
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3385 0045 0F       		.uleb128 0xf
  3386 0046 00       		.byte	0
  3387 0047 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 66
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 66
 
 
  3388 0048 0B       		.uleb128 0xb
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3442 007e 0D       		.uleb128 0xd
  3443 007f 04       		.uleb128 0x4
  3444 0080 01       		.byte	0x1
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 67
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 67
 
 
  3445 0081 0B       		.uleb128 0xb
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3499 00b7 00       		.byte	0
  3500 00b8 11       		.uleb128 0x11
  3501 00b9 13       		.uleb128 0x13
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 68
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 68
 
 
  3502 00ba 01       		.byte	0x1
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3556 00f0 00       		.byte	0
  3557 00f1 03       		.uleb128 0x3
  3558 00f2 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 69
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 69
 
 
  3559 00f3 3A       		.uleb128 0x3a
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3613 0129 1A       		.uleb128 0x1a
  3614 012a 21       		.uleb128 0x21
  3615 012b 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 70
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 70
 
 
  3616 012c 49       		.uleb128 0x49
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3670 0165 13       		.uleb128 0x13
  3671 0166 00       		.byte	0
  3672 0167 00       		.byte	0
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 71
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 71
 
 
  3673 0168 1E       		.uleb128 0x1e
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3727 01a7 898201   		.uleb128 0x4109
  3728 01aa 01       		.byte	0x1
  3729 01ab 11       		.uleb128 0x11
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 72
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 72
 
 
  3730 01ac 01       		.uleb128 0x1
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3784 01e2 00       		.byte	0
  3785 01e3 49       		.uleb128 0x49
  3786 01e4 13       		.uleb128 0x13
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 73
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 73
 
 
  3787 01e5 00       		.byte	0
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3841 0055 01       		.uleb128 0x1
  3842 0056 50       		.byte	0x50
  3843 0057 9F       		.byte	0x9f
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 74
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 74
 
 
  3844 0058 00000000 		.4byte	0
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3895      FB0E0D00 
  3895      01010101 
  3896              	.LASF470:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 75
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 75
 
 
  3897 0000 4359424C 		.ascii	"CYBLE_EVT_UDSC_READ_CHAR_RESPONSE\000"
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3915      545F504C 
  3915      5853435F 
  3915      52454144 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 76
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 76
 
 
  3916              	.LASF447:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3934              	.LASF497:
  3935 0263 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
  3935      455F5354 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 77
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 77
 
 
  3935      4154455F 
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3955      455F4556 
  3955      545F5253 
  3955      4353435F 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 78
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 78
 
 
  3955      57524954 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3973      57524954 
  3974              	.LASF455:
  3975 04c8 4359424C 		.ascii	"CYBLE_EVT_TPSS_NOTIFICATION_ENABLED\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 79
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 79
 
 
  3975      455F4556 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  3993      455F4556 
  3993      545F4C32 
  3993      4341505F 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 80
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 80
 
 
  3993      43424643 
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4012      455F4556 
  4012      545F424C 
  4012      53535F49 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 81
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 81
 
 
  4012      4E444943 
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4030      4E5F4E4F 
  4031              	.LASF310:
  4032 0894 4359424C 		.ascii	"CYBLE_EVT_CSCSC_NOTIFICATION\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 82
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 82
 
 
  4032      455F4556 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4050      4D53535F 
  4050      494E4449 
  4051              	.LASF157:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 83
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 83
 
 
  4052 09bd 4359424C 		.ascii	"CYBLE_GATT_ERR_ANCS_INVALID_COMMAND\000"
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4070      545F4C4E 
  4070      53535F4E 
  4070      4F544946 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 84
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 84
 
 
  4071              	.LASF307:
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4089              	.LASF192:
  4090 0c2e 73657276 		.ascii	"serviceHandle\000"
  4090      69636548 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 85
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 85
 
 
  4090      616E646C 
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4110 0d41 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
  4110      455F4556 
  4110      545F4C32 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 86
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 86
 
 
  4110      4341505F 
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4129              	.LASF89:
  4130 0e76 4359424C 		.ascii	"CYBLE_ERROR_OK\000"
  4130      455F4552 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 87
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 87
 
 
  4130      524F525F 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4148      4541445F 
  4149              	.LASF478:
  4150 0f96 4359424C 		.ascii	"CYBLE_EVT_WPTSS_INDICATION_DISABLED\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 88
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 88
 
 
  4150      455F4556 
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4168      4341505F 
  4168      43424643 
  4169              	.LASF56:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 89
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 89
 
 
  4170 10c9 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4188      4E4F5449 
  4189              	.LASF59:
  4190 11e8 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 90
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 90
 
 
  4190      455F4556 
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4208      455F4556 
  4208      545F4854 
  4208      53535F49 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 91
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 91
 
 
  4208      4E444943 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4227      53535F43 
  4227      4841525F 
  4228              	.LASF370:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 92
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 92
 
 
  4229 1459 4359424C 		.ascii	"CYBLE_EVT_HRSS_ENERGY_EXPENDED_RESET\000"
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4247 157a 4359424C 		.ascii	"CYBLE_EVT_GATTC_SRVC_DUPLICATION\000"
  4247      455F4556 
  4247      545F4741 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 93
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 93
 
 
  4247      5454435F 
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4265      494E4449 
  4266              	.LASF502:
  4267 16be 4379426C 		.ascii	"CyBle_GattsWriteEventHandler\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 94
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 94
 
 
  4267      655F4761 
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4285      455F4556 
  4285      545F4849 
  4285      4453535F 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 95
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 95
 
 
  4285      5245504F 
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4305 18fe 4359424C 		.ascii	"CYBLE_EVT_UDSS_WRITE_CHAR\000"
  4305      455F4556 
  4305      545F5544 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 96
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 96
 
 
  4305      53535F57 
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4323      505F4155 
  4323      54485F46 
  4324              	.LASF355:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 97
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 97
 
 
  4325 1a4b 4359424C 		.ascii	"CYBLE_EVT_HIDSS_EXIT_SUSPEND\000"
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4343 1b70 4359424C 		.ascii	"CYBLE_EVT_IASS_WRITE_CHAR_CMD\000"
  4343      455F4556 
  4343      545F4941 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 98
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 98
 
 
  4343      53535F57 
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4361      00
  4362              	.LASF156:
  4363 1cbe 4359424C 		.ascii	"CYBLE_GATT_ERR_ANCS_UNKNOWN_COMMAND\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 99
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 99
 
 
  4363      455F4741 
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4381      655F6174 
  4381      7456616C 
  4381      7565734C 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 100
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 100
 
 
  4381      656E00
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4401 1f01 4359424C 		.ascii	"CYBLE_EVT_CPSS_BROADCAST_ENABLED\000"
  4401      455F4556 
  4401      545F4350 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 101
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 101
 
 
  4401      53535F42 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4419      4F544946 
  4420              	.LASF133:
  4421 2031 4359424C 		.ascii	"CYBLE_GATT_ERR_PREPARE_WRITE_QUEUE_FULL\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 102
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 102
 
 
  4421      455F4741 
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4439      4E535546 
  4440              	.LASF475:
  4441 2174 4359424C 		.ascii	"CYBLE_EVT_WPTSS_NOTIFICATION_ENABLED\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 103
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 103
 
 
  4441      455F4556 
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4459      545F4553 
  4459      53535F44 
  4459      45534352 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 104
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 104
 
 
  4460              	.LASF327:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4479      74747300 
  4480              	.LASF132:
  4481 23e9 4359424C 		.ascii	"CYBLE_GATT_ERR_INSUFFICIENT_AUTHORIZATION\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 105
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 105
 
 
  4481      455F4741 
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4500              	.LASF317:
  4501 2503 4359424C 		.ascii	"CYBLE_EVT_CTSS_NOTIFICATION_DISABLED\000"
  4501      455F4556 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 106
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 106
 
 
  4501      545F4354 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4519      545F424C 
  4519      53535F4E 
  4519      4F544946 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 107
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 107
 
 
  4520              	.LASF134:
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4539 2797 4359424C 		.ascii	"CYBLE_EVT_WPTSC_INDICATION\000"
  4539      455F4556 
  4539      545F5750 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 108
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 108
 
 
  4539      5453435F 
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4557      4154545F 
  4557      47454E5F 
  4558              	.LASF388:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 109
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 109
 
 
  4559 28b9 4359424C 		.ascii	"CYBLE_EVT_HTSC_READ_DESCR_RESPONSE\000"
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4577      545F4149 
  4577      4F53435F 
  4577      52454144 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 110
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 110
 
 
  4578              	.LASF517:
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4596              	.LASF501:
  4597 2aef 4379426C 		.ascii	"CyBle_GattsReInitGattDb\000"
  4597      655F4761 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 111
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 111
 
 
  4597      74747352 
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4616      455F4556 
  4616      545F474C 
  4616      53535F49 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 112
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 112
 
 
  4616      4E444943 
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4635              	.LASF222:
  4636 2d42 4359424C 		.ascii	"CYBLE_EVT_AIOSS_INDICATION_ENABLED\000"
  4636      455F4556 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 113
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 113
 
 
  4636      545F4149 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4656      455F4552 
  4656      524F525F 
  4656      464C4153 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 114
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 114
 
 
  4656      485F5752 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4676      455F4556 
  4676      545F504C 
  4676      5853535F 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 115
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 115
 
 
  4676      57524954 
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4694      4F504552 
  4695              	.LASF503:
  4696 308f 61706952 		.ascii	"apiResult\000"
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 116
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 116
 
 
  4696      6573756C 
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4715              	.LASF499:
  4716 31ae 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
  4716      455F5354 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 117
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 117
 
 
  4716      4154455F 
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4734      5853435F 
  4734      54494D45 
  4735              	.LASF286:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 118
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 118
 
 
  4736 32ce 4359424C 		.ascii	"CYBLE_EVT_CGMSC_WRITE_CHAR_RESPONSE\000"
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4756      455F4556 
  4756      545F4149 
  4756      4F53435F 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 119
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 119
 
 
  4756      57524954 
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4775      53435F57 
  4775      52495445 
  4776              	.LASF338:
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 120
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 120
 
 
  4777 3505 4359424C 		.ascii	"CYBLE_EVT_GLSS_INDICATION_ENABLED\000"
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4795 361d 4359424C 		.ascii	"CYBLE_GATT_ERR_CODE_T\000"
  4795      455F4741 
  4795      54545F45 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 121
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 121
 
 
  4795      52525F43 
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4814              	.LASF155:
  4815 3734 4359424C 		.ascii	"CYBLE_GATT_ERR_ANS_COMMAND_NOT_SUPPORTED\000"
  4815      455F4741 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 122
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 122
 
 
  4815      54545F45 
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4833      7456616C 
  4833      75657343 
  4833      43434400 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 123
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 123
 
 
  4834              	.LASF219:
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4852              	.LASF389:
  4853 3983 4359424C 		.ascii	"CYBLE_EVT_HTSC_WRITE_DESCR_RESPONSE\000"
  4853      455F4556 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 124
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 124
 
 
  4853      545F4854 
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4872              	.LASF247:
  4873 3ac7 4359424C 		.ascii	"CYBLE_EVT_ANSC_WRITE_CHAR_RESPONSE\000"
  4873      455F4556 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 125
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 125
 
 
  4873      545F414E 
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4892      455F4556 
  4892      545F4350 
  4892      53535F42 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 126
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 126
 
 
  4892      524F4144 
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4912      455F4556 
  4912      545F4741 
  4912      5454435F 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 127
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 127
 
 
  4912      4C4F4E47 
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 1
  4932      455F4556 
  4932      545F5253 
  4932      4353535F 
-ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\ccZUMs0D.s 			page 128
+ARM GAS  C:\Users\Toreckk\AppData\Local\Temp\cctOWbmp.s 			page 128
 
 
  4932      4E4F5449 

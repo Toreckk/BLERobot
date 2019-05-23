@@ -76,16 +76,27 @@ public class ControlActivity extends AppCompatActivity {
         setContentView(R.layout.activity_control);
 
         textView = (TextView) findViewById(R.id.textView);
+        textView.setEnabled(false);
+        textView.setAlpha(.3f);
         textView2 = (TextView) findViewById(R.id.textView2);
+        textView2.setEnabled(false);
+        textView2.setAlpha(.3f);
         seekbar = (SeekBar) findViewById(R.id.seekBar);
+        seekbar.setEnabled(false);
+        seekbar.setAlpha(.3f);
         seekbar2 = (SeekBar) findViewById(R.id.seekBar2);
+        seekbar2.setEnabled(false);
+        seekbar2.setAlpha(.3f);
         button = (Button) findViewById(R.id.ButtonStop);
-        Button ClaxonBtn = (Button) findViewById(R.id.Claxonbtn);
-        SwitchCompat PowerSwitch = findViewById(R.id.PWswitch);
+        button.setEnabled(false);
+        button.setAlpha(.3f);
+        final ToggleButton toggleButton1 = (ToggleButton) findViewById(R.id.ToggleButton1);
+        toggleButton1.setEnabled(false);
+        toggleButton1.setAlpha(1f);
+        final SwitchCompat PowerSwitch = findViewById(R.id.PWswitch);
 
 
 
-        ToggleButton toggleButton1 = (ToggleButton) findViewById(R.id.ToggleButton1);
         final TextView plainText =  findViewById(R.id.ModeValue);
 
         seekbar.setProgress(100);
@@ -172,7 +183,8 @@ public class ControlActivity extends AppCompatActivity {
                     seekbar2.setAlpha(.3f);
                     button.setEnabled(false);
                     button.setAlpha(.3f);
-                    plainText.setText("Romba mode ON");
+                    plainText.setText("Auto mode ON");
+
 
                     //Set robot to roomba mode
                     mRobotService.emptyBleQueue();
@@ -185,7 +197,7 @@ public class ControlActivity extends AppCompatActivity {
                     seekbar2.setAlpha(1f);
                     button.setEnabled(true);
                     button.setAlpha(1f);
-                    plainText.setText("Romba mode OFF");
+                    plainText.setText("Auto mode OFF");
                     //Turn manual control on
                     mRobotService.setRobotMode(0);
                     //Stop Robot
@@ -196,6 +208,43 @@ public class ControlActivity extends AppCompatActivity {
                 }
             }
         });
+
+        PowerSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(PowerSwitch.isChecked()){
+                    seekbar.setEnabled(true);
+                    seekbar.setAlpha(1f);
+                    seekbar2.setEnabled(true);
+                    seekbar2.setAlpha(1f);
+                    button.setEnabled(true);
+                    button.setAlpha(1f);
+                    toggleButton1.setEnabled(true);
+                    toggleButton1.setAlpha(1f);
+
+                }
+                else{
+                    seekbar.setProgress(100);
+                    seekbar2.setProgress(100);
+                    seekbar.setEnabled(false);
+                    seekbar.setAlpha(.3f);
+                    seekbar2.setEnabled(false);
+                    seekbar2.setAlpha(.3f);
+                    button.setEnabled(false);
+                    button.setAlpha(.3f);
+                    toggleButton1.setEnabled(false);
+                    toggleButton1.setAlpha(.3f);
+                    mRobotService.emptyBleQueue();
+                    mRobotService.setRobotMode(0);//Auto mode
+                    mRobotService.setMotorSpeed(RobotService.Motor.RIGHT_WHEEL, 0);//Stop wheels
+                    mRobotService.setMotorSpeed(RobotService.Motor.LEFT_WHEEL, 0);
+
+
+                }
+            }
+        });
+
+
     }
 
     @Override

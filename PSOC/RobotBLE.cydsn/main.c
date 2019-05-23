@@ -109,6 +109,8 @@ void BleCallBack(uint32 event, void* eventParam){
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             BLE_PWM_Start();        
             ROOMBA_PWM_Stop();
+            LEFT_MOTOR_WriteCompare(0);
+            RIGHT_MOTOR_WriteCompare(0);
         break;
          
         case CYBLE_EVT_GAP_DEVICE_CONNECTED:
@@ -218,8 +220,8 @@ void movimiento (uint dir) {
         IN3_Write(0);
         IN4_Write(1);
       
-        LEFT_MOTOR_WriteCompare(50);
-        RIGHT_MOTOR_WriteCompare(50);
+        LEFT_MOTOR_WriteCompare(30);
+        RIGHT_MOTOR_WriteCompare(30);
     }
     if (dir == 1){ // izq
         
@@ -230,6 +232,28 @@ void movimiento (uint dir) {
         
         LEFT_MOTOR_WriteCompare(50);
         RIGHT_MOTOR_WriteCompare(50);
+       /* LEFT_MOTOR_WriteCompare(0);
+                RIGHT_MOTOR_WriteCompare(0);
+                
+                CyDelay(1000);
+                IN1_Write(1);
+                IN2_Write(0);
+                IN3_Write(1);
+                IN4_Write(0);
+                
+                LEFT_MOTOR_WriteCompare(50);
+                RIGHT_MOTOR_WriteCompare(50);
+                
+                CyDelay(500);
+                IN1_Write(0);
+                IN2_Write(1);
+                IN3_Write(1);
+                IN4_Write(0);
+                
+                LEFT_MOTOR_WriteCompare(50);
+                RIGHT_MOTOR_WriteCompare(50);
+                
+                CyDelay(500);*/
         }
 }
 int main(void)
@@ -279,8 +303,8 @@ int main(void)
                 IN3_Write(1);
                 IN4_Write(0);
                 
-                LEFT_MOTOR_WriteCompare(30);
-                RIGHT_MOTOR_WriteCompare(30);
+                LEFT_MOTOR_WriteCompare(40);
+                RIGHT_MOTOR_WriteCompare(40);
                 
                 CyDelay(500);
                 IN1_Write(0);
@@ -295,9 +319,11 @@ int main(void)
             }
     		else if (dist < 15) {
                 movimiento(1);
+                //ROOMBA_PWM_Start();
             }
             else {
                 movimiento(0);
+                //ROOMBA_PWM_Start();
             }
 
  

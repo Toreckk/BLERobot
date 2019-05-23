@@ -74,8 +74,6 @@
 #include "CS.h"
 #include "CS_aliases.h"
 #include "LEFT_MOTOR.h"
-#include "Seg.h"
-#include "Seg_aliases.h"
 #include "BLE_bless_isr.h"
 #include "cy_em_eeprom.h"
 #include "core_cm0_psoc4.h"
@@ -84,6 +82,7 @@
 #include "cyPm.h"
 #include "cytypes.h"
 #include "cypins.h"
+#include "CyDMA.h"
 #include "CyLFClk.h"
 
 /*[]*/
